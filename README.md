@@ -155,19 +155,25 @@ cs760-accent-st-robustness-ml-research/
 │   ├── analysis/
 │   └── utils/
 │
-├── outputs/
-│   ├── predictions/
-│   ├── metrics/
-│   └── logs/
-│
-├── results/
-│   ├── statistical_tests/
-│   ├── tables/
-│   └── figures/
+├── runs/
+│   ├── <run_name>/
+│   │   ├── outputs/
+│   │   │   ├── predictions/
+│   │   │   ├── metrics/
+│   │   │   └── logs/
+│   │   └── results/
+│   │       ├── statistical_tests/
+│   │       ├── tables/
+│   │       └── figures/
+│   └── <another_run>/
+│       ├── outputs/
+│       └── results/
 │
 ├── scripts/
 └── tests/
 ```
+
+Each experiment is stored in its own directory under `runs/`, keeping its generated outputs and analysed results together and separate from other runs.
 
 ---
 
