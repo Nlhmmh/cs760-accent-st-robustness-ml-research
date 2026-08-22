@@ -1,0 +1,20 @@
+{
+  "cuda_available": true,
+  "cuda_version": "12.8",
+  "device": "cuda",
+  "gpu_memory_gb": 14.56,
+  "gpu_name": "Tesla T4",
+  "model_asr": "openai/whisper-large-v2",
+  "model_direct": "facebook/seamless-m4t-v2-large",
+  "model_mt": "facebook/nllb-200-distilled-600M",
+  "notebook_timing_methodology": "time.perf_counter() with torch.cuda.synchronize() before and after each GPU inference call; model loading time is excluded from each clip measurement.",
+  "platform_machine": "x86_64",
+  "platform_release": "6.6.122+",
+  "platform_system": "Linux",
+  "platform_version": "#1 SMP Thu Apr 30 18:17:14 UTC 2026",
+  "python_version": "3.13.15 (main, Aug  6 2026, 11:06:23) [GCC 11.4.0]",
+  "target_language": "zh",
+  "timestamp_utc": "2026-08-22T03:07:21Z",
+  "torch_version": "2.11.0+cu128",
+  "transformers_version": "5.15.0"
+}
