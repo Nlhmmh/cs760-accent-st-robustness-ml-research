@@ -148,6 +148,17 @@ cs760-accent-st-robustness-ml-research/
 │   ├── 06_statistical_analysis.ipynb
 │   └── 07_results_visualisation.ipynb
 │
+├── literature_review/
+│   ├── main.tex
+│   ├── references.bib
+│   ├── sections/
+│   │   ├── 01_member_1.tex
+│   │   ├── 02_member_2.tex
+│   │   ├── 03_member_3.tex
+│   │   ├── 04_member_4.tex
+│   │   └── 05_member_5.tex
+│   └── figures/
+│
 ├── src/
 │   ├── data/
 │   ├── pipelines/
@@ -174,6 +185,28 @@ cs760-accent-st-robustness-ml-research/
 ```
 
 Each experiment is stored in its own directory under `runs/`, keeping its generated outputs and analysed results together and separate from other runs.
+
+The literature review is maintained as a modular LaTeX document under `literature_review/`. The root `main.tex` assembles the five member-owned section files, while references and figures are shared across the team.
+
+### Literature Review Collaboration
+
+To minimise merge conflicts, each team member should primarily edit their assigned file in `literature_review/sections/`:
+
+- **Member 1** — `01_member_1.tex`
+- **Member 2** — `02_member_2.tex`
+- **Member 3** — `03_member_3.tex`
+- **Member 4** — `04_member_4.tex`
+- **Member 5** — `05_member_5.tex`
+
+Add BibTeX entries to the shared `literature_review/references.bib` file and place images in `literature_review/figures/`. Coordinate changes to `main.tex` and `references.bib` before merging because all members use these files.
+
+Compile the complete review from the repository root with:
+
+```bash
+latexmk -pdf literature_review/main.tex
+```
+
+Alternatively, open `literature_review/` as the project root in an online LaTeX editor such as Overleaf and set `main.tex` as the main document.
 
 ---
 
