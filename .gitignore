@@ -45,6 +45,7 @@ dist/
 .eggs/
 
 # Local datasets and preprocessing artefacts
+/data
 /data/raw/
 /data/interim/
 /data/processed/
@@ -66,3 +67,4 @@ dist/
 *.tmp
 *.temp
 .cache/
+temp.md
