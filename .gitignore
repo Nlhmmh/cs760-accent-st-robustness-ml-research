@@ -68,3 +68,7 @@ dist/
 *.temp
 .cache/
 temp.md
+
+# Run files and scripts
+/runs/direct_run_*
+/runs/cascade_run_*
