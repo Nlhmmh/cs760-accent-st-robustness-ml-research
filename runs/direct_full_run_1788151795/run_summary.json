@@ -1,0 +1,51 @@
+{
+  "run_timestamp": 1788151795,
+  "run_started_utc": "2026-08-31T04:49:55.151261+00:00",
+  "run_finished_utc": "2026-08-31T06:16:57.483929+00:00",
+  "dataset_mode": "final",
+  "number_of_input_samples": 4200,
+  "dataset_fingerprint": {
+    "metadata_sha256": "57fb7e6b62647d661cb887bdd279f1b4af57bbf1fca8e5ee741b5490136dcdba",
+    "ordered_id_sha256": "bf79323ce8acbf43a01d5dfb234b68b2e99fcb08d95671fd2bb2f9932c37f225"
+  },
+  "model_id": "facebook/seamless-m4t-v2-large",
+  "requested_model_revision": "5f8cc790b19fc3f67a61c105133b20b34e3dcb76",
+  "resolved_model_revision": "5f8cc790b19fc3f67a61c105133b20b34e3dcb76",
+  "target_language": "cmn",
+  "generation_settings": {
+    "num_beams": 1,
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "decoding_policy_note": "Fixed deterministic beam-search settings, pre-specified before final evaluation; identical for every clip and accent group.",
+  "device": "cuda",
+  "gpu_name": "Tesla T4",
+  "gpu_driver_version": "580.82.07",
+  "git_commit": null,
+  "total_samples": 4200,
+  "successful_samples": 4200,
+  "failed_samples": 0,
+  "total_audio_duration_sec": 19401.456000000002,
+  "total_pipeline_runtime_sec": 3898.5674851060085,
+  "mean_pipeline_runtime_sec": 0.9282303535966687,
+  "median_pipeline_runtime_sec": 0.8775320485010525,
+  "min_pipeline_runtime_sec": 0.542248482001014,
+  "max_pipeline_runtime_sec": 2.4201011929999368,
+  "std_pipeline_runtime_sec": 0.24376746804004984,
+  "total_generation_runtime_sec": 3770.664948987931,
+  "mean_generation_runtime_sec": 0.8977773688066503,
+  "median_generation_runtime_sec": 0.8470841574990118,
+  "mean_realtime_factor": 0.2195075623687935,
+  "median_realtime_factor": 0.20413170181008258,
+  "generation_limit_hits": 0,
+  "peak_gpu_memory_allocated_gb": 2.875678539276123,
+  "peak_gpu_memory_reserved_gb": 2.935546875,
+  "output_files": {
+    "predictions_csv": "/content/runs/direct_run_1788151795/direct_predictions.csv",
+    "runtime_csv": "/content/runs/direct_run_1788151795/direct_runtime.csv",
+    "environment_json": "/content/runs/direct_run_1788151795/run_environment.json",
+    "config_json": "/content/runs/direct_run_1788151795/run_config.json",
+    "runtime_figure": "/content/runs/direct_run_1788151795/runtime_per_clip.png",
+    "duration_figure": "/content/runs/direct_run_1788151795/runtime_vs_audio_duration.png"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "dataset_mode": "final",
+  "pilot_metadata_path": "/content/data/pilot_sample/pilot_sample_metadata.csv",
+  "pilot_audio_dir": "/content/data/pilot_sample/pilot_sample_audio",
+  "final_metadata_path": "/content/data/final_sample/final_sample_600_per_group.csv",
+  "final_audio_dir": "/content/data/final_sample/final_sample_audio",
+  "model_id": "facebook/seamless-m4t-v2-large",
+  "requested_model_revision": "5f8cc790b19fc3f67a61c105133b20b34e3dcb76",
+  "resolved_model_revision": "5f8cc790b19fc3f67a61c105133b20b34e3dcb76",
+  "target_language": "cmn",
+  "generation_settings": {
+    "num_beams": 1,
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "decoding_policy_note": "Fixed deterministic beam-search settings, pre-specified before final evaluation; identical for every clip and accent group.",
+  "expected_final_samples": 4200,
+  "expected_final_accent_groups": 7,
+  "expected_final_samples_per_accent": 600,
+  "checkpoint_every": 10,
+  "seed": 760,
+  "metadata_sha256": "57fb7e6b62647d661cb887bdd279f1b4af57bbf1fca8e5ee741b5490136dcdba",
+  "ordered_id_sha256": "bf79323ce8acbf43a01d5dfb234b68b2e99fcb08d95671fd2bb2f9932c37f225",
+  "dataset_rows": 4200,
+  "model_sample_rate_hz": 16000,
+  "audio_preprocessing": {
+    "mono_conversion": "mean across channels when multi-channel",
+    "resampling": "resample to 16000 Hz when needed",
+    "noise_reduction": false,
+    "accent_normalization": false,
+    "data_augmentation": false
+  }
+}
