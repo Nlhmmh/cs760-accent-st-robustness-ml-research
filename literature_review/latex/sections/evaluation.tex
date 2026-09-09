@@ -1,0 +1,123 @@
+\section{Evaluation Data and Methodological Evidence}
+\label{sec:evaluation}
+
+This section is limited to literature that affects how evidence about accent
+and speech translation can be interpreted. It separates dataset and reference
+design (Member 1) from metrics and statistical reliability (Member 5). The
+final version should synthesize what previous studies enable or prevent; it
+should not become a procedural methodology section for the group's experiment.
+
+\subsection{Accent-Labelled Speech Data}
+
+Common Voice provides a practical source of accent-labelled speech, but the
+status of those labels needs to be stated carefully. Ardila et al. describe
+\texttt{accent} as one of three optional demographic fields self-reported by
+speakers, alongside age and gender; the paper does not report expert phonetic
+verification of this field \cite{ardila2020commonvoice}. Prabhu et al. later
+extract an English validated subset, \texttt{MCV\_ACCENT}, and organize 14
+Common Voice accent categories into five seen accents used for training and
+validation and nine unseen accents used for testing. Their train, development,
+and test sets are speaker-disjoint \cite{prabhu2023accentcodebooks}. This work
+demonstrates that Common Voice metadata can support controlled
+accent-robustness experiments, but neither paper establishes independent
+validation of the accent categories. A version caveat is also necessary:
+Ardila et al. describe Common Voice data from 2019, whereas Prabhu et al. do
+not report the exact Common Voice release used for \texttt{MCV\_ACCENT}; their
+counts and split details therefore should not be treated as describing an
+identical dataset snapshot.
+
+\subsection{Speech-Translation Data and Reference Quality}
+
+CoVoST 2 supplies the translation layer that Common Voice itself lacks. Wang
+et al. derive it from validated Common Voice read speech and send deduplicated
+source transcripts, without the corresponding audio, to professional
+translators \cite{wang2021covost2}. Translation quality is checked using
+language-model perplexity, LASER scores, and a length-ratio heuristic.
+Low-scoring items are manually inspected and retranslated, while sentences
+that cannot be translated properly, often because of missing context, are
+marked in the release. This process provides documented professional
+translation and quality-control provenance. The paper also reports cascaded
+and end-to-end ST baselines on the corpus; its end-to-end ST category
+corresponds to the Direct ST category used in this survey
+\cite{wang2021covost2}. However, the references are conditioned on text rather
+than audio, and the authors warn that the CoVoST multi-speaker development and
+test splits contain repeated sentences that may skew BLEU or WER. These
+properties must therefore be considered when designing a comparable
+evaluation.
+
+\subsection{Dataset Design for Controlled Accent Comparisons}
+
+Together, the three papers show that a fair comparison between Direct and
+Cascaded ST requires careful control of the evaluation data. Common Voice
+keeps speakers separate across its official training, development, and test
+sets and removes repeated text sentences from those splits
+\cite{ardila2020commonvoice}. CoVoST 2 adds professional translation
+references and reports both cascaded and end-to-end ST baselines, but it was
+not designed to isolate accent effects, and its alternative multi-speaker
+development and test splits contain repeated sentences
+\cite{wang2021covost2}. Prabhu et al. provide a stronger accent-control
+template: speaker-disjoint seen/unseen accent splits and an explicit
+transcript-overlap policy. Their curation deliberately permits some transcript
+overlap across splits, while keeping most development and test examples
+disjoint from training in both speaker and transcript
+\cite{prabhu2023accentcodebooks}.
+
+Consequently, a pipeline difference should be evaluated on matched utterances
+and references, with speaker identity, transcript overlap, accent imbalance,
+dataset version, and recording-condition variation controlled or at
+least reported. These controls improve comparability but do not establish
+architecture as the sole cause: the evaluated systems may also differ in
+training data, capacity, objectives, or decoding. Once the data are comparable,
+the metric and statistical-reliability literature determines how strongly any
+observed difference can be interpreted.
+
+% Keep the comparison-table structure in the project without allowing an empty
+% two-column float to consume a page. Change to \showdatasettabletrue only
+% after at least one evidence-checked row has been added below.
+\newif\ifshowdatasettable
+\showdatasettablefalse
+\ifshowdatasettable
+\begin{table*}[!t]
+  \caption{Dataset-literature comparison scaffold. Populate every cell only
+  from personally verified original sources.}
+  \label{tab:dataset-literature}
+  \centering
+  \scriptsize
+  \setlength{\tabcolsep}{3pt}
+  \renewcommand{\arraystretch}{1.18}
+  \begin{tabularx}{\textwidth}{@{}YYYYYYYY@{}}
+    \toprule
+    Source / dataset & Task & Language / accent coverage & Annotation /
+    reference type & Speaker balance / controls & Strengths & Limitations &
+    Relevance to RQ \\
+    \midrule
+    \multicolumn{8}{c}{\emph{TODO(Member 1): add one evidence-checked row per
+    personally read dataset paper.}} \\
+    \bottomrule
+  \end{tabularx}
+\end{table*}
+\fi
+
+\subsection{Evaluation Metrics}
+
+% TODO(Member 5): Owner: Member 5. Cover WER, BLEU, chrF, and chrF++ only to
+% the extent needed to interpret the reviewed literature and the research
+% question. Compare what each metric measures, known strengths/weaknesses,
+% comparability across tokenization or languages, and limits of sentence-level
+% use. Cite personally read original or authoritative metric sources.
+% Boundary: WER is a Cascaded ST diagnostic; it is not a translation metric.
+\collabplaceholder{Member 5}{Synthesize the evaluation-metric literature and
+explain which questions WER, BLEU, chrF, and chrF++ can and cannot answer.}
+
+\subsection{Statistical Reliability and Controlled Evaluation}
+
+% TODO(Member 5): Owner: Member 5. Complete the approximately 1-page Section V
+% allocation jointly with Member 1. Synthesize paired evaluation, confidence
+% intervals or paired bootstrap procedures, speaker/content controls, and
+% association analysis. Explain how prior work supports reliable differences
+% without overstating association as causation.
+% Transition out: state which evidence-quality constraints the cross-theme
+% synthesis in Section VI must respect.
+\collabplaceholder{Member 5}{Review controlled comparison and uncertainty
+evidence, then state the interpretive constraints that Section VI must carry
+into the research-gap assessment.}

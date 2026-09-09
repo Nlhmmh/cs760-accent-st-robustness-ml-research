@@ -1,0 +1,73 @@
+% .latexmkrc resolves this class from the official template supplied with the
+% project under ../IEEE-conference-template-062824/.
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+
+\definecolor{placeholdergray}{gray}{0.96}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\newcommand{\collabplaceholder}[2]{%
+  \par\smallskip
+  \noindent\colorbox{placeholdergray}{%
+    \parbox{\dimexpr\columnwidth-2\fboxsep\relax}{%
+      \textbf{#1 placeholder.} \emph{#2}}}%
+  \par\smallskip
+}
+
+\newif\ifhasverifiedreferences
+% Member 1's three personally reviewed sources have been added to
+% references.bib. Other members may append their verified sources there.
+\hasverifiedreferencestrue
+
+\title{Regional English Accent Robustness in Direct and Cascaded
+Speech-to-Text Translation: A Literature Survey}
+
+\author{
+  \IEEEauthorblockN{Nathan Naylin, Zhitong Li, Arizona Xing,
+  Patricia Jennesha, and Jidni Mayukh}
+  \IEEEauthorblockA{\textit{School of Computer Science}\\
+  \textit{University of Auckland}\\
+  Auckland, New Zealand}
+}
+
+\begin{document}
+
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/architectures}
+\input{sections/accent_asr}
+\input{sections/accent_st}
+\input{sections/evaluation}
+\input{sections/synthesis_gap}
+\input{sections/conclusion}
+\input{sections/author_contributions}
+\input{sections/ai_use_statement}
+
+\ifhasverifiedreferences
+  \bibliographystyle{IEEEtran}
+  \bibliography{references}
+\else
+  \section*{References}
+  % TODO(Group): This visible box reserves the required References section
+  % without inventing bibliography records. Remove it by switching
+  % \hasverifiedreferencesfalse to \hasverifiedreferencestrue above.
+  \collabplaceholder{All members}{Add only original sources that a group
+  member has personally read and verified. Every bibliography entry must be
+  cited in the text, and every literature claim must point to a matching
+  entry in \texttt{references.bib}.}
+\fi
+
+\end{document}
