@@ -1,0 +1,36 @@
+## Core LaTeX auxiliary files
+*.aux
+*.fls
+*.idx
+*.ind
+*.ilg
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+
+## Bibliography tools (BibTeX / Biber)
+*.bbl
+*.blg
+*.bcf
+*.run.xml
+
+## Build tools (e.g., latexmk)
+*.fdb_latexmk
+
+## Class / Package specific auxiliary files
+*.nav
+*.snm
+*.vrb
+*.maf
+*.mtc
+*.mtc1
+
+## Output documents (Optional but recommended)
+# Ignore final PDFs so you only track source code. 
+# Remove the next line if you explicitly want to version control your final PDF.
+*.pdf
+*.dvi
+*.xdv
