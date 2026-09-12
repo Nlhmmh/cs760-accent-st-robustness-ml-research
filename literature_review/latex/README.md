@@ -3,9 +3,9 @@
 This directory is a compile-ready IEEE two-column scaffold. `.latexmkrc`
 resolves `IEEEtran.cls` from the supplied
 `../IEEE-conference-template-062824/` directory. It contains the
-complete group-report structure, but only Member 1's organizational work is
-present. Literature prose is intentionally absent where no personally verified
-reading notes were found in the repository.
+complete group-report structure. Member 1's organizational and dataset-review
+work and Member 2's supplied accent-ASR review are integrated; placeholders
+remain where no member-authored literature prose was supplied.
 
 ## Build
 
