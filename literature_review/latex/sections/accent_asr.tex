@@ -1,21 +1,92 @@
 \section{Accent Robustness in Speech Processing}
 \label{sec:accent-asr}
 
-% TODO(Member 2): Owner: Member 2. Target approximately 1.7 pages.
-% Purpose: synthesize evidence on regional/accented English ASR, including
-% seen versus unseen accents, underrepresented groups, generalization,
-% adaptation, and limitations.
-% Evidence needed: approximately five personally read peer-reviewed papers.
-% Comparisons needed: accent definitions, speaker-disjoint evaluation,
-% training/test overlap, dataset balance, WER patterns, adaptation trade-offs,
-% and which populations are missing or aggregated.
-% Boundary: this section may establish accent sensitivity in ASR but must not
-% present ASR WER as direct evidence of final translation quality.
-% Transition in: explain why architecture evidence must be paired with speech
-% variation evidence.
-% Transition out: make explicit which ASR findings motivate, but do not answer,
-% the speech-translation question in Section IV.
-\collabplaceholder{Member 2}{Develop the accent-ASR synthesis using verified
-sources. Compare datasets, evaluation conditions, generalization, adaptation,
-strengths, and limitations, while preserving the boundary between recognition
-and final translation evidence.}
+Before speech-to-text translation quality is attributed to architectural
+choices such as Direct versus Cascaded design, it must first be established
+that accent is itself a robust and systematic source of variation in upstream
+automatic speech recognition (ASR) error. A growing body of literature confirms
+that ASR systems, despite steady gains in aggregate accuracy, continue to
+perform unevenly across speakers of different English varieties, and that this
+unevenness is neither incidental nor confined to a narrow set of edge cases.
+
+Large-scale audits of deployed ASR systems provide the clearest evidence that
+accent effects are systematic rather than anecdotal. DiChristofano et al.
+\cite{dichristofano2022global} evaluated three widely used commercial ASR
+services on speakers drawn from a broad range of global English-language
+backgrounds who all read identical text, controlling sentence content and
+length while leaving speaker and recording differences as potential
+confounds. They reported statistically significant performance gaps associated
+with birthplace-related factors and age of English acquisition, showing that
+accent-related error also persists among some first-language English speakers.
+This finding is extended by Jahan et al. \cite{jahan2025unveiling}, who
+benchmarked twenty variants of seven ASR model families, including Whisper and
+SeamlessM4T, across gender, age, and accent using CORAAL, the Speech Accent
+Archive, SBCSAE, and L2-ARCTIC. In their combined CORAAL--SBCSAE experiment,
+they found that both speaker variability and the dialectal difference between
+African American Vernacular English and General American English contributed
+to the observed performance disparity. Read together, these studies show that
+accent robustness cannot be reduced to a native/non-native binary; it spans
+regional, dialectal, and second-language (L2) variation and must be measured
+across all of these categories rather than treated as one monolithic group.
+
+A second strand of evidence addresses how ASR systems generalise, or fail to
+generalise, from the accents seen during training to the accents encountered at
+inference. The AESRC2020 challenge \cite{shi2021aesrc} remains a foundational
+reference point for this sub-theme: participants trained on 160 hours of speech
+spanning eight labelled accents and were evaluated on a held-out test set that
+deliberately included two unseen accents to probe generalisation rather than
+memorisation. The organisers reported that, among their baselines, fine-tuning
+a LibriSpeech-pretrained model on accented data outperformed training the same
+model family only on the accented data, while the strongest submission used a
+self-supervised wav2vec encoder and most participants trained a single average
+model rather than explicit per-accent branches; these results show that
+pretraining and shared modelling were useful within this benchmark, but do not
+establish that they generally matter more than accent-specific architectures.
+This seen/unseen distinction is also central to the accent-labelled data
+reviewed elsewhere in this survey: Prabhu et al.
+\cite{prabhu2023accentcodebooks} organise the Common Voice accent categories
+discussed in Section~\ref{sec:evaluation} into five seen and nine unseen accent
+groups, and address the resulting generalisation gap directly at the acoustic-
+model level by learning accent-specific codebooks that are selectively combined
+at inference time, reporting reductions in word error rate on unseen accents
+relative to accent-agnostic baselines. Considered alongside the AESRC2020
+results, this indicates that seen and unseen accents must be reported
+separately and that generalisation gaps can be narrowed through pretraining or
+accent-conditioned adaptation, although the studies do not directly establish
+that an absent accent degrades more sharply than an underrepresented seen
+accent under matched conditions.
+
+This generalisation gap motivates a broader set of adaptation and
+regularisation techniques aimed specifically at unseen-accent robustness. Thai
+et al. \cite{thai2026contrastive} introduced a supervised contrastive learning
+objective layered onto standard CTC fine-tuning, requiring no architectural
+change and no explicit accent labels, and reported relative word-error-rate
+reductions of up to 25--29\% under unseen-accent evaluation on the L2-ARCTIC
+benchmark, which they associated with more compact and stable encoder
+representations. Closer to the architectures compared in this survey, Swain et
+al. \cite{swain2026fair} evaluated Whisper and SeamlessM4T across twenty-six
+second-language accent groups and found large, uneven fluctuations in word
+error rate between groups for both model families prior to any intervention.
+Their proposed fairness-prompted fine-tuning, combining spectral decoupling,
+group distributionally robust optimisation, and invariant risk minimisation,
+improved macro-averaged word error rate relative to standard fine-tuning and
+enhanced fairness across accent groups.
+
+Read together, these studies support two conclusions that motivate the
+remainder of this survey. First, accent-related degradation in ASR is well
+documented, systematic, and measurable using ASR metrics including WIL and
+WER, and it affects both commercial black-box services and the open model
+families, Whisper and SeamlessM4T, relevant to the Direct and Cascaded systems
+compared in this project
+\cite{dichristofano2022global,jahan2025unveiling,swain2026fair}. Second, the
+mitigation studies reviewed in this section focus on the ASR stage itself,
+through adaptation, regularisation, or fairness-constrained fine-tuning of the
+recogniser in isolation
+\cite{prabhu2023accentcodebooks,swain2026fair,thai2026contrastive}. Among the
+studies reviewed in this section, none directly tests whether accent-related
+ASR error propagates into degraded final translation quality, or whether that
+propagation differs between architectures that expose an intermediate
+transcript, such as a Cascaded Whisper-to-translation pipeline, and
+architectures that map speech to translated text directly, such as
+SeamlessM4T. Establishing whether this specific gap holds in the broader
+literature is the task of the following section.
