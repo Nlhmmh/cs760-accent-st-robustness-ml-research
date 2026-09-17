@@ -1,19 +1,195 @@
 \section{Speech Translation Architectures and System Comparisons}
 \label{sec:architectures}
 
-% TODO(Member 3): Owner: Member 3. Target approximately 1.4 pages.
-% Purpose: synthesize Direct ST, Cascaded ST, Direct-versus-Cascade evidence,
-% system strengths and weaknesses, and ASR-to-MT error propagation.
-% Evidence needed: at least three personally read, recent or foundational
-% peer-reviewed papers; comparable tasks/datasets/metrics; experimental
-% conditions that explain agreement or disagreement among results.
-% Comparisons needed: performance, modularity, training/fine-tuning setup,
-% intermediate supervision, error visibility, and limits on generalization.
-% Transition in: connect the two operational definitions in the Introduction
-% to evidence about their observed behavior.
-% Transition out: identify why architecture comparisons alone cannot establish
-% robustness to regional English accents, motivating Section III.
-\collabplaceholder{Member 3}{Synthesize Direct and Cascaded ST architectures
-and controlled system comparisons. Compare findings and limitations rather
-than listing three isolated paper summaries, then motivate the need to examine
-accent robustness.}
+\subsection{Architectures: Direct vs. Cascaded Paradigms}
+
+\begin{figure}[t]
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tikzpicture}[
+  node distance=6mm and 6mm,
+  data/.style={draw, rounded corners=2pt, minimum height=7mm,
+    minimum width=17mm, align=center, font=\small, inner sep=2pt},
+  proc/.style={draw, minimum height=7mm, minimum width=13mm,
+    align=center, font=\small, inner sep=2pt},
+  lbl/.style={font=\small\bfseries},
+  arrow/.style={-{Stealth[length=2mm]}, thick}
+]
+
+% Cascaded pipeline
+\node[data] (audio1) {Speech};
+\node[proc, right=of audio1] (asr) {ASR};
+\node[data, right=of asr] (text) {Transcript};
+\node[proc, right=of text] (mt) {MT};
+\node[data, right=of mt] (trans1) {Translation};
+
+\draw[arrow] (audio1) -- (asr);
+\draw[arrow] (asr) -- (text);
+\draw[arrow] (text) -- (mt);
+\draw[arrow] (mt) -- (trans1);
+
+\node[lbl, above=1mm of text] {Cascaded ST};
+
+% Direct pipeline
+\node[data, below=11mm of audio1] (audio2) {Speech};
+\node[proc, right=of audio2, minimum width=56mm] (direct)
+  {Direct ST};
+\node[data, right=of direct] (trans2) {Translation};
+
+\draw[arrow] (audio2) -- (direct);
+\draw[arrow] (direct) -- (trans2);
+
+\node[lbl, above=1mm of direct] {Direct ST};
+
+\end{tikzpicture}%
+}
+\caption{Simplified inference pipelines based on Sperber and
+Paulik~\cite{sperber2020endtoend}. The cascade passes a single best
+source-language transcript from ASR to MT. Direct ST produces target-language
+text without an intermediate transcript.}
+\label{fig:cascade-direct}
+\end{figure}
+
+Cascaded speech translation (ST) works as a two-step pipeline. An automatic
+speech recognition (ASR) module first transcribes the audio into text in the
+source language, and a machine translation (MT) model then translates that
+transcript into the target language. The advantage of this separation is
+practical. The two components can be developed, trained and replaced
+independently. Each can also use the corpora already collected for its own
+task: ASR draws on speech paired with transcripts, MT on parallel text, and
+both are more widely available than audio paired with
+translations~\cite{sperber2020endtoend}. Fig.~\ref{fig:cascade-direct}
+contrasts this pipeline with the direct alternative described below.
+
+The same separation creates the weakness most often associated with this
+design: error propagation. Where the interface between the two components is a
+single best transcript, recognition errors can pass into the MT stage, and the
+MT model cannot return to the acoustic signal to check what was said. The size
+of this effect varies. Le et al.~\cite{le2017disentangling} studied
+French-to-English speech translation and found that improving the ASR component
+from 21.86\% to 16.90\% word error rate on their development set raised BLEU
+from 26.73 to 28.89. In individual sentences, a few recognition errors
+sometimes produced many translation errors, while others, such as morphological
+substitutions, left the translation almost unaffected. Word error rate alone
+therefore does not show how much recognition errors affect translation quality,
+although their pipeline used phrase-based statistical MT and these effects need
+not carry over to neural systems.
+
+Error propagation can be reduced. Sperber and
+Paulik~\cite{sperber2020endtoend} list lattices, confusion networks and
+error-tolerant MT as established countermeasures, and the cascade of Bentivogli
+et al.~\cite{bentivogli2021cascade} fine-tunes its MT component on a mixture of
+human and automatic transcripts for the same reason. Two other problems arise
+at the interface between the components. MT models trained mainly on written
+text may struggle with the disfluent, spoken-style output that ASR produces, a
+mismatch between MT training text and ASR output. And once the pipeline commits
+to a transcript, anything the transcript does not encode, including prosody, is
+lost to the MT model~\cite{sperber2020endtoend}.
+
+Direct ST architectures bypass the intermediate transcript. Weiss et
+al.~\cite{weiss2017sequence} built an early direct sequence-to-sequence system
+of this kind on 163 hours of Spanish telephone speech paired with English
+translations, mapping acoustic features onto target-language text in a single
+network. Removing the transcript interface removes the error propagation that
+comes with it, and a single model can in principle run with lower latency than
+two chained models, although Weiss et al. did not report latency measurements.
+Paired speech and translation data is scarce, and much harder to obtain than
+the separate ASR and MT corpora available to cascaded systems. Sperber and
+Paulik~\cite{sperber2020endtoend} describe this as a possible trade-off between
+data efficiency and modelling power, and note that the techniques direct models
+use to compensate, such as training on ASR and MT data, may reintroduce some of
+the issues associated with cascades. They present this as a question for
+further analysis rather than a settled result.
+
+\subsection{Empirical System Comparisons}
+
+Bentivogli et al.~\cite{bentivogli2021cascade} compared cascaded and direct
+systems built on the same core Transformer technology, drawing on overlapping
+training resources used through different pipelines, and evaluated both on the
+same MuST-C test segments for English to German, Spanish and Italian. They used
+automatic metrics together with professional post-editing, assessed using two
+measures based on translation edit rate (TER): human-targeted TER (HTER) and
+multi-reference TER (mTER). On those post-editing measures the two approaches
+performed similarly for English-to-German and English-to-Italian. For
+English-to-Spanish the direct system was significantly better, while BLEU
+computed against independent references favoured the cascade. The authors note
+that these measures can lead to different conclusions.
+
+A more detailed analysis showed different error patterns across directions. The
+cascade made fewer morphological errors in English-to-German and
+English-to-Italian, and fewer word-order errors in English-to-German. For
+English-to-Spanish, the direct system made fewer lexical, morphological and
+word-order errors. On a filtered subset prepared for manual annotation, direct
+systems left more source words untranslated, though some omissions were
+discourse markers that the authors say need not count as errors. The direct
+system appeared to handle prosody better and made fewer errors in understanding
+speech. The authors call both findings tentative, since few prosody cases could
+be isolated and errors inside direct models are harder to observe.
+
+The direct model used an encoder initialised from an ASR model, knowledge
+distillation from a teacher MT model, and synthetic data produced by translating
+transcripts from ASR training corpora~\cite{bentivogli2021cascade}. The
+experiment therefore does not show that a direct model could match the cascade
+without ASR and MT resources, nor that the gains it does achieve follow from
+the inference architecture alone.
+
+A study of Basque and Spanish reported different results. Etchegoyhen et
+al.~\cite{etchegoyhen2022casestudy} compared both directions for this pair,
+where Basque has rich morphology and relatively free word order. On their main
+test sets the cascade was stronger for Basque-to-Spanish, while a
+wav2vec-based direct model scored higher for Spanish-to-Basque. In a manual
+ranking on a separate sample of parliamentary speech, evaluators preferred the
+cascaded output in every configuration except Spanish-to-Basque with additional
+training data, where the two were judged roughly equal. When they grouped
+results by ASR word error rate, the direct model was not consistently more
+robust on harder audio, and the tendency reversed with language direction and
+training condition.
+
+Shared tasks compare more systems, which differ in many respects besides
+architecture. In the IWSLT 2021 offline task, cascaded systems took the top two
+places, and the best cascade scored 2 BLEU points above the best direct
+submission. With the original subtitle-style TED references, a different direct
+submission ranked highest among direct systems, and the gap to the best cascade
+was 0.7 BLEU. This shows that reference choice can change both system rankings
+and the apparent gap between the two approaches. In the multilingual task of
+the same campaign, the three teams submitting both architectures found their
+direct systems stronger.
+The organisers suggest that differences between the tasks in auxiliary data
+volume and in audio segmentation may help explain
+this~\cite{anastasopoulos2021iwslt}. Two years later, cascaded systems were
+again generally stronger in the IWSLT 2023 offline
+task~\cite{agarwal2023iwslt}.
+
+More recently, Papi et al.~\cite{papi2026hearing} benchmarked twenty-two
+systems, four direct and twelve cascaded alongside six speech-enabled language
+models, across sixteen benchmarks and a range of acoustic and linguistic
+conditions. Cascaded systems were the most reliable overall, and performance
+depended on the condition tested rather than on the architecture alone. In a
+human evaluation comparing one model from each group, the direct model produced
+more undertranslation than the cascade, consistent with the pattern reported by
+Bentivogli et al.~\cite{bentivogli2021cascade}.
+
+\subsection{From System Comparisons to Accent}
+
+Across these studies, no approach performs best in every setting, and the
+reported differences vary with the language pair, the evaluation data, the
+reference translations and the metric, a dependence examined further in
+Section~\ref{sec:evaluation}. Earlier comparisons such as Bentivogli et
+al.~\cite{bentivogli2021cascade} and Etchegoyhen et
+al.~\cite{etchegoyhen2022casestudy} did not report results by accent group.
+Their material is not uniformly clean: Weiss et al.~\cite{weiss2017sequence}
+work with telephone speech, and Bentivogli et
+al.~\cite{bentivogli2021cascade} analyse audio duration, speech rate and errors
+from poor audio quality and overlapping speech.
+
+Recent work has begun to report accent-level results. The IWSLT 2024 offline
+task added an accent challenge built from the Edinburgh International Accents
+of English Corpus, and all submissions to that task used a cascaded
+architecture~\cite{ahmad2024iwslt}. Papi et al.~\cite{papi2026hearing} evaluate
+accent conditions across direct, cascaded and speech-enabled systems and
+suggest that the speech encoder is important.
+Section~\ref{sec:accent-st} examines accent robustness in speech translation in
+more detail. Comparisons at the system level can show how translation quality
+varies across accent groups, but they do not on their own explain where those
+differences come from. The next section reviews how accent affects ASR, which
+may help explain errors in cascaded speech translation.
