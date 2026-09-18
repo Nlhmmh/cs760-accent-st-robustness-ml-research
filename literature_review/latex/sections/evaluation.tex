@@ -1,11 +1,11 @@
 \section{Evaluation Data and Methodological Evidence}
 \label{sec:evaluation}
 
-This section is limited to literature that affects how evidence about accent
-and speech translation can be interpreted. It separates dataset and reference
-design (Member 1) from metrics and statistical reliability (Member 5). The
-final version should synthesize what previous studies enable or prevent; it
-should not become a procedural methodology section for the group's experiment.
+This section synthesizes the literature that determines how evidence about
+accent and speech translation can be interpreted. It first examines dataset
+and reference design, then considers translation metrics and statistical
+reliability. Together, these themes establish the controls required for a
+credible comparison without turning the survey into an experimental procedure.
 
 \subsection{Accent-Labelled Speech Data}
 
@@ -70,33 +70,6 @@ architecture as the sole cause: the evaluated systems may also differ in
 training data, capacity, objectives, or decoding. Once the data are comparable,
 the metric and statistical-reliability literature determines how strongly any
 observed difference can be interpreted.
-
-% Keep the comparison-table structure in the project without allowing an empty
-% two-column float to consume a page. Change to \showdatasettabletrue only
-% after at least one evidence-checked row has been added below.
-\newif\ifshowdatasettable
-\showdatasettablefalse
-\ifshowdatasettable
-\begin{table*}[!t]
-  \caption{Dataset-literature comparison scaffold. Populate every cell only
-  from personally verified original sources.}
-  \label{tab:dataset-literature}
-  \centering
-  \scriptsize
-  \setlength{\tabcolsep}{3pt}
-  \renewcommand{\arraystretch}{1.18}
-  \begin{tabularx}{\textwidth}{@{}YYYYYYYY@{}}
-    \toprule
-    Source / dataset & Task & Language / accent coverage & Annotation /
-    reference type & Speaker balance / controls & Strengths & Limitations &
-    Relevance to RQ \\
-    \midrule
-    \multicolumn{8}{c}{\emph{TODO(Member 1): add one evidence-checked row per
-    personally read dataset paper.}} \\
-    \bottomrule
-  \end{tabularx}
-\end{table*}
-\fi
 
 \subsection{Evaluation Metrics}
 

@@ -1,13 +1,25 @@
 \begin{abstract}
-% TODO(Group): Write this last, after all thematic sections and the research
-% gap have been agreed. Target 150--200 words in one paragraph. Include:
-% (1) motivation; (2) survey scope and paper-selection approach;
-% (3) principal cross-theme findings; (4) the evidence-supported gap; and
-% (5) the resulting research question. Do not cite or introduce findings that
-% are absent from the body.
-\collabplaceholder{Group}{Write a 150--200 word abstract after the body is
-complete. It must summarize the motivation, scope, selection approach,
-synthesis, validated gap, and research question.}
+Regional English accent is a source of uneven automatic speech
+recognition performance, but its effect on final speech-translation quality is
+less clearly established. This survey examines how accent may affect Direct
+speech translation, which maps speech to translated text without an exposed
+transcript, and Cascaded speech translation, which connects speech recognition
+to machine translation. Twenty-seven works were retained through thematic
+selection covering system architectures, accent robustness, error
+propagation, datasets, translation metrics, and statistical comparison. The
+review finds that neither architecture is consistently superior: reported
+outcomes vary with language pair, training resources, test data, references,
+and metrics. Accent-related recognition disparities are well established, and
+recognition errors can damage downstream translation, but these findings do
+not alone demonstrate accent-related translation degradation. The closest
+speech-translation studies either lack controlled regional-accent labels, omit
+a matched Cascaded comparator, or evaluate an adjacent downstream task.
+Common Voice and CoVoST 2 enable a relevant evaluation, although self-reported
+accent labels, repeated content, speaker dependence, and reference design
+constrain interpretation. The gap is a matched evaluation of Direct
+and Cascaded systems on the same regional-English utterances using final
+translation quality, motivating the question: how does regional English accent
+affect the translation quality of these two system categories?
 \end{abstract}
 
 \begin{IEEEkeywords}

@@ -1,12 +1,39 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-% TODO(Member 1 + Group): Target approximately 0.5 page and no more than one
-% page. Write after Section VI is agreed. Include: (1) the most important
-% cross-theme findings; (2) qualifications and unresolved limitations;
-% (3) the evidence-supported research gap; and (4) the final research question
-% or hypothesis for the project. Every conclusion must trace to evidence in
-% the body. Do not introduce a new paper, claim, or method here.
-\collabplaceholder{Member 1 and Group}{Conclude with supported synthesis,
-limitations, the validated or refined gap, and the final research question.
-Do not complete this section until all thematic evidence is available.}
+This survey examined whether existing evidence explains how regional English
+accent affects Direct and Cascaded speech-to-text translation. Three findings
+shape the answer. First, published system comparisons do not identify a
+consistently superior architecture: outcomes depend on language direction,
+training resources, evaluation data, references, and metrics. Second,
+accent-related performance differences are well established in ASR, including
+for model families relevant to contemporary speech translation, but WER does
+not measure final translation quality. Third, cascaded error propagation is
+supported by both controlled transcript manipulation and analyses of phonetic
+recognition errors, making accent-related translation degradation plausible
+without demonstrating it directly.
+
+The closest studies do not yet provide the complete comparison required by the
+research question. Accent-level ST benchmarks either evaluate only cascaded
+submissions or do not combine matched regional-English utterances, a complete
+Cascaded comparator, and accent-stratified final translations. The available
+data also impose qualifications. Common Voice accent labels are optional
+self-reports rather than expert phonetic classifications; corpus versions and
+recording conditions differ; speakers or prompts can recur; and CoVoST 2
+references were created from transcripts rather than audio. BLEU and chrF
+scores further depend on reference and processing choices, while small accent
+subsets can make numerical differences uncertain.
+
+The literature gap is therefore narrower than an absence of research on
+accent or ST robustness. It is the absence, within the reviewed evidence, of a
+controlled, matched comparison that treats regional English accent as the
+grouping variable and final translation quality as the shared outcome for both
+Direct and Cascaded ST. This supports the project question: \emph{How does
+regional English accent affect the translation quality of Direct and Cascaded
+speech-to-text translation systems?} A defensible answer requires identical
+utterances and references across systems, speaker-aware accent groups,
+consistent corpus-level metrics, and paired uncertainty estimates. Such an
+evaluation can establish comparative associations between accent group and
+system performance, but it should not attribute differences solely to
+architecture when models also differ in training data, capacity, objectives,
+or decoding.

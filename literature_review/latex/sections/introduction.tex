@@ -21,27 +21,54 @@ accent groups. ASR word error rate (WER) is treated only as a diagnostic for
 the Cascaded ST pathway, not as a substitute for measuring translation
 quality.
 
-% TODO(Group): Target a final length of approximately 1--1.25 pages for this
-% section. Add a cited problem statement explaining why accent robustness and
-% final translation quality matter. Each factual statement about prior work
-% needs a verified citation.
-\collabplaceholder{Group}{Add the evidence-backed motivation and problem
-statement. Establish why regional-accent variation matters for speech
-translation without treating ASR-only evidence as translation evidence.}
+The comparison matters because the two categories expose different potential
+failure mechanisms. Cascaded systems can exploit mature ASR and MT resources,
+but errors in a single-best transcript may pass to the translation stage;
+Direct systems remove that discrete interface but depend more heavily on
+paired speech--translation data \cite{sperber2020endtoend}. Existing system
+comparisons do not establish a universal winner. Their conclusions change
+with language pair, training resources, test segmentation, reference choice,
+and evaluation measure \cite{bentivogli2021cascade,
+anastasopoulos2021iwslt,etchegoyhen2022casestudy}. Aggregate comparisons
+therefore cannot establish whether either architecture is more robust for a
+particular regional-accent group.
 
-The literature is to be selected thematically rather than presented as a
-paper-by-paper catalogue. The completed survey should prefer recent,
-peer-reviewed work, while retaining older sources only when they are
-foundational. Within each theme, studies should be compared by task, data,
-experimental controls, measures, findings, and limitations. Claims about the
-research gap must remain provisional until literature closest to the research
-question has been checked for contrary evidence.
+Accent is a relevant evaluation variable because recognition performance is
+not distributed uniformly across English varieties. Audits and challenge
+studies report differences across regional, dialectal, and second-language
+accent groups, including degradation on accents absent from training
+\cite{dichristofano2022global,jahan2025unveiling,shi2021aesrc,
+prabhu2023accentcodebooks}. These results establish an upstream ASR problem,
+not a final translation result. The distinction is essential: similar WER can
+produce different amounts of translation damage, while a Direct system has no
+exposed transcript on which WER can be measured
+\cite{le2017disentangling}. Evidence that phonetic ASR errors can reduce
+translation quality makes an accent effect in Cascaded ST plausible, but that
+effect must still be evaluated using matched final translations rather than
+inferred from recognition scores alone \cite{sperber2019,pida2026}.
 
-% TODO(Group): Replace the following planning statement with the actual search
-% and inclusion process used by the group. Record databases, query families,
-% dates, inclusion/exclusion criteria, and how many sources were retained.
-\collabplaceholder{Group}{Document the search and selection process actually
-used. Do not describe a search that the group did not perform.}
+The literature was selected thematically rather than as a paper-by-paper
+catalogue. Distributed searches covered Direct and Cascaded ST, ASR-to-MT
+error propagation, accented ASR and unseen-accent generalisation, accented or
+dialectal ST, accent-labelled and translation datasets, translation metrics,
+and statistical reliability. Candidate metadata and full texts were checked
+through official publication or proceedings records, including ACL Anthology,
+ISCA Archive, and IEEE proceedings; arXiv works were retained when no venue
+version was identified. A work was included when a member had read its full
+text and it directly informed at least one theme, architecture comparison,
+evaluation constraint, or contrary test of the proposed gap. Blogs, secondary
+summaries, duplicates, and sources without verifiable support for the claims
+made here were excluded. This process retained 27 works, including older
+foundational metric papers alongside recent studies. Because a common
+systematic search log was not recorded across all members, this is a focused
+narrative survey rather than an exhaustive systematic review.
+
+The survey makes three contributions. First, it connects evidence about ST
+architecture with evidence about accent-sensitive speech recognition without
+treating WER as translation quality. Second, it tests the proposed gap against
+the closest accent, robustness, and error-propagation studies. Third, it
+identifies the dataset, reference, metric, and dependence controls needed for
+an interpretable comparison of final translation quality across accent groups.
 
 The remainder of the survey moves from general to specific. Section
 \ref{sec:architectures} compares Direct and Cascaded ST architectures;
@@ -51,6 +78,3 @@ Section~\ref{sec:evaluation} considers evaluation data and methodological
 evidence; and Section~\ref{sec:synthesis} integrates the themes to assess the
 research gap. Section~\ref{sec:conclusion} states the conclusions and final
 research question supported by that synthesis.
-
-% TODO(Group): Once all sections are complete, add a concise statement of the
-% survey's actual contributions. Do not describe planned work as a finding.
