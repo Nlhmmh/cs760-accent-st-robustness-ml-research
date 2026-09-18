@@ -62,18 +62,18 @@ translations~\cite{sperber2020endtoend}. Fig.~\ref{fig:cascade-direct}
 contrasts this pipeline with the direct alternative described below.
 
 The same separation creates the weakness most often associated with this
-design: error propagation. Where the interface between the two components is a
-single best transcript, recognition errors can pass into the MT stage, and the
-MT model cannot return to the acoustic signal to check what was said. The size
-of this effect varies. Le et al.~\cite{le2017disentangling} studied
-French-to-English speech translation and found that improving the ASR component
-from 21.86\% to 16.90\% word error rate on their development set raised BLEU
-from 26.73 to 28.89. In individual sentences, a few recognition errors
-sometimes produced many translation errors, while others, such as morphological
-substitutions, left the translation almost unaffected. Word error rate alone
-therefore does not show how much recognition errors affect translation quality,
-although their pipeline used phrase-based statistical MT and these effects need
-not carry over to neural systems.
+design: error propagation. Where the interface between the two components is
+a single best transcript, recognition errors can pass into the MT stage, and
+the MT model cannot return to the acoustic signal to check what was said.
+The size of this effect varies. Le et al.~\cite{le2017disentangling} studied
+French-to-English speech translation and found that improving the ASR
+component from 21.86\% to 16.90\% word error rate on their development set
+raised BLEU from 26.73 to 28.89. A few recognition errors sometimes caused
+many translation errors, whereas a larger number, including morphological
+substitutions, could have little effect. Word error rate alone therefore
+does not show how much recognition errors affect translation quality,
+although their pipeline used phrase-based statistical MT and these effects
+need not carry over to neural systems.
 
 Error propagation can be reduced. Sperber and
 Paulik~\cite{sperber2020endtoend} list lattices, confusion networks and
@@ -87,19 +87,20 @@ to a transcript, anything the transcript does not encode, including prosody, is
 lost to the MT model~\cite{sperber2020endtoend}.
 
 Direct ST architectures bypass the intermediate transcript. Weiss et
-al.~\cite{weiss2017sequence} built an early direct sequence-to-sequence system
-of this kind on 163 hours of Spanish telephone speech paired with English
-translations, mapping acoustic features onto target-language text in a single
-network. Removing the transcript interface removes the error propagation that
-comes with it, and a single model can in principle run with lower latency than
-two chained models, although Weiss et al. did not report latency measurements.
-Paired speech and translation data is scarce, and much harder to obtain than
-the separate ASR and MT corpora available to cascaded systems. Sperber and
-Paulik~\cite{sperber2020endtoend} describe this as a possible trade-off between
-data efficiency and modelling power, and note that the techniques direct models
-use to compensate, such as training on ASR and MT data, may reintroduce some of
-the issues associated with cascades. They present this as a question for
-further analysis rather than a settled result.
+al.~\cite{weiss2017sequence} built an early direct sequence-to-sequence
+system of this kind on 163 hours of Spanish telephone speech paired with
+English translations, mapping acoustic features onto target-language text in
+a single network. Removing the transcript interface removes the error
+propagation that comes with it, and a single model can in principle run with
+lower latency than two chained models, although Weiss et al. did not report
+latency measurements. Paired speech and translation data is scarce, and
+harder to obtain than the separate ASR and MT corpora available to cascaded
+systems. Sperber and Paulik~\cite{sperber2020endtoend} describe this as a
+possible trade-off between data efficiency and modelling power, and note
+that the techniques direct models use to compensate, such as training on ASR
+and MT data, may reintroduce some of the issues associated with cascades.
+They present this as a question for further analysis rather than a settled
+result.
 
 \subsection{Empirical System Comparisons}
 
@@ -135,15 +136,15 @@ the inference architecture alone.
 
 A study of Basque and Spanish reported different results. Etchegoyhen et
 al.~\cite{etchegoyhen2022casestudy} compared both directions for this pair,
-where Basque has rich morphology and relatively free word order. On their main
-test sets the cascade was stronger for Basque-to-Spanish, while a
+where Basque has rich morphology and relatively free word order. On their
+main test sets the cascade was stronger for Basque-to-Spanish, while a
 wav2vec-based direct model scored higher for Spanish-to-Basque. In a manual
-ranking on a separate sample of parliamentary speech, evaluators preferred the
-cascaded output in every configuration except Spanish-to-Basque with additional
-training data, where the two were judged roughly equal. When they grouped
-results by ASR word error rate, the direct model was not consistently more
-robust on harder audio, and the tendency reversed with language direction and
-training condition.
+ranking on a separate sample of parliamentary speech, evaluators preferred
+the cascaded output in every configuration except Spanish-to-Basque with
+additional training data, where the two were judged roughly equal. When
+results were grouped by ASR word error rate, direct models did not
+consistently perform better on subsets with higher WER. The pattern varied
+with language direction and training data.
 
 Shared tasks compare more systems, which differ in many respects besides
 architecture. In the IWSLT 2021 offline task, cascaded systems took the top two
@@ -177,19 +178,20 @@ reference translations and the metric, a dependence examined further in
 Section~\ref{sec:evaluation}. Earlier comparisons such as Bentivogli et
 al.~\cite{bentivogli2021cascade} and Etchegoyhen et
 al.~\cite{etchegoyhen2022casestudy} did not report results by accent group.
-Their material is not uniformly clean: Weiss et al.~\cite{weiss2017sequence}
-work with telephone speech, and Bentivogli et
-al.~\cite{bentivogli2021cascade} analyse audio duration, speech rate and errors
-from poor audio quality and overlapping speech.
+Other speech conditions were also considered: Weiss et
+al.~\cite{weiss2017sequence} used telephone speech, and Bentivogli et
+al.~\cite{bentivogli2021cascade} analysed audio duration and speech rate and
+examined errors involving poor audio quality or overlapping speech.
 
-Recent work has begun to report accent-level results. The IWSLT 2024 offline
-task added an accent challenge built from the Edinburgh International Accents
-of English Corpus, and all submissions to that task used a cascaded
-architecture~\cite{ahmad2024iwslt}. Papi et al.~\cite{papi2026hearing} evaluate
-accent conditions across direct, cascaded and speech-enabled systems and
-suggest that the speech encoder is important.
-Section~\ref{sec:accent-st} examines accent robustness in speech translation in
-more detail. Comparisons at the system level can show how translation quality
-varies across accent groups, but they do not on their own explain where those
-differences come from. The next section reviews how accent affects ASR, which
-may help explain errors in cascaded speech translation.
+Recent studies report accent-level results. The IWSLT 2024 offline task
+added an accent challenge built from the Edinburgh International Accents of
+English Corpus, and all submissions to that task used a cascaded
+architecture~\cite{ahmad2024iwslt}. Papi et al.~\cite{papi2026hearing}
+evaluate accent conditions across direct, cascaded and speech-enabled
+systems and suggest that the choice of speech encoder matters for accent
+robustness. Section~\ref{sec:accent-st} examines accent robustness in speech
+translation in more detail. Comparisons at the system level can show how
+translation quality varies across accent groups, but they do not on their
+own explain where those differences come from. The next section reviews how
+accent affects ASR, which may help explain errors in cascaded speech
+translation.
