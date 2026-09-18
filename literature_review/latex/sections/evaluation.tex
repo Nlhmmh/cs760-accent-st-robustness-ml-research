@@ -100,24 +100,99 @@ observed difference can be interpreted.
 
 \subsection{Evaluation Metrics}
 
-% TODO(Member 5): Owner: Member 5. Cover WER, BLEU, chrF, and chrF++ only to
-% the extent needed to interpret the reviewed literature and the research
-% question. Compare what each metric measures, known strengths/weaknesses,
-% comparability across tokenization or languages, and limits of sentence-level
-% use. Cite personally read original or authoritative metric sources.
-% Boundary: WER is a Cascaded ST diagnostic; it is not a translation metric.
-\collabplaceholder{Member 5}{Synthesize the evaluation-metric literature and
-explain which questions WER, BLEU, chrF, and chrF++ can and cannot answer.}
+WER only signifies transcription error when compared to a reference sentence.
+It helps as a diagnostic metric (similar to WIL) in the Cascaded approach,
+where a gap in the ASR stage can be identified. Moreover, this is not available
+in Direct ST, as there is no intermediary layer available for that approach.
+As a result, it helps to identify faults in one approach but has no impact on
+the evaluation of the other. Nor does WER show how much translation quality is
+lost: recognition errors of similar size can produce very different amounts of
+translation damage \cite{le2017disentangling}. To adapt WER to multiple
+references and differences in word selection and sequence, BLEU was derived on
+top of it. BLEU attempts to address translation quality by taking additional
+factors into consideration \cite{papineni2002bleu}.
+
+BLEU builds on unigram precision by introducing modified precision, which caps
+the maximum credit an output word can receive based on the reference sentence.
+This penalises excessively repeated word outputs. It further extends
+reliability by introducing a brevity penalty to penalise shorter outputs based
+on the best length match. It achieved a significantly high correlation with
+human judgement \cite{papineni2002bleu}. However, over a set of reference
+outputs, a seemingly correct translation can score lower because BLEU does not
+have access to the meanings of words. Moreover, it was tested over a
+500-sentence corpus rather than using a sentence-level approach. The similarity
+with human judgement holds at corpus level rather than for individual sentences
+\cite{papineni2002bleu}. chrF is a character n-gram score which acts as a
+singular tool for judging the overall quality of a translation because of its
+tokenisation-independent and human-validation-based approach. The approach
+puts $\beta$ times more emphasis on recall than on precision. When compared
+across two $\beta$ values, $\beta = 3$ was found to have higher correlation
+with human output than $\beta = 1$, which assigns equal weight to precision and
+recall \cite{popovic2015chrf}. chrF++ is another metric which re-introduces
+tokenisation into the mix by merging character n-grams with word unigrams and
+bigrams. It was also validated against a direct-assessment approach, and
+$\beta = 2$ was confirmed to perform best when assessed on English and Russian
+targets \cite{popovic2017chrfpp}.
+
+For comparison, BLEU scores are not comparable across various papers simply
+because the parameters and variables that affect the value are not easily
+accessible or clearly reported. As a result, direct comparison between BLEU
+scores is similar to comparing measurements expressed in different units.
+Differences can vary by up to 1.8 BLEU and average around 1.0
+\cite{post2018clarity}. Differences in reference normalisation or tokenisation
+cause variance that is difficult to ignore \cite{post2018clarity}. IWSLT 2021
+shows a gap of 2 BLEU between the Cascaded and Direct systems with one reference
+set and 0.7 with another \cite{anastasopoulos2021iwslt}. The 2 and 0.7 gaps are
+of the same order of magnitude as Post's 1.0 to 1.8 variance
+\cite{post2018clarity}. chrF was initially tested with only one non-European
+language, Hindi, and its application to other writing systems, such as Chinese,
+remains to be explored \cite{popovic2015chrf}. It remains unclear whether
+chrF++ or chrF would be better because the additional benefits gained by
+re-introducing word tokenisation for English-to-Chinese pairs have not been
+derived. Popovi\'c submitted only plain chrF for Chinese because the concept of
+a Chinese word is unclear \cite{popovic2017chrfpp}.
 
 \subsection{Statistical Reliability and Controlled Evaluation}
 
-% TODO(Member 5): Owner: Member 5. Complete the approximately 1-page Section V
-% allocation jointly with Member 1. Synthesize paired evaluation, confidence
-% intervals or paired bootstrap procedures, speaker/content controls, and
-% association analysis. Explain how prior work supports reliable differences
-% without overstating association as causation.
-% Transition out: state which evidence-quality constraints the cross-theme
-% synthesis in Section VI must respect.
-\collabplaceholder{Member 5}{Review controlled comparison and uncertainty
-evidence, then state the interpretive constraints that Section VI must carry
-into the research-gap assessment.}
+A difference in BLEU score between two systems on one test set does not by
+itself show that one system is better, so a statistically sound approach is
+needed to reach this conclusion. However, because of the complex nature of the
+metric itself, the bootstrap sampling method can be used to develop an
+understanding of the scenario. Koehn validates the method by comparing systems
+across many test sets of different sizes and checking how often its conclusions
+hold \cite{koehn2004significance}. Bootstrap sampling is introduced, where a
+BLEU score is given for a set of $n$ sentences. Repeatedly generating BLEU
+scores about 1000 times for 300-sentence sets drawn with replacement from one
+set of 300 sentences results in the remaining 95\% of BLEU scores falling in an
+interval after the top and bottom 2.5\% are dropped
+\cite{koehn2004significance}. When comparing two systems, paired bootstrap is
+introduced to measure reliably whether one system outperforms the other. From
+the same set of translated sentences, the evaluation metric is computed for
+both systems 1000 times. A conclusion can be reached after identifying how
+often one system wins over the other; if it wins over 95\% of the time, that
+system can be said to be better with 95\% statistical significance
+\cite{koehn2004significance}. For a Direct-versus-Cascaded comparison, scoring
+both systems on the same test set is what makes this paired test applicable,
+which matches the matched-utterance requirement of Section~V-C and the design
+used by Bentivogli et al. \cite{bentivogli2021cascade}.
+
+Koehn's experiment is based on the underlying assumption that each sentence
+score is independent of the others. He states this for the analytical case, and
+bootstrap resampling of sentences relies on it too
+\cite{koehn2004significance}. Accent-labelled read speech breaks this
+assumption. One speaker can contribute many clips, and the same source sentence
+can appear several times \cite{ardila2020commonvoice,wang2021covost2}.
+Resampling clips then treats linked observations as if they were separate, and
+the uncertainty becomes smaller than it should be. Koehn also shows that the
+factors that make sentences hard to translate occur in clusters, and clusters
+widen the spread of scores: on 300 sentences taken in sequence, BLEU ranged
+from 21 to 37 per cent, but on 300 sentences spread across the corpus it ranged
+only from 27 to 31 per cent \cite{koehn2004significance}. A head-to-head
+comparison of Direct and Cascaded ST on the same clips is the cleanest approach,
+as the metric is computed at corpus level rather than at subset level, as is the
+case with accent groups \cite{papineni2002bleu}. This is further supported by
+Koehn's Table 3, which shows that small differences cannot be distinguished
+even with 600 sentences \cite{koehn2004significance}. Any accent-level
+difference between Direct and Cascaded ST can therefore be relied upon only
+when these conditions are met, and not solely on the numerical gap between the
+approaches.
