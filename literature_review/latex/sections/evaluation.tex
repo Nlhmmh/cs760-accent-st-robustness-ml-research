@@ -73,17 +73,15 @@ observed difference can be interpreted.
 
 \subsection{Evaluation Metrics}
 
-WER only signifies transcription error when compared to a reference sentence.
-It helps as a diagnostic metric (similar to WIL) in the Cascaded approach,
-where a gap in the ASR stage can be identified. Moreover, this is not available
-in Direct ST, as there is no intermediary layer available for that approach.
-As a result, it helps to identify faults in one approach but has no impact on
-the evaluation of the other. Nor does WER show how much translation quality is
-lost: recognition errors of similar size can produce very different amounts of
-translation damage \cite{le2017disentangling}. To adapt WER to multiple
-references and differences in word selection and sequence, BLEU was derived on
-top of it. BLEU attempts to address translation quality by taking additional
-factors into consideration \cite{papineni2002bleu}.
+WER measures transcription error by comparing an ASR output with a reference
+transcript. It can diagnose the ASR stage of a Cascaded system, but standard
+Direct ST exposes no intermediate transcript on which to compute it. WER also
+does not show how much final translation quality is lost: recognition errors
+of similar size can produce very different amounts of translation damage
+\cite{le2017disentangling}. BLEU is a separate metric for translation rather
+than an adaptation of WER. It compares a candidate translation with one or
+more reference translations using modified n-gram precision and a brevity
+penalty \cite{papineni2002bleu}.
 
 BLEU builds on unigram precision by introducing modified precision, which caps
 the maximum credit an output word can receive based on the reference sentence.

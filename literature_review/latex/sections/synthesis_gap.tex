@@ -1,59 +1,73 @@
 \section{Cross-Theme Synthesis and Research Gap}
 \label{sec:synthesis}
 
-The architecture literature rules out a simple expectation that either Direct
-or Cascaded ST will be uniformly more robust. Direct systems remove the
-single-best transcript interface, whereas cascades can exploit separately
-developed ASR and MT components and substantially larger task-specific
-resources \cite{sperber2020endtoend}. Controlled and shared-task comparisons
-show that the apparent advantage can change with language direction, training
-data, segmentation, references, and metric
+The literature on speech-translation systems does not show that either Direct
+or Cascaded ST is always more robust. Direct systems remove the intermediate
+transcript, while Cascaded systems can use separately developed ASR and MT
+components and larger task-specific resources \cite{sperber2020endtoend}.
+Previous comparisons also show that the better-performing system can change
+depending on language direction, training data, segmentation, reference
+translations, and evaluation metrics
 \cite{bentivogli2021cascade,anastasopoulos2021iwslt,
-etchegoyhen2022casestudy}. Architecture is therefore one condition in the
-comparison, not an isolated explanation for an observed score difference.
+etchegoyhen2022casestudy}. Therefore, architecture is only one factor in the
+comparison and should not be treated as the only explanation for performance
+differences.
 
-The accent-ASR literature establishes the first half of the proposed problem:
-recognition performance varies across English accent groups, including between
-seen and unseen accents, and mitigation reduces but does not eliminate these
-differences \cite{shi2021aesrc,prabhu2023accentcodebooks,
-swain2026fair}. The error-propagation literature establishes a second link:
-changes or phonetic errors in ASR output can alter Cascaded translation quality
-\cite{le2017disentangling,sperber2019,pida2026}. Neither strand, however,
-establishes an accent effect on final translation by itself. WER is unavailable
-as an equivalent internal diagnostic for standard Direct ST, and equal-sized
-recognition errors need not cause equal translation damage.
+The accent-ASR literature establishes one important part of the problem. ASR
+performance varies across English accent groups, including both seen and
+unseen accents \cite{shi2021aesrc,prabhu2023accentcodebooks,swain2026fair}.
+Research on ASR error propagation establishes another important link:
+recognition errors, including phonetic errors, can affect the translation
+quality of Cascaded systems
+\cite{le2017disentangling,sperber2019,pida2026}. However, neither group of
+studies directly proves that accent affects final speech-translation quality.
+WER is also not available as an equivalent internal metric for standard Direct
+ST because Direct systems do not produce an intermediate transcript. In
+addition, similar levels of ASR error do not always produce the same amount of
+translation error.
 
-The closest contrary evidence narrows rather than closes the gap. IWSLT 2024
-reports accent-level ST evaluation, but all submissions to its accent challenge
-were cascaded \cite{ahmad2024iwslt}. Papi et al. compare Direct, Cascaded, and
-speech-enabled systems under accent conditions, but their broad benchmark does
-not provide the matched regional-English design required to isolate the
-question posed here \cite{papi2026hearing}. SeamlessM4T robustness studies
-compare speaker or vocal-style variation rather than controlled regional
-accent and do not include a complete matched Whisper-to-MT cascade
-\cite{seamlessm4t2023,seamless2023}. Accent-explicit downstream propagation is
-also reported outside natural speech translation, with accent treated
-qualitatively rather than as the grouping variable \cite{losttranscription2026}.
+The closest existing studies reduce the size of the research gap but do not
+completely address it. IWSLT 2024 includes accent-level speech-translation
+evaluation, but all systems in its accent challenge were Cascaded systems
+\cite{ahmad2024iwslt}. Papi et al. compare Direct, Cascaded, and speech-enabled
+systems under accent-related conditions, but their broad benchmark does not use
+the matched regional-English design required for this research question
+\cite{papi2026hearing}. SeamlessM4T robustness studies examine speaker or
+vocal-style variation rather than controlled regional accents, and they do not
+include a complete matched Whisper-to-MT Cascaded system
+\cite{seamlessm4t2023,seamless2023}. Other work reports accent-related
+downstream errors, but accent is treated mainly as a qualitative observation
+rather than as the main grouping variable \cite{losttranscription2026}.
 
-The evaluation literature further specifies what a useful comparison must
-control. Common Voice offers self-reported accent labels, and CoVoST 2 adds
-professionally produced translation references, but their versions, repeated
-sentences, speaker structure, and reference construction limit claims unless
-they are reported explicitly \cite{ardila2020commonvoice,wang2021covost2}.
-Prabhu et al. demonstrate speaker-disjoint and transcript-aware accent splits,
-but only for ASR \cite{prabhu2023accentcodebooks}. Direct and Cascaded systems
-must therefore be scored on the same utterances and references, accent groups
-must preserve speaker structure, and corpus-level metric differences require a
-paired uncertainty analysis rather than interpretation from raw BLEU or chrF
-gaps alone \cite{papineni2002bleu,post2018clarity,
-koehn2004significance}.
+The evaluation literature also shows that careful dataset control is
+necessary. Common Voice provides self-reported accent labels, while CoVoST 2
+provides professionally produced translation references. However, dataset
+versions, repeated sentences, speaker structure, and reference construction
+can affect how results should be interpreted
+\cite{ardila2020commonvoice,wang2021covost2}. Prabhu et al. show that
+speaker-disjoint and transcript-aware splits can improve accent evaluation,
+although their work focuses on ASR rather than speech translation
+\cite{prabhu2023accentcodebooks}. Therefore, Direct and Cascaded systems should
+be evaluated using the same utterances and references, while speaker structure
+and accent balance should be carefully controlled or reported. Differences in
+corpus-level metrics should also be supported by paired statistical analysis
+rather than interpreted only from raw BLEU or chrF scores
+\cite{papineni2002bleu,post2018clarity,koehn2004significance}.
 
-The evidence thus supports a focused gap: no study identified in this survey
-combines controlled regional-English accent groups, matched utterances and
-references, Direct and Cascaded ST systems, and final translation quality in
-one comparison. The resulting research question remains: \emph{How does
-regional English accent affect the translation quality of Direct and Cascaded
-speech-to-text translation systems?} The question asks for comparative effects
-under matched evaluation; it does not assume in advance that accent causes a
-larger loss in either architecture or that architecture alone explains any
-difference.
+Overall, the literature supports a focused research gap. No study identified
+in this survey combines all of the following in one experiment:
+
+\begin{itemize}
+  \item controlled regional-English accent groups;
+  \item the same utterances and reference translations;
+  \item both Direct and Cascaded ST systems;
+  \item final translation quality as the main outcome.
+\end{itemize}
+
+This leads to the research question: How does regional English accent
+affect the translation quality of Direct and Cascaded speech-to-text
+translation systems?
+
+The question focuses on comparative effects under matched evaluation
+conditions. It does not assume that accent affects one system more than the
+other, or that architecture alone explains any observed difference.

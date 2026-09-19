@@ -1,25 +1,23 @@
 \begin{abstract}
-Regional English accent is a source of uneven automatic speech
-recognition performance, but its effect on final speech-translation quality is
-less clearly established. This survey examines how accent may affect Direct
-speech translation, which maps speech to translated text without an exposed
-transcript, and Cascaded speech translation, which connects speech recognition
-to machine translation. Twenty-seven works were retained through thematic
-selection covering system architectures, accent robustness, error
-propagation, datasets, translation metrics, and statistical comparison. The
-review finds that neither architecture is consistently superior: reported
-outcomes vary with language pair, training resources, test data, references,
-and metrics. Accent-related recognition disparities are well established, and
-recognition errors can damage downstream translation, but these findings do
-not alone demonstrate accent-related translation degradation. The closest
-speech-translation studies either lack controlled regional-accent labels, omit
-a matched Cascaded comparator, or evaluate an adjacent downstream task.
-Common Voice and CoVoST 2 enable a relevant evaluation, although self-reported
-accent labels, repeated content, speaker dependence, and reference design
-constrain interpretation. The gap is a matched evaluation of Direct
-and Cascaded systems on the same regional-English utterances using final
-translation quality, motivating the question: how does regional English accent
-affect the translation quality of these two system categories?
+Regional English accent can affect automatic speech recognition (ASR)
+performance, but its effect on final speech-translation quality is still
+unclear. This survey examines how accent may affect two speech translation
+approaches: \textbf{Direct speech translation}, which maps speech directly to
+translated text, and \textbf{Cascaded speech translation}, which first applies
+ASR and then machine translation. The survey reviews 27 studies covering
+speech-translation architectures, accent robustness, ASR error propagation,
+datasets, evaluation metrics, and statistical comparison. Existing research
+shows that neither Direct nor Cascaded systems are consistently superior;
+performance varies with language pair, training resources, test data,
+reference translations, and evaluation metrics. Accent-related ASR
+differences are well established, and recognition errors can reduce downstream
+translation quality, but these findings do not directly show that regional
+accent affects final translation quality. Common Voice and CoVoST 2 provide
+suitable data for this evaluation, although accent labels, repeated content,
+speaker dependence, and reference design introduce limitations. The main
+research gap is therefore a matched comparison of Direct and Cascaded systems
+using the same regional-English utterances and final translation quality as
+the shared outcome.
 \end{abstract}
 
 \begin{IEEEkeywords}

@@ -1,39 +1,52 @@
 \section{Conclusion}
 \label{sec:conclusion}
 
-This survey examined whether existing evidence explains how regional English
-accent affects Direct and Cascaded speech-to-text translation. Three findings
-shape the answer. First, published system comparisons do not identify a
-consistently superior architecture: outcomes depend on language direction,
-training resources, evaluation data, references, and metrics. Second,
-accent-related performance differences are well established in ASR, including
-for model families relevant to contemporary speech translation, but WER does
-not measure final translation quality. Third, cascaded error propagation is
-supported by both controlled transcript manipulation and analyses of phonetic
-recognition errors, making accent-related translation degradation plausible
-without demonstrating it directly.
+This survey examined existing research on how regional English accents may
+affect Direct and Cascaded speech-to-text translation. Three main findings were
+identified.
 
-The closest studies do not yet provide the complete comparison required by the
-research question. Accent-level ST benchmarks either evaluate only cascaded
-submissions or do not combine matched regional-English utterances, a complete
-Cascaded comparator, and accent-stratified final translations. The available
-data also impose qualifications. Common Voice accent labels are optional
-self-reports rather than expert phonetic classifications; corpus versions and
-recording conditions differ; speakers or prompts can recur; and CoVoST 2
-references were created from transcripts rather than audio. BLEU and chrF
-scores further depend on reference and processing choices, while small accent
-subsets can make numerical differences uncertain.
+First, previous studies do not show that one speech-translation architecture is
+always better. The results depend on factors such as language direction,
+training resources, evaluation data, reference translations, and evaluation
+metrics. Second, accent-related performance differences are well established
+in ASR, including in model families related to modern speech-translation
+systems. However, WER measures transcription error and does not directly
+measure final translation quality. Third, research shows that ASR errors can
+propagate through Cascaded systems and reduce translation quality. This makes
+accent-related translation degradation possible, but existing studies do not
+directly demonstrate it.
 
-The literature gap is therefore narrower than an absence of research on
-accent or ST robustness. It is the absence, within the reviewed evidence, of a
-controlled, matched comparison that treats regional English accent as the
-grouping variable and final translation quality as the shared outcome for both
-Direct and Cascaded ST. This supports the project question: \emph{How does
-regional English accent affect the translation quality of Direct and Cascaded
-speech-to-text translation systems?} A defensible answer requires identical
-utterances and references across systems, speaker-aware accent groups,
-consistent corpus-level metrics, and paired uncertainty estimates. Such an
-evaluation can establish comparative associations between accent group and
-system performance, but it should not attribute differences solely to
-architecture when models also differ in training data, capacity, objectives,
-or decoding.
+The closest studies still do not provide the full comparison required by the
+research question. Some accent-level speech-translation benchmarks include
+only Cascaded systems, while others do not combine matched regional-English
+utterances, a complete Cascaded comparator, and accent-based final translation
+results.
+
+The datasets also have important limitations. Common Voice accent labels are
+optional and self-reported rather than verified by expert phonetic analysis.
+Different dataset versions and recording conditions may also affect the
+results. Speakers or source sentences may appear more than once, and CoVoST 2
+reference translations were created from written transcripts rather than
+directly from audio. In addition, BLEU and chrF scores can change depending on
+reference and processing choices, and small accent groups may make performance
+differences uncertain.
+
+Therefore, the research gap is not simply a lack of research on accent or
+speech-translation robustness. The more specific gap is the absence of a
+controlled, matched comparison where regional English accent is the
+grouping variable and final translation quality is measured for both Direct
+and Cascaded ST systems.
+
+This supports the research question: How does regional English accent
+affect the translation quality of Direct and Cascaded speech-to-text
+translation systems?
+
+A reliable evaluation requires both systems to use the same utterances and
+reference translations, while speaker structure and accent groups should be
+carefully controlled. Evaluation metrics should also be applied consistently,
+and uncertainty should be measured using paired statistical analysis.
+
+Such an evaluation can show whether system performance is associated with
+accent group. However, any observed differences should not be explained only
+by architecture, because the compared models may also differ in training data,
+model capacity, objectives, and decoding methods.
