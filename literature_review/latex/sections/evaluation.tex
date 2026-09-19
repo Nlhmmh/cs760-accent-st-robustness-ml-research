@@ -1,11 +1,11 @@
 \section{Evaluation Data and Methodological Evidence}
 \label{sec:evaluation}
 
-This section is limited to literature that affects how evidence about accent
-and speech translation can be interpreted. It separates dataset and reference
-design (Member 1) from metrics and statistical reliability (Member 5). The
-final version should synthesize what previous studies enable or prevent; it
-should not become a procedural methodology section for the group's experiment.
+This section synthesizes the literature that determines how evidence about
+accent and speech translation can be interpreted. It first examines dataset
+and reference design, then considers translation metrics and statistical
+reliability. Together, these themes establish the controls required for a
+credible comparison without turning the survey into an experimental procedure.
 
 \subsection{Accent-Labelled Speech Data}
 
@@ -71,46 +71,17 @@ training data, capacity, objectives, or decoding. Once the data are comparable,
 the metric and statistical-reliability literature determines how strongly any
 observed difference can be interpreted.
 
-% Keep the comparison-table structure in the project without allowing an empty
-% two-column float to consume a page. Change to \showdatasettabletrue only
-% after at least one evidence-checked row has been added below.
-\newif\ifshowdatasettable
-\showdatasettablefalse
-\ifshowdatasettable
-\begin{table*}[!t]
-  \caption{Dataset-literature comparison scaffold. Populate every cell only
-  from personally verified original sources.}
-  \label{tab:dataset-literature}
-  \centering
-  \scriptsize
-  \setlength{\tabcolsep}{3pt}
-  \renewcommand{\arraystretch}{1.18}
-  \begin{tabularx}{\textwidth}{@{}YYYYYYYY@{}}
-    \toprule
-    Source / dataset & Task & Language / accent coverage & Annotation /
-    reference type & Speaker balance / controls & Strengths & Limitations &
-    Relevance to RQ \\
-    \midrule
-    \multicolumn{8}{c}{\emph{TODO(Member 1): add one evidence-checked row per
-    personally read dataset paper.}} \\
-    \bottomrule
-  \end{tabularx}
-\end{table*}
-\fi
-
 \subsection{Evaluation Metrics}
 
-WER only signifies transcription error when compared to a reference sentence.
-It helps as a diagnostic metric (similar to WIL) in the Cascaded approach,
-where a gap in the ASR stage can be identified. Moreover, this is not available
-in Direct ST, as there is no intermediary layer available for that approach.
-As a result, it helps to identify faults in one approach but has no impact on
-the evaluation of the other. Nor does WER show how much translation quality is
-lost: recognition errors of similar size can produce very different amounts of
-translation damage \cite{le2017disentangling}. To adapt WER to multiple
-references and differences in word selection and sequence, BLEU was derived on
-top of it. BLEU attempts to address translation quality by taking additional
-factors into consideration \cite{papineni2002bleu}.
+WER measures transcription error by comparing an ASR output with a reference
+transcript. It can diagnose the ASR stage of a Cascaded system, but standard
+Direct ST exposes no intermediate transcript on which to compute it. WER also
+does not show how much final translation quality is lost: recognition errors
+of similar size can produce very different amounts of translation damage
+\cite{le2017disentangling}. BLEU is a separate metric for translation rather
+than an adaptation of WER. It compares a candidate translation with one or
+more reference translations using modified n-gram precision and a brevity
+penalty \cite{papineni2002bleu}.
 
 BLEU builds on unigram precision by introducing modified precision, which caps
 the maximum credit an output word can receive based on the reference sentence.

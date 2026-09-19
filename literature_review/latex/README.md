@@ -1,12 +1,10 @@
 # COMPSCI 760 literature survey LaTeX project
 
-This directory is a compile-ready IEEE two-column scaffold. `.latexmkrc`
+This directory is a compile-ready IEEE two-column survey. `.latexmkrc`
 resolves `IEEEtran.cls` from the supplied
 `../IEEE-conference-template-062824/` directory. It contains the
-complete group-report structure. Member 1's organizational and dataset-review
-work, Member 2's accent-ASR review, and Member 4's accent-ST review are
-integrated; placeholders remain where no member-authored literature prose was
-supplied.
+complete group report: all five member-owned sections and the group-authored
+abstract, introduction, synthesis, research gap, and conclusion are integrated.
 
 ## Build
 
@@ -22,14 +20,7 @@ Clean generated build files without deleting the PDF:
 latexmk -c main.tex
 ```
 
-When verified citations have been added to `references.bib`, change
-`\hasverifiedreferencesfalse` to `\hasverifiedreferencestrue` in `main.tex`.
-Then run `latexmk -pdf main.tex` again.
-
-The full-width dataset comparison table is kept hidden while it has no
-verified rows. After adding at least one evidence-checked row in
-`sections/evaluation.tex`, change `\showdatasettablefalse` to
-`\showdatasettabletrue` in that file.
+Verified citations are stored in `references.bib` and compiled automatically.
 
 ## Ownership and planned space
 

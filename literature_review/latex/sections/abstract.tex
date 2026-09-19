@@ -1,13 +1,23 @@
 \begin{abstract}
-% TODO(Group): Write this last, after all thematic sections and the research
-% gap have been agreed. Target 150--200 words in one paragraph. Include:
-% (1) motivation; (2) survey scope and paper-selection approach;
-% (3) principal cross-theme findings; (4) the evidence-supported gap; and
-% (5) the resulting research question. Do not cite or introduce findings that
-% are absent from the body.
-\collabplaceholder{Group}{Write a 150--200 word abstract after the body is
-complete. It must summarize the motivation, scope, selection approach,
-synthesis, validated gap, and research question.}
+Regional English accent can affect automatic speech recognition (ASR)
+performance, but its effect on final speech-translation quality is still
+unclear. This survey examines how accent may affect two speech translation
+approaches: \textbf{Direct speech translation}, which maps speech directly to
+translated text, and \textbf{Cascaded speech translation}, which first applies
+ASR and then machine translation. The survey reviews 27 studies covering
+speech-translation architectures, accent robustness, ASR error propagation,
+datasets, evaluation metrics, and statistical comparison. Existing research
+shows that neither Direct nor Cascaded systems are consistently superior;
+performance varies with language pair, training resources, test data,
+reference translations, and evaluation metrics. Accent-related ASR
+differences are well established, and recognition errors can reduce downstream
+translation quality, but these findings do not directly show that regional
+accent affects final translation quality. Common Voice and CoVoST 2 provide
+suitable data for this evaluation, although accent labels, repeated content,
+speaker dependence, and reference design introduce limitations. The main
+research gap is therefore a matched comparison of Direct and Cascaded systems
+using the same regional-English utterances and final translation quality as
+the shared outcome.
 \end{abstract}
 
 \begin{IEEEkeywords}

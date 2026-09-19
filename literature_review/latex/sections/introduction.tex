@@ -1,56 +1,88 @@
 \section{Introduction}
 \label{sec:introduction}
 
-This survey examines regional English accent as an evaluation dimension for
-speech-to-text translation. Its focus is a comparison between two operational
-system categories. A \emph{Direct speech translation} (Direct ST) system maps
-source-language speech to target-language text without exposing an
-intermediate transcript. A \emph{Cascaded speech translation} (Cascaded ST)
-system first applies automatic speech recognition (ASR) and then machine
-translation (MT). These definitions establish the terminology used throughout
-the survey; they do not, by themselves, imply that either category is more
-accurate or robust.
+This survey examines regional English accent as an important factor in
+speech-to-text translation. It focuses on two main system types: Direct speech
+translation (Direct ST) and Cascaded speech translation (Cascaded ST). Direct
+ST translates source-language speech directly into target-language text
+without producing an intermediate transcript. Cascaded ST first uses automatic
+speech recognition (ASR) to convert speech into text and then applies machine
+translation (MT) to produce the target-language translation. These two
+approaches are compared throughout the survey, without assuming that either
+one is always more accurate or more robust.
 
-The survey is organized around the following research question:
+The survey is guided by the following research question:
 \begin{quote}
 \emph{How does regional English accent affect the translation quality of
 Direct and Cascaded speech-to-text translation systems?}
 \end{quote}
-The intended comparison concerns final translation quality across regional
-accent groups. ASR word error rate (WER) is treated only as a diagnostic for
-the Cascaded ST pathway, not as a substitute for measuring translation
-quality.
+The main focus is final translation quality across regional accent groups.
+Word error rate (WER) is considered only as a diagnostic measure for the ASR
+stage of the Cascaded system. It is not treated as a direct measure of
+translation quality.
 
-% TODO(Group): Target a final length of approximately 1--1.25 pages for this
-% section. Add a cited problem statement explaining why accent robustness and
-% final translation quality matter. Each factual statement about prior work
-% needs a verified citation.
-\collabplaceholder{Group}{Add the evidence-backed motivation and problem
-statement. Establish why regional-accent variation matters for speech
-translation without treating ASR-only evidence as translation evidence.}
+The comparison is important because Direct and Cascaded systems have different
+possible failure points. Cascaded systems can benefit from mature ASR and MT
+models and from the larger datasets available for these separate tasks.
+However, errors in the ASR transcript can be passed to the MT stage. Direct
+systems remove this intermediate transcript, but they depend more strongly on
+paired speech--translation data \cite{sperber2020endtoend}. Existing
+comparisons do not show that one system type is always better. Results vary
+depending on language pair, training resources, test segmentation, reference
+translations, and evaluation metrics
+\cite{bentivogli2021cascade,anastasopoulos2021iwslt,
+etchegoyhen2022casestudy}. Therefore, overall system performance does not
+directly show whether one approach is more robust to a particular regional
+accent.
 
-The literature is to be selected thematically rather than presented as a
-paper-by-paper catalogue. The completed survey should prefer recent,
-peer-reviewed work, while retaining older sources only when they are
-foundational. Within each theme, studies should be compared by task, data,
-experimental controls, measures, findings, and limitations. Claims about the
-research gap must remain provisional until literature closest to the research
-question has been checked for contrary evidence.
+Accent is an important evaluation factor because ASR performance is not equal
+across English varieties. Previous studies have reported performance
+differences across regional, dialectal, and second-language accents, including
+poorer performance on accents that were not represented during training
+\cite{dichristofano2022global,jahan2025unveiling,shi2021aesrc,
+prabhu2023accentcodebooks}. However, these findings mainly show an ASR-level
+problem rather than a final translation result. This distinction is important
+because similar WER values can lead to different levels of translation error,
+while Direct ST does not produce an intermediate transcript where WER can be
+measured \cite{le2017disentangling}. Previous work also shows that phonetic
+recognition errors can reduce translation quality in Cascaded systems
+\cite{sperber2019,pida2026}. This makes an accent effect on translation
+plausible, but such an effect must still be measured using final translations
+rather than inferred from ASR scores alone.
 
-% TODO(Group): Replace the following planning statement with the actual search
-% and inclusion process used by the group. Record databases, query families,
-% dates, inclusion/exclusion criteria, and how many sources were retained.
-\collabplaceholder{Group}{Document the search and selection process actually
-used. Do not describe a search that the group did not perform.}
+The literature was selected by theme rather than organised as a paper-by-paper
+catalogue. The search covered Direct and Cascaded ST, ASR-to-MT error
+propagation, accented ASR, unseen-accent generalisation, accented or dialectal
+speech translation, accent-labelled datasets, speech-translation datasets,
+evaluation metrics, and statistical reliability. Candidate papers and
+publication details were checked through official sources, including ACL
+Anthology, ISCA Archive, and IEEE proceedings. ArXiv papers were included when
+no published venue version was identified. A paper was retained when its full
+text had been reviewed and it directly contributed to at least one theme,
+system comparison, evaluation issue, or test of the proposed research gap.
+Blogs, secondary summaries, duplicate sources, and papers without verifiable
+support for the required claims were excluded.
 
-The remainder of the survey moves from general to specific. Section
-\ref{sec:architectures} compares Direct and Cascaded ST architectures;
-Section~\ref{sec:accent-asr} reviews accent robustness in speech recognition;
-Section~\ref{sec:accent-st} examines work at their intersection;
-Section~\ref{sec:evaluation} considers evaluation data and methodological
-evidence; and Section~\ref{sec:synthesis} integrates the themes to assess the
-research gap. Section~\ref{sec:conclusion} states the conclusions and final
-research question supported by that synthesis.
+This process retained 27 studies, including recent work and older foundational
+papers on evaluation metrics. Because a common systematic search record was
+not maintained across all contributors, the survey is treated as a focused
+narrative literature survey rather than an exhaustive systematic review.
 
-% TODO(Group): Once all sections are complete, add a concise statement of the
-% survey's actual contributions. Do not describe planned work as a finding.
+The survey makes three main contributions. First, it connects research on
+Direct and Cascaded speech translation with research on accent-sensitive ASR,
+while keeping ASR error and translation quality as separate concepts. Second,
+it examines whether the proposed research gap has already been addressed by
+the closest studies on accent robustness, speech translation, and error
+propagation. Third, it identifies the dataset, reference, metric, and
+statistical controls needed for a fair comparison of final translation quality
+across regional accent groups.
+
+The remainder of the survey is organised as follows. Section
+\ref{sec:architectures} reviews Direct and Cascaded speech-translation systems
+and their empirical comparisons. Section~\ref{sec:accent-asr} examines accent
+robustness in ASR. Section~\ref{sec:accent-st} reviews work that connects
+accent, error propagation, and speech translation. Section~\ref{sec:evaluation}
+discusses datasets, reference quality, evaluation metrics, and statistical
+reliability. Section~\ref{sec:synthesis} combines the findings across these
+themes to assess the research gap. Finally, Section~\ref{sec:conclusion}
+presents the conclusion and the research question supported by the literature.
