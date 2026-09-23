@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-09-21T06:04:12.163196+00:00",
+  "purpose": "Literal-<unk> constrained-decoding sensitivity analysis",
+  "test_scope": "balanced_small",
+  "selected_clips": 35,
+  "original_affected_rows_total": 508,
+  "model_id": "facebook/seamless-m4t-v2-large",
+  "model_revision": "5f8cc790b19fc3f67a61c105133b20b34e3dcb76",
+  "target_language": "cmn",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "gpu": null,
+  "pytorch_version": "2.8.0",
+  "torchaudio_version": "2.8.0",
+  "transformers_version": "4.57.6",
+  "sacrebleu_version": "2.6.0",
+  "generation_settings": {
+    "num_beams": 1,
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "special_unk_token": "<unk>",
+  "special_unk_token_id": 1,
+  "literal_unk_sequences_blocked": [
+    [
+      249371,
+      2105,
+      248948
+    ],
+    [
+      9614,
+      2105,
+      248948
+    ]
+  ],
+  "baseline_exact_reproduction_rate": 0.9428571428571428,
+  "baseline_literal_unk_outputs": 35,
+  "blocked_literal_unk_outputs": 0,
+  "literal_unk_removed_count": 35,
+  "translations_changed": 35,
+  "baseline_metrics": {
+    "BLEU_zh": 28.186585056754026,
+    "chrF": 24.850456161401357,
+    "chrFpp": 18.863623098262366
+  },
+  "blocked_metrics": {
+    "BLEU_zh": 15.515017393596349,
+    "chrF": 19.14749932977575,
+    "chrFpp": 14.487824252331084
+  },
+  "note": "Sensitivity analysis only. Official 4,200-sample Direct predictions remain unchanged."
+}

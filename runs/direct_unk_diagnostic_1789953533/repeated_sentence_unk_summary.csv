@@ -1,0 +1,302 @@
+sentence_id,occurrences,speakers,accents,unk_occurrences,sentence,unk_rate,pattern
+002d9ce9b23f703382a0e01b478bf7092b10b5df791688b2150c53d8cf2549b5,2,2,2,0,What’s his other name?,0.0,never_unk
+0126407f34103cd72d511de00e0de327af8f31bf6c4e1a2c65a588e07590bb7b,2,2,2,0,My review of the sun: one star.,0.0,never_unk
+0223866a7df236238825d7ff8a5d39c98db43fe580107cbd0e0a5b656bc7e5ab,2,2,2,0,I suppose I ought to stay in my room all day!,0.0,never_unk
+04927dd889d2eacbdece6e072dfb6ada906edc0602a07e8805acad1fafd7a5a7,2,2,2,0,The sheep had taught him that.,0.0,never_unk
+0675d0ba551cfdba4c38aa5b2499b714ae0c88ba36d9c06c8a374baf305c14d2,3,3,3,3,"Yeah, I had a bit of a poke at that and failed to work out what was wrong.",1.0,always_unk
+07130dcdfcbe6ac70ff6eec0825e46b0a52c7fd2c2db94e757ba6eb63252c32e,2,2,2,0,"Give me my book, the boy said.",0.0,never_unk
+0976fa3d5fc9360fa5ab3c542c7d04fe717e084d81c8e1055883878db93fe53e,2,2,2,2,"Gossips are frogs, they drink and talk.",1.0,always_unk
+09f6c9f70aecc185ab35254966cbf8ef1b5ecf4bad9c33d36efc72beeff46030,3,3,2,0,"It was, however, still so hot from its flight through the air.",0.0,never_unk
+0fcef4fc58feff761b0dfa89a175e06c9a0401b9ebb912fcb273ec85a0190bd4,2,2,2,0,"Then suddenly, they kneel and die.",0.0,never_unk
+10a04550288c0841c313a0bee4ef675489b2b5026858e8bc9ae43e084e645b98,2,2,2,0,Mine's in the door.,0.0,never_unk
+10f76def6a62c9b396ebbc5e8471e683bb062e1637bf4703c164abcee95d65f3,2,2,2,0,He was ludicrously fast on a bike.,0.0,never_unk
+114c527fd5338e110321992f1891b71afa10cec36763b44bce62733bab178c7a,2,2,1,0,I forgot to thank you for those roses.,0.0,never_unk
+1199d79b0a8add9abc1d00a01fef7ce168623b0ce30f79cd0ef02d240b9be48d,2,2,2,0,Keep him in here!,0.0,never_unk
+119f610b5d5e2c54dde586cb5876be0aaad74081f8e55a3c48f8ce68c1b583a8,2,2,2,0,I've been lonely and hungry for something practically all my life.,0.0,never_unk
+12305a3ecc663fcb537a825211799977de4d324a4601d562af44ab55930289b0,2,2,2,0,"You'll live, and you'll learn that a man shouldn't be so stupid.",0.0,never_unk
+154539ca07f5d2fee3e1f725d6532427998ae69a978db44291d2224caa61feca,2,2,1,0,What do you think it was?,0.0,never_unk
+156bffc01213cd379370a3b5aa1345e58c75d4a19cffa95b04e5f7443e78c13d,2,2,1,0,"It's such an unfair world, innit?",0.0,never_unk
+15aa5db853745f3dbda9b0d0c9000a07917dbb89b1fe15821a2935d9393f8ac1,2,2,2,0,Haven't you got any feeling?,0.0,never_unk
+174e80803a36e6fe52e81eff8d2e5f0caf9f5065d6b4182dbd2f5e6edf5dfab8,2,2,1,0,"I'm an adventurer, looking for treasure, he said to himself.",0.0,never_unk
+181b0ddb759ba126b890dbab956ec5f87b42fa015034314eecc477687de8679d,2,2,2,0,"The C++ framework Qt is pronounced like ""cute"".",0.0,never_unk
+1835a9e5aded0919923b1093b805aaebdb3914bd2abe051b40576d79dd1047b9,2,2,2,0,What should I say?,0.0,never_unk
+18dc302ff137144b3483bf7cfe44b57076cf153bedab645977833a9cf160cb0b,2,2,2,0,"Lots of places sell tea around here, the merchant said.",0.0,never_unk
+19df22549f4a8c2a1a49d2888d3b28cf7543997d71b2f15c80aff731fc6239e0,2,2,2,2,Pull the hook to toggle the jukebox.,1.0,always_unk
+1bf9762c63a69b5c3fd2a3fd6a0fa6cc330dbe671ded35bb5ac6be796d606d96,2,2,2,0,"Wearing his new sandals, he descended the stairs silently.",0.0,never_unk
+1c15a091c1bd41f279cadffd0e9a96d88664321f9b51425e620c5206d54827c5,2,2,2,0,"If you start your emails with ""Greetings"" let me be the first to welcome you to Earth.",0.0,never_unk
+1ce757161a274a6eae858799f6222e700902e9f302a2cb11d849ce082795a8ae,2,2,2,0,Sell your gift to a buyer at a good gain.,0.0,never_unk
+1d7576a1c1ea24d09fe27f6fb957eceaaee9e2a0694d0f5d3d084e8b427c5000,2,2,1,0,"You know, he is an honest man.",0.0,never_unk
+215609d5bb16a5711045217d99f5648d81070b7844663daabc62373d0c03129d,2,2,2,0,Love is blind,0.0,never_unk
+21ab88c247c6a72eab8675717b0c89cbbede062cf4e9c5982de5922ca86d713c,3,3,2,3,He stood irresolute for a moment and then scrambled out of the pit.,1.0,always_unk
+21ec66371ec4d52a4c460de8b2859816390f346694405ed281174c16562252b7,2,2,2,0,All is not gold that glitters.,0.0,never_unk
+22d65c5979a7add586df8ff7aed61f42604ed3432644c34c239d127caab32029,2,2,1,0,The monk was irritated.,0.0,never_unk
+22da10e5b681aeea680e3378e2dfee2142affcb5b3dd3ac97b07751d3329096a,2,2,1,0,"Watch out, blues ahead!",0.0,never_unk
+2582cb3cf590656443f1aa966d58f117bfb4108c9f536ca448ccfe455710f11b,2,2,1,0,Where did it come from then?,0.0,never_unk
+264b31c86d58d25de640e5fe71d579d8a2373efc570aea6e5581a6088b54fd07,2,2,2,0,Then what does she want with you?,0.0,never_unk
+2a82a87493dc776b6e18da63fbe2957415cca98aa863b2b50f0b3ce9c824419f,2,2,2,0,"When he kissed her cheek, she suddenly blushed, changing her color faster than a chameleon.",0.0,never_unk
+2ba7f3be8bcec7ffe96880c6b134e03bd9cba1e4b209a2da2771a4e1ae147a82,2,2,2,0,I can't find it anywhere.,0.0,never_unk
+2c79754f23c5a9769c4dc728c959c49ff7f62ba9ab174ff563be94b44def1117,2,2,2,0,And what did she say?,0.0,never_unk
+2cb95a392deedcb3b8bc213ae7695748,2,2,2,0,"Ninety five lines and no more, that's it.",0.0,never_unk
+2df5c1edcc2e84676b72652f81c3c4d3de75c473ca93296d57e449692cb13a2b,2,2,1,0,Does the venue offer free WiFi?,0.0,never_unk
+2e10e4b2a57c652f4af3af131110484aace524be01a8e3d5967dcd1fb3d69fef,2,2,2,0,You must mean two other trees.,0.0,never_unk
+2f4278ae6e068e2c0acc77c22a6608c394e523234856872ccc45f06d5cb89377,2,2,1,0,There you have it!,0.0,never_unk
+2fc893cba4ef0299b23fea2025a5258ca30346021315d093e7c2998cadc8b244,2,2,2,0,Tell them it's a case of serious delirium.,0.0,never_unk
+3232fab0eb42ac524a3a4b249eed0ffd6440d1b38ae0b8de4b3a63034610b3f9,3,3,3,0,"No, nothing at all.",0.0,never_unk
+3271189e95b2e3ab9a867953a87e7eec403250e9bf3d0031a99d7621cd2d936c,2,2,2,0,You'll be the counselor of the oasis.,0.0,never_unk
+335c5e548e43fc2a69d8bec4a0b20296ec4228d003b6c4b711834fade11566cc,2,2,2,0,In his youth my dad was a hooligan.,0.0,never_unk
+34dab646145d11b256fc38dad21094505c42ed03bb4f56ad1e8e4b2280015a5d,2,2,2,0,What else can I do?,0.0,never_unk
+3596281e827886984eeb50f435bbd683d5a0a2b3591f389fc6ec2b0342003570,2,2,2,0,What are you doing in here?,0.0,never_unk
+35a2f801b81944fb1e632756d46321c70a9a63681f39fb8b9480d66b07639284,2,2,2,0,A ripe plum is fit for a king's palate.,0.0,never_unk
+370c672abea713c78cf5c1a9cc4a22ae2436ed794abf1c16ac64bfbaa76f8dc7,2,2,2,0,There was no need.,0.0,never_unk
+38dd7bd60867f3204fa8224a10b54ac81497474f106af07118fce8def50c25cc,2,2,2,2,I have blisters on my hands because I was bouldering yesterday.,1.0,always_unk
+3a77fe00836f6fae260e86283b32f0529a7194c2dae84083ddab3663e703cdcc,2,2,2,0,Can I have one of those?,0.0,never_unk
+3ab42003a097423051bac16025e41c8bf4e8cfd8aa7687e5cc4d3d915366a96d,3,3,2,0,"I'm definitely out of practice actually writing stuff, too.",0.0,never_unk
+3c10956d6a9d50d9a8ea381bbfe54cc9ed031eee60ac81ce86a25fc3f567f92e,2,2,2,0,"But my heart is agitated, the boy said.",0.0,never_unk
+3d5c8fcc19c221528ccd2b22fd4f163d3d0df31429a08d94c695d9a0df4bb782,3,3,2,0,I have already described the appearance of that colossal bulk which was embedded in the ground.,0.0,never_unk
+3de032f5c1811f31717e301b467b838f876ebb4b81627dd5741e40f4967dd8a6,2,2,2,0,You can count on me under one condition.,0.0,never_unk
+3de87cdb34f667bfc80ca693df9732181e5cd03f07be643b0d4c7cbaf1ea42f3,2,2,2,0,Symmetric algorithms tend to be faster than asymmetric ones.,0.0,never_unk
+403f8c8d587cdf74f7de3d6a33eb8ce2fb93e032ee28756680d38848ef8c006c,2,2,1,0,He recited an Our Father silently.,0.0,never_unk
+40d5688f6899edfdd7f1659b34b4596f0e464a138736fe3fcccc1d8663f7bb20,2,2,2,0,"And, above all, don't forget to follow your destiny through to its conclusion.",0.0,never_unk
+41092059a90cd06cc1af172337640ab6f0092041649c459a1f8b0e206ced6a94,2,2,1,0,Love required them to stay with the people they loved.,0.0,never_unk
+41598cb84264d50332763f1f3bb0bfa40e50a18425919586b836d4fe54f2a60a,2,2,2,0,All that time the Martians must have been getting ready.,0.0,never_unk
+41e8613149bddc3fbf1a45aaa0884db1,2,2,2,0,"From a technical point of view, the MP-Three-standard is completely outdated and yet it's still very successful.",0.0,never_unk
+42131000890fbda74e1feff7da0abc5c239c9ed69d0ea89cf467a69585ce577f,2,2,2,0,You wouldn't mind living in the nicest house in town.,0.0,never_unk
+42402fbc7fca2798f43f6a7d1cc44d51e3da4fc981263f7eccac347ce05e353d,2,2,2,0,"A group of people, one of them with a guitar, were sitting by the campfire and singing songs.",0.0,never_unk
+4254c449ca295d07cce0850b4c12ba1acbb8614fbd30943144713d04e2c0ea70,2,2,1,0,I heard a faint movement under my feet.,0.0,never_unk
+4432533216d6cbfea5f356a10d98fa62c7f49f3e5a5f47be414125b78695ec69,2,2,2,0,Do you know what's wrong with you?,0.0,never_unk
+4508a1bbaa15e86870d5edefbb3048f929a98d5add2094d657a8d9ac4053a193,2,2,2,2,"The diver forced open the oyster, revealing a shimmering pearl.",1.0,always_unk
+45318fbcabc5333a5afe0a7407379737ec43c78676a6905d0ec2347838229d31,2,2,1,0,Petrov made a funny face as he turned.,0.0,never_unk
+455ce71cfb00db7f6e5203e00d0ab774ac64d99c4023ca4b952cf7c9b73019d6,3,3,2,0,What did you do?,0.0,never_unk
+459d1509e77d2a20c558015e8c8952f1ae67a18ffc9a3e5ea54ef458761e8245,2,2,1,0,Treason is a blow that comes unexpectedly.,0.0,never_unk
+45b714272cec659c14940ce00e5c62c120d386a0acb001d1d97c729c53e810c9,2,2,2,2,"Take shelter in this tent, but keep still.",1.0,always_unk
+45d8ef0bcd663989dfea2eefa21f5e511906d4f9e8d8e8bcafd265ecde238f87,2,2,2,2,The hydrogen gas escaped.,1.0,always_unk
+45ed8f046b24c9beba4f7de2f735257102a18f6198493bb4ff6df8fc7f0ae5a1,2,2,2,0,The treasure is at the Pyramids; that you already knew.,0.0,never_unk
+46016b952bb6e38d9a356fe1aed0fb209b3c36ce79942e1f0bb98cedb20e6cf1,2,2,2,2,I bet you forgot the wine!,1.0,always_unk
+46a9951ca69adeac5441ff15330f4bb2208d54e9cdbe64c94655d4971b47ffbe,2,2,2,0,The night was warm and I was thirsty.,0.0,never_unk
+490f6b39136c6a82d48e40c8d2eccf6ba2023c3c42c72fdd153d9c0395cf0862,2,2,2,0,Its lower end was still embedded.,0.0,never_unk
+49b13eda497c136de43754761cf890118046cc8e0be816b4bce19a6388e041d4,2,2,2,0,Something terribly important's happened.,0.0,never_unk
+4a0b2f9dc4a4fe558cb14b770bd731412fddb7c5991d748145e25514e4d0177a,2,2,2,0,"To the world you may be one person, but to one person, you may be the world.",0.0,never_unk
+4a52fa2daff90c6a6fe9b44761d8e1ccd27c74e118dfd1a5e34cc72089340695,2,2,2,0,It's a man who understands nature and the world.,0.0,never_unk
+4a654b634c01c43ff0cdf588d068863023eedd5a5005a4472f1686928e8de410,2,2,2,0,"A practice of infidels, he said to himself.",0.0,never_unk
+4bc4400756fd662050bed8cfed1fc58abd8b45092b0f23aa4a6e7e0125339763,4,4,4,0,"Deeds are fruits, words are but leaves.",0.0,never_unk
+4cf7c27b8605aacb3c229647f5e0b833a3c490a2b2d74be2c17f02b246c37bb3,2,2,2,0,"People from all over the world have passed through this village, son, said his father.",0.0,never_unk
+4d987db6d63aa38e87a4df448304c50878e333033dbc1be57b35356cde109fda,2,2,1,0,How did he look?,0.0,never_unk
+4ee1d83103e8a1a0e91c0070571f593a091278f1b8bd985b52c3dfcde1d1d41b,2,2,2,0,What do you make of that?,0.0,never_unk
+4ee81a5d351db28aa3711c70f6fbc7126812e1520c3f269ffd362f5ce2c4ad71,2,2,2,0,"He wanted your money, he said.",0.0,never_unk
+4f1a478aeb93f711e4262ef1e5f5c1e8f362f63e69e7b4006df1a986cf8d8892,2,2,2,2,"He kept driving at full speed, totally unfazed by the flap, flap, flap of the burst tyre.",1.0,always_unk
+4fd09a975fff7f18e4fd6989c7fc987a8de2a7ef295e5afdd4c4717a0842c8c6,2,2,2,0,"If you have an issue in the workplace, you are encouraged to contact the HR department.",0.0,never_unk
+5039f73307189c07f32cc0be5882b59230eadffd3e637a26361c8e0320788ebd,2,2,1,2,"Oh, you are, eh?",1.0,always_unk
+50ae30b633eb35c4130f7d2b6bdf900c4134a6721bba28c54dd288859f521f41,2,2,2,0,Read all about it!,0.0,never_unk
+51938c9366b8364794184ce6e6a81cf2,2,2,2,0,"The gallant noble, good man thinks of himself last.",0.0,never_unk
+51bcf6749607c94b04c99afc326ed9862cdb89175c0dc38934adfa33612046b7,2,2,2,0,The seventeen-year-old girl gently pushed his hand away as he touched her belly.,0.0,never_unk
+5210858af1328cd73e824ad3e7ab3b6f31cecedb97da9e87a025a37270046943,2,2,2,0,"We could get to the Pyramids by tomorrow, said the other, taking the money.",0.0,never_unk
+522f7b7b88cf0e7e6de2a2b8ba3dd6e0dd88fc32d2c65475c463afa510ef76ef,2,2,2,0,"Sorry, I'll explain more when I actually understand what's going on.",0.0,never_unk
+53343883c5e4e3098a25b8c10e79f146,2,2,1,2,"Nora finds herself ugly, because she has pimples.",1.0,always_unk
+5409d41f0232c92a4b5b9978554f11836e3a0665b96c68e572b5bd3022a0c9d6,2,2,2,0,Servants came and went with silver trays laden with spices and tea.,0.0,never_unk
+5414a3dd05e8139e85e836fe78ffa5a0000e0209af2ca73190ecbb01a1f67a6a,2,2,1,0,I've suddenly become quite important.,0.0,never_unk
+547e44aff52aff8c4e4331ed3d739c284040cf2c480c94dd1a9d86058dbc1649,2,2,2,0,What's the matter with you boys?,0.0,never_unk
+54b4deee08a49b3f6082f8cfe67e9914fff4afb3b3226e6f4f644f2edc426e90,4,4,3,0,And continue to pay heed to the omens.,0.0,never_unk
+557507b3bbfa51ca85556bcd011be8b5e882cb428b0020d88474665e217989a6,2,2,1,0,"You're a good lad, you know? he told his son with stern eyes.",0.0,never_unk
+557c6a3ff963a5e0197e694d1b542a8d6896cb540c02c0c73e5b228fac82af11,2,2,2,0,"Tell me more about your dream, said the woman.",0.0,never_unk
+5658f851f4895cd7a0bb28846da0427c84757b66bea8db625f35b077cfae12d0,2,2,2,2,The boy mumbled an answer that allowed him to avoid responding to her question.,1.0,always_unk
+572b4cb18ceb278330500068dd89f786c30a176154278d3443f48b69314a7359,2,2,2,0,That it was unable to deal with this boy who spoke the Language of the World.,0.0,never_unk
+59a6f43846cf22b4baee19fe9a735db2f48faa61e104f522e6eb1933ef167ac8,3,3,3,0,YOU WANNA TAKE THIS OUTSIDE?,0.0,never_unk
+5b9a968daf2861f68c4a57101520e0e43c77f8a37a53b38c0c364876d0192cbc,2,2,2,0,Be sure to set that lamp firmly in the hole.,0.0,never_unk
+5c0443e114bc2abf445dc80a0f54326ef56d30c47fced0a258b942363f035912,2,2,1,0,What good will that do?,0.0,never_unk
+5ca616cceeb80fd822100e6c293f59eb1a7c401efc45cfe55cd24fe5fb7a50d6,2,2,2,0,Wars bring scars.,0.0,never_unk
+5cf7733b669c1d3808a9696aa3df47342619463986e2deb0b2e083b729c5ee3b,2,2,2,0,Please tell me more about your symptoms.,0.0,never_unk
+5d0ff9689660d9cda5b25096db47494ed71d8768a877697c28e0a2180ccc94ba,2,2,2,0,Others stumbled upon the stone by accident.,0.0,never_unk
+5d92ba67cfe3e3abb2dd59de4b1a5e4cc35c62ffff2b81cf5a0f08b9d5e5873d,3,3,2,0,"According to the dictionary, the word ""gizmo"" means the same as ""gadget"".",0.0,never_unk
+5dce4217f2d4126d0cd4ecaf2bf20779fab8ecae35820fa1439bd34fcfbdca68,2,2,2,0,Don't wait till the game is called on account of darkness!,0.0,never_unk
+5e37de92b095f4f1ac698c17c6ac6d6293d08ffb992af56b0c6290b5be8ea1a4,2,2,2,2,"I ate a dish with rice, spaghetti, hummus, and caramelized onions.",1.0,always_unk
+5e9ca73d825aa5f1b59a3ac611aa12c03f0ab5986b341128d987c9bfbe278e9d,2,2,1,0,"Yesterday, I asked my doctor for a new prescription.",0.0,never_unk
+60ab06b88dfbc17eb2d0011abb70c0efaf7a207204771edb3e44c1932af26020,2,2,2,0,But I found it difficult to get to work because of the investigations.,0.0,never_unk
+60c8e6246b06eb7e239d78fe73f2951ec9950176469f982a20b67e0578b3d9db,2,2,2,0,The quickening of time.,0.0,never_unk
+6177f5429e1b18a4c4de0898f0b179c36445da7f2c7eb2675c711002bfa1f2d8,2,2,2,2,"After twelve hours of rowing, Darius climbed out of the canoe, and lied down on the beach to nap.",1.0,always_unk
+6214dbefb96ff4b3fca6f6e77fb6c9f756618cdce49e6a1e2b09bdd29610b87d,2,2,2,0,"Hello, Benjamin.",0.0,never_unk
+6350f6f304794e711f153ca02688fa9422bdf1fb1fabfab839f61084bc1e9752,3,3,3,0,"She looked skeptical when leaning against the wall, observing the celebrities.",0.0,never_unk
+644ad5477c4a5030675ffeb381b5007943b3c4e0f34f71f1dd5d1183e31d4aa5,2,2,2,0,"Roger, the backup team is on the way.",0.0,never_unk
+64652676befc70eb8108900d539e81ff7e34b14b5d87df898e0f3c0a73eb10c7,2,2,1,0,"The thing is, nobody knew what was happening.",0.0,never_unk
+67eb2770723a359421234affa6f53f79c5609046cae6879b3bcb4914c89515a6,2,2,2,0,"The boy was strong, and wanted to retaliate, but he was in a foreign country.",0.0,never_unk
+68d84383fc0524a985610f477ea80f17acf58554a62baa2d420b1b719b7a39ef,2,2,2,0,And I still claim I was right the night I proposed.,0.0,never_unk
+693d95062107dfb9b7b73ecf551b89dc9c8e4b5388775b44742a02f72883a104,4,4,3,0,"Down below in the darkness were hundreds of people, sleeping in peace.",0.0,never_unk
+697e2e297a5c79c7d9a34ae20d45eef49f84854ccb60dc44e2eb911498224ae2,3,3,2,0,It left a greenish streak that glowed for some seconds.,0.0,never_unk
+69877abca369de12ae25ea10525386805ad9f1629d6bc08941db4322cf0696fa,3,3,2,0,You're just like Father used to be.,0.0,never_unk
+69bc7bb74f1be523a79a74d07b7998bac00a2587507052993b79a153ebd4b929,2,2,2,0,The thought was so dreadful to him that he forgot about the heat and went forward.,0.0,never_unk
+6ad5a4605f8a5a3dfe094612e541221c81266fe0f5142be405d960fe862b66c5,2,2,2,0,How did it happen?,0.0,never_unk
+6daeb59e34ef97723fd1578dba6fa34c51a9ede31bce486d5d474db588999572,2,2,2,0,Victoria was born in nineteen-seventy-four.,0.0,never_unk
+6e572329dd3cce23396fc0abce161a5a46d60d9876e3eda7a19a4412b361e8fb,2,2,1,0,"Oh, my dear child!",0.0,never_unk
+6e7182c4579a52abddbab8ae12e7b12b1204a9705b3afe87415c8215a4882471,2,2,1,0,"Whenever I fall asleep, I don't dream.",0.0,never_unk
+6f3554755bb69d5734679acdd9fa47b24e1eb4add39d44078f7b964e5735f21e,2,2,1,2,She's a feisty little ferret.,1.0,always_unk
+707e440da2e1b9b82f560e735c550b8960e61a6bd0ddaf0667af1ae4d967686a,2,2,2,0,He was not able to find the words for his feelings.,0.0,never_unk
+715d62b1cf6dfde1db037026f122d2aebbe805da72a2e72474f433d8c233c8f2,2,2,2,0,Don't you know it?,0.0,never_unk
+71bc63cf8b59e1457492d5c9ff2c125759c321e516710c89f18d30a8ebca90e7,2,2,2,0,"And I'm certain you'll find it, the alchemist said.",0.0,never_unk
+7319508d83cc1f503326a44d00dd965802c70f980715a52dfb980104c4b96586,2,2,2,2,Canned pears lack full flavor.,1.0,always_unk
+74a11a6117e6a62acf92fb0a5470c246577d3b61963130e702008f433ae21e89,2,2,1,0,"I'm heading down to the sushi place, you wanna get anything?",0.0,never_unk
+763223cc84a8702032ba0f3da5050b9291f7acc0bde19775f00c3b5f0eafb031,3,3,2,0,"A musical note sustained to its full length, with no break between it and the next note.",0.0,never_unk
+767f4ab649683c81201b9b98ec719a1e7dd590ca8f2cb1dd7772d144c3caff49,2,2,2,0,"Have many acquaintances, but few friends.",0.0,never_unk
+7729a60fa5ed12f51478bd6b3f9e7ae20000299244d30fbfaacb86ab2e7214e5,2,2,2,0,"He knew what I was thinking, the boy said to himself.",0.0,never_unk
+799f903571fedf68e55bf1161d46ada784b83735bc45dffe61e73c30483e3cf8,2,2,2,0,I told him that was what I had come here to learn.,0.0,never_unk
+7b750ea276d1d49deafb8fb72f3dd447228e337de9356a563c20c82712f05cf0,2,2,2,0,Robin had some sort of date with Tracy.,0.0,never_unk
+7c34068eeb79a7694ffffaca907da89285b75d4f8edb0dcb66447b3aba6cffe5,2,2,1,0,Better hash is made of rare beef.,0.0,never_unk
+7dbdf5af9ceea2b4ab4efc80eb77aba2f75fc0bc869c240cb885a7f08a8c9028,2,2,2,0,"She thought it might be a cheap copy, but she didn’t want to know.",0.0,never_unk
+7de47356a5f5450340a5cc13b80341d3e6fdd2cfee39a1d2efa33df57fd3d70f,2,2,2,1,He noticed the unequal cooling of its surface.,0.5,mixed
+7ea540cd93423d6c858f48f5e84f4a6e3c7061e0740c072e16fd61c8a2d9adae,2,2,2,0,She had forgotten about the cookies in the oven.,0.0,never_unk
+7ec25cfa7ebb1803f762090c27a089fee6166c1d561e4f47b50a4921f12c9a87,2,2,1,0,Does this mean he will go to jail?,0.0,never_unk
+7ec85161440207256c1772653498948ac218a488bcc971e109d56e302da3bcc7,2,2,2,0,"No, that's not what I mean.",0.0,never_unk
+7f216d445bd6c39eb5373eab8c49b2f521c472b8037daafa76d7acc9663195e9,2,2,2,0,The carpet was exquisite.,0.0,never_unk
+80b033439b2d60e9d1c487bab1e38186,2,2,2,0,"LGBT stands for lesbian, gay, bisexual, and transgender.",0.0,never_unk
+80d53b1e5b45cd5eac7796905eddfb83,2,2,2,2,"The grim reaper is waiting for you, reckless driver!",1.0,always_unk
+815604fea1434fb2a5bca7fa83cdad6e8a7ba63afed882a4b0e414160ac6ea6f,2,2,2,2,"There were really, I think, two or three hundred people elbowing one another.",1.0,always_unk
+8210059e45197ff697bbc69f785d9bf511d2e46938596265780d10120d21abdb,2,2,2,0,"Sentences are built of nouns, verbs and sometimes adjectives.",0.0,never_unk
+8247430b436f6d17588c582974c2263e7cf8975fc1e3154914cb6686868ebd08,2,2,2,0,"'And this is what your son said,' the angel told the man.",0.0,never_unk
+82fc82b207f82b1c3eecf2fb68beaa7e54ff014a0aea70f6221b8b2deab9e77a,2,2,2,0,He wrapped the twigs in a piece of cloth and put them back in his bag.,0.0,never_unk
+84a700e8f46fc72f390b7a4a99631d05313fd436199ba851b445f4a07dacbf9e,2,2,2,0,This is a ludicrous situation.,0.0,never_unk
+84cc92d6222f23934977aacf406428ba7a663bf0c9437324939e118698cb596d,2,2,2,2,"The penguin waddles across the ice, joining her companions.",1.0,always_unk
+8520fb17985df85a99c5704f37666b254a64d55070e521e37ff42e99d730aa72,2,2,2,0,He wasn't asking for help.,0.0,never_unk
+886d03cff9c2ec585f1304bd0c66d85e1008a7b2601a56a65cacb172fd9559c5,3,3,3,0,Do male kangaroos have a pouch?,0.0,never_unk
+892517d0dd658d6883f463eb316916c635ba8b2652a1afa1a682ee087d1a1e4b,2,2,2,0,What else can I do?,0.0,never_unk
+89c6aa33d5ea51acb0e3aa4fa82e311d2cc84f752207af8990258e553318dbca,2,2,1,0,You and I were the only ones that kept our heads.,0.0,never_unk
+8b220ce4d5c0ff799ad704c2d3e14966232fa2bbd69612d81d0909d7b843317c,2,2,2,0,He walked slowly through the market.,0.0,never_unk
+8b837cfd3addfbd611595bbe7ea0623ec534aead9a3466e8d1a993eb0c0d7d7a,2,2,1,0,The airplane rose gracefully into the sky.,0.0,never_unk
+8d2b3e235f90b9161a8c3fa2fc86c8516d106400570d12805bc94b7ca5cd600c,2,2,2,2,"Another reason why Apple is superior to Microsoft, the troll posted and grabbed some popcorn for the subsequent flame war.",1.0,always_unk
+8e8cee4b692b60fa3c5037f9bb5d25bb2befceca13c8f5f74ca6aa3f7b7d0c71,2,2,2,0,"Not too bad, I suppose.",0.0,never_unk
+8eab7e5d26bea4e61f588d334c70a27ae04fe2c7854f289014c2f34f07070ce1,2,2,2,0,"I do like movies, but I prefer cartoons.",0.0,never_unk
+8f277f91eb8d4ecce5d3b60785263cceca9aac918878b8468f07e4e34a3dac98,2,2,2,0,These scissors can cut metal.,0.0,never_unk
+9077fca578cc151f2d1c13bf1874a42242057878a77f8d98216da740857d3120,2,2,2,0,"Had our instruments permitted it, we might have been able to see the trouble way back when.",0.0,never_unk
+90ec9f8f35a7eecd27d8ed30aa7d489a9fdc49cd3a0831d430968315517a2661,2,2,2,0,How are you doing?,0.0,never_unk
+910b85f9244815b85d6a81e7554123be038a9bc3a71193b775d01b200a22977c,2,2,1,2,You will need some rubber boots.,1.0,always_unk
+927bf3ff7ec4a9cddaf16533df87ea8e9a73e609290ff07b9bd3e9ca811d4717,2,2,2,0,Men strive but seldom get rich.,0.0,never_unk
+942ddbd1dca03f50b5b44e679609e1661b29caea3f627e40960244c58cda6957,2,2,1,0,"The boy waited, and then interrupted the old man just as he himself had been interrupted.",0.0,never_unk
+9431c036e9a494ac17a63b78adac001c8a6d93767475444ba8c6cfb8ed1e4248,2,2,1,0,Do you know what kind of package it was?,0.0,never_unk
+94e4f9e001fcf0cd7d57287dbc19b5018327635c9e817b395b8b3a1cd0bba12b,2,2,2,0,Did you see the garden that it took the master gardener ten years to create?,0.0,never_unk
+96317f1841c244f3ca0bf137e5397569e0b396b940043364cff1ff0d6202512b,2,2,1,2,"The thief wasn't there, and the owner brought him a cup of tea.",1.0,always_unk
+96cb07806cdddacf82a21aed50e474b5da73c7087914e6fa7301bcb066a36d23,2,2,2,0,What do you know about that?,0.0,never_unk
+96f433c75be56e1f2d765666610b7d5a4564da869c17117c393bc225e7ad6071,3,3,2,0,"He moved about, invisible but everyone could hear him.",0.0,never_unk
+973a1da2f761f35a169c8e48ffaab48b3e0e5632b87dd76f39af675a1be8b7cc,2,2,2,0,Why didn't you come to our launch party?,0.0,never_unk
+98107ffeec650271e9b30c425e55e63ef1cfb82e001f9c62e2f099e54eb9710b,2,2,2,0,"I promise, I will be careful!",0.0,never_unk
+981457974ebef3428f38f0220abf5bafa7dcb95b36f629d8fc997cf3037dedad,2,2,1,0,"A shepherd may like to travel, but he should never forget about his sheep.",0.0,never_unk
+9b01b2fa7c3fbe7d66aec38c5a2c4dd4,2,2,2,1,"If you lose your temper, don't look for it.",0.5,mixed
+9c02188486a44d9b1406f5f04ac4fd45f49533c3f62e9ffd3df30fe1294d0483,2,2,2,0,It's called the principle of favorability.,0.0,never_unk
+9c294af3447419605ea86eddc9a8e62e2a18a37ecf92b323d63b3db3b412c4be,2,2,2,0,I myself heard nothing of that.,0.0,never_unk
+9ca47d0b7bd2d7854c00558633dd72240fc756a00271fb3fdb567215b46a393d,2,2,2,0,I'm not familiar with the books this author wrote.,0.0,never_unk
+9da347540883e7726fdcb34f2c4e1ad49285a2f52e420bb8e0e027b2c0fa4ff5,2,2,2,0,Two scorpions were menacing each other with their stings.,0.0,never_unk
+a06f50dc158d5156a2a4d74de2978832ac89022798294131d4f80f4d3018a79d,2,2,2,0,Every Jack has his Jill.,0.0,never_unk
+a07fe8ae1a746230d26d15484779c7c04fd04cae41f70101692873bfab999e89,2,2,2,0,I beg your pardon!,0.0,never_unk
+a1b32e925dcff76b2caf49d937e7a7af6dcb6ef0acd94bb6772c6ab5e72c3ed0,2,2,2,0,"You can’t do that, it is written in our contract.",0.0,never_unk
+a2492f87563968e80f707ead8ed0dfc5875e0ec17b4fda7a865da082fa156c1e,3,3,1,0,Now I will drift gently off to dreamland.,0.0,never_unk
+a5ddb9dabb89d468439831ba3464a00718557583dae7125893e003b7acfe4359,2,2,2,0,One of the worst crooks in town!,0.0,never_unk
+a63346c757ea36e52ab4416a36fe8af0d8c296913d7db3309ce4526736702579,2,2,2,0,Just as I thought!,0.0,never_unk
+a65255b66cf0c77e0bc6416e563e08319895c5b59a9eba1019364fc1b3b9703a,2,2,2,0,"Since the miner had sacrificed everything to his destiny, the old man decided to become involved.",0.0,never_unk
+a6acc6a1556284e32c4edf16e97998cea26c19e780cf82ef9e93cd83847197de,2,2,2,2,Pitch the straw through the door of the stable.,1.0,always_unk
+a6d6ee31342c7a19cfc876c897459172,2,2,2,0,"When it comes to the crunch, our company will become insolvent.",0.0,never_unk
+a78e783daf956d9984c805ff577837781eaa9253485cc4ad6a0c80fe6a101966,2,2,2,0,"There was a small building there, with a window at which people bought tickets to Africa.",0.0,never_unk
+a9b943abe9e0605ab6d8a070a8febd4b3937129b7a373d59b709f73d45687ea4,2,2,2,2,The turf and gravel around it seemed charred as if by a sudden explosion.,1.0,always_unk
+aa04f571e97c3e11698b686c700dd17c9eb54dda96a0ada261badc04f50523e8,2,2,2,2,"They walked in from the rain, all dishevelled and steaming.",1.0,always_unk
+ab1a994b5f123782725df32e064b19386b4b024ce43cf409aeeb5b21df8747c0,2,2,1,0,"It's pretty straightforward, isn't it?",0.0,never_unk
+ad003d72fe6c6c909368b4bf2eb9f92e0103a6db07acab15e9ab2eb6e434114d,2,2,2,0,Even me — I haven't thought of other women since I met the merchant's daughter.,0.0,never_unk
+ad17c5fc7f7540e020ba7c0af2b5326dce8cf630ec9716f7936298a6c1a4c532,2,2,2,0,What are you talking about?,0.0,never_unk
+adc984f3a22c59f3af9fad7bbec62493037ed47da592bbf1c0f753db44ae88f0,2,2,2,0,Do you think we will ever find a cure for cancer?,0.0,never_unk
+ae1dcd2e0c669ceb37a226fb6c2a0a4d87510c766e93699d6fb724f48a0db92f,2,2,2,0,Heave the line over the port side.,0.0,never_unk
+ae4b7b581b9245d573c031e941232c18e238f40ca95a31c741844c7ceac56f5e,2,2,2,0,A fresh start will work such wonders.,0.0,never_unk
+ae8a68e8219c7346a7fc7f4a70bd6ed6185873642e541824571e2fbef3653d2a,2,2,2,2,"The flag is red, blue, and yellow.",1.0,always_unk
+aeaa8c7e8213a58ac9c962907ba41fc7da9a9e2c825d54d2f33a83a0ffc4e634,2,2,2,0,I spilled coffee on my paper.,0.0,never_unk
+af1bade7770d20ff14a840631553758ab4282855a1233a66a58f0577b68e5eec,2,2,2,2,He heard a muffled grating sound and saw the black mark jerk forward an inch or so.,1.0,always_unk
+afb2ad9c149137f09b5db2e1043cf67c1f22c31b7a38909509f0ed6a13c67fd0,3,3,3,0,"At the first glance, it was really not very exciting.",0.0,never_unk
+afd7f3d298bc43479ff491e86b8777233d231c3fa6fd25c8465d6d214af84441,2,2,2,0,Wouldn't do any good.,0.0,never_unk
+aff6b8325373465b269dc9f51dc6273524190dfbadfa6bce5f07176d7f19a3d9,2,2,2,0,"What is it, dear?",0.0,never_unk
+b21efc17d439b843206947a9c32d67180d64632128ce88008d07cfad420e7413,2,2,2,0,"It would have been visible to me, had I only looked up as it passed.",0.0,never_unk
+b33df4c930d32024f3711c2d89049164a91d50919bebae736b325af6d14970fd,2,2,2,0,"I don't understand what you're talking about, the desert said.",0.0,never_unk
+b3d5c8d6162797652bc446156d02df330048268a8d5b66d9ec65eb8d31cad559,2,2,1,0,What have you got there?,0.0,never_unk
+b3e343e59ca9cddec4bbe221547ba1d8f0bfe2c18a8c487e6736288fdc509c7b,2,2,2,0,What is the weather in Brazil during the summer?,0.0,never_unk
+b446f000ed3182aa0577eac394490ccc3211d1b9a8380bae26aad6c34b08fb23,2,2,2,2,Best to bend it while it's a twig.,1.0,always_unk
+b4ebc58dba022922b78039859b164290a8c18c1a8a0d256da70e69980f4a465d,2,2,2,2,The hail pattered on the burnt brown grass.,1.0,always_unk
+b52e679a999d7528874f0a2cd9e06c54ea63be781cb08303f03203be5a78d605,2,2,1,0,A strong bid may scare your partner stiff.,0.0,never_unk
+b570c3acd8e582901e710ec276aaacb6e829ee3377863942f12450f6b54ae177,2,2,2,0,"Forget it, there is no such thing.",0.0,never_unk
+b6b14cadbca0ad1809a7e1ebad2533966c2301a542b74623e68e3c0c0aa09844,2,2,2,0,But maybe people who felt that way had never learned the universal language.,0.0,never_unk
+b713f85f43d4e8415ca15d9257ad77e7a87211c5fe0215d0036ca392b657aa63,3,3,3,3,"He grew strawberries, so you would not like it.",1.0,always_unk
+b87d7e216bc6a93aceaa04dc0e2eb17b363e54bebabdf062ae4fd8ec252b4c67,2,2,2,0,I could see something in their faces.,0.0,never_unk
+b8bb448cb05b5d10df276dedef2f45f7,2,2,2,0,What did I tell you?,0.0,never_unk
+b91243d7818613721bfcf7a89f2258e5044377e653b06856bc2460460fcc5c7d,2,2,2,0,I just got rid of one crowd.,0.0,never_unk
+b9a6b08416e46da7c8dd8c7bd1c55639da6214f8951156a004a1d2687aba0149,2,2,2,2,Most of them were staring quietly at the big table.,1.0,always_unk
+b9dc4e625afbadbd9c3f5e36e98d450e9eca71d0034583cf37339c163307829b,2,2,2,0,A whole week in Bermuda.,0.0,never_unk
+bd0d915efa257523c6ed0ec0235e3a321ad5dfb899bd246883c8ed6b232dafaf,2,2,2,0,My friend bought all the other sheep immediately.,0.0,never_unk
+bda3ef2f46c6505238bc2d10f8a9ba2ecf33d0bdc52ce92495de6d3f3201cf33,2,2,2,0,As you were!,0.0,never_unk
+be19afd10cfc0880d41a5a401a529bd9e0407ca936483d74f25aa926ea975c62,4,4,3,0,It was faintly marked with transverse stripes and slightly flattened from the perfect round.,0.0,never_unk
+be36f0f45433a4717d49bff1dffccf48a70d830bb382a54546970c4372e9d903,2,2,2,0,"The sun thought about that, and decided to shine more brightly.",0.0,never_unk
+bf3949ff440f338e1e3be16a8ea24f98ee9310ead63ed3fb7432d4177ae7cb8c,2,2,2,0,Would you like a cappuccino?,0.0,never_unk
+bf4dd4a18d937351e936b3f8ec2f812542fef7710ed46dac6672864343a786e2,3,3,3,0,Can I pay in cash?,0.0,never_unk
+bf7ed88f4c02a9b680cd5361d0fdcae9ad6d714aadae90b9d6e0dd1ba6741a6c,2,2,2,0,"Grow angry slowly, there's plenty of time.",0.0,never_unk
+c15df2f330a438e2bcedf10794856e2808ffc41e00deaf7635a2823aa19288e7,2,2,2,0,Why are you doing this?,0.0,never_unk
+c17a11937c520cd41c41928c021b43908f3d9a27b3f22d12606ea3af83f1430a,2,2,1,0,And that's another thing.,0.0,never_unk
+c21c942a905b5f91fee7b2969d8c2111c602400d33878a8f1568d44f84878dbb,2,2,2,0,I had some problems in activating this coupon.,0.0,never_unk
+c4901ad2ea19ef82a6d7ed15451530cd9d43dc8f6b1a54333ac2aa755a314a30,2,2,2,0,"With every day that passed, the boy's heart became more and more silent.",0.0,never_unk
+c6674833802559dceb535e162609a1c8d9bfe2cfe553171385ea387ebec22fcc,2,2,2,0,It was a great success.,0.0,never_unk
+c7d5c700492ef1b15cf7a37ce302a40c23f0545786b6d708d51570f0f4b0431c,2,2,2,0,The attic was dark and smelt of old dust.,0.0,never_unk
+c9e21fc39fb1314e4feba509a9bc6deff012f6e78259a4a4d14fe1b9d1f9787f,2,2,2,0,What do you mean by that?,0.0,never_unk
+ca8c852da360d9806ad37df9ee9cca342778da96249e0095278c4c48b93e73d2,2,2,2,0,She wasn't her type.,0.0,never_unk
+cb1309190bab66e2ec950aa5f8ad1ba8504039de833c66f5165eb38f21ed3b3b,2,2,2,0,Where is my wife?,0.0,never_unk
+cd59c8655f4574b2a8f134c688223f5925294904c6a92c5808b1458c31a50aa6,2,2,1,0,I'd propose a dictionary attack instead of brute force.,0.0,never_unk
+cd6ffdd1c091faa5a6e19297c17f9ab047560ad486532f83ab417a8cfd04234b,3,3,2,0,The Englishman was disappointed.,0.0,never_unk
+ce9bc564008d24931aec51eddf15ddccead3daaf4b0647468e33cf04188182e8,2,2,2,0,"He seemed unfriendly, and had looked irritated when the boy had entered.",0.0,never_unk
+cecb266d94f1bef4ac52f130b7383c196b1027f7427fdf9f0a6a328297c68c5b,5,5,4,5,The crowd swayed a little as I elbowed my way through.,1.0,always_unk
+ced3ed1f8141337e9d4a48983ba08ae3867ab6d105a502bbc56809ed0f8adca2,2,2,2,0,What are you here for this morning?,0.0,never_unk
+cee1b8dfd7ac846fc575925014e62cc8d2d2904d4880bfd46c6c5fc911481655,2,2,1,0,What are you up to?,0.0,never_unk
+cf5e6f27167fffd896acf2086ce375a06927ed74961a5195520d497c081e8852,2,2,2,2,The loafers and golf caddies were used to hanging out near the railway station.,1.0,always_unk
+d1a2aa653b61a5856ebb3f627430d54c25995b9787de106c2ea9099edab3b450,2,2,2,0,The grass and bushes were wet with dew.,0.0,never_unk
+d2df63484febad3e6ad70c521b452a750d24aa19207054609c69bc853200af64,3,3,3,0,It was only when I got this close to it that the strangeness of it was at all evident to me.,0.0,never_unk
+d444844a992a4e7c38017557ccf412c2154951b201ab9db4f689eb8af38c4331,3,3,3,0,The two men hurried back and found the cylinder still lying in the same position.,0.0,never_unk
+d48db4bc2b2fe9fe6df333b29bbd93fc71c46fc798100197aa4ee1a042575059,2,2,2,0,The horse galloped uncontrollably.,0.0,never_unk
+d49d70ac432b746a64996d51bf31d9a37d2ddb226ff10a993f50db8d5bdf5117,2,2,2,0,"My wife pointed out to me the brightness of the red, green, and yellow signal lights.",0.0,never_unk
+d5f6d912279131ebcf13cec74cada4b33a362722c3a813b338efa1cee6800ace,2,2,2,0,"You don't have to be rich, skinny, popular, or even own a cape to perform a random act of kindness.",0.0,never_unk
+d811548300151bf196644da19591601c86e99f8253481999d7d8ad215f1c905e,2,2,2,0,Strange images passed through my mind.,0.0,never_unk
+d8775b03b71570972abc5878a47dc00d7faa6a07a880400e430db0c2da8483e8,2,2,2,2,And they attacked an empty tent.,1.0,always_unk
+d8bad291770b39fce6cbf2ca77913aa2bbbcc9f221ad65c89b8516c454528fc2,2,2,2,0,Henderson was taking it in.,0.0,never_unk
+daa96b2355ffdfb8145b6464ba5f16200a4144a63d8b2a826225b1af8e81e21c,2,2,1,0,Just hurry up and get here.,0.0,never_unk
+db539731fd5d2c5c4ad7143380dbcbb3a3499b8a73aceab8576bcd6b3958b4bf,3,3,3,3,"The Englishman prodded him, and the boy asked her about the man who cured people's illnesses.",1.0,always_unk
+db90d653ff870407810deb7251af499e5d4b99fc9a6d21e6c7365a2f015b7776,2,2,1,0,"I've already had that experience with my sheep, and now it's happening with people.",0.0,never_unk
+dc154475d9c9444002c84bc13ac19b33fd922289eca956fd9ee2f9890da76c73,2,2,1,0,"A friend had told the boy about the shop, and he had taken his sheep there.",0.0,never_unk
+dd13d8a767ec01f22569d18c70842e6d1103c3d91969ddb79b8ffe5e924f66f8,2,2,2,0,Don't spank your kids!,0.0,never_unk
+dd26f93c2701750c6d3fd3f49bf7276781f7d663e8c0bc0a4fdf315a99a07874,3,3,3,3,But that was simply because my eye was tired.,1.0,always_unk
+dd64c6b052ee126ab534ad4a5840a7d333cfd413b1b5332668e1f23a55434070,2,2,1,0,I didn't know whose it was.,0.0,never_unk
+de08fecea1d4da54b4172f7a3a344a5be98408e2c4b46c8098fc62ede02af7f3,2,2,2,0,Then leave with the caravan.,0.0,never_unk
+df1830ea459af68f7ee5240f3beb61bb82a9d47920d34e82b70cb9d5945ff068,2,2,2,0,"Come to my ranch, and I'm gonna show you what damage the tornado has caused.",0.0,never_unk
+df3c337cd0fc8c91aed58b60513e38b70359bc4678a0484a03cff550080b483d,2,2,2,0,How was that for a tight squeeze?,0.0,never_unk
+df87f67c534ef15870d155e3faa63e49f1240c9e496fa4dbff12d5e842895341,2,2,2,0,"Here, let me show you, said Ann.",0.0,never_unk
+e2e03243aada68b757ec6ab6d6e171eb3abb71c0898ce01e857c3616d4aeee6b,2,2,2,0,"Oh my god, they killed Kenny!",0.0,never_unk
+e3e575fc542ef42f0b38d2c247b07d7735a9e5f48adcf17da4e9f39859e59fcd,2,2,2,0,A break in the dam almost caused a flood.,0.0,never_unk
+e6f6cd0374f5236f15d55671f6c9b89485754f5d3323ef1d86f7cfe942c992e6,4,4,2,0,It seemed to him that it fell to earth about one hundred miles east of here.,0.0,never_unk
+e9bbc9e26e5c488fb51b8e911d5df88ad98820000daf445af19be6e0af1a09b5,2,2,2,0,The pleasant hours fly by much too soon.,0.0,never_unk
+eb633689253985933f2330ae514f4e671be3edd36239abe539bac11f760a90a2,2,2,2,0,Do you have Isabella's phone number?,0.0,never_unk
+eb9a57662d6bd34ae5540e08e503e1c7125b6dbd29b3b6e19c6f90ecf3b50215,3,3,2,0,"Looking at the sun, he calculated that he would reach Tarifa before midday.",0.0,never_unk
+ebec26e6e442f5af368ab6e96a3154cdb288ec7954427e60cab4c438be6cc223,2,2,2,0,Are you enjoying London?,0.0,never_unk
+ebf6f1502cdb2887b4141c101ba5da6eaeee1c2336dcafb9b402d9d5cf8f20d8,2,2,2,0,A light purse makes a heavy heart.,0.0,never_unk
+ecf7174d60bea06dac4117c382e07a8424b9b0310a6db15d43e0e64f5efa14b0,2,2,2,0,"She biked home, smiling all the way, knowing that she had won.",0.0,never_unk
+ed41bd57210e87342a84a21ce41097d2ce8989a1fadba4c46804188ab1f7603a,2,2,2,0,Grape juice and water mix well.,0.0,never_unk
+ee46d752e964aebd25eeb843280a274af04a32b4cc2342cda707b443c95a54c2,3,3,2,0,"In spite of this, I still believed that there were men in Mars.",0.0,never_unk
+eef83cf4c152e6a97361e0535f4153009960b3091fb336ea9ace4e1544683d81,2,2,2,0,Fifty bucks ain't going to ruin me.,0.0,never_unk
+efc5c6e0868be6056a7b5cf5bc139fc7a40552928746ae2efb9b7cbec2bb8c16,2,2,2,0,"Among these people were a couple of cyclists, a gardener I employed sometimes, and a girl carrying a baby.",0.0,never_unk
+efd90486ed98ecb14612c0aefeb9c514cd08e095069bf436a782c478075df7ef,2,2,2,0,You can't have your cake and eat it too.,0.0,never_unk
+f104f11bc624acfe9f3dbedd5527a70ceaf1fa9baf3b4461ea40b47c27bf7b6b,2,2,2,0,I'm going to wait here for you every day.,0.0,never_unk
+f44b5b95683f5138d2651bcace694bc53e9d62c8f18d97feb639c19c84940447,2,2,2,0,It was no more exciting than an overturned carriage or a tree blown across the road.,0.0,never_unk
+f453893670e82454b66652af19dda95fcae97e1f30206a7a21afcf5aa79499d0,4,4,2,0,"I need you to be spontaneous. He asked me out to ""din din.""",0.0,never_unk
+f58f2b35c351f2f4e6887d3266440695418cbcc36bb426acc86ee72c675d454e,2,2,2,0,We sharpened our wits at university so we could handle this crisis.,0.0,never_unk
+f6a3b990d7dbc8fa2e0c0e7ffb09844978641b27004833fff5b6c9ce699c21af,2,2,2,0,And the names of the people involved were very difficult to pronounce.,0.0,never_unk
+f774207cee5b74e6f1793e9cfe489096c07b4462b2640dc369df06ea672ea33c,3,3,3,0,It was possible to sail the entire route in one go.,0.0,never_unk
+f7e3892279631755bf9ebe3cbdb3c571f8ab3ae10b2fa1b5c57956df3913a70a,2,2,1,0,And who are you?,0.0,never_unk
+f84603f9ab729a92c8647c2997c5c320cd1ff0c7231f2c9b746397ccd64f7825,2,2,1,0,I'll be right there.,0.0,never_unk
+f8effbf83e5bbfd9b097be5d751f2a898ae3c165c5cb24962a225adbff59ac73,2,2,2,2,"Roll the dice, please.",1.0,always_unk
+f9030ad0b66bf50663265b829743bffb02b679e2d588425e7264eb819fd80aab,2,2,2,0,"No, he's loyal.",0.0,never_unk
+f923fc1e8f39bd9da5ece12c87a86d5cebd874bf188249b90be14c61ffd54cbb,2,2,2,2,The homeless seem to like soup.,1.0,always_unk
+fae778a91ae4b61cf11305b0e853d562e091b244e645e32b33c6b379c416938f,2,2,2,0,"Sentences are built of nouns, verbs and sometimes adjectives.",0.0,never_unk
+fafc46f4488ecc65ca56539c66a9c15bd037e0aa9bd8a60f9ea4fef40d7ad383,2,2,2,0,"Curse the moment I met that old man, he thought.",0.0,never_unk
+fb453dfed8a5ec0e6ecfe426485bfe48,2,2,2,2,Why do people even eat peanut butter and jelly?,1.0,always_unk
+fb8244b12bb339531f46fa69ffbd61020347cdda85c041bab4e0babb1b75346b,2,2,1,0,Nothing else remains over for us. We have no alternative.,0.0,never_unk
+fc16416b3aab0a0244f1e12ebacd63e6f6fd858b6903944f06ad0807e95da4c4,2,2,1,0,"Yeah, I was in a wheel chair for months.",0.0,never_unk
+fc38b0fa658335090f51c090d1e0e64eaa0aa08d2bc609828c12f46e5bf5aad3,2,2,2,2,Steam hissed from the broken valve.,1.0,always_unk
+fc907713f6add92803820ff263c5eea367dc2ff7121ce944b733b514c3cfa275,2,2,2,0,Hundreds of observers saw the flame that night and the night after.,0.0,never_unk
+fd110d5aaaf3a3309e40a9f4f7ab506a397411e0928540b4bdfd2aa220f1179f,2,2,2,0,I can't do that.,0.0,never_unk
+fd71db711869e32f879c80e6f9a601d5e8a891872354617a90f4726fccc652cf,2,2,2,2,My roommate’s boyfriend is taking up two shelves of fridge space with his beer.,1.0,always_unk
+fdb7f15323f13e69d0078833335d37e8e3787b902b959dabb3136de58488f89b,4,4,2,4,He disappeared into the tent.,1.0,always_unk
+fdd133c21421c996332dd03009ec2adbcf89d7dc603bdb46ac817f1cf159938b,2,2,2,0,"Olivia, have you seen my keys?",0.0,never_unk
+fe37145c7e48cdff57a53f16d8317fc8403709bac4a9efd2d61e0bc09130b726,2,2,2,0,Henderson went into the railway station to telegraph the news to London.,0.0,never_unk
