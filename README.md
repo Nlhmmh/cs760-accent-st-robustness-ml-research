@@ -5,8 +5,19 @@ associated with the translation quality of Direct and Cascaded
 speech-to-text translation systems.
 
 The repository contains the original Group 9 proposal, the frozen-model
-inference notebooks, completed Direct and Cascaded run artifacts, and an IEEE
-LaTeX literature survey in progress. The implemented experiment has advanced
+inference notebooks, completed Direct and Cascaded run artifacts, an
+integrated IEEE LaTeX literature survey, and Direct `<unk>` diagnostic and
+sensitivity experiments. **Last updated: 24 September 2026.**
+
+Both Cascaded model variants have completed full runs on all **4,200 clips**,
+using Whisper large-v2 for ASR:
+
+| Cascaded MT model | Completed run directory |
+|---|---|
+| NLLB-200 distilled **600M** | [`cascade_full_run_1788146589`](runs/cascade_full_run_1788146589/) |
+| NLLB-200 **3.3B** | [`cascade_full_run_1790228071`](runs/cascade_full_run_1790228071/) |
+
+The implemented experiment has advanced
 beyond the proposal: the original design specified five accent groups and
 3,000 clips, whereas the frozen dataset and completed runs use **seven accent
 groups and 4,200 clips**.
@@ -48,7 +59,7 @@ English speech -------------------->| SeamlessM4T v2-large          |
                                            English transcript
                                                     |
                                     +---------------+---------------+
-                                    | NLLB-200 distilled 600M       |
+                                    | NLLB-200 3.3B                 |
                                     | English-to-Chinese MT         |
                                     +---------------+---------------+
                                                     |
@@ -75,11 +86,13 @@ Whisper transcript -----------------> Common Voice English transcript
 
 - Architecture: English speech to English ASR text to Chinese MT text.
 - ASR: `openai/whisper-large-v2`, forced to English transcription.
-- MT: `facebook/nllb-200-distilled-600M`.
+- Current MT: `facebook/nllb-200-3.3B` (completed 24 September 2026).
+- Earlier baseline: `facebook/nllb-200-distilled-600M`; its full run is retained.
 - NLLB language direction: `eng_Latn` to `zho_Hans`.
 - Frozen revisions resolved by the completed run:
   - Whisper: `ae4642769ce2ad8fc292556ccea8e901f1530655`.
-  - NLLB: `f8d333a098d19b4fd9a8b18f94170487ad3f821d`.
+  - NLLB 3.3B: `1a07f7d195896b2114afcb79b7b57ab512e7b43e`.
+  - Earlier NLLB 600M: `f8d333a098d19b4fd9a8b18f94170487ad3f821d`.
 - Whisper processes every clip first; it is then released before NLLB runs on
   the saved ASR transcripts. NLLB never receives the Common Voice reference
   transcript.
@@ -191,7 +204,7 @@ Identifier semantics are important:
   That key is valid only while the frozen row order and metadata fingerprint
   are unchanged.
 
-The two completed inference runs recorded the same dataset fingerprints:
+All three completed full inference runs recorded the same dataset fingerprints:
 
 ```text
 metadata SHA-256:   57fb7e6b62647d661cb887bdd279f1b4af57bbf1fca8e5ee741b5490136dcdba
@@ -204,8 +217,11 @@ key.
 
 ## Evaluation and statistical-analysis plan
 
-Inference is complete, but the quality and statistical analyses are not yet
-implemented in this repository.
+Full inference is complete for Direct and both Cascaded model variants. A
+reproducible full-dataset translation-quality and WER evaluation, with paired
+statistical analysis, is still missing. Notebooks 06 and 07 already calculate
+BLEU, chrF, and chrF++ on a selected 35-clip Direct sensitivity subset; these
+are not overall system or accent-robustness results.
 
 ### Planned measures
 
@@ -246,12 +262,15 @@ artifacts.
 | Seven-clip engineering pilot | Complete | Executed `create_pilot_samples.ipynb` |
 | 35-clip hardware timing pilot | Complete | Notebook plus archived TPU/T4 artifacts |
 | Direct inference, 4,200 clips | Complete; 4,200/4,200 successful | `runs/direct_full_run_1788151795/` |
-| Cascaded inference, 4,200 clips | Complete; 4,200/4,200 successful | `runs/cascade_full_run_1788146589/` |
-| Direct/Cascade output combination | Notebook executed and validated | `combine_translation_outputs.ipynb` |
-| WER, chrF++, and BLEU calculation | **Not present** | Evaluation notebook still required |
+| Cascaded 600M baseline, 4,200 clips | Complete; 4,200/4,200 successful | `runs/cascade_full_run_1788146589/` |
+| Cascaded 3.3B inference, 4,200 clips | Complete; 4,200/4,200 successful | `runs/cascade_full_run_1790228071/` |
+| Direct `<unk>` investigation | Complete diagnostic and two 35-clip sensitivity experiments | Notebooks 05–07 and investigation log |
+| Direct/Cascade output combination | Executed for the older 600M run; 3.3B integration pending | `combine_translation_outputs.ipynb` |
+| Full-dataset WER, chrF++, and BLEU calculation | **Not present**; subset sensitivity scores available | Full evaluation notebook still required |
 | Confidence intervals / statistical tests | **Not present** | Statistical-analysis notebook still required |
 | Accent-level interpretation | **Not started in tracked artifacts** | Depends on verified metrics/statistics |
-| Literature survey | In progress | IEEE LaTeX scaffold; Member 1 portion populated |
+| Literature survey | Member sections and group synthesis integrated | `literature_review/latex/` |
+| Method/results presentation | Tracked PDF available | `presentation/9_MethodResults.pdf` |
 
 ## Notebooks
 
@@ -261,11 +280,16 @@ before rerunning one.
 
 | Notebook | Purpose | Expected working directory |
 |---|---|---|
+| [`01_data_preprocessing.ipynb`](notebooks/01_data_preprocessing.ipynb) | Prepares and samples the source data; requires local source datasets. | Review notebook paths |
+| [`02_audio_extraction.ipynb`](notebooks/02_audio_extraction.ipynb) | Extracts selected audio from the source archive. | Review notebook paths |
 | [`create_pilot_samples.ipynb`](notebooks/create_pilot_samples.ipynb) | Validates the frozen 7 x 600 dataset and creates a duration-varied, speaker-diverse pilot. The current code/output selects 1 clip per group (7 total). | Repository root or `notebooks/` |
 | [`timing_test_pipelines.ipynb`](notebooks/timing_test_pipelines.ipynb) | Runs a 35-clip timing feasibility comparison and estimates full-run duration. It is not a translation-quality evaluation. | Repository root / Colab project root |
 | [`03_direct_pipeline.ipynb`](notebooks/03_direct_pipeline.ipynb) | Runs frozen SeamlessM4T inference, checkpoints predictions, records timing/environment/configuration, and validates output integrity. | Repository root; `PROJECT_ROOT = Path.cwd()` |
 | [`04_cascaded_pipeline.ipynb`](notebooks/04_cascaded_pipeline.ipynb) | Runs staged Whisper then NLLB inference with checkpointing, separate ASR/MT diagnostics, and final integrity checks. | Repository root; `PROJECT_ROOT = Path.cwd()` |
 | [`combine_translation_outputs.ipynb`](notebooks/combine_translation_outputs.ipynb) | Validates identical run samples and shared metadata, then combines `asr_transcript`, `cascade_translation`, and `direct_translation` by unique `id`. It does not score them. | `notebooks/` |
+| [`05_direct_unk_diagnostic.ipynb`](notebooks/05_direct_unk_diagnostic.ipynb) | Audits literal `<unk>` frequency, repeated content, and tokenizer behaviour. | Review notebook paths |
+| [`06_direct_unk_sensitivity.ipynb`](notebooks/06_direct_unk_sensitivity.ipynb) | Tests greedy/beam-5 decoding and special-UNK suppression; saves generated token IDs and subset metrics. | Review notebook paths |
+| [`07_direct_literal_unk_blocking_sensitivity.ipynb`](notebooks/07_direct_literal_unk_blocking_sensitivity.ipynb) | Tests blocking ordinary token sequences spelling `<unk>` and compares changed outputs. | Review notebook paths |
 | [`copy_from_colab.ipynb`](notebooks/copy_from_colab.ipynb) | Colab helper that mounts Drive and archives `/content/runs`, `/content/outputs`, and `/content/results`. | Google Colab |
 
 ### Recommended execution order
@@ -279,7 +303,9 @@ before rerunning one.
 5. Freeze model revisions and decoding settings.
 6. Run both pipelines with `DATASET_MODE = "final"`.
 7. Preserve the run directories and their JSON fingerprints.
-8. Run `combine_translation_outputs.ipynb` from `notebooks/`.
+8. Select the intended Cascaded run in `combine_translation_outputs.ipynb`
+   (it currently points to the 600M baseline), then run it from `notebooks/`.
+   Preserve separate, clearly labelled combined outputs for each model variant.
 9. Implement and run the missing evaluation and statistical-analysis stages.
 
 The completed full runs do not need to be repeated unless the frozen data,
@@ -291,31 +317,35 @@ local, Git-ignored downstream artifact; the tracked notebook records the
 successful combination, while the model prediction CSVs in `runs/` remain the
 reconstructable inputs.
 
+The saved combination notebook still selects `cascade_full_run_1788146589`.
+Do not describe its combined output as using NLLB 3.3B until the input path is
+updated and the combination is rerun and validated.
+
 ## Completed run artifacts
 
 ### Summary
 
-| Property | Direct full run | Cascaded full run |
-|---|---:|---:|
-| Local directory | `direct_full_run_1788151795` | `cascade_full_run_1788146589` |
-| Run date (UTC) | 2026-08-31 04:49-06:16 | 2026-08-31 03:23-04:33 |
-| Input / successful / failed | 4,200 / 4,200 / 0 | 4,200 / 4,200 / 0 |
-| Total measured pipeline/stage-sum time | 3,898.567 s | 3,903.437 s |
-| Mean time per clip | 0.928 s | 0.929 s |
-| Median time per clip | 0.878 s | 0.902 s |
-| Mean real-time factor | 0.220 | 0.216 |
-| Generation-limit flags | 0 | Whisper 0; NLLB 0 |
-| Peak allocated GPU memory | 2.876 GB | 3.159 GB |
+| Property | Direct | Cascade 600M baseline | Cascade 3.3B latest |
+|---|---:|---:|---:|
+| Local directory | `direct_full_run_1788151795` | `cascade_full_run_1788146589` | `cascade_full_run_1790228071` |
+| Run date (UTC) | 2026-08-31 04:49–06:16 | 2026-08-31 03:23–04:33 | 2026-09-24 05:34–07:00 |
+| Input / successful / failed | 4,200 / 4,200 / 0 | 4,200 / 4,200 / 0 | 4,200 / 4,200 / 0 |
+| Total measured pipeline/stage-sum time | 3,898.567 s | 3,903.437 s | 4,650.148 s |
+| Mean time per clip | 0.928 s | 0.929 s | 1.107 s |
+| Median time per clip | 0.878 s | 0.902 s | 1.074 s |
+| Mean real-time factor | 0.220 | 0.216 | 0.256 |
+| Generation-limit flags | 0 | Whisper 0; NLLB 0 | Whisper 0; NLLB 0 |
+| Peak allocated GPU memory | 2.876 GB | 3.159 GB | 11.126 GB |
 
 These timings are computational diagnostics, not model-quality results. The
 Direct value is measured around its per-sample pipeline. The Cascaded value is
 the sum of separately measured Whisper and NLLB stages because the models were
-run in separate passes. Neither includes model loading or warm-up, so the two
+run in separate passes. Neither includes model loading or warm-up, so these
 columns should not be presented as a controlled serving-latency benchmark.
 
 ### Full-run environment
 
-Both completed runs record:
+All three completed full runs record:
 
 - Google Colab/Linux environment.
 - Python 3.13.15.
@@ -354,7 +384,7 @@ Combined target schema:
 ```
 
 The tracked runtime CSVs contain a legacy `client_id` diagnostic column, but
-it is blank for all 4,200 rows in both completed runs. Do not populate or
+it is blank for all 4,200 rows in all three completed full runs. Do not populate or
 publish that field; `sample_id` is the only retained pseudonymous speaker
 identifier.
 
@@ -365,6 +395,28 @@ TPU-labelled and Tesla-T4 GPU timing outputs for the 35-clip feasibility test,
 including CSV/Parquet results, environment JSON, figures, HTML, and rendered
 notebook PDFs. Treat these as pilot engineering measurements rather than final
 quality evidence.
+
+## Direct `<unk>` investigation
+
+The original Direct run contains literal `<unk>` in **508/4,200 outputs
+(12.10%)**, with 599 occurrences. The tracked follow-up artifacts are:
+
+- [`direct_unk_diagnostic_1789953533`](runs/direct_unk_diagnostic_1789953533/): full-run frequency, accent/content associations, and tokenizer checks.
+- [`direct_unk_sensitivity_1789954497`](runs/direct_unk_sensitivity_1789954497/): 35 originally affected clips, five per accent, tested with greedy and beam-5 decoding, with/without suppression of special UNK ID `1`.
+- [`direct_literal_unk_blocking_1789970452`](runs/direct_literal_unk_blocking_1789970452/): the same subset tested with literal token-sequence constraints.
+
+Generated-token inspection on the subset found ordinary tokens spelling the
+marker, with no special UNK IDs. Suppressing ID `1` did not change greedy
+outputs; beam-5 reduced exact-marker outputs only from 35 to 34. Blocking the
+literal sequences removed exact `<unk>` strings but produced `<unk >` variants
+in all 35 outputs. BLEU fell from 28.19 to 15.52 and chrF++ from 18.86 to 14.49;
+this is not a successful repair.
+
+These are post-hoc experiments on selected affected clips, run on CPU/FP32;
+the baseline reproduced 33/35 original GPU/FP16 translations exactly. They do
+not establish full-dataset effects or the model's internal cause. The official
+4,200 Direct predictions remain unchanged. See the
+[investigation log](SeamlessM4T_UNK_Investigation_Log.md) for evidence and limits.
 
 ## Literature survey
 
@@ -381,6 +433,9 @@ literature_review/
     ├── main.tex
     ├── references.bib
     ├── README.md
+├── README-running-pipelines.md
+├── SeamlessM4T_UNK_Investigation_Log.md
+├── presentation/9_MethodResults.pdf
     ├── figures/
     └── sections/
         ├── abstract.tex
@@ -397,15 +452,13 @@ literature_review/
 
 Current state:
 
-- Title, authors, terminology, report structure, collaboration placeholders,
-  Author Contributions, and AI Use Statement are scaffolded.
-- Member 1's dataset/reference-quality synthesis is populated in
-  `sections/evaluation.tex`.
-- Three Member 1 references are present: Common Voice, CoVoST 2, and the
-  MCV_ACCENT/codebook paper.
-- Sections owned by Members 2-5 and the group-level abstract, synthesis, and
-  conclusion still contain placeholders.
-- The current local PDF is a three-page working draft, not the final survey.
+- All thematic sections contain prose, including architectures, accent ASR,
+  accent ST, and evaluation methodology.
+- The abstract, introduction, cross-theme synthesis, conclusion, author
+  contributions, and AI Use Statement are populated.
+- The abstract describes a survey of 27 studies. The bibliography and integrated
+  member contributions replace the earlier Member 1-only scaffold.
+- LaTeX source is tracked; generated PDFs remain local and Git-ignored.
 
 Build the survey with:
 
@@ -448,17 +501,29 @@ deliverable.
 .
 ├── 9_Proposal.pdf
 ├── README.md
+├── README-running-pipelines.md
+├── SeamlessM4T_UNK_Investigation_Log.md
+├── presentation/9_MethodResults.pdf
 ├── notebooks/
+│   ├── 01_data_preprocessing.ipynb
+│   ├── 02_audio_extraction.ipynb
 │   ├── create_pilot_samples.ipynb
 │   ├── timing_test_pipelines.ipynb
 │   ├── 03_direct_pipeline.ipynb
 │   ├── 04_cascaded_pipeline.ipynb
+│   ├── 05_direct_unk_diagnostic.ipynb
+│   ├── 06_direct_unk_sensitivity.ipynb
+│   ├── 07_direct_literal_unk_blocking_sensitivity.ipynb
 │   ├── combine_translation_outputs.ipynb
 │   └── copy_from_colab.ipynb
 ├── runs/
 │   ├── pilot_run_colab_tpu.zip
 │   ├── direct_full_run_1788151795/
-│   └── cascade_full_run_1788146589/
+│   ├── cascade_full_run_1788146589/
+│   ├── cascade_full_run_1790228071/
+│   ├── direct_unk_diagnostic_1789953533/
+│   ├── direct_unk_sensitivity_1789954497/
+│   └── direct_literal_unk_blocking_1789970452/
 ├── data/                              # local and Git-ignored
 │   └── final_sample/
 └── literature_review/
@@ -491,9 +556,9 @@ directory rather than overwriting the completed artifacts.
 1. **Proposal versus implementation:** the proposal's 5 x 600 design was
    expanded to the implemented 7 x 600 design. Use 4,200, not 3,000, for all
    current analysis and reporting.
-2. **Missing evaluation stage:** no tracked notebook currently computes WER,
-   chrF++, BLEU, uncertainty, statistical tests, or the WER/translation-score
-   association.
+2. **Missing full evaluation stage:** subset translation metrics exist in
+   notebooks 06–07, but full-dataset WER/translation scores, uncertainty,
+   statistical tests, and WER/translation-score associations remain pending.
 3. **Identifier wording:** old markdown in the Direct notebook says
    `sample_id` is unique. The data and current code show that it is a repeating
    speaker identifier. The generated `id` is the unique clip-level pairing
@@ -506,9 +571,11 @@ directory rather than overwriting the completed artifacts.
 6. **Local-only data products:** the frozen sample, combined translation file,
    Member 1 source PDFs/notes, IEEE template, and generated LaTeX PDF are
    ignored and will not appear in a fresh clone.
-7. **Literature draft:** Member 1's section is integrated, but the survey still
-   requires the other members' verified reading and the group-level synthesis.
+7. **Cascaded model selection:** the inference notebook now uses NLLB 3.3B,
+   while the combination notebook still selects the 600M baseline. Update and
+   validate the chosen inputs before evaluation; label both variants explicitly.
 
-The immediate research milestone is to implement a reproducible evaluation
-notebook on the combined 4,200-row output, followed by speaker-aware paired
-statistical analysis and accent-level interpretation.
+The immediate research milestone is to integrate the latest Cascaded run and
+implement reproducible full-dataset evaluation, followed by speaker-aware
+paired statistical analysis and accent-level interpretation. Keep the original
+Direct outputs and report the post-hoc sensitivity experiments separately.
