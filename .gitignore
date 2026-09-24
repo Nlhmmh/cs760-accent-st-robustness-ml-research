@@ -73,3 +73,7 @@ temp.md
 # Run files and scripts
 /runs/direct_run_*
 /runs/cascade_run_*
+
+# Presentation
+/presentation
+!/presentation/9_MethodResults.pdf

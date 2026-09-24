@@ -1,0 +1,21 @@
+{
+  "input_predictions": "/Users/nlh/Downloads/uoa_lectures/CS760/project/cs760-accent-st-robustness-ml-research/runs/direct_full_run_1788151795/direct_predictions.csv",
+  "input_runtime": "/Users/nlh/Downloads/uoa_lectures/CS760/project/cs760-accent-st-robustness-ml-research/runs/direct_full_run_1788151795/direct_runtime.csv",
+  "model_id": "facebook/seamless-m4t-v2-large",
+  "model_revision": "5f8cc790b19fc3f67a61c105133b20b34e3dcb76",
+  "tokenizer_class": "SeamlessM4TTokenizerFast",
+  "unk_token": "<unk>",
+  "unk_token_id": 1,
+  "total_rows": 4200,
+  "direct_unk_rows": 508,
+  "direct_unk_row_rate": 0.12095238095238095,
+  "total_literal_unk_occurrences": 599,
+  "reference_rows_tokenizing_to_unk": 3498,
+  "direct_unk_rows_whose_reference_tokenizes_to_unk": 448,
+  "repeated_sentence_pattern_counts": {
+    "never_unk": 256,
+    "always_unk": 43,
+    "mixed": 2
+  },
+  "interpretation_note": "These are diagnostic associations. They do not prove that a single factor causes SeamlessM4T to generate <unk>."
+}

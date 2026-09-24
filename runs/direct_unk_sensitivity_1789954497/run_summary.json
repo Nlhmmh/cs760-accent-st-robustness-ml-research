@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-09-21T01:42:03.744326+00:00",
+  "test_scope": "balanced_small",
+  "samples_per_accent": 5,
+  "number_of_selected_clips": 35,
+  "original_affected_rows_total": 508,
+  "model_id": "facebook/seamless-m4t-v2-large",
+  "model_revision": "5f8cc790b19fc3f67a61c105133b20b34e3dcb76",
+  "target_language": "cmn",
+  "device": "cpu",
+  "dtype": "torch.float32",
+  "gpu": null,
+  "pytorch_version": "2.8.0",
+  "torchaudio_version": "2.8.0",
+  "transformers_version": "4.57.6",
+  "sacrebleu_version": "2.6.0",
+  "unk_token": "<unk>",
+  "unk_token_id": 1,
+  "experiments": {
+    "baseline_greedy": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 256,
+      "block_unk": false
+    },
+    "greedy_block_unk": {
+      "num_beams": 1,
+      "do_sample": false,
+      "max_new_tokens": 256,
+      "block_unk": true
+    },
+    "beam5": {
+      "num_beams": 5,
+      "do_sample": false,
+      "max_new_tokens": 256,
+      "block_unk": false
+    },
+    "beam5_block_unk": {
+      "num_beams": 5,
+      "do_sample": false,
+      "max_new_tokens": 256,
+      "block_unk": true
+    }
+  },
+  "baseline_exact_reproduction_rate": 0.9428571428571428,
+  "note": "Sensitivity analysis only. Official 4,200-sample Direct predictions remain unchanged."
+}
