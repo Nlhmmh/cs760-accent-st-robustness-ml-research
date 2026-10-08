@@ -1,0 +1,65 @@
+x,y,stratum,unit,n_clips,n_speakers,rho,ci_low,ci_high,excludes_zero
+normalised WER,Cascade-600M sentence chrF++,overall,speaker,4200,1586,-0.1878280868769294,-0.21564941198351006,-0.16028938880509086,True
+normalised WER,Cascade-3.3B sentence chrF++,overall,speaker,4200,1586,-0.1958647174244011,-0.22552852805054338,-0.1664537310093666,True
+normalised WER,gap Direct minus Cascade-600M,overall,speaker,4200,1586,0.13280364031453018,0.10307663611698718,0.16121459062543841,True
+normalised WER,gap Direct minus Cascade-3.3B,overall,speaker,4200,1586,0.1738936369414948,0.14353914673920878,0.20302545729442614,True
+normalised WER,Cascade-600M sentence chrF++,England English,speaker,600,398,-0.1392730766508542,-0.22123154603204326,-0.05432982626965402,True
+normalised WER,Cascade-3.3B sentence chrF++,England English,speaker,600,398,-0.11245575333332176,-0.1954335394273833,-0.031518173080941604,True
+normalised WER,gap Direct minus Cascade-600M,England English,speaker,600,398,0.1152782782068776,0.034724820482315434,0.20036926006460085,True
+normalised WER,gap Direct minus Cascade-3.3B,England English,speaker,600,398,0.11105682733206984,0.030678442711580513,0.18935669577775216,True
+normalised WER,Cascade-600M sentence chrF++,Filipino,speaker,600,72,-0.27182018319529816,-0.3264188738000989,-0.20929361224714918,True
+normalised WER,Cascade-3.3B sentence chrF++,Filipino,speaker,600,72,-0.24352067412907585,-0.30236266114166005,-0.18252050634454933,True
+normalised WER,gap Direct minus Cascade-600M,Filipino,speaker,600,72,0.1929022917327228,0.1005461923637333,0.27849555164380463,True
+normalised WER,gap Direct minus Cascade-3.3B,Filipino,speaker,600,72,0.2113834207912506,0.13147453942156687,0.28422629319431525,True
+normalised WER,Cascade-600M sentence chrF++,Hong Kong English,speaker,600,41,-0.17408416637413227,-0.26266318337395467,-0.10732230199016225,True
+normalised WER,Cascade-3.3B sentence chrF++,Hong Kong English,speaker,600,41,-0.17767620393453928,-0.28565459715789093,-0.08456771196473017,True
+normalised WER,gap Direct minus Cascade-600M,Hong Kong English,speaker,600,41,0.16285380774577746,0.0952384319824312,0.2560085366315329,True
+normalised WER,gap Direct minus Cascade-3.3B,Hong Kong English,speaker,600,41,0.17833587555174488,0.09951968262835756,0.2671585222376692,True
+normalised WER,Cascade-600M sentence chrF++,"India and South Asia (India, Pakistan, Sri Lanka)",speaker,600,356,-0.23619121832179432,-0.3176875960633689,-0.15162773660048234,True
+normalised WER,Cascade-3.3B sentence chrF++,"India and South Asia (India, Pakistan, Sri Lanka)",speaker,600,356,-0.2873544601230103,-0.3655515158600202,-0.20945885103920345,True
+normalised WER,gap Direct minus Cascade-600M,"India and South Asia (India, Pakistan, Sri Lanka)",speaker,600,356,0.08561291890611789,0.010981517905804284,0.15374412301736198,True
+normalised WER,gap Direct minus Cascade-3.3B,"India and South Asia (India, Pakistan, Sri Lanka)",speaker,600,356,0.21469550497590795,0.12958696417566617,0.2877450772559167,True
+normalised WER,Cascade-600M sentence chrF++,Malaysian English,speaker,600,61,-0.15466354826236586,-0.23059664298578939,-0.07720582095042826,True
+normalised WER,Cascade-3.3B sentence chrF++,Malaysian English,speaker,600,61,-0.18056241682808113,-0.26077127161645675,-0.09181686206060881,True
+normalised WER,gap Direct minus Cascade-600M,Malaysian English,speaker,600,61,0.13189940368636396,0.05815209691429542,0.20539007582659222,True
+normalised WER,gap Direct minus Cascade-3.3B,Malaysian English,speaker,600,61,0.18656682361711222,0.10852137048548419,0.2605113277731033,True
+normalised WER,Cascade-600M sentence chrF++,"Southern African (South Africa, Zimbabwe, Namibia)",speaker,600,131,-0.18568358737638582,-0.2559757812412131,-0.1078057468224766,True
+normalised WER,Cascade-3.3B sentence chrF++,"Southern African (South Africa, Zimbabwe, Namibia)",speaker,600,131,-0.22187708291990385,-0.2985879417106615,-0.14205730318179813,True
+normalised WER,gap Direct minus Cascade-600M,"Southern African (South Africa, Zimbabwe, Namibia)",speaker,600,131,0.11548881153195048,0.04902236612897537,0.18576478218019785,True
+normalised WER,gap Direct minus Cascade-3.3B,"Southern African (South Africa, Zimbabwe, Namibia)",speaker,600,131,0.1799397667612325,0.10316624283506864,0.2523785270087147,True
+normalised WER,Cascade-600M sentence chrF++,United States English,speaker,600,527,-0.14324504045877434,-0.22161609416902414,-0.06502626271335368,True
+normalised WER,Cascade-3.3B sentence chrF++,United States English,speaker,600,527,-0.14389183031450786,-0.21892085618717597,-0.0663882327770473,True
+normalised WER,gap Direct minus Cascade-600M,United States English,speaker,600,527,0.08129328902972383,0.00011551623172024772,0.16096130322207866,True
+normalised WER,gap Direct minus Cascade-3.3B,United States English,speaker,600,527,0.09551379577511122,0.007321441053812913,0.18658287318848107,True
+normalised WER,Cascade-600M sentence chrF++,overall,clip,4200,1586,-0.1878280868769294,-0.2171780473253179,-0.16061480776839865,True
+normalised WER,Cascade-3.3B sentence chrF++,overall,clip,4200,1586,-0.1958647174244011,-0.22462177854379484,-0.16674684998756545,True
+normalised WER,gap Direct minus Cascade-600M,overall,clip,4200,1586,0.13280364031453018,0.10262282240215599,0.16062508330537173,True
+normalised WER,gap Direct minus Cascade-3.3B,overall,clip,4200,1586,0.1738936369414948,0.14181272852431737,0.20170621920132606,True
+normalised WER,Cascade-600M sentence chrF++,England English,clip,600,398,-0.1392730766508542,-0.21292058092247265,-0.06474084770575833,True
+normalised WER,Cascade-3.3B sentence chrF++,England English,clip,600,398,-0.11245575333332176,-0.19218770081276795,-0.03334665134282028,True
+normalised WER,gap Direct minus Cascade-600M,England English,clip,600,398,0.1152782782068776,0.03585807201565944,0.2007725630667741,True
+normalised WER,gap Direct minus Cascade-3.3B,England English,clip,600,398,0.11105682733206984,0.0356964240039241,0.19312820638557632,True
+normalised WER,Cascade-600M sentence chrF++,Filipino,clip,600,72,-0.27182018319529816,-0.34239649399093625,-0.19834837907286673,True
+normalised WER,Cascade-3.3B sentence chrF++,Filipino,clip,600,72,-0.24352067412907585,-0.3175137206721124,-0.1734025875079724,True
+normalised WER,gap Direct minus Cascade-600M,Filipino,clip,600,72,0.1929022917327228,0.116520041270649,0.27197888604647613,True
+normalised WER,gap Direct minus Cascade-3.3B,Filipino,clip,600,72,0.2113834207912506,0.13046958102134693,0.28453610460113804,True
+normalised WER,Cascade-600M sentence chrF++,Hong Kong English,clip,600,41,-0.17408416637413227,-0.2517723141174511,-0.09511043893198848,True
+normalised WER,Cascade-3.3B sentence chrF++,Hong Kong English,clip,600,41,-0.17767620393453928,-0.2507460243677107,-0.09583618869339615,True
+normalised WER,gap Direct minus Cascade-600M,Hong Kong English,clip,600,41,0.16285380774577746,0.07973990911935298,0.24420263833019312,True
+normalised WER,gap Direct minus Cascade-3.3B,Hong Kong English,clip,600,41,0.17833587555174488,0.10207394199169664,0.2566668457187378,True
+normalised WER,Cascade-600M sentence chrF++,"India and South Asia (India, Pakistan, Sri Lanka)",clip,600,356,-0.23619121832179432,-0.3162935812113529,-0.1534107638859513,True
+normalised WER,Cascade-3.3B sentence chrF++,"India and South Asia (India, Pakistan, Sri Lanka)",clip,600,356,-0.2873544601230103,-0.3660662839501626,-0.20553899176391718,True
+normalised WER,gap Direct minus Cascade-600M,"India and South Asia (India, Pakistan, Sri Lanka)",clip,600,356,0.08561291890611789,0.0024359880256008297,0.16528644163918968,True
+normalised WER,gap Direct minus Cascade-3.3B,"India and South Asia (India, Pakistan, Sri Lanka)",clip,600,356,0.21469550497590795,0.134919592754228,0.288347076675556,True
+normalised WER,Cascade-600M sentence chrF++,Malaysian English,clip,600,61,-0.15466354826236586,-0.23974683472832894,-0.0773755990525497,True
+normalised WER,Cascade-3.3B sentence chrF++,Malaysian English,clip,600,61,-0.18056241682808113,-0.2617447640551998,-0.10604449556596661,True
+normalised WER,gap Direct minus Cascade-600M,Malaysian English,clip,600,61,0.13189940368636396,0.05671388728121654,0.20492685946697034,True
+normalised WER,gap Direct minus Cascade-3.3B,Malaysian English,clip,600,61,0.18656682361711222,0.10471917502341958,0.2571056214908359,True
+normalised WER,Cascade-600M sentence chrF++,"Southern African (South Africa, Zimbabwe, Namibia)",clip,600,131,-0.18568358737638582,-0.2623772847150664,-0.10066094160402653,True
+normalised WER,Cascade-3.3B sentence chrF++,"Southern African (South Africa, Zimbabwe, Namibia)",clip,600,131,-0.22187708291990385,-0.297985405652039,-0.14169831812633352,True
+normalised WER,gap Direct minus Cascade-600M,"Southern African (South Africa, Zimbabwe, Namibia)",clip,600,131,0.11548881153195048,0.03740270975984232,0.19007992778198782,True
+normalised WER,gap Direct minus Cascade-3.3B,"Southern African (South Africa, Zimbabwe, Namibia)",clip,600,131,0.1799397667612325,0.09748573318514002,0.25752513175438635,True
+normalised WER,Cascade-600M sentence chrF++,United States English,clip,600,527,-0.14324504045877434,-0.22076070862930672,-0.06197550600289694,True
+normalised WER,Cascade-3.3B sentence chrF++,United States English,clip,600,527,-0.14389183031450786,-0.21394263717488746,-0.06833936945845838,True
+normalised WER,gap Direct minus Cascade-600M,United States English,clip,600,527,0.08129328902972383,0.006641700781997482,0.1570891356422995,True
+normalised WER,gap Direct minus Cascade-3.3B,United States English,clip,600,527,0.09551379577511122,0.0163164101366026,0.1715923148054539,True
