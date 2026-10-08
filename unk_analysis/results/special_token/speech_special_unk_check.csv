@@ -1,0 +1,701 @@
+id,primary_accent,sentence,reference_translation_zh,original_translation,rerun_translation,rerun_translation_marked,n_special_unk_ids,special_unk_positions,n_tokens
+sample_3748,United States English,"It is I, the boy answered.",“就是我”，那男孩答道。,"""这是我"",男孩回答说.","""这是我"",男孩回答说.","""这是我"",男孩回答说.",0,[],11
+sample_2414,Malaysian English,Let's go Hiking across France.,让我们去法国徒步旅行吧。,让我们去徒步穿越法国.,让我们去徒步穿越法国.,让我们去徒步穿越法国.,0,[],12
+sample_0513,England English,Maize is another word for corn,玉米是玉米的另一种说法,玉米是玉米的另一个词,玉米是玉米的另一个词,玉米是玉米的另一个词,0,[],12
+sample_2236,"India and South Asia (India, Pakistan, Sri Lanka)","To escape from the smoke, and fall into the fire.",逃离烟雾，掉进火里。,"从烟雾中逃脱,并落入火中.","从烟雾中逃脱,并落入火中.","从烟雾中逃脱,并落入火中.",0,[],16
+sample_3423,"Southern African (South Africa, Zimbabwe, Namibia)",He shook his head.,他摇了摇头。,他摇了摇头.,他摇了摇头.,他摇了摇头.,0,[],9
+sample_1739,Hong Kong English,"Jeez, you look stoned!",天哪，你看起来醉了！,"天哪,你看起来很<unk>!","天哪,你看起来很<unk>!","天哪,你看起来很<unk>!",0,[],13
+sample_0928,Filipino,Curiosity killed the cat; Satisfaction brought it back.,好奇心虽然杀死了猫，但好奇心得到满足后却可以让它复活。,好奇心杀了猫; 满足使它回来.,好奇心杀了猫; 满足使它回来.,好奇心杀了猫; 满足使它回来.,0,[],17
+sample_2825,Malaysian English,Most of the nightlife in the town is centred on beachfront spots.,镇上的夜生活大多集中在海滨景点。,镇上的大部分夜生活都集中在海<unk>上.,镇上的大部分夜生活都集中在海<unk>上.,镇上的大部分夜生活都集中在海<unk>上.,0,[],18
+sample_3722,United States English,He was ludicrously fast on a bike.,他骑自行车的速度快得可笑。,他骑着自行车的速度非常快.,他骑着自行车的速度非常快.,他骑着自行车的速度非常快.,0,[],13
+sample_0568,England English,He stood irresolute for a moment and then scrambled out of the pit.,他犹豫不决地站了一会儿，然后从坑里爬了出来。,"他站了不决心的一刻,然后<unk>出坑.","他站了不决心的一刻,然后<unk>出坑.","他站了不决心的一刻,然后<unk>出坑.",0,[],19
+sample_1960,"India and South Asia (India, Pakistan, Sri Lanka)","“Tell me, tell me!” cried Noah.",Noah 哭着说：“告诉我，告诉我！”,"告诉我,告诉我!诺亚喊道","告诉我,告诉我!诺亚喊道","[UNKID]告诉我,告诉我![UNKID]诺亚喊道[UNKID]",3,"[3, 10, 15]",17
+sample_0907,Filipino,"People from all over the world have passed through this village, son, said his father.",“孩子，世界各地的人都经过这个村庄。”他的父亲说。,"""来自世界各地的人已经通过这个村庄,儿子"",他的父亲说.","""来自世界各地的人已经通过这个村庄,儿子"",他的父亲说.","""来自世界各地的人已经通过这个村庄,儿子"",他的父亲说.",0,[],19
+sample_3401,"Southern African (South Africa, Zimbabwe, Namibia)","Newfrontiers is committed to building churches according to ""New Testament principles.",新边疆根据《新约原则》（New Testament principles）大力建造教堂。,"新边界致力于按照""新约原则""建造教堂.","新边界致力于按照""新约原则""建造教堂.","新边界致力于按照""新约原则""建造教堂.",0,[],16
+sample_1279,Hong Kong English,Give it a name.,给它起个名字。,给它一个名字.,给它一个名字.,给它一个名字.,0,[],9
+sample_2424,Malaysian English,A new movie is shown for the first time in the cinema.,一部新电影首次在电影院上映。,一部新电影首次在电影院上映.,一部新电影首次在电影院上映.,一部新电影首次在电影院上映.,0,[],13
+sample_3688,United States English,The Royal Court of Justice is based in the capital Thimphu.,皇家法院总部设在首都廷布。,皇家法院的总部位于首都蒂姆普.,皇家法院的总部位于首都蒂姆普.,皇家法院的总部位于首都蒂姆普.,0,[],13
+sample_0285,England English,He has also worked as a teacher and translator.,同时他也是一位教师和翻译。,他还曾担任教师和翻译.,他还曾担任教师和翻译.,他还曾担任教师和翻译.,0,[],10
+sample_2004,"India and South Asia (India, Pakistan, Sri Lanka)",A stone flounder is the textbook definition of effective camouflage.,石质比目鱼教科书般定义了何为有效伪装。,石<unk>是教科书中有效的伪装的定义.,石<unk>是教科书中有效的伪装的定义.,石<unk>是教科书中有效的伪装的定义.,0,[],17
+sample_0818,Filipino,"Cheers mate, he said to the driver as he left the taxi.",“干杯，伙计”，他离开出租车时对司机说。,"好吧,伙计他离开出租车时对司机说","好吧,伙计他离开出租车时对司机说","[UNKID]好吧,伙计[UNKID]他离开出租车时对司机说[UNKID]",3,"[3, 9, 20]",22
+sample_1386,Hong Kong English,I'm getting Trevor ready!,我让 Trevor 准备好了！,我正在准备特雷弗!,我正在准备特雷弗!,我正在准备特雷弗!,0,[],10
+sample_3091,"Southern African (South Africa, Zimbabwe, Namibia)",Writing makes the exact man.,写作造就了真正的人,写作使人变得精确,写作使人变得精确,写作使人变得精确,0,[],11
+sample_2520,Malaysian English,"It is also popular among tourists, people that like to swim and bird watchers.",它在游客，喜欢游泳的人和观鸟者中也很受欢迎。,"它也很受游客,喜欢游泳的人和观鸟者欢迎.","它也很受游客,喜欢游泳的人和观鸟者欢迎.","它也很受游客,喜欢游泳的人和观鸟者欢迎.",0,[],18
+sample_0153,England English,Fortune favours the brave.,天佑勇者。,运气有利于勇敢的人.,运气有利于勇敢的人.,运气有利于勇敢的人.,0,[],12
+sample_1035,Filipino,"It seemed such a little thing, so bright and small and still.",它看起来是一件小事，如此的鲜明，如此的微小，如此的沉静。,"它看起来像一个小东西,那么明亮,小,静止.","它看起来像一个小东西,那么明亮,小,静止.","它看起来像一个小东西,那么明亮,小,静止.",0,[],19
+sample_1949,"India and South Asia (India, Pakistan, Sri Lanka)",I'll see you get it in fifteen minutes.,我 15 分钟后给你送去。,我会看到你在十五分钟内得到它.,我会看到你在十五分钟内得到它.,我会看到你在十五分钟内得到它.,0,[],13
+sample_4092,United States English,"This new release will be called ""Happy Birthday Flutterby"".",这首新发行的单曲将被命名为《Happy Birthday Flutterby》。,"这部新版本将被称为""快乐生日弗拉特比"".","这部新版本将被称为""快乐生日弗拉特比"".","这部新版本将被称为""快乐生日弗拉特比"".",0,[],17
+sample_3215,"Southern African (South Africa, Zimbabwe, Namibia)","He wanted to say so to the alchemist, but he was afraid of the man.",他想对炼金术士这么说，但是他害怕那个人。,"他想告诉炼金术士, 但他害怕这个人.","他想告诉炼金术士, 但他害怕这个人.","他想告诉炼金术士, 但他害怕这个人.",0,[],17
+sample_1654,Hong Kong English,A woman sitting with a guitar talking to a man sitting with an umbrella.,一个拿着吉他坐着的女人与一个打着伞坐着男人聊天。,"一个女人坐着吉他,跟一个拿着雨伞的男人说话","一个女人坐着吉他,跟一个拿着雨伞的男人说话","一个女人坐着吉他,跟一个拿着雨伞的男人说话[UNKID]",1,[18],20
+sample_2494,Malaysian English,He is also a former Vice Chairman of the Senate Education Committee.,他也是前参议院教育委员会副主席。,他也是参议院教育委员会的前副主席.,他也是参议院教育委员会的前副主席.,他也是参议院教育委员会的前副主席.,0,[],13
+sample_0497,England English,"For some reason, we were blocked from entering.",出于某种原因，我们被阻止进入。,"由于某种原因,我们被阻止进入.","由于某种原因,我们被阻止进入.","由于某种原因,我们被阻止进入.",0,[],12
+sample_2238,"India and South Asia (India, Pakistan, Sri Lanka)",He is not trying to create the world of violinists.,他不是想创造小提琴家的世界。,他不是试图创造小提琴家的世界.,他不是试图创造小提琴家的世界.,他不是试图创造小提琴家的世界.,0,[],13
+sample_1096,Filipino,Spencer of the Chronicle.,《纪事报》的 Spencer。,Spencer of the Chronicle,Spencer of the Chronicle,Spencer of the Chronicle,0,[],8
+sample_4193,United States English,Can I have some of your tasty beverage?,我可以喝一下你美味的饮料吗？,我可以喝一下你美味的饮料吗?,我可以喝一下你美味的饮料吗?,我可以喝一下你美味的饮料吗?,0,[],15
+sample_3012,"Southern African (South Africa, Zimbabwe, Namibia)",There was nothing else to do.,没有别的事可做。,没有别的办法,没有别的办法,没有别的办法,0,[],7
+sample_1298,Hong Kong English,"If you do not have your ticket, I cannot let you in.",如果你没有票，我就不能让你进去。,"如果你没有门票,我不能让你进来.","如果你没有门票,我不能让你进来.","如果你没有门票,我不能让你进来.",0,[],14
+sample_2601,Malaysian English,"The next edition of Thunder, Rick Steiner defeated Jarrett and Totally Buffed defeated KroniK.",在下一集的“ Thunder” 节目中，Rick Steiner 击败了 Jarrett，Totally Buffed 击败了 KroniK。,"在下一届雷<unk>赛中,里克·斯坦纳击败了贾雷特,而托塔利·巴夫德击败了克罗尼克.","在下一届雷<unk>赛中,里克·斯坦纳击败了贾雷特,而托塔利·巴夫德击败了克罗尼克.","在下一届雷<unk>赛中,里克·斯坦纳击败了贾雷特,而托塔利·巴夫德击败了克罗尼克.",0,[],42
+sample_1823,"India and South Asia (India, Pakistan, Sri Lanka)",I drew myself up a bit.,我站直了一点儿。,我把自己拉得稍微高一点,我把自己拉得稍微高一点,我把自己拉得稍微高一点[UNKID],1,[11],13
+sample_0521,England English,This was still under development when the war ended.,战争结束时，这个项目还在开发中。,这在战争结束时仍在开发中.,这在战争结束时仍在开发中.,这在战争结束时仍在开发中.,0,[],12
+sample_0844,Filipino,"She biked home, smiling all the way, knowing that she had won.",她骑车回家，一路上面带微笑，知道自己赢了。,"她骑自行车回家, 一直微笑着, 知道她已经赢了.","她骑自行车回家, 一直微笑着, 知道她已经赢了.","她骑自行车回家, 一直微笑着, 知道她已经赢了.",0,[],22
+sample_3927,United States English,"Examples include a beef Manhattan, a hot chicken sandwich in Canada, or Welsh rarebit.",例如曼哈顿的牛肉，加拿大的热鸡肉三明治，或者威尔士干酪。,"例如牛肉曼哈顿,加拿大热<unk>三明治,或威尔士稀罕.","例如牛肉曼哈顿,加拿大热<unk>三明治,或威尔士稀罕.","例如牛肉曼哈顿,加拿大热<unk>三明治,或威尔士稀罕.",0,[],25
+sample_3499,"Southern African (South Africa, Zimbabwe, Namibia)",He began playing guitar and soon added dobro and lap steel.,他开始弹吉他，并很快加入了感声吉他和电吉他。,"他开始弹吉他,很快就加入了多博和<unk>钢.","他开始弹吉他,很快就加入了多博和<unk>钢.","他开始弹吉他,很快就加入了多博和<unk>钢.",0,[],20
+sample_1546,Hong Kong English,You know what I mean?,你懂我的意思吧？,你知道我的意思吗?,你知道我的意思吗?,你知道我的意思吗?,0,[],9
+sample_2768,Malaysian English,What can it be?,它会是什么呢？,这可能是什么?,这可能是什么?,这可能是什么?,0,[],7
+sample_1930,"India and South Asia (India, Pakistan, Sri Lanka)","Moser, Stone, Nelson and Andy Gurley comprise the current lineup.",摩瑟，斯通，纳尔逊和安迪·古利组成了当前阵容。,"莫泽,斯通,尼尔森和安迪·格利组成了目前的阵容.","莫泽,斯通,尼尔森和安迪·格利组成了目前的阵容.","莫泽,斯通,尼尔森和安迪·格利组成了目前的阵容.",0,[],25
+sample_0369,England English,"From the railway station in the distance came the sound of trains, ringing and rumbling.",从远处的火车站传来火车的声音，清脆而隆隆。,"从远处的火车站听到火车的声音,<unk>和<unk>.","从远处的火车站听到火车的声音,<unk>和<unk>.","从远处的火车站听到火车的声音,<unk>和<unk>.",0,[],24
+sample_3850,United States English,Never mind the European war!,别管欧洲战争！,别管欧洲战争!,别管欧洲战争!,别管欧洲战争!,0,[],9
+sample_0847,Filipino,As sure as I am alive.,十拿九稳,我活着一样肯定,我活着一样肯定,我活着一样肯定[UNKID],1,[7],9
+sample_3166,"Southern African (South Africa, Zimbabwe, Namibia)","His daughter, Lyli Herse, won eight national female cycling championships in France.",他的女儿 Lyli Herse 在法国赢得了八项全国女子自行车锦标赛冠军。,他的女儿莉莉·赫尔塞在法国赢得了八次国家女子自行车锦标赛.,他的女儿莉莉·赫尔塞在法国赢得了八次国家女子自行车锦标赛.,他的女儿莉莉·赫尔塞在法国赢得了八次国家女子自行车锦标赛.,0,[],24
+sample_1749,Hong Kong English,Must she keep playing that?,她必须一直玩下去吗?,她必须继续玩这个吗?,她必须继续玩这个吗?,她必须继续玩这个吗?,0,[],10
+sample_2578,Malaysian English,"The village is named after the River Avoca, in Ireland.",小镇以爱尔兰 Avoca 河来命名。,这座村庄以爱尔兰的阿沃卡河命名.,这座村庄以爱尔兰的阿沃卡河命名.,这座村庄以爱尔兰的阿沃卡河命名.,0,[],15
+sample_0565,England English,The boy mumbled an answer that allowed him to avoid responding to her question.,这个男孩含糊地回答了一个问题，使得他避免回答她的问题。,"这个男孩<unk>着回答, 让他避免回答她的问题.","这个男孩<unk>着回答, 让他避免回答她的问题.","这个男孩<unk>着回答, 让他避免回答她的问题.",0,[],19
+sample_2395,"India and South Asia (India, Pakistan, Sri Lanka)",Did anyone else share this lab at the time?,当时还有其他人一起使用这个实验室吗？,那时还有谁在实验室里工作?,那时还有谁在实验室里工作?,那时还有谁在实验室里工作?,0,[],12
+sample_3462,"Southern African (South Africa, Zimbabwe, Namibia)",He disappeared into the tent.,他消失在帐篷里。,他消失在帐<unk>里.,他消失在帐<unk>里.,他消失在帐<unk>里.,0,[],12
+sample_3616,United States English,The salts of molybdic acid are called molybdates.,钼酸盐被称为钼酸盐。,摩利布迪酸的盐称为摩利布达酸.,摩利布迪酸的盐称为摩利布达酸.,摩利布迪酸的盐称为摩利布达酸.,0,[],18
+sample_1724,Hong Kong English,"Speedbird niner, turn left heading two seven zero, climb and maintain flight level three five.",雷鸟，左转航向270，爬升，保持飞行高度35。,"飞鸟九号,向左转向二七零,爬上并保持飞行水平三五.","飞鸟九号,向左转向二七零,爬上并保持飞行水平三五.","飞鸟九号,向左转向二七零,爬上并保持飞行水平三五.",0,[],26
+sample_0835,Filipino,It brought his heart into his mouth.,他的心都提到嗓子眼了。,这把他的心带到他的嘴里.,这把他的心带到他的嘴里.,这把他的心带到他的嘴里.,0,[],13
+sample_2928,Malaysian English,A father with his son on his shoulders walking through a park.,一位父亲背着儿子，在公园散步。,一个父亲带着儿子在肩上走过公园,一个父亲带着儿子在肩上走过公园,一个父亲带着儿子在肩上走过公园[UNKID],1,[13],15
+sample_0167,England English,Symmetric algorithms tend to be faster than asymmetric ones.,对称算法往往比非对称算法更快。,对称算法往往比不对称算法更快.,对称算法往往比不对称算法更快.,对称算法往往比不对称算法更快.,0,[],17
+sample_2062,"India and South Asia (India, Pakistan, Sri Lanka)",He was also engaged in the slave trade with his father.,他还和他的父亲一起从事奴隶贸易。,他还与父亲一起从事奴隶贸易.,他还与父亲一起从事奴隶贸易.,他还与父亲一起从事奴隶贸易.,0,[],12
+sample_3320,"Southern African (South Africa, Zimbabwe, Namibia)","Due to the lack of a bug bounty program, Johanna decided to sell her exploit on the black market.",由于缺乏一个漏洞奖励计划，Johanna 决定在黑市上出售她的漏洞。,"由于缺乏错误奖励计划, 乔安娜决定在黑市上出售她的漏洞.","由于缺乏错误奖励计划, 乔安娜决定在黑市上出售她的漏洞.","由于缺乏错误奖励计划, 乔安娜决定在黑市上出售她的漏洞.",0,[],24
+sample_1558,Hong Kong English,Two joyful people are walking down the city street.,两个快乐的人正沿着城市的街道散步。,两位快乐的人正在城市街道上行走,两位快乐的人正在城市街道上行走,两位快乐的人正在城市街道上行走[UNKID],1,[13],15
+sample_4012,United States English,Another person was there to help him toward his destiny.,另一个人在那里帮助他走向他的命运。,另一个人在那里帮助他实现他的命运.,另一个人在那里帮助他实现他的命运.,另一个人在那里帮助他实现他的命运.,0,[],14
+sample_0748,Filipino,It has produced several comedy shows on television.,已经在电视上制作了几部喜剧节目。,它在电视上制作了几部喜剧节目.,它在电视上制作了几部喜剧节目.,它在电视上制作了几部喜剧节目.,0,[],15
+sample_2572,Malaysian English,Most of them were staring quietly at the big table.,他们大多数人都静静地盯着大桌子。,他们中的大多数人静静地<unk>着大桌子.,他们中的大多数人静静地<unk>着大桌子.,他们中的大多数人静静地<unk>着大桌子.,0,[],18
+sample_0368,England English,The nearest other district within Glasgow is Castlemilk.,格拉斯哥内最近的其他地区是牛奶堡。,格拉斯哥最近的另一个地区是卡斯尔米尔克.,格拉斯哥最近的另一个地区是卡斯特米尔克.,格拉斯哥最近的另一个地区是卡斯特米尔克.,0,[],17
+sample_2117,"India and South Asia (India, Pakistan, Sri Lanka)","He managed to cure his RSI completely over several months, but he never stopped using his voice.",他试图在几个月的时间里成功治愈自己的肢体重复性劳损，但他从未停止使用自己的声音。,"他在几个月内完全治愈了他的RSI, 但他从来没有停止使用他的声音.","他在几个月内完全治愈了他的RSI, 但他从来没有停止使用他的声音.","他在几个月内完全治愈了他的RSI, 但他从来没有停止使用他的声音.",0,[],22
+sample_1585,Hong Kong English,Worse and worse,越来越糟。,越来越糟糕,越来越糟糕,越来越糟糕,0,[],8
+sample_3794,United States English,Two scorpions were menacing each other with their stings.,两只蝎子用刺互相威胁。,两只蝎子用刺互相威胁,两只蝎子用刺互相威胁,两只蝎子用刺互相威胁[UNKID],1,[11],13
+sample_0709,Filipino,He switched to the outfield a couple of years later.,几年后，他切换到外野。,"几年后,他转到了外野","几年后,他转到了外野","几年后,他转到了外野[UNKID]",1,[11],13
+sample_3363,"Southern African (South Africa, Zimbabwe, Namibia)",And better still to be alone with one's books.,最好还是一个人看书。,更好的是独自与自己的书籍.,更好的是独自与自己的书籍.,更好的是独自与自己的书籍.,0,[],13
+sample_2446,Malaysian English,"A group of people, one of them with a guitar, were sitting by the campfire and singing songs.",一群人，其中有一个人拿着吉他，坐在篝火旁唱歌。,"一群人,其中一个拿着吉他,坐在营火旁边唱歌.","一群人,其中一个拿着吉他,坐在营火旁边唱歌.","一群人,其中一个拿着吉他,坐在营火旁边唱歌.",0,[],22
+sample_0443,England English,"He wandered for a while, keeping the date palms of the oasis within sight.",他徘徊了一会儿，让绿洲的椰枣树保持在视野之内。,"他漫步了一段时间, 保持绿洲的枣树在视线内.","他漫步了一段时间, 保持绿洲的枣树在视线内.","他漫步了一段时间, 保持绿洲的枣树在视线内.",0,[],22
+sample_2155,"India and South Asia (India, Pakistan, Sri Lanka)","Thus for singletons, topological distinguishability is a condition in between disjointness and separatedness.",因此，对于单例而言，拓扑可区分性是介于不相交和分离之间的条件。,"因此,对于单体,拓<unk>区分是分离和分离之间的条件.","因此,对于单体,拓<unk>区分是分离和分离之间的条件.","因此,对于单体,拓<unk>区分是分离和分离之间的条件.",0,[],24
+sample_1005,Filipino,"As he did so, he talked with the monk about the tribal wars.",他一边这样做，一边和和尚谈论部落战争。,他与僧侣谈论部落战争.,他与僧侣谈论部落战争.,他与僧侣谈论部落战争.,0,[],12
+sample_3178,"Southern African (South Africa, Zimbabwe, Namibia)",White is a former member of the Royal Canadian Air Force.,White 曾经是一名加拿大皇家空军。,怀特是加拿大皇家空军的前成员.,怀特是加拿大皇家空军的前成员.,怀特是加拿大皇家空军的前成员.,0,[],14
+sample_1455,Hong Kong English,Mr. and Mrs. Nate joined the Red Cross and sewed.,Nate 先生和他的太太加入红十字会，缝好了衣服。,"奈特先生和夫人加入了红十字会,","奈特先生和夫人加入了红十字会,","奈特先生和夫人加入了红十字会,",0,[],16
+sample_3822,United States English,There was no need.,没有必要。,没有必要.,没有必要.,没有必要.,0,[],6
+sample_0541,England English,And the names of the people involved were very difficult to pronounce.,涉案人员的名字很难做出判断。,参与者的名字很难发音.,参与者的名字很难发音.,参与者的名字很难发音.,0,[],11
+sample_2760,Malaysian English,"She put on her slippers, scaled the stairs, and went to bed.",她穿上拖鞋，爬楼梯，然后上床睡觉。,"她穿上拖鞋,爬上楼梯,然后去睡觉.","她穿上拖鞋,爬上楼梯,然后去睡觉.","她穿上拖鞋,爬上楼梯,然后去睡觉.",0,[],19
+sample_1814,"India and South Asia (India, Pakistan, Sri Lanka)",You like every boy.,你喜欢每个男孩。,你喜欢每一个男孩.,你喜欢每一个男孩.,你喜欢每一个男孩.,0,[],8
+sample_3026,"Southern African (South Africa, Zimbabwe, Namibia)",Never mind those guys.,别管那些家伙。,别管那些人.,别管那些人.,别管那些人.,0,[],9
+sample_1261,Hong Kong English,She also served as vice-chair of the board.,她还担任董事会副主席。,她还担任董事会副主席.,她还担任董事会副主席.,她还担任董事会副主席.,0,[],11
+sample_3833,United States English,I think we should go.,我认为我们应该去。,我认为我们应该去.,我认为我们应该去.,我认为我们应该去.,0,[],8
+sample_0727,Filipino,The only shadow was that of the few scattered pine trees.,唯一的阴影是那几棵散落的松树。,唯一的阴影是几棵散落的松树.,唯一的阴影是几棵散落的松树.,唯一的阴影是几棵散落的松树.,0,[],16
+sample_0480,England English,Possibly one of Hershey's best-known products due to long-running massive advertising campaigns.,可能是好时最著名的产品之一，因为长期都在进行大规模的广告活动。,"由于长期大规模的广告活动,","由于长期大规模的广告活动,","由于长期大规模的广告活动,",0,[],10
+sample_2031,"India and South Asia (India, Pakistan, Sri Lanka)","Forestry Commission Scotland reports to, and receives funding from, the Scottish Parliament.",苏格兰 Forestry Commission 向苏格兰议会报告并获得其资金。,"苏格兰林业委员会向苏格兰议会报告,并从苏格兰议会获得资金.","苏格兰林业委员会向苏格兰议会报告,并从苏格兰议会获得资金.","苏格兰林业委员会向苏格兰议会报告,并从苏格兰议会获得资金.",0,[],23
+sample_2602,Malaysian English,A young boy in a white karate gi executes a jump kick.,穿白色空手道服装的年轻男孩跳了起来。,一个穿着白色空手道服的年轻男孩执行一个跳<unk>.,一个穿着白色空手道服的年轻男孩执行一个跳<unk>.,一个穿着白色空手道服的年轻男孩执行一个跳<unk>.,0,[],21
+sample_3306,"Southern African (South Africa, Zimbabwe, Namibia)",Earliest Reported Postmark on stamped envelopes.,在需要贴邮票的信封上最早公开的邮戳。,在印章封封面上最早报告的邮票.,在印章封封面上最早报告的邮票.,在印章封封面上最早报告的邮票.,0,[],16
+sample_1503,Hong Kong English,"Deeds are fruits, words are but leaves.",行动是果实，言语只是树叶而已。,"行为是果实,言语只是叶子.","行为是果实,言语只是叶子.","行为是果实,言语只是叶子.",0,[],15
+sample_0923,Filipino,"If I could, I'd write a huge encyclopedia just about the words luck and coincidence.",如果可以的话，我会写一本关于运气和巧合的大百科全书。,"如果我可以,我会写一本巨大的百科全书,","如果我可以,我会写一本巨大的百科全书,","如果我可以,我会写一本巨大的百科全书,",0,[],15
+sample_3765,United States English,Give credit where credit is due.,有功则赏。,给应得的赞誉,给应得的赞誉,给应得的赞誉[UNKID],1,[9],11
+sample_2654,Malaysian English,Bertrand's postulate was proposed for applications to permutation groups.,Bertrand 的假设是针对应用于置换群的情况所提出的。,贝特兰的假设被提议用于对变量组的应用.,贝特兰的假设被提议用于对变量组的应用.,贝特兰的假设被提议用于对变量组的应用.,0,[],20
+sample_0502,England English,Kim played in all four of South Korea's matches during the tournament.,在锦标赛中，Kim 参加了韩国的所有四场比赛。,金在比赛期间参加了韩国四场比赛.,金在比赛期间参加了韩国四场比赛.,金在比赛期间参加了韩国四场比赛.,0,[],12
+sample_1855,"India and South Asia (India, Pakistan, Sri Lanka)",What else can I do?,我还能做什么？,我还能做些什么?,我还能做些什么?,我还能做些什么?,0,[],10
+sample_3485,"Southern African (South Africa, Zimbabwe, Namibia)","Given only the public key, it is very hard to compute the private one.",由于只有公钥，所以很难计算私有密钥。,"如果只给出公钥, 很难计算私钥.","如果只给出公钥, 很难计算私钥.","如果只给出公钥, 很难计算私钥.",0,[],16
+sample_1254,Hong Kong English,Denison has a humid subtropical climate.,Denison 属亚热带湿润气候。,丹森有一个潮湿的亚热带气候,丹森有一个潮湿的亚热带气候,丹森有一个潮湿的亚热带气候,0,[],13
+sample_1085,Filipino,Few of the island's soils are well suited to agriculture.,岛上的土壤不太适合于农业。,岛上的土壤很少适合农业.,岛上的土壤很少适合农业.,岛上的土壤很少适合农业.,0,[],12
+sample_4133,United States English,"Yes, it would be difficult.",是的，这将会很难。,"是的,这将是困难的.","是的,这将是困难的.","是的,这将是困难的.",0,[],11
+sample_0457,England English,Cecropia are usually full of vines but not normally overgrown by them.,“Cecropia”通常爬满藤蔓，但通常不会过度生长。,"""Cecropia""通常充满葡萄树,但通常不会被葡萄树覆盖.","""Cecropia""通常充满葡萄树,但通常不会被葡萄树覆盖.","""Cecropia""通常充满葡萄树,但通常不会被葡萄树覆盖.",0,[],22
+sample_2666,Malaysian English,I woke up to the screech of my neighbor practicing trumpet.,我在邻居练习小号的尖锐声中醒来。,我醒来时听到邻居在练习喇<unk>的尖叫声.,我醒来时听到邻居在练习喇<unk>的尖叫声.,我醒来时听到邻居在练习喇<unk>的尖叫声.,0,[],22
+sample_2180,"India and South Asia (India, Pakistan, Sri Lanka)",He has other things to do first.,他还有其他事情要做。,他先有其他事情要做.,他先有其他事情要做.,他先有其他事情要做.,0,[],10
+sample_3273,"Southern African (South Africa, Zimbabwe, Namibia)","What is it, then?",那是什么 ？,那么它是什么?,那么它是什么?,那么它是什么?,0,[],8
+sample_1581,Hong Kong English,A boy in a blue shirt plays in a jumping tent.,一个身穿蓝色衬衫的男孩在充气城堡里玩,一个穿着蓝色衬衫的男孩在跳帐篷里玩耍,一个穿着蓝色衬衫的男孩在跳帐篷里玩耍,一个穿着蓝色衬衫的男孩在跳帐篷里玩耍[UNKID],1,[18],20
+sample_0777,Filipino,What we need is fireworks.,我们需要的是烟火。,我们需要的是烟花,我们需要的是烟花,我们需要的是烟花,0,[],8
+sample_3980,United States English,The Monday night fight lived up to its billing.,星期一晚上的战斗名符其实。,星期一晚上的战斗活到它的账单.,星期一晚上的战斗活到它的账单.,星期一晚上的战斗活到它的账单.,0,[],14
+sample_0252,England English,He left the house and his thoughts behind him.,他离开了房子，但他的想法还久久未褪去。,"他离开了房子,留下了他的想法.","他离开了房子,留下了他的想法.","他离开了房子,留下了他的想法.",0,[],12
+sample_3168,"Southern African (South Africa, Zimbabwe, Namibia)",When the frost has come it is time for turkey.,霜冻来临的时候就是吃火鸡的时候了。,"当<unk>来了,这是火<unk>的时间.","当<unk>来了,这是火<unk>的时间.","当<unk>来了,这是火<unk>的时间.",0,[],17
+sample_1841,"India and South Asia (India, Pakistan, Sri Lanka)",The new girl was fired today at noon.,新来的女孩今天中午被解雇了。,新来的女孩今天中午被解雇了,新来的女孩今天中午被解雇了,新来的女孩今天中午被解雇了[UNKID],1,[12],14
+sample_2807,Malaysian English,You forgot about the key signature for the first three measures.,您忘记了前三个度量的密钥签名。,你忘了前三节的关键签名,你忘了前三节的关键签名,你忘了前三节的关键签名[UNKID],1,[12],14
+sample_1095,Filipino,I serve the motto of the Prince of Wales.,我信奉 Wales 王子的座右铭。,我服从威尔士王子的座右铭.,我服从威尔士王子的座右铭.,我服从威尔士王子的座右铭.,0,[],14
+sample_4195,United States English,It seemed to him that it fell to earth about one hundred miles east of here.,在他看来，它似乎落在了离这儿以东一百英里的地方。,"他觉得它倒在了地球上,距离这里东面大约一百英里.","他觉得它倒在了地球上,距离这里东面大约一百英里.","他觉得它倒在了地球上,距离这里东面大约一百英里.",0,[],20
+sample_1414,Hong Kong English,Just hurry up and get here.,快点到这儿来。,只是赶快来这里.,只是赶快来这里.,只是赶快来这里.,0,[],9
+sample_0168,England English,My initial assumption about the phase displaced pulse was wrong.,我最初对相移脉冲的假设是错误的。,我最初对相位移脉冲的假设是错误的,我最初对相位移脉冲的假设是错误的,我最初对相位移脉冲的假设是错误的[UNKID],1,[16],18
+sample_2064,"India and South Asia (India, Pakistan, Sri Lanka)",The monuments are separately listed.,这些纪念碑是分开列出的。,这些纪念碑被单独列出.,这些纪念碑被单独列出.,这些纪念碑被单独列出.,0,[],12
+sample_4095,United States English,The last angel in the series holds a mobile phone and also wears jeans.,这批天使雕像中最新的一座雕像拿着手机、穿着牛仔裤。,"系列中的最后一个天使拿着手机,还穿着牛仔裤","系列中的最后一个天使拿着手机,还穿着牛仔裤","系列中的最后一个天使拿着手机,还穿着牛仔裤[UNKID]",1,[18],20
+sample_2549,Malaysian English,A boy standing next to a small field fire and a boy running away from it.,一个男孩站在小篝火旁，另一个男孩从篝火旁跑开。,"一个男孩站在小野火旁边,一个男孩从中逃跑","一个男孩站在小野火旁边,一个男孩从中逃跑","一个男孩站在小野火旁边,一个男孩从中逃跑[UNKID]",1,[17],19
+sample_3052,"Southern African (South Africa, Zimbabwe, Namibia)","On the seventh day, the alchemist decided to make camp earlier than usual.",第七天，炼金术士决定比平时更早扎营。,"在第七天,炼金术士决定比平常早点露营.","在第七天,炼金术士决定比平常早点露营.","在第七天,炼金术士决定比平常早点露营.",0,[],20
+sample_1555,Hong Kong English,I bet you forgot the wine!,我打赌你忘了酒！,我敢打<unk>你忘了葡萄酒!,我敢打<unk>你忘了葡萄酒!,我敢打<unk>你忘了葡萄酒!,0,[],15
+sample_1127,Filipino,"While doing so, the sustainable yield may be much less.",这样做时，可持续产量可能要少得多。,"在这样做时,可持续的产量可能要少得多.","在这样做时,可持续的产量可能要少得多.","在这样做时,可持续的产量可能要少得多.",0,[],17
+sample_0036,England English,"Woodforde won four singles titles, including his hometown Adelaide tournament twice.",Woodforde 获得了 4 次单打冠军，包括他家乡阿德莱德的两次锦标赛。,"伍德福德赢得了四个单打冠军,包括他的家乡阿德莱德比赛两次.","伍德福德赢得了四个单打冠军,包括他的家乡阿德莱德比赛两次.","伍德福德赢得了四个单打冠军,包括他的家乡阿德莱德比赛两次.",0,[],24
+sample_2710,Malaysian English,"He had used the two stones only once, one morning when he was at a marketplace.",这两块石头他只使用过一次，那是一天早晨他在集市上的时候使用的。,"他只用了两块石头一次,","他只用了两块石头一次,","他只用了两块石头一次,",0,[],13
+sample_3131,"Southern African (South Africa, Zimbabwe, Namibia)",I can't find the ruler in my pencil case.,我找不到我铅笔盒里的尺子。,我在<unk>笔箱里找不到线索.,我在<unk>笔箱里找不到线索.,我在<unk>笔箱里找不到线索.,0,[],15
+sample_1772,Hong Kong English,Victoria does things in a much bigger way.,维多利亚以更大的方式做事。,维多利亚以更大的方式做事.,维多利亚以更大的方式做事.,维多利亚以更大的方式做事.,0,[],13
+sample_1815,"India and South Asia (India, Pakistan, Sri Lanka)",And how did you get out?,你是怎么出来的？,你是怎么逃出来的?,你是怎么逃出来的?,你是怎么逃出来的?,0,[],10
+sample_1163,Filipino,"But if you have to go before then, go on in pursuit of your dream.",但如果你必须在那之前离开，那就继续追求你的梦想吧。,"但如果你必须在那之前离开,继续追求你的梦想.","但如果你必须在那之前离开,继续追求你的梦想.","但如果你必须在那之前离开,继续追求你的梦想.",0,[],16
+sample_3736,United States English,Do you like her?,你喜欢她吗 ？,你喜欢她吗?,你喜欢她吗?,你喜欢她吗?,0,[],8
+sample_0050,England English,"Artisanal gin bar, seriously?!",手工杜松子酒吧，真的吗？,"艺术品酒吧,真的吗?","艺术品酒吧,真的吗?","艺术品酒吧,真的吗?",0,[],12
+sample_2968,Malaysian English,Just handling them made him feel better.,只是拿着它们，他就感觉好多了。,仅仅是处理它们让他感觉更好,仅仅是处理它们让他感觉更好,仅仅是处理它们让他感觉更好,0,[],12
+sample_1527,Hong Kong English,She began her career as an economist at the World Bank.,她的职业生涯始于世界银行的经济学家。,她开始了世界银行的经济学家生涯.,她开始了世界银行的经济学家生涯.,她开始了世界银行的经济学家生涯.,0,[],12
+sample_2346,"India and South Asia (India, Pakistan, Sri Lanka)",He also tried to capture Herat twice.,他还两次试图占领赫拉特省。,他还试图两次占领赫拉特.,他还试图两次占领赫拉特.,他还试图两次占领赫拉特.,0,[],11
+sample_3232,"Southern African (South Africa, Zimbabwe, Namibia)","In a cinematic rope-down maneuver, the special forces overwhelmed the criminals.",在一个电影式的绳降动作中，特种部队制服了罪犯。,特别部队以电影般的绳索下降机动战胜了犯罪分子.,特别部队以电影般的绳索下降机动战胜了犯罪分子.,特别部队以电影般的绳索下降机动战胜了犯罪分子.,0,[],21
+sample_0963,Filipino,I shall be neither more nor less meritorious,我既不会多有功绩，也不会少有功绩,"我将不会更有价值,也不会更有价值.","我将不会更有价值,也不会更有价值.","我将不会更有价值,也不会更有价值.",0,[],16
+sample_3777,United States English,I got it all ready.,我把一切都准备好了。,我已经准备好了.,我已经准备好了.,我已经准备好了.,0,[],8
+sample_0246,England English,Senator James Eastland.,詹姆斯·伊斯特兰参议员。,参议员詹姆斯·伊斯特兰.,参议员詹姆斯·伊斯特兰.,参议员詹姆斯·伊斯特兰.,0,[],12
+sample_2537,Malaysian English,I shall never forget it.,我永远不会忘记它。,我永远不会忘记它.,我永远不会忘记它.,我永远不会忘记它.,0,[],10
+sample_1710,Hong Kong English,"The moment you find yourself spelling out a word, stop right away and add this word to the Vocabulary Editor.",当你发现自己正在拼写一个单词时，马上停下来，把这个单词添加到词汇编辑器中。,"在你发现自己正在拼写一个单词时,立即停止并将这个单词添加到词汇编辑器中.","一旦你发现自己正在拼写一个词,","一旦你发现自己正在拼写一个词,",0,[],14
+sample_3090,"Southern African (South Africa, Zimbabwe, Namibia)",I want to spend Christmas in California with my family.,我想在加州跟家人一起过圣诞节。,我想在加利福尼亚和家人一起度过圣诞节.,我想在加利福尼亚和家人一起度过圣诞节.,我想在加利福尼亚和家人一起度过圣诞节.,0,[],16
+sample_2115,"India and South Asia (India, Pakistan, Sri Lanka)",Miley was adopted.,麦莉被收养了。,Miley 被收养了,Miley 被收养了,Miley 被收养了[UNKID],1,[8],10
+sample_1125,Filipino,"Ninety five lines and no more, that's it.",九十五行，仅此而已。,"九十五行,没有更多,这就是它.","九十五行,没有更多,这就是它.","九十五行,没有更多,这就是它.",0,[],13
+sample_3886,United States English,"There are only two species in the genus ""Nannopsittaca"".",“ Nannopsittaca”属中只有两种。,"在""Nannopsittaca""属中只有两种物种.","在""Nannopsittaca""属中只有两种物种.","在""Nannopsittaca""属中只有两种物种.",0,[],19
+sample_0402,England English,She wasn't her type.,她不是她喜欢的类型。,她不是她的类型.,她不是她的类型.,她不是她的类型.,0,[],8
+sample_2522,Malaysian English,Suppose there was a Shane York and he walked into this office.,假设有个叫肖恩·约克的人走进这间办公室。,假设有个叫谢恩·约克的人走进这间办公室.,假设有个叫谢恩·约克的人走进这个办公室.,假设有个叫谢恩·约克的人走进这个办公室.,0,[],20
+sample_1685,Hong Kong English,In some form or other we need fun.,在某种形式上，我们需要乐趣。,"在某种程度上,我们需要乐趣.","在某种程度上,我们需要乐趣.","在某种程度上,我们需要乐趣.",0,[],12
+sample_0690,Filipino,Her work schedules prohibited her from enrolling in a university.,她的工作日程安排使她不能上大学。,她的工作时间表禁止她入学大学.,她的工作时间表禁止她入学大学.,她的工作时间表禁止她入学大学.,0,[],13
+sample_3530,"Southern African (South Africa, Zimbabwe, Namibia)",The climate is relatively dry.,气候相对干燥。,气候相对干燥.,气候相对干燥.,气候相对干燥.,0,[],9
+sample_2389,"India and South Asia (India, Pakistan, Sri Lanka)",Its county seat is Clayton.,其县城是克雷顿。,它的县城是克莱顿.,它的县城是克莱顿.,它的县城是克莱顿.,0,[],11
+sample_3916,United States English,"It helped me to trust in people, the Englishman answered.",“这有助于我信任别人。”那个英国人回答。,"""这帮助我信任人们"",英国人回答说.","""这帮助我信任人们"",英国人回答说.","""这帮助我信任人们"",英国人回答说.",0,[],15
+sample_0363,England English,What were we to do?,我们该怎么办？,我们该怎么办呢?,我们该怎么办呢?,我们该怎么办呢?,0,[],9
+sample_2921,Malaysian English,The Right Opposition is led by David Gamkrelidze of New Rights Party.,右翼反对派由新权利党的戴维·甘姆克雷利兹（David Gamkrelidze）领导。,右翼反对派由新权利党的大卫·甘克雷利兹领导.,右翼反对派由新权利党的大卫·甘克雷利兹领导.,右翼反对派由新权利党的大卫·甘克雷利兹领导.,0,[],23
+sample_0651,Filipino,Do you know what's wrong with you?,你知道你有什么毛病吗？,你知道你有什么问题吗?,你知道你有什么问题吗?,你知道你有什么问题吗?,0,[],10
+sample_1600,Hong Kong English,"Tyler, Lucy, Michelle, we're going to space!",Tyler 、 Lucy 、 Michelle ，我们要去太空了 ！,"泰勒,露西,米歇尔,我们要去太空!","泰勒,露西,米歇尔,我们要去太空!","泰勒,露西,米歇尔,我们要去太空!",0,[],17
+sample_2249,"India and South Asia (India, Pakistan, Sri Lanka)",I saw astonishment and horror on the faces of the people around me.,我看到周围人脸上的惊讶和恐惧。,我看到周围人的脸上充满了惊<unk>和恐惧.,我看到周围人的脸上充满了惊<unk>和恐惧.,我看到周围人的脸上充满了惊<unk>和恐惧.,0,[],19
+sample_3105,"Southern African (South Africa, Zimbabwe, Namibia)",There was hardly any movement from the pit.,坑里几乎没有任何动静。,从坑里几乎没有任何动作.,从坑里几乎没有任何动作.,从坑里几乎没有任何动作.,0,[],12
+sample_4054,United States English,He wrapped the twigs in a piece of cloth and put them back in his bag.,他用一块布把小树枝包起来，放回包里。,"他把树枝裹在一块布上,把它们放回他的袋子里.","他把树枝裹在一块布上,把它们放回他的袋子里.","他把树枝裹在一块布上,把它们放回他的袋子里.",0,[],23
+sample_0076,England English,Where did it come from then?,那是从哪里来的？,那它来自哪里呢?,那它来自哪里呢?,那它来自哪里呢?,0,[],9
+sample_2632,Malaysian English,A skater is in the air and doing a trick with skyscrapers in the background.,一个滑冰者在空中表演，背景是摩天大楼。,"一个滑冰运动员在空中,后面是摩天大楼,正在表演技巧","一个滑冰运动员在空中,后面是摩天大楼,正在表演技巧","一个滑冰运动员在空中,后面是摩天大楼,正在表演技巧[UNKID]",1,[20],22
+sample_0733,Filipino,Kodak has announced that it will no longer produce or sell this product.,柯达宣布不再生产或销售该产品。,科达克宣布不再生产或销售这种产品.,科达克宣布不再生产或销售这种产品.,科达克宣布不再生产或销售这种产品.,0,[],14
+sample_1375,Hong Kong English,What is it all about?,这是怎么回事?,这一切是什么?,这一切是什么?,这一切是什么?,0,[],7
+sample_1953,"India and South Asia (India, Pakistan, Sri Lanka)","You two in the last row, stop giggling!",最后一排的两位，别笑了!,"你们两个人在最后一排,停止笑!","你们两个人在最后一排,停止笑!","你们两个人在最后一排,停止笑!",0,[],14
+sample_3655,United States English,Never look a gift horse in the mouth.,馈赠之马，切莫挑剔。,永远不要看礼物马的嘴里.,永远不要看礼物马的嘴里.,永远不要看礼物马的嘴里.,0,[],14
+sample_3137,"Southern African (South Africa, Zimbabwe, Namibia)","I had not followed my suggestion to its conclusion, he admitted humbly.",他谦卑地承认：“我没有按照我的建议得出结论。”,"我没有跟随我的建议,直到它得出结论他谦卑地承认","我没有跟随我的建议,直到它得出结论他谦卑地承认","[UNKID]我没有跟随我的建议,直到它得出结论[UNKID]他谦卑地承认[UNKID]",3,"[3, 16, 22]",24
+sample_0426,England English,"At the camp, it was difficult to see anything.",在营地，很难看到任何东西。,"在营地,很难看到任何东西.","在营地,很难看到任何东西.","在营地,很难看到任何东西.",0,[],12
+sample_2764,Malaysian English,What should I say?,我该说什么？,我应该说些什么?,我应该说些什么?,我应该说些什么?,0,[],9
+sample_1561,Hong Kong English,"But my heart is agitated, the boy said.",“但是我的心很不安，”男孩说。,"""但我的心是激动"",男孩说.","""但我的心是激动"",男孩说.","""但我的心是激动"",男孩说.",0,[],14
+sample_0782,Filipino,YOU WANNA TAKE THIS OUTSIDE?,想出去谈谈吗？,你想把这个带出去吗?,你想把这个带出去吗?,你想把这个带出去吗?,0,[],11
+sample_2113,"India and South Asia (India, Pakistan, Sri Lanka)",The Clown emerges and claims that he has dispatched the Violator.,小丑出现并声称已驱逐了违规者。,小丑出现并声称他已经杀了违法者.,小丑出现并声称他已经杀了违法者.,小丑出现并声称他已经杀了违法者.,0,[],16
+sample_3487,"Southern African (South Africa, Zimbabwe, Namibia)","She looked skeptical when leaning against the wall, observing the celebrities.",当她靠在墙上观察那些名流时，看上去疑心重重。,"她看起来怀疑当靠在墙上,观察名人.","她看起来怀疑当靠在墙上,观察名人.","她看起来怀疑当靠在墙上,观察名人.",0,[],15
+sample_3645,United States English,What are you talking about?,你在说什么？,你在说什么?,你在说什么?,你在说什么?,0,[],8
+sample_0151,England English,"Then the old man began to inspect the sheep, and he saw that one was lame.",然后老人开始检查羊，他看到一只是跛脚的。,"然后这位老人开始检查羊, 他看到一个是<unk>的.","然后这位老人开始检查羊, 他看到一个是<unk>的.","然后这位老人开始检查羊, 他看到一个是<unk>的.",0,[],20
+sample_2759,Malaysian English,The Chickasaw National Recreation Area preserves partially forested hills of south-central Oklahoma near Sulphur.,奇克索国家娱乐区竭力维护俄克拉荷马中南部、紧邻萨尔弗的部分森林山丘。,奇卡索国家娱乐区保留了奥克拉荷马州中部南部附近的部分森林山丘.,奇卡索国家娱乐区保留了奥克拉荷马州中部南部附近的部分森林山丘.,奇卡索国家娱乐区保留了奥克拉荷马州中部南部附近的部分森林山丘.,0,[],25
+sample_1657,Hong Kong English,The Islamic law is called shariah.,伊斯兰法律被称为伊斯兰教法。,伊斯兰法律是叫伊斯兰教法,伊斯兰法律是叫伊斯兰教法,伊斯兰法律是叫伊斯兰教法,0,[],12
+sample_0672,Filipino,"The key aspect of Rare's methodology is their ""Pride Campaign's"".",Rare 的方法论的关键方面是他们的“骄傲运动”。,Rare 的方法学的关键方面是他们的骄傲运动,Rare 的方法学的关键方面是他们的骄傲运动,Rare 的方法学的关键方面是他们的[UNKID]骄傲运动[UNKID],2,"[12, 16]",18
+sample_2066,"India and South Asia (India, Pakistan, Sri Lanka)","Top speed was when submerged, and on the surface.",在水下和水面上达到最高速度。,最高速度是在水下和表面.,最高速度是在水下和表面.,最高速度是在水下和表面.,0,[],12
+sample_3389,"Southern African (South Africa, Zimbabwe, Namibia)","Well, then, allow me to retort.",那么，请允许我反驳。,"那么,让我回复一下.","那么,让我回复一下.","那么,让我回复一下.",0,[],11
+sample_3620,United States English,"Naturally, in overdose, they can be cardiotoxic, prolonging heart rhythms and increasing myocardial irritability.",当然，过量则会导致心脏中毒、心律延长和心肌易怒性增加。,"当然,过量服用时, 它们会造成心脏毒, 延长心律, 增加心肌的刺激.","当然,过量服用时, 它们会造成心脏毒, 延长心律, 增加心肌的刺激.","当然,过量服用时, 它们会造成心脏毒, 延长心律, 增加心肌的刺激.",0,[],31
+sample_0417,England English,Hundreds of observers saw the flame that night and the night after.,那天晚上和之后的晚上，数以百计的人看到了火焰。,数百名观察者在那天晚上和第二天晚上看到了火焰.,数百名观察者在那天晚上和第二天晚上看到了火焰.,数百名观察者在那天晚上和第二天晚上看到了火焰.,0,[],20
+sample_2483,Malaysian English,His father said no more.,父亲没有再说什么。,他的父亲没有说更多.,他的父亲没有说更多.,他的父亲没有说更多.,0,[],9
+sample_1795,Hong Kong English,How can that be?,这怎么可能？,这怎么可能呢?,这怎么可能呢?,这怎么可能呢?,0,[],8
+sample_1115,Filipino,"According to various king-lists, Giric was slain at Dundurn.",根据各种国王名单显示，吉里克是在邓登被杀的。,"根据各种国王名单,吉里克在<unk>德恩被杀.","根据各种国王名单,吉里克在<unk>德恩被杀.","根据各种国王名单,吉里克在<unk>德恩被杀.",0,[],20
+sample_2306,"India and South Asia (India, Pakistan, Sri Lanka)","He should not be confused with the post-bop tuba player, Howard Johnson.",他不应该把后波普时代的大号演奏家霍华德·约翰逊混淆。,他不应该与波普后的杜巴演奏家霍华德·约翰逊混<unk>.,他不应该与波普后的杜巴演奏家霍华德·约翰逊混<unk>.,他不应该与波普后的杜巴演奏家霍华德·约翰逊混<unk>.,0,[],25
+sample_3439,"Southern African (South Africa, Zimbabwe, Namibia)",More recently he has emerged as a more serious writer.,最近，他成了一位真正的作家。,最近他成为一个更认真的作家.,最近他成为一个更认真的作家.,最近他成为一个更认真的作家.,0,[],11
+sample_3946,United States English,To err is human (To forgive divine).,人非圣贤，孰能无过。,"错误是人类的,原谅是神圣的.","错误是人类的,原谅是神圣的.","错误是人类的,原谅是神圣的.",0,[],16
+sample_0301,England English,The insurgents gathered sticks and wood.,叛乱分子众人拾柴。,叛乱分子收集了木棍和木头.,叛乱分子收集了木棍和木头.,叛乱分子收集了木棍和木头.,0,[],15
+sample_2506,Malaysian English,Five years he lived with a shaggy dog.,他和一条毛茸茸的狗生活了 5 年。,他和一只毛<unk>的狗一起生活了五年.,他和一只毛<unk>的狗一起生活了五年.,他和一只毛<unk>的狗一起生活了五年.,0,[],18
+sample_1038,Filipino,"To eat, and to scratch, a man need but begin.",要吃，要抓，一个人只需要开始。,"一个人只需要开始吃,","一个人只需要开始吃,","一个人只需要开始吃,",0,[],10
+sample_1467,Hong Kong English,Can I at least keep the onion soup?,我能至少留着洋葱汤吧？,至少我可以留着洋<unk>吗?,至少我可以留着洋<unk>吗?,至少我可以留着洋<unk>吗?,0,[],13
+sample_2130,"India and South Asia (India, Pakistan, Sri Lanka)",There are vast differences between the northern arc and southern arc of the loop.,北弧线圈和南弧线圈之间存在着巨大的差异。,北方弧和南方弧之间存在巨大的差异.,北方弧和南方弧之间存在巨大的差异.,北方弧和南方弧之间存在巨大的差异.,0,[],15
+sample_3327,"Southern African (South Africa, Zimbabwe, Namibia)",Her guns destroyed at least three enemy suicide planes.,她的枪至少摧毁了三架敌方自杀式飞机。,她的枪支至少摧毁了三架敌人的自杀飞机.,她的枪支至少摧毁了三架敌人的自杀飞机.,她的枪支至少摧毁了三架敌人的自杀飞机.,0,[],19
+sample_4005,United States English,The dungeon was rendered using on-screen character graphics.,地牢是使用屏幕上的角色图形渲染的。,地下室是使用屏幕上的角色图形渲染的.,地下室是使用屏幕上的角色图形渲染的.,地下室是使用屏幕上的角色图形渲染的.,0,[],17
+sample_0188,England English,Then she got out through the skylight.,然后她从天窗出来了。,然后她通过天窗走了出来.,然后她通过天窗走了出来.,然后她通过天窗走了出来.,0,[],12
+sample_2570,Malaysian English,The salt breeze came across from the sea.,海风吹过海面。,盐风从海边吹过来.,盐风从海边吹过来.,盐风从海边吹过来.,0,[],13
+sample_0602,Filipino,A breeze began to blow.,一阵微风吹来。,一阵风开始吹.,一阵风开始吹.,一阵风开始吹.,0,[],9
+sample_1437,Hong Kong English,Nothing is ill said if it is not ill taken.,如果没有被误解，什么都不是坏事。,"没有什么是坏说的,如果它不是坏的.","没有什么是坏说的,如果它不是坏的.","没有什么是坏说的,如果它不是坏的.",0,[],15
+sample_1821,"India and South Asia (India, Pakistan, Sri Lanka)",And he wasn't faring much better.,他也好不到哪里去。,他的情况并没有好一点.,他的情况并没有好一点.,他的情况并没有好一点.,0,[],9
+sample_3897,United States English,Pull the hook to toggle the jukebox.,拉动挂钩来切换点唱机。,拉动<unk>子来开启音乐盒.,拉动<unk>子来开启音乐盒.,拉动<unk>子来开启音乐盒.,0,[],16
+sample_3300,"Southern African (South Africa, Zimbabwe, Namibia)",My father fell in love with him.,我父亲爱上了他。,我父亲爱上了他.,我父亲爱上了他.,我父亲爱上了他.,0,[],9
+sample_0094,England English,New spinner movement a racket!,新的旋转运动球拍！,新的旋转运动一个球拍!,新的旋转运动一个球拍!,新的旋转运动一个球拍!,0,[],12
+sample_2803,Malaysian English,He walked slowly through the market.,他慢慢地穿过市场。,他慢慢地走过市场.,他慢慢地走过市场.,他慢慢地走过市场.,0,[],11
+sample_0864,Filipino,And he hadn't perceived them because he had become accustomed to them.,因为他已经习惯了它们，所以他没有察觉到它们。,"他没有意识到它们, 因为他已经习惯了它们.","他没有意识到它们, 因为他已经习惯了它们.","他没有意识到它们, 因为他已经习惯了它们.",0,[],15
+sample_1618,Hong Kong English,That's what I mean.,我就是这个意思。,这就是我的意思.,这就是我的意思.,这就是我的意思.,0,[],7
+sample_2386,"India and South Asia (India, Pakistan, Sri Lanka)","Tux is not smiling, he just looks nice all the time.",Tux 没有笑，他总是看起来很好。,"塔克斯没有微笑,他只是一直看起来很好.","塔克斯没有微笑,他只是一直看起来很好.","塔克斯没有微笑,他只是一直看起来很好.",0,[],17
+sample_3990,United States English,"He continued to write books, and a half dozen were published in his lifetime.",他继续的写作，并且在一生中出版了六本书。,"他继续写书,在他的一生中出版了半打书.","他继续写书,在他的一生中出版了半打书.","他继续写书,在他的一生中出版了半打书.",0,[],19
+sample_3528,"Southern African (South Africa, Zimbabwe, Namibia)","As a result, the band ceased to perform for a few months.",结果，乐队停止了几个月的表演。,"结果,乐队停止了几个月的表演.","结果,乐队停止了几个月的表演.","结果,乐队停止了几个月的表演.",0,[],14
+sample_0028,England English,A whole week in Bermuda.,在百慕大群岛呆了整整一个星期。,在百慕大度过一整周.,在百慕大度过一整周.,在百慕大度过一整周.,0,[],13
+sample_0760,Filipino,"His heart squeezed, as if his chest had suddenly compressed it.",他的心脏攫紧了一下，好像他的胸口突然挤压了一下。,"他的心压缩,好像他的胸部突然压缩了它.","他的心压缩,好像他的胸部突然压缩了它.","他的心压缩,好像他的胸部突然压缩了它.",0,[],18
+sample_2461,Malaysian English,As you were!,如你所愿。,保持原状!,保持原状!,保持原状!,0,[],8
+sample_1390,Hong Kong English,The first part of the plan needs changing.,计划的第一部分需要改变。,计划的第一部分需要改变.,计划的第一部分需要改变.,计划的第一部分需要改变.,0,[],10
+sample_1818,"India and South Asia (India, Pakistan, Sri Lanka)","Gamble played cornerback, wide receiver, and all phases of special teams at Ohio State.",Gamble 在俄亥俄州做过边后卫、接球手，并在特种队里进行过所有等级的训练。,"甘布尔在俄<unk>俄州立大学打过角后卫,宽接收手和所有阶段的特别球队.","甘布尔在俄<unk>俄州立大学打过角后卫,宽接收手和所有阶段的特别球队.","甘布尔在俄<unk>俄州立大学打过角后卫,宽接收手和所有阶段的特别球队.",0,[],32
+sample_4192,United States English,It can describe a wide variety of fields with an inherently stochastic nature.,它可以描述具有内在随机性的各种领域。,"它可以描述各种各样的领域,","它可以描述各种各样的领域,","它可以描述各种各样的领域,",0,[],11
+sample_3156,"Southern African (South Africa, Zimbabwe, Namibia)","Living alone, she made solitude her best friend.",独自生活，她把孤独当成了最好的朋友。,"她独自生活, 孤独是她最好的朋友.","她独自生活, 孤独是她最好的朋友.","她独自生活, 孤独是她最好的朋友.",0,[],16
+sample_0410,England English,A steep trail is painful for our feet.,陡峭的小路走得我们脚痛。,一个<unk>的小径对我们的脚很痛苦.,一个<unk>的小径对我们的脚很痛苦.,一个<unk>的小径对我们的脚很痛苦.,0,[],16
+sample_0991,Filipino,He must know how to deal with the snakes of the desert.,他一定知道如何对付沙漠中的蛇。,他一定知道如何处理沙漠的蛇.,他一定知道如何处理沙漠的蛇.,他一定知道如何处理沙漠的蛇.,0,[],13
+sample_1400,Hong Kong English,I don't even know who I'm talking to any more.,我甚至不知道我在跟谁说话。,我甚至不知道我在和谁说话了.,我甚至不知道我在和谁说话了.,我甚至不知道我在和谁说话了.,0,[],13
+sample_2454,Malaysian English,What are you here for this morning?,你今天早上来这里干什么？,你今天早上来这里是为了什么?,你今天早上来这里是为了什么?,你今天早上来这里是为了什么?,0,[],11
+sample_1805,"India and South Asia (India, Pakistan, Sri Lanka)",He carried two dead hawks over his shoulder.,他肩上扛着两只死鹰。,他把两个死<unk>抬过他的肩膀.,他把两个死<unk>抬过他的肩膀.,他把两个死<unk>抬过他的肩膀.,0,[],16
+sample_4062,United States English,Nothing dries sooner than a tear.,没有什么比眼泪干的更快。,没有什么比眼<unk>更快干燥.,没有什么比眼<unk>更快干燥.,没有什么比眼<unk>更快干燥.,0,[],15
+sample_3414,"Southern African (South Africa, Zimbabwe, Namibia)",He was hitless in four at-bats on his debut.,他的处子秀在四场蝙蝠比赛中一无所获。,"在他的首次亮相中,他四次无击.","在他的首次亮相中,他四次无击.","在他的首次亮相中,他四次无击.",0,[],14
+sample_0499,England English,She plans to install a bench on her balcony.,她打算在自家阳台上放一个长凳。,她打算在阳台上安装一个长凳,她打算在阳台上安装一个长凳,她打算在阳台上安装一个长凳[UNKID],1,[12],14
+sample_0685,Filipino,It was a great success.,这是一个巨大的成功。,这是一次巨大的成功.,这是一次巨大的成功.,这是一次巨大的成功.,0,[],9
+sample_1247,Hong Kong English,"Millions of years ago, our seven continents were one super-continent called Pangaea.",几百万年前，我们的七大洲是一个超级大陆，叫做盘古大陆。,"数百万年前,我们的七个大陆是一个名为潘盖亚的超级大陆.","数百万年前,我们的七个大陆是一个名为潘盖亚的超级大陆.","数百万年前,我们的七个大陆是一个名为潘盖亚的超级大陆.",0,[],20
+sample_2532,Malaysian English,The horse balked and threw the tall rider.,马儿突然停下来，高个子骑手从马背上摔下来。,"马<unk>住了,把高个子的骑手扔了下来.","马<unk>住了,把高个子的骑手扔了下来.","马<unk>住了,把高个子的骑手扔了下来.",0,[],20
+sample_2209,"India and South Asia (India, Pakistan, Sri Lanka)",I'm really hoping it will be different this time.,我真希望这一次会不一样。,我真的希望这次会有所不同.,我真的希望这次会有所不同.,我真的希望这次会有所不同.,0,[],11
+sample_3701,United States English,The crowd gasped as they realised that the speaker was completely naked.,当人们意识到演讲者一丝不挂时，他们倒抽了一口气。,"当他们意识到演讲者完全赤身裸体时,人群喘息了.","当他们意识到演讲者完全赤身裸体时,人群喘息了.","当他们意识到演讲者完全赤身裸体时,人群喘息了.",0,[],22
+sample_3316,"Southern African (South Africa, Zimbabwe, Namibia)","Looking down at the spoon he held, the boy saw that the oil was gone.",男孩低头看着手中的勺子，发现油不见了。,"这个男孩看着他手里的<unk>匙, 看到油已经消失了.","这个男孩看着他手里的<unk>匙, 看到油已经消失了.","这个男孩看着他手里的<unk>匙, 看到油已经消失了.",0,[],22
+sample_0293,England English,A brown leather bag hung from its strap.,皮带上挂着一个棕色的皮包。,一个棕色的皮袋挂在它的皮带上.,一个棕色的皮袋挂在它的皮带上.,一个棕色的皮袋挂在它的皮带上.,0,[],15
+sample_0979,Filipino,As the most successful contestant in Jeopardy!,作为危险游戏中最成功的选手！,作为最成功的竞争对手在危险!,作为最成功的竞争对手在危险!,作为最成功的竞争对手在危险!,0,[],11
+sample_2469,Malaysian English,He was accused of plagiarism.,他被指控剽窃。,他被指控剽窃.,他被指控剽窃.,他被指控剽窃.,0,[],8
+sample_2087,"India and South Asia (India, Pakistan, Sri Lanka)",Do you understand me?,你明白我的意思吗？,你明白我的意思吗?,你明白我的意思吗?,你明白我的意思吗?,0,[],9
+sample_1774,Hong Kong English,Then what does she want with you?,那她找你干什么?,那她想要你做什么?,那她想要你做什么?,那她想要你做什么?,0,[],9
+sample_3678,United States English,He thought of all the married shepherds he had known.,他想到了所有他认识的已婚牧羊人。,他想起他认识的所有已婚牧羊人.,他想起他认识的所有已婚牧羊人.,他想起他认识的所有已婚牧羊人.,0,[],15
+sample_3430,"Southern African (South Africa, Zimbabwe, Namibia)",They formed heaps that are visible a mile and a half away.,他们堆积在一起，一英里半以外都可以看到。,它们形成了可以从一英里半的距离上看到堆<unk>.,它们形成了可以从一英里半的距离上看到堆<unk>.,它们形成了可以从一英里半的距离上看到堆<unk>.,0,[],20
+sample_0411,England English,Seward proposes that ball lightning is a spinning plasma toroid or ring.,苏华德认为球状闪电是一个旋转的等离子圆环面或环。,塞沃德认为球闪电是一个旋转的等离子体<unk>体或环.,塞沃德认为球闪电是一个旋转的等离子体<unk>体或环.,塞沃德认为球闪电是一个旋转的等离子体<unk>体或环.,0,[],26
+sample_0814,Filipino,"Had our instruments permitted it, we might have been able to see the trouble way back when.",如果我们的仪器允许的话，我们也许能在很久以前就看出问题所在。,"如果我们的仪器允许, 我们可能会能够看到问题远在当时.","如果我们的仪器允许, 我们可能会能够看到问题远在当时.","如果我们的仪器允许, 我们可能会能够看到问题远在当时.",0,[],18
+sample_2972,Malaysian English,"Oh dear, oh dear!",哦天哪，哦天哪！,"<unk>,亲爱的,<unk>,亲爱的!","<unk>,亲爱的,<unk>,亲爱的!","<unk>,亲爱的,<unk>,亲爱的!",0,[],17
+sample_1610,Hong Kong English,How did it happen?,这是怎么发生的？,这怎么可能发生呢?,这怎么可能发生呢?,这怎么可能发生呢?,0,[],9
+sample_2371,"India and South Asia (India, Pakistan, Sri Lanka)",The diocese is attached to the Province of Canterbury.,这个教区由坎特伯雷省管辖。,该教区隶属于坎特伯雷省.,该教区隶属于坎特伯雷省.,该教区隶属于坎特伯雷省.,0,[],14
+sample_4165,United States English,Several private schools are located in Maple Ridge.,Maple Ridge 有几所私立学校。,几所私立学校位于梅普尔山脊.,几所私立学校位于梅普尔山脊.,几所私立学校位于梅普尔山脊.,0,[],16
+sample_3290,"Southern African (South Africa, Zimbabwe, Namibia)","Yeah, I had a bit of a poke at that and failed to work out what was wrong.",是啊，我想了一下，但没弄清楚是怎么回事。,"是的,我有点<unk>,但没有弄清楚有什么问题.","是的,我有点<unk>,但没有弄清楚有什么问题.","是的,我有点<unk>,但没有弄清楚有什么问题.",0,[],20
+sample_0143,England English,She doesn't have the money.,她没有钱。,她没有钱.,她没有钱.,她没有钱.,0,[],7
+sample_0689,Filipino,The bridge is operated as a toll bridge by the Port of Hood River.,这座桥由胡德河港运营为收费桥。,这座桥由胡德河港作为收费桥运营.,这座桥由胡德河港作为收费桥运营.,这座桥由胡德河港作为收费桥运营.,0,[],16
+sample_2511,Malaysian English,"Luke, I am your sister!",Luke，我是你妹妹 ！,"卢克,我是你的妹妹!","卢克,我是你的妹妹!","卢克,我是你的妹妹!",0,[],12
+sample_1495,Hong Kong English,They can't even find him.,他们甚至找不到他。,他们甚至找不到他,他们甚至找不到他,他们甚至找不到他[UNKID],1,[7],9
+sample_1951,"India and South Asia (India, Pakistan, Sri Lanka)","Oh, I beg your pardon!",哦，麻烦再说一遍！,"<unk>,我求你原谅!","<unk>,我求你原谅!","<unk>,我求你原谅!",0,[],13
+sample_3896,United States English,"Damage suffered makes you knowing, but seldom rich.",受过的伤害会令人明智，但却不会令人丰富。,"遭受的伤害会让你变得聪明,但很少会让你变得富有.","遭受的伤害会让你变得聪明,但很少会让你变得富有.","遭受的伤害会让你变得聪明,但很少会让你变得富有.",0,[],20
+sample_3474,"Southern African (South Africa, Zimbabwe, Namibia)","Looking at the sun, he calculated that he would reach Tarifa before midday.",他看着太阳，估计中午之前可以到达塔里法。,"他看着太阳,计算出他将在中午之前到达塔里法.","他看着太阳,计算出他将在中午之前到达塔里法.","他看着太阳,计算出他将在中午之前到达塔里法.",0,[],20
+sample_0159,England English,Canada is quite cold at times.,加拿大有时很冷。,加拿大有时很冷.,加拿大有时很冷.,加拿大有时很冷.,0,[],9
+sample_1025,Filipino,The name comes from the prickles on the female cones.,这个名字来自雌球果上的刺毛。,这个名字来自雌性<unk>上的刺.,这个名字来自雌性<unk>上的刺.,这个名字来自雌性<unk>上的刺.,0,[],14
+sample_2443,Malaysian English,Pizza is an Italian classic.,披萨是意大利经典美食。,披萨是意大利的经典,披萨是意大利的经典,披萨是意大利的经典,0,[],10
+sample_1205,Hong Kong English,I prefer pizza with thin crust.,我喜欢薄切披萨。,我喜欢披萨与薄脆,我喜欢披萨与薄脆,我喜欢披萨与薄脆,0,[],10
+sample_3699,United States English,Steam hissed from the broken valve.,蒸汽从阀门的破裂处发出嘶嘶声。,蒸汽从破碎的<unk>门发出<unk>声.,蒸汽从破碎的<unk>门发出<unk>声.,蒸汽从破碎的<unk>门发出<unk>声.,0,[],20
+sample_3047,"Southern African (South Africa, Zimbabwe, Namibia)",She was here first.,她先来的。,她是第一个来这里的.,她是第一个来这里的.,她是第一个来这里的.,0,[],10
+sample_2213,"India and South Asia (India, Pakistan, Sri Lanka)","Fresh cases, still able to walk, they clustered about the spokesman.",新来的病人还能走路，他们簇拥在 说话人周围。,"新病例,仍然能够走路, 他们聚集在发言人.","新病例,仍然能够走路, 他们聚集在发言人.","新病例,仍然能够走路, 他们聚集在发言人.",0,[],19
+sample_0174,England English,Come on in the office here.,到办公室来吧。,进来办公室吧.,进来办公室吧.,进来办公室吧.,0,[],9
+sample_0768,Filipino,Overhead projectors were popular in the twentieth century.,高架投影仪在二十世纪曾非常流行。,"在20世纪,空中投影机很受欢迎.","在20世纪,空中投影机很受欢迎.","在20世纪,空中投影机很受欢迎.",0,[],14
+sample_2894,Malaysian English,It is the most valuable stamp in the world.,它是世界上最有价值的邮票。,这是世界上最贵的邮票.,这是世界上最贵的邮票.,这是世界上最贵的邮票.,0,[],10
+sample_1602,Hong Kong English,"Pay and spray, stay and pray, play and sway, what did you say?",支付和喷雾，停留和祈祷，玩和摇摆，你说什么？,"支付和喷雾,留下来和祈祷,玩和摇摆,你说什么?","支付和喷雾,留下来和祈祷,玩和摇摆,你说什么?","支付和喷雾,留下来和祈祷,玩和摇摆,你说什么?",0,[],24
+sample_3972,United States English,In his youth my dad was a hooligan.,我父亲年轻时是个流氓。,我父亲年轻时是个流氓,我父亲年轻时是个流氓,我父亲年轻时是个流氓[UNKID],1,[9],11
+sample_3466,"Southern African (South Africa, Zimbabwe, Namibia)",He told her about the morning's meeting.,他告诉她早上开会的事。,他告诉她关于早上的会议.,他告诉她关于早上的会议.,他告诉她关于早上的会议.,0,[],11
+sample_2398,"India and South Asia (India, Pakistan, Sri Lanka)",What can have happened?,会发生什么事呢？,发生了什么事?,发生了什么事?,发生了什么事?,0,[],8
+sample_0016,England English,How was that for a tight squeeze?,挤的太紧了怎么办？,这怎么样是一个紧紧的挤压?,这怎么样是一个紧紧的挤压?,这怎么样是一个紧紧的挤压?,0,[],13
+sample_0701,Filipino,"As the flag unfurled, they all hollered like wild beasts.",旗帜展开时，他们都像野兽一样大叫。,"随着国旗的展开,他们都像野兽一样大喊大叫.","随着国旗的展开,他们都像野兽一样大喊大叫.","随着国旗的展开,他们都像野兽一样大喊大叫.",0,[],20
+sample_1619,Hong Kong English,"The fool wanders, the wise man travels.",愚者徘徊，智者远游。,"愚人游荡,聪明人旅行.","愚人游荡,聪明人旅行.","愚人游荡,聪明人旅行.",0,[],14
+sample_2626,Malaysian English,Remembering is more satisfying than forgetting.,记住比忘记更令人满意。,记住比忘记更令人满意.,记住比忘记更令人满意.,记住比忘记更令人满意.,0,[],13
+sample_3887,United States English,Any volunteers?,有志愿者吗？,有任何志愿者,有任何志愿者,有任何志愿者,0,[],7
+sample_3067,"Southern African (South Africa, Zimbabwe, Namibia)",The boy was astonished by what he saw inside.,男孩被他在里面看到的东西震惊了。,这个男孩惊<unk>地看到里面的东西.,这个男孩惊<unk>地看到里面的东西.,这个男孩惊<unk>地看到里面的东西.,0,[],15
+sample_2359,"India and South Asia (India, Pakistan, Sri Lanka)","Maktub, the boy said, remembering the crystal merchant.",“Maktub，”男孩说，想起了水晶商人。,"""Maktub"",男孩说,记住水晶商人.","""Maktub"",男孩说,记住水晶商人.","""Maktub"",男孩说,记住水晶商人.",0,[],18
+sample_0557,England English,The desk and both chairs were painted tan.,桌子和两把椅子都漆成褐色。,桌子和两个椅子都被涂成棕色.,桌子和两个椅子都被涂成棕色.,桌子和两个椅子都被涂成棕色.,0,[],17
+sample_1150,Filipino,The only point at issue was the precise line of the borders.,唯一的问题是边界的精确线。,唯一有争议的点是边界的精确线.,唯一有争议的点是边界的精确线.,唯一有争议的点是边界的精确线.,0,[],18
+sample_1630,Hong Kong English,I'll be right there.,我马上就来。,我马上就到.,我马上就到.,我马上就到.,0,[],9
+sample_2963,Malaysian English,"The conical eggs are blue green when fresh, then turn orange.",锥形蛋刚生出来的时候是蓝绿色的，之后会变成橙色。,"<unk>形的<unk>蛋在新鲜时是蓝绿色的,然后变成<unk>色.","<unk>形的<unk>蛋在新鲜时是蓝绿色的,然后变成<unk>色.","<unk>形的<unk>蛋在新鲜时是蓝绿色的,然后变成<unk>色.",0,[],28
+sample_3113,"Southern African (South Africa, Zimbabwe, Namibia)",My friend bought all the other sheep immediately.,我的朋友立刻买下了所有其他的羊。,我的朋友立即买了所有其他的羊.,我的朋友立即买了所有其他的羊.,我的朋友立即买了所有其他的羊.,0,[],13
+sample_4162,United States English,"Thank you, just the same.",谢谢，还是一样。,"谢谢你,同样.","谢谢你,同样.","谢谢你,同样.",0,[],10
+sample_1811,"India and South Asia (India, Pakistan, Sri Lanka)",The whole army of them!,他们整个军队！,他们的整个军队!,他们的整个军队!,他们的整个军队!,0,[],8
+sample_1064,Filipino,Do you know those people?,你认识那些人吗？,你认识这些人吗?,你认识这些人吗?,你认识这些人吗?,0,[],9
+sample_0035,England English,The Hagen-Dieringhausen railway runs through the valley.,Hagen-Dieringhausen铁路贯穿山谷。,哈根-迪林豪森铁路经过山谷.,哈根-迪林豪森铁路经过山谷.,哈根-迪林豪森铁路经过山谷.,0,[],15
+sample_1493,Hong Kong English,Perhaps she met somebody.,也许她遇到了什么人。,也许她遇到了某人.,也许她遇到了某人.,也许她遇到了某人.,0,[],11
+sample_2817,Malaysian English,We can describe the object's movement with a differential equation of second order.,我们可以用二阶微分方程来描述物体的运动。,我们可以用二次微分方程来描述物体的运动.,我们可以用二次微分方程来描述物体的运动.,我们可以用二次微分方程来描述物体的运动.,0,[],17
+sample_4120,United States English,A boy came running towards me.,一个男孩向我跑来。,一个男孩跑向我.,一个男孩跑向我.,一个男孩跑向我.,0,[],9
+sample_3263,"Southern African (South Africa, Zimbabwe, Namibia)",Couldn't this have waited until morning?,难道就不能等到早上？,这不能等到早上吗?,这不能等到早上吗?,这不能等到早上吗?,0,[],10
+sample_2006,"India and South Asia (India, Pakistan, Sri Lanka)",It's a man who understands nature and the world.,这是一个了解自然和世界的人。,这是一个理解自然和世界的人.,这是一个理解自然和世界的人.,这是一个理解自然和世界的人.,0,[],10
+sample_0626,Filipino,We have an excess of squirrels.,我们的松鼠太多了。,我们有过多的松鼠.,我们有过多的松鼠.,我们有过多的松鼠.,0,[],10
+sample_0413,England English,I don't like coconuts.,我不喜欢椰子。,我不喜欢<unk>子.,我不喜欢<unk>子.,我不喜欢<unk>子.,0,[],10
+sample_1771,Hong Kong English,Jaffeir visits Pierre at his execution.,Jaffeir 在皮埃尔行刑时去看望了他。,贾菲尔在执行死刑时拜访了皮埃尔.,贾菲尔在执行死刑时拜访了皮埃尔.,贾菲尔在执行死刑时拜访了皮埃尔.,0,[],18
+sample_2425,Malaysian English,The foliage and fruits contain tannic acid and are poisonous to cattle and humans.,叶子和果实含有单宁酸，对牛和人有毒。,"叶子和水果含有<unk>酸,对牛和人类有毒.","叶子和水果含有<unk>酸,对牛和人类有毒.","叶子和水果含有<unk>酸,对牛和人类有毒.",0,[],22
+sample_3694,United States English,She also has responsibility for training Edinburgh University medical students in psychiatry.,她还负责给爱丁堡大学医学院的学生进行精神病学方面的授课。,她还负责培训爱丁堡大学的精神病学医学学生.,她还负责培训爱丁堡大学的精神病学医学学生.,她还负责培训爱丁堡大学的精神病学医学学生.,0,[],17
+sample_3526,"Southern African (South Africa, Zimbabwe, Namibia)","And so, despite the fact that he was a Roman centurion, he converted to their faith.",因此，尽管他是一名罗马百夫长，他还是皈依了他们的信仰。,"所以,尽管他是罗马百夫长, 他转变为他们的信仰.","所以,尽管他是罗马百夫长, 他转变为他们的信仰.","所以,尽管他是罗马百夫长, 他转变为他们的信仰.",0,[],19
+sample_1980,"India and South Asia (India, Pakistan, Sri Lanka)","The name San Fernando was added, making it San Fernando de Dilao.",添加了San Fernando这个名字，使它成为San Fernando de Dilao。,"添加了圣费尔南多的名字,使其成为圣费尔南多德迪拉奥.","添加了圣费尔南多的名字,使其成为圣费尔南多德迪拉奥.","添加了圣费尔南多的名字,使其成为圣费尔南多德迪拉奥.",0,[],25
+sample_0422,England English,What could it mean?,这意味着什么？,这可能意味着什么?,这可能意味着什么?,这可能意味着什么?,0,[],8
+sample_0715,Filipino,Henderson went into the railway station to telegraph the news to London.,Henderson 到火车站去打电报将消息发送到伦敦。,亨德森走进火车站将消息电报到伦敦.,亨德森走进火车站将消息电报到伦敦.,亨德森走进火车站将消息电报到伦敦.,0,[],19
+sample_1435,Hong Kong English,Fortunately its not the sole driving factor of the local economy.,幸运的是，这不是当地经济的唯一驱动因素。,"幸运的是,这不是当地经济的唯一驱动因素.","幸运的是,这不是当地经济的唯一驱动因素.","幸运的是,这不是当地经济的唯一驱动因素.",0,[],16
+sample_2517,Malaysian English,"She made a handful of films, mostly in the silent era.",她拍了几部电影，大部分都是在无声电影时代拍的。,"她拍摄了少数电影,大多是在无声时代.","她拍摄了少数电影,大多是在无声时代.","她拍摄了少数电影,大多是在无声时代.",0,[],15
+sample_3621,United States English,Oak is strong and also gives shade.,橡木很结实，也能遮荫。,"<unk>树是坚固的,也提供了阴影.","<unk>树是坚固的,也提供了阴影.","<unk>树是坚固的,也提供了阴影.",0,[],17
+sample_3446,"Southern African (South Africa, Zimbabwe, Namibia)","That night, he told all of this to the alchemist.",那天晚上，他把这一切都告诉了炼金术士。,"那天晚上,他把这一切告诉了炼金术士.","那天晚上,他把这一切告诉了炼金术士.","那天晚上,他把这一切告诉了炼金术士.",0,[],18
+sample_1820,"India and South Asia (India, Pakistan, Sri Lanka)","What is it, dear?",怎么了，亲爱的？,"这是什么,亲爱的?","这是什么,亲爱的?","这是什么,亲爱的?",0,[],9
+sample_0217,England English,Hannelore is an old German name.,汉内洛是一个古老的德国名字。,汉内洛尔是一个古老的德国名字.,汉内洛尔是一个古老的德国名字.,汉内洛尔是一个古老的德国名字.,0,[],14
+sample_0855,Filipino,"Scott's assistant, architect William Hay, oversaw the nave's construction.",斯科特的助理建筑师威廉·海伊负责中殿的施工。,"斯科特的助理,建筑师威廉·海,监督了船的建设.","斯科特的助理,建筑师威廉·海,监督了船的建设.","斯科特的助理,建筑师威廉·海,监督了船的建设.",0,[],20
+sample_1203,Hong Kong English,A sash of gold silk will trim her dress.,用一条金丝带装饰她的连衣裙。,一条金丝的腰带将修饰她的衣服.,一条金丝的腰带将修饰她的衣服.,一条金丝的腰带将修饰她的衣服.,0,[],16
+sample_4038,United States English,Jacqueline has an ulcer on her bottom lip.,Jacqueline 的下嘴唇有溃疡。,杰奎琳的下唇上有一个<unk>.,杰奎琳的下唇上有一个<unk>.,杰奎琳的下唇上有一个<unk>.,0,[],16
+sample_2939,Malaysian English,"The tribal chieftain called for the boy, and presented him with fifty pieces of gold.",部落首领叫来了男孩，并给他五十枚金币。,"部落的首领叫来那个男孩, 给他五十块金币.","部落的首领叫来那个男孩, 给他五十块金币.","部落的首领叫来那个男孩, 给他五十块金币.",0,[],21
+sample_1874,"India and South Asia (India, Pakistan, Sri Lanka)",What is the common denominator between these two variables?,这两个变量之间的共同点是什么？,这两个变量之间的共同分母是什么?,这两个变量之间的共同分母是什么?,这两个变量之间的共同分母是什么?,0,[],13
+sample_3518,"Southern African (South Africa, Zimbabwe, Namibia)",How often do you go through this little ritual?,你多久做一次这个小小的仪式？,你有多频繁地进行这个小仪式?,你有多频繁地进行这个小仪式?,你有多频繁地进行这个小仪式?,0,[],14
+sample_0029,England English,"Because I've always heard about them, the boy answered, saying nothing about his dream.",“因为我总是听说他们，”男孩回答说，但他对自己的梦只字未提。,"""因为我一直听说过他们"",男孩回答说,没有说任何关于他的梦想.","""因为我一直听说过他们"",男孩回答说,没有说任何关于他的梦想.","""因为我一直听说过他们"",男孩回答说,没有说任何关于他的梦想.",0,[],23
+sample_0699,Filipino,Project Coster was founded and run by Marc van Oostendorp.,Coster 项目是由 Marc van Oostendorp 创立和运营的。,科斯特项目由马克·范·奥斯<unk>多普创立和经营.,科斯特项目由马克·范·奥斯<unk>多普创立和经营.,科斯特项目由马克·范·奥斯<unk>多普创立和经营.,0,[],24
+sample_1389,Hong Kong English,"I like the avenger of the new episode, he really is a badass.",我喜欢新一集的复仇者，他真是个坏蛋。,"我喜欢新集的复仇者,他真的很<unk>.","我喜欢新集的复仇者,他真的很<unk>.","我喜欢新集的复仇者,他真的很<unk>.",0,[],18
+sample_2898,Malaysian English,A group of people are rafting on river rapids.,一群人正在激流上漂流。,一群人正在河流上漂流,一群人正在河流上漂流,一群人正在河流上漂流[UNKID],1,[11],13
+sample_4056,United States English,Garnes was replaced in overnights by Darla Coop.,加尔涅斯在一夜之间被达拉库普取代。,加恩斯被达拉·库普取代.,加恩斯被达拉·库普取代.,加恩斯被达拉·库普取代.,0,[],15
+sample_1975,"India and South Asia (India, Pakistan, Sri Lanka)","We work hard, so our children don't have to.",我们努力工作，让我们的孩子不必如此。,"我们努力工作,所以我们的孩子不必这样做.","我们努力工作,所以我们的孩子不必这样做.","我们努力工作,所以我们的孩子不必这样做.",0,[],14
+sample_3122,"Southern African (South Africa, Zimbabwe, Namibia)",Garlic can be used to fight vampires.,大蒜可以用来对付吸血鬼。,大<unk>可以用来对抗吸血鬼.,大<unk>可以用来对抗吸血鬼.,大<unk>可以用来对抗吸血鬼.,0,[],15
+sample_0343,England English,Replace the Ts in Tim Tebow's name with any other consonant to get a Star Wars character,把 Tim Tebow 名字中的 T 换成其他辅音字母，以得到一个星球大战里的角色,"用任何其他辅音取代Tim Tebow的名字中的T, 得到一个星球大战角色","用任何其他辅音取代Tim Tebow的名字中的T, 得到一个星球大战角色","用任何其他辅音取代Tim Tebow的名字中的T, 得到一个星球大战角色",0,[],24
+sample_1498,Hong Kong English,Did you know that Nikola was going to join us?,你知道 Nikola 要加入我们吗?,你知道尼科拉会加入我们吗?,你知道尼科拉会加入我们吗?,你知道尼科拉会加入我们吗?,0,[],13
+sample_0859,Filipino,What are you crying about?,你哭什么？,你为什么哭泣?,你为什么哭泣?,你为什么哭泣?,0,[],8
+sample_3878,United States English,I bet you forgot the wine!,我打赌你忘了酒！,我敢打<unk>你忘了葡萄酒!,我敢打<unk>你忘了葡萄酒!,我敢打<unk>你忘了葡萄酒!,0,[],15
+sample_2498,Malaysian English,"Mommy, can we have a puppy please?",妈妈，我们能有一只小狗吗？,"妈妈,我们可以有一个小狗吗?","妈妈,我们可以有一个小狗吗?","妈妈,我们可以有一个小狗吗?",0,[],13
+sample_1922,"India and South Asia (India, Pakistan, Sri Lanka)",What game do you want to play?,你想玩什么游戏?,你想玩什么游戏?,你想玩什么游戏?,你想玩什么游戏?,0,[],9
+sample_3157,"Southern African (South Africa, Zimbabwe, Namibia)",He placed Urim and Thummim in the chest.,他将 Urim 和 Thummim 放在胸前。,他把乌里姆和土米姆放在箱子里.,他把乌里姆和土米姆放在箱子里.,他把乌里姆和土米姆放在箱子里.,0,[],17
+sample_0044,England English,"She owned several farms in New London, and had a home in Norwich.",她在新伦敦拥有数个农场，并在诺里奇拥有一所房产。,"她在新伦敦拥有几座农场,在诺维奇有一个家.","她在新伦敦拥有几座农场,在诺维奇有一个家.","她在新伦敦拥有几座农场,在诺维奇有一个家.",0,[],19
+sample_1540,Hong Kong English,"The Ibec design, while bespoke, was not adventurous.",Ibec 的设计虽然是定制的，但并不具有冒险精神。,"虽然Ibeck的设计是定制的,","虽然Ibeck的设计是定制的,","虽然Ibeck的设计是定制的,",0,[],14
+sample_0809,Filipino,"There, he awards both Ziwei and Xiaoyanzi with a gold insignia.",在那里，他为 Ziwei 和 Xiaoyanzi 颁发了金色徽章。,"在那里,他授予齐威和<unk>扬齐一个金<unk>章.","在那里,他授予齐威和<unk>扬齐一个金<unk>章.","在那里,他授予齐威和<unk>扬齐一个金<unk>章.",0,[],23
+sample_3880,United States English,He has also done work in the sociology of social and sociable robotics.,他还从事过社交和社交机器人的社会学方面的研究。,他还研究了社会和社交机器人的社会学.,他还研究了社会和社交机器人的社会学.,他还研究了社会和社交机器人的社会学.,0,[],13
+sample_2750,Malaysian English,a girl wearing sunglasses smiles for the camera.,一个戴着墨镜的女孩对着照相机微笑。,一个戴着太阳眼镜的女孩对着相机微笑,一个戴着太阳眼镜的女孩对着相机微笑,一个戴着太阳眼镜的女孩对着相机微笑[UNKID],1,[16],18
+sample_3447,"Southern African (South Africa, Zimbabwe, Namibia)",I'd love to see you try and convince them of that!,我很乐意看到你试着说服他们!,我很想看到你试着说服他们!,我很想看到你试着说服他们!,我很想看到你试着说服他们!,0,[],14
+sample_2036,"India and South Asia (India, Pakistan, Sri Lanka)",Can I be used to request invocation of a subsystem on the remote system?,我可以用来请求调用远程系统上的子系统吗？,我可以被用来请求在远程系统上调用子系统吗?,我可以被用来请求在远程系统上调用子系统吗?,我可以被用来请求在远程系统上调用子系统吗?,0,[],19
+sample_0077,England English,Stark naked. Under bare poles. In puris naturalibus.,一丝不挂。光着身子。赤裸。,"在裸体,裸体<unk>下,在""自然纯粹""中.","在裸体,裸体<unk>下,在""自然纯粹""中.","在裸体,裸体<unk>下,在""自然纯粹""中.",0,[],22
+sample_1322,Hong Kong English,"Whenever I fall asleep, I don't dream.",每当我睡着的时候，我都不做梦。,"每当我睡着的时候,我都不做梦","每当我睡着的时候,我都不做梦","每当我睡着的时候,我都不做梦[UNKID]",1,[13],15
+sample_3846,United States English,You're just like Father used to be.,你就像以前的爸爸一样。,你就像父亲一样.,你就像父亲一样.,你就像父亲一样.,0,[],8
+sample_0616,Filipino,The phoenix burst into flames spontaneously.,凤凰自燃了。,凤凰自发地燃烧起来,凤凰自发地燃烧起来,凤凰自发地燃烧起来[UNKID],1,[11],13
+sample_2463,Malaysian English,"There were raised voices,and some sort of struggle appeared to be going on. .",有人提高了嗓门，似乎要进行某种斗争。,"有一些声音<unk>起, 似乎正在进行某种斗争.","有一些声音<unk>起, 似乎正在进行某种斗争.","有一些声音<unk>起, 似乎正在进行某种斗争.",0,[],18
+sample_3185,"Southern African (South Africa, Zimbabwe, Namibia)","That baker... he said to himself, without completing the thought.",“那个面包师……”他嘀咕着，没说完。,"""那个面包师... ""他对自己说,没有完成想法.","""那个面包师... ""他对自己说,没有完成想法.","""那个面包师... ""他对自己说,没有完成想法.",0,[],19
+sample_2169,"India and South Asia (India, Pakistan, Sri Lanka)",Listed by exhibit year and location.,按展品年份和地点列出。,根据展览年份和地点列出.,根据展览年份和地点列出.,根据展览年份和地点列出.,0,[],13
+sample_0081,England English,"The Arabs laughed at him, and the alchemist laughed along.",阿拉伯人嘲笑他，炼金术士也跟着笑了。,"阿拉伯人嘲笑他,炼金术士也嘲笑他.","阿拉伯人嘲笑他,炼金术士也嘲笑他.","阿拉伯人嘲笑他,炼金术士也嘲笑他.",0,[],20
+sample_1333,Hong Kong English,"Fatima, the girl said, averting her eyes.",“Fatima。”女孩转过头说。,"""法蒂玛"",女孩说,避开她的眼睛.","""法蒂玛"",女孩说,避开她的眼睛.","""法蒂玛"",女孩说,避开她的眼睛.",0,[],16
+sample_3960,United States English,"Nick explains what happened, but Glenda refuses to help unless he turns himself in.",尼克解释了事情的经过，但格伦达拒绝帮忙，除非他自首。,"尼克解释了发生了什么,但格伦达拒绝帮助,除非他投降.","尼克解释了发生了什么,但格伦达拒绝帮助,除非他投降.","尼克解释了发生了什么,但格伦达拒绝帮助,除非他投降.",0,[],23
+sample_2841,Malaysian English,The fin was sharp and cut the clear water.,鱼鳍锋利，划破了清澈的水面。,"翅膀很尖,切断了清<unk>的水.","翅膀很尖,切断了清<unk>的水.","翅膀很尖,切断了清<unk>的水.",0,[],19
+sample_2009,"India and South Asia (India, Pakistan, Sri Lanka)","Harapiak subsequently left politics, and worked as a director at the Winnipeg Technical Centre.",Harapiak 后来离开了政界，在温尼伯技术中心担任主任。,"哈拉皮亚克随后离开政治,并在温尼伯技术中心担任董事.","哈拉皮亚克随后离开政治,并在温尼伯技术中心担任董事.","哈拉皮亚克随后离开政治,并在温尼伯技术中心担任董事.",0,[],21
+sample_0749,Filipino,"A Russian Grand Duchess was styled as, ""Her Imperial Highness"".",俄罗斯大公爵夫人的风格被称为“殿下”。,"俄罗斯大公爵夫人被称为""皇室陛下"".","俄罗斯大公爵夫人被称为""皇室陛下"".","俄罗斯大公爵夫人被称为""皇室陛下"".",0,[],17
+sample_3578,"Southern African (South Africa, Zimbabwe, Namibia)",Terracotta Sighing,兵马俑之叹。,塔拉科塔说,塔拉科塔说,塔拉科塔说,0,[],9
+sample_0279,England English,Zak is a wannabe skater.,Zak 想要成为一名滑冰运动员。,扎克是一名想成为滑冰运动员的人.,扎克是一名想成为滑冰运动员的人.,扎克是一名想成为滑冰运动员的人.,0,[],14
+sample_3875,United States English,It was a useful reminder to complete the task.,这是一个对完成任务有用的提醒。,"这是一个有用的提醒,完成任务","这是一个有用的提醒,完成任务","这是一个有用的提醒,完成任务[UNKID]",1,[9],11
+sample_1633,Hong Kong English,"Whenever I fall asleep, I don't dream.",每当我睡着的时候，我都不做梦。,"每当我睡着的时候,我都不做梦.","每当我睡着的时候,我都不做梦.","每当我睡着的时候,我都不做梦.",0,[],15
+sample_2814,Malaysian English,I could go on for days about the delicious wines produced in this part of the world.,我可以连续几天谈论世界这一地区出产的美味葡萄酒。,我可以说几天关于世界上这个地方生产的美味葡萄酒.,我可以说几天关于世界上这个地方生产的美味葡萄酒.,我可以说几天关于世界上这个地方生产的美味葡萄酒.,0,[],19
+sample_2377,"India and South Asia (India, Pakistan, Sri Lanka)",What do you know about that?,你对此了解多少？,你对此有什么了解?,你对此有什么了解?,你对此有什么了解?,0,[],8
+sample_1154,Filipino,It was the beginning of a long and successful collaboration.,这是一个长期的成功合作的开始。,这是一个漫长而成功的合作的开始.,这是一个漫长而成功的合作的开始.,这是一个漫长而成功的合作的开始.,0,[],12
+sample_3118,"Southern African (South Africa, Zimbabwe, Namibia)","I'm leaving today, said the boy.",“我今天就要走了，”男孩说。,"""我今天就离开了"",男孩说.","""我今天就离开了"",男孩说.","""我今天就离开了"",男孩说.",0,[],13
+sample_0221,England English,Who is the blonde girl with the red skirt?,那个穿红裙子的金发女孩是谁?,那个穿着红色<unk>子的金发女孩是谁?,那个穿着红色<unk>子的金发女孩是谁?,那个穿着红色<unk>子的金发女孩是谁?,0,[],19
+sample_3774,United States English,"It would have been visible to me, had I only looked up as it passed.",我只有在它经过的时候抬起头来，我才看见它。,"如果我只在它经过时抬头看,我就会看到它","如果我只在它经过时抬头看,它就会被我看到","如果我只在它经过时抬头看,它就会被我看到[UNKID]",1,[18],20
+sample_1532,Hong Kong English,I wanted them to be a part of your inheritance.,我想让它们成为你遗产的一部分。,我希望他们成为你遗产的一部分.,我希望他们成为你遗产的一部分.,我希望他们成为你遗产的一部分.,0,[],11
+sample_2812,Malaysian English,Why should you not?,为什么不能呢？,你为什么不应该呢?,你为什么不应该呢?,你为什么不应该呢?,0,[],9
+sample_1957,"India and South Asia (India, Pakistan, Sri Lanka)",You've got the brain of a pancake.,你脑子进水了。,你脑子像<unk>饼一样大.,你脑子像<unk>饼一样大.,你脑子像<unk>饼一样大.,0,[],14
+sample_0660,Filipino,This made the coding of counting loops very efficient.,这使得计数循环的编码非常有效。,这使得计数循环的编码非常高效.,这使得计数循环的编码非常高效.,这使得计数循环的编码非常高效.,0,[],16
+sample_3055,"Southern African (South Africa, Zimbabwe, Namibia)",I wish I could go back to the hospital.,我希望我能回到医院。,我希望可以回到医院.,我希望可以回到医院.,我希望可以回到医院.,0,[],8
+sample_0289,England English,It was no more exciting than an overturned carriage or a tree blown across the road.,这并不比翻倒的马车或被风吹倒横跨马路的树更令人兴奋。,这并不像一辆翻转的马车或一棵被风吹过路的树那样令人兴奋.,这并不像一辆翻转的马车或一棵被风吹过路的树那样令人兴奋.,这并不像一辆翻转的马车或一棵被风吹过路的树那样令人兴奋.,0,[],28
+sample_3928,United States English,"Happy hardcore is a fast style of techno music, that was kind of popular in the nineties.",Happy hardcore 是一种快速风格的电子音乐，在 90 年代很流行。,"快乐硬核是一种快速的科技音乐风格,","快乐硬核是一种快速的科技音乐风格,","快乐硬核是一种快速的科技音乐风格,",0,[],14
+sample_1656,Hong Kong English,Every Jack has his Jill.,有情人终成眷属。,每个杰克都有自己的吉尔,每个杰克都有自己的吉尔,每个杰克都有自己的吉尔,0,[],11
+sample_2529,Malaysian English,Seven steps must be climbed in order to reach the passage.,必须爬七级台阶才能到达通道。,"要到达通道,必须爬上七个台阶.","要到达通道,必须爬上七个台阶.","要到达通道,必须爬上七个台阶.",0,[],16
+sample_2029,"India and South Asia (India, Pakistan, Sri Lanka)",Connect to the specified prompt server.,连接至制定的提示服务器。,连接到特定的提示服务器,连接到特定的提示服务器,连接到特定的提示服务器[UNKID],1,[9],11
+sample_1191,Filipino,The toilet needed cleaning.,厕所需要打扫。,厕所需要清理.,厕所需要清理.,厕所需要清理.,0,[],10
+sample_3524,"Southern African (South Africa, Zimbabwe, Namibia)",I always have both.,两者我都有。,我总是有这两种.,我总是有这两种.,我总是有这两种.,0,[],9
+sample_0543,England English,You're lying to me.,你在骗我。,你是在骗我.,你是在骗我.,你是在骗我.,0,[],8
+sample_1267,Hong Kong English,This is the Press Room.,这是新闻发布室。,这是新闻发布室,这是新闻发布室,这是新闻发布室[UNKID],1,[6],8
+sample_3812,United States English,Hit your enemy with all your strength.,尽你的全力打击敌人。,用你所有的力量击中你的敌人.,用你所有的力量击中你的敌人.,用你所有的力量击中你的敌人.,0,[],13
+sample_2896,Malaysian English,"His dessert smelled musty, not sweet.",他的甜点有霉味，不甜。,"他的甜点闻起来<unk>味,而不是甜味.","他的甜点闻起来<unk>味,而不是甜味.","他的甜点闻起来<unk>味,而不是甜味.",0,[],17
+sample_2012,"India and South Asia (India, Pakistan, Sri Lanka)",Our elders have the wisdom to learn from.,我们的长辈有学习的智慧。,我们的长老有智慧可以从中学习.,我们的长老有智慧可以从中学习.,我们的长老有智慧可以从中学习.,0,[],13
+sample_0612,Filipino,"Relaxed and unhurried, he resolved that he would walk through the narrow streets of Tangier.",他轻轻松松，不急不躁，下定决心要穿过丹吉尔的狭窄街道。,他决定要穿过坦吉尔的狭窄街道.,他决定要穿过坦吉尔的狭窄街道.,他决定要穿过坦吉尔的狭窄街道.,0,[],17
+sample_3190,"Southern African (South Africa, Zimbabwe, Namibia)",The wolf-dog thrust his gaunt muzzle toward him.,那只狼狗把它那瘦骨嶙峋的鼻子朝他伸过来。,狼狗向他推着他的瘦弱的嘴巴.,狼狗向他推着他的瘦弱的嘴巴.,狼狗向他推着他的瘦弱的嘴巴.,0,[],17
+sample_0184,England English,Now I will drift gently off to dreamland.,现在我要慢慢地进入梦乡。,现在我会轻轻地漂移到梦境.,现在我会轻轻地漂移到梦境.,现在我会轻轻地漂移到梦境.,0,[],14
+sample_1637,Hong Kong English,"And that he, a boy, could perform miracles.",他只是一个男孩，但可以创造奇迹。,"而且他,一个男孩,可以执行奇迹.","而且他,一个男孩,可以执行奇迹.","而且他,一个男孩,可以执行奇迹.",0,[],14
+sample_2496,Malaysian English,"Although the reduced capacity was justifiable in their opinion, they stayed the course.",尽管他们认为减少运力是合理的，但他们坚持了下去。,"虽然他们认为减少产能是合理的,但他们坚持了这一路线.","虽然他们认为减少产能是合理的,但他们坚持了这一路线.","虽然他们认为减少产能是合理的,但他们坚持了这一路线.",0,[],21
+sample_3969,United States English,And what did she say?,她说了什么？,你说的是什么?,你说的是什么?,你说的是什么?,0,[],8
+sample_2147,"India and South Asia (India, Pakistan, Sri Lanka)",What are you doing in here?,你在这里做什么?,你在这里做什么?,你在这里做什么?,你在这里做什么?,0,[],7
+sample_0994,Filipino,I'll look on Github for support.,我会在 Github 上寻求支持。,我会在Github上寻找支持.,我会在Github上寻找支持.,我会在Github上寻找支持.,0,[],12
+sample_3576,"Southern African (South Africa, Zimbabwe, Namibia)","It swayed in the air, like weeping willows.",它在空中摇曳，像垂柳。,"它在空气中摇摆,就像哭<unk>.","它在空气中摇摆,就像哭<unk>.","它在空气中摇摆,就像哭<unk>.",0,[],16
+sample_0045,England English,This gives rise to screw theory.,这就产生了螺旋理论。,这就引发了螺丝理论.,这就引发了螺丝理论.,这就引发了螺丝理论.,0,[],11
+sample_2908,Malaysian English,"At all other times, the Presidium acts for the Assembly.",在其他任何时候，主席团都代表着大会。,"在其他所有时间,主席团代表议会行事.","在其他所有时间,主席团代表议会行事.","在其他所有时间,主席团代表议会行事.",0,[],15
+sample_1354,Hong Kong English,If you don't say it you will not have to unsay it.,如果你不说，你就不用说出来了。,"如果你不说,你就不用说出来了","如果你不说,你就不用说出来了","如果你不说,你就不用说出来了[UNKID]",1,[11],13
+sample_2268,"India and South Asia (India, Pakistan, Sri Lanka)",Solomon and Gergana Passy have four children from their three marriages.,Solomon 和 Gergana Passy 在他们的三次婚姻中生了四个孩子。,索罗门和格尔加纳·帕西在三次婚姻中生了四个孩子.,索罗门和格尔加纳·帕西在三次婚姻中生了四个孩子.,索罗门和格尔加纳·帕西在三次婚姻中生了四个孩子.,0,[],25
+sample_3948,United States English,Why are gully covers round?,为什么泄水沟盖是圆的？,为什么<unk>沟的盖子是圆的?,为什么<unk>沟的盖子是圆的?,为什么<unk>沟的盖子是圆的?,0,[],15
+sample_1106,Filipino,There's no time like the present.,没有比现在更好的时间了。,没有比现在更好的时间.,没有比现在更好的时间.,没有比现在更好的时间.,0,[],9
+sample_3196,"Southern African (South Africa, Zimbabwe, Namibia)",And we'll be at Larissa's Bar up the street.,我们会去街那头的 Larissa's 酒吧。,我们会在街上拉丽莎的酒吧.,我们会在街上拉丽莎的酒吧.,我们会在街上拉丽莎的酒吧.,0,[],13
+sample_0006,England English,It has gone now.,现在都已经过去了。,现在已经不见了,现在已经不见了,现在已经不见了[UNKID],1,[7],9
+sample_2513,Malaysian English,"After twelve hours of rowing, Darius climbed out of the canoe, and lied down on the beach to nap.",Darius 划了十二个小时后，爬出独木舟，躺在沙滩上打盹。,"经过12个小时的划船, 达利乌斯从独木舟上爬出来, 躺在海<unk>上睡觉.","经过12个小时的划船, 达利乌斯从独木舟上爬出来, 躺在海<unk>上睡觉.","经过12个小时的划船, 达利乌斯从独木舟上爬出来, 躺在海<unk>上睡觉.",0,[],36
+sample_1359,Hong Kong English,"If you are using Firefox, try out this sample module.",如果您正在使用 火狐浏览器，请尝试这个示例模块。,"如果您正在使用Firefox,请尝试使用这个样本模块.","如果您正在使用Firefox,请尝试使用这个样本模块.","如果您正在使用Firefox,请尝试使用这个样本模块.",0,[],19
+sample_3828,United States English,"It's a Yankee, Joan cried.",他是个美国佬，琼哭了。,"""这是一个洋基"",乔安哭了.","""这是一个洋基"",乔安哭了.","""这是一个洋基"",乔安哭了.",0,[],13
+sample_2072,"India and South Asia (India, Pakistan, Sri Lanka)",There's a caravan leaving today for Al-Fayoum.,今天有一队商队出发去 Al-Fayoum。,"""今天有一支车队前往阿尔法尤姆"".","""今天有一支车队前往阿尔法尤姆"".","""今天有一支车队前往阿尔法尤姆"".",0,[],15
+sample_0996,Filipino,The President just decorated him.,总统刚刚授予了他勋章。,总统刚刚授予他一个奖章.,总统刚刚授予他一个奖章.,总统刚刚授予他一个奖章.,0,[],13
+sample_3237,"Southern African (South Africa, Zimbabwe, Namibia)",Bata is also known for its nightlife and market.,巴塔还以其夜生活和市场而闻名。,巴塔也以其夜生活和市场而闻名.,巴塔也以其夜生活和市场而闻名.,巴塔也以其夜生活和市场而闻名.,0,[],14
+sample_0220,England English,"I want you to help me turn myself into the wind, the boy answered.",“我想让你帮我把自己变成风，”男孩回答。,"""我想你帮我把自己变成风"",男孩回答说.","""我想你帮我把自己变成风"",男孩回答说.","""我想你帮我把自己变成风"",男孩回答说.",0,[],17
+sample_2599,Malaysian English,I am so happy!,我太高兴了！,我非常开心,我非常开心,我非常开心[UNKID],1,[6],8
+sample_2026,"India and South Asia (India, Pakistan, Sri Lanka)",Do you know who I am?,你知道我是谁吗?,你知道我是谁吗?,你知道我是谁吗?,你知道我是谁吗?,0,[],9
+sample_1796,Hong Kong English,Don't count your chickens before they hatch.,别太早下定论。,在<unk>化之前不要计数你的<unk>.,在<unk>化之前不要计数你的<unk>.,在<unk>化之前不要计数你的<unk>.,0,[],17
+sample_0712,Filipino,What could it be?,会是什么呢？,这可能是什么?,这可能是什么?,这可能是什么?,0,[],7
+sample_3883,United States English,I have already described the appearance of that colossal bulk which was embedded in the ground.,我已经描述了埋在地下的那个巨大物体的外观。,"我已经描述了那个巨大的体积的外观,","我已经描述了那个巨大的体积的外观,","我已经描述了那个巨大的体积的外观,",0,[],15
+sample_3235,"Southern African (South Africa, Zimbabwe, Namibia)",He decided to spend the night there.,他决定在那里过夜。,他决定在那里过夜.,他决定在那里过夜.,他决定在那里过夜.,0,[],9
+sample_0203,England English,"Well, it needed but this.",好吧，它需要的只是这个。,"好吧,它需要但这个.","好吧,它需要但这个.","好吧,它需要但这个.",0,[],11
+sample_2840,Malaysian English,I want to know how all this is possible.,我想知道这一切是怎么做到的。,我想知道这一切是如何可能的,我想知道这一切是如何可能的,我想知道这一切是如何可能的[UNKID],1,[8],10
+sample_2160,"India and South Asia (India, Pakistan, Sri Lanka)","to check one To pull the fell hide, skin over one's ears",去检查、去拉掉皮革，把皮捂在耳朵上。,"检查一个拉掉了皮肤,皮肤在耳朵上.","检查一个拉掉了皮肤,皮肤在耳朵上.","检查一个拉掉了皮肤,皮肤在耳朵上.",0,[],19
+sample_1433,Hong Kong English,Don't spank your kids!,不要打你的孩子 ！,不要鞭打你的孩子!,不要鞭打你的孩子!,不要鞭打你的孩子!,0,[],9
+sample_1093,Filipino,"This isn't exactly cheap, but it is scalable if we assume hierarchical contexts.",这并不便宜，但是如果我们假设层次结构上下文，它是可伸缩的。,"这并不便宜,但如果我们假设层次结构上下文,它是可扩展的","这并不便宜,但如果我们假设层次结构上下文,它是可扩展的","这并不便宜,但如果我们假设层次结构上下文,它是可扩展的[UNKID]",1,[22],24
+sample_3644,United States English,I was the only patient in the waiting room.,我是候诊室中等待的唯一患者。,我是等待室里唯一的病人,我是等待室里唯一的病人,我是等待室里唯一的病人[UNKID],1,[8],10
+sample_3421,"Southern African (South Africa, Zimbabwe, Namibia)",It was camouflaged so well that no one would have suspected its presence.,伪装得如此之好，以至没有人怀疑它的存在。,"它被伪装得如此之好, 没人会怀疑它的存在.","它被伪装得如此之好, 没人会怀疑它的存在.","它被伪装得如此之好, 没人会怀疑它的存在.",0,[],20
+sample_0022,England English,I forgot to thank you for those roses.,我忘了谢谢你送的玫瑰。,我忘了感谢你送的玫瑰,我忘了感谢你送的玫瑰,我忘了感谢你送的玫瑰[UNKID],1,[11],13
+sample_2623,Malaysian English,"Who is this stranger who speaks of omens? asked one of the chieftains, eyeing the boy.",“这个可以于预知未来的陌生人究竟是谁？”其中一个酋长目不转睛地盯着男孩问到。,"""谁是这个陌生人说预兆?"" 一个首领问,眼睛<unk>着男孩.","""谁是这个陌生人说预兆?"" 一个首领问,眼睛<unk>着男孩.","""谁是这个陌生人说预兆?"" 一个首领问,眼睛<unk>着男孩.",0,[],26
+sample_2370,"India and South Asia (India, Pakistan, Sri Lanka)",Who was using this lab when the necklace was still here?,当项链还在这里的时候，谁在用这个实验室 ？,"当项链还在这里时, 谁在使用这个实验室?","当项链还在这里时, 谁在使用这个实验室?","当项链还在这里时, 谁在使用这个实验室?",0,[],17
+sample_1750,Hong Kong English,The Morning Post is not obstructing justice or hiding criminals.,《晨报》并没有妨碍司法公正，也没有隐藏罪犯。,"""晨报""不是妨碍正义或隐藏罪犯.","""晨报""不是妨碍正义或隐藏罪犯.","""晨报""不是妨碍正义或隐藏罪犯.",0,[],18
+sample_0838,Filipino,"He grew strawberries, so you would not like it.",他种草莓，所以你不会喜欢它的。,"他种植草<unk>,所以你不会喜欢它.","他种植草<unk>,所以你不会喜欢它.","他种植草<unk>,所以你不会喜欢它.",0,[],17
+sample_4037,United States English,Medalists and complete results were published.,金牌得主和完整的结果已经发表。,奖牌得主和完整的结果被公布.,奖牌得主和完整的结果被公布.,奖牌得主和完整的结果被公布.,0,[],14
+sample_3167,"Southern African (South Africa, Zimbabwe, Namibia)",What's the matter with me?,我到底怎么了？,我有什么问题?,我有什么问题?,我有什么问题?,0,[],7
+sample_0129,England English,Do you have anything to eat?,你有什么吃的吗？,你有什么可以吃的吗?,你有什么可以吃的吗?,你有什么可以吃的吗?,0,[],10
+sample_2655,Malaysian English,Thousands of workers commute from the surroundings into the city each day.,每天都有成千上万的工人从周围的环境通勤进城。,每天有成千上万的工人从周边地区通勤到城市.,每天有成千上万的工人从周边地区通勤到城市.,每天有成千上万的工人从周边地区通勤到城市.,0,[],21
+sample_2119,"India and South Asia (India, Pakistan, Sri Lanka)","Oh, I beg your pardon!",哦，麻烦再说一遍！,"<unk>,我求你原谅!","<unk>,我求你原谅!","<unk>,我求你原谅!",0,[],13
+sample_0935,Filipino,Subsequent volumes are available as paid-for updates.,后面的几卷为付费更新。,随后的卷可以作为付费更新.,随后的卷可以作为付费更新.,随后的卷可以作为付费更新.,0,[],13
+sample_1219,Hong Kong English,Where have you been this afternoon?,今天下午你去哪里了？,你今天下午在哪里?,你今天下午在哪里?,你今天下午在哪里?,0,[],9
+sample_3894,United States English,"Later, the Nine Olympian Muses were named.",后来，九位奥林匹亚的缪斯女神被命名。,"后来,九位奥林匹克神<unk>被命名.","后来,九位奥林匹克神<unk>被命名.","后来,九位奥林匹克神<unk>被命名.",0,[],19
+sample_3523,"Southern African (South Africa, Zimbabwe, Namibia)",Give Home Is the Hunter zero stars,Give Home Is the Hunter 零星级,给家是猎人零星,给家是猎人零星,给[UNKID]家是猎人[UNKID]零星,2,"[4, 9]",13
+sample_0450,England English,The plastic barrier shattered.,塑料栅栏破裂了。,塑料屏障被打破了.,塑料屏障被打破了.,塑料屏障被打破了.,0,[],12
+sample_2785,Malaysian English,Bravery is the ability to overcome fear.,勇敢是战胜恐惧的能力。,勇气是克服恐惧的能力.,勇气是克服恐惧的能力.,勇气是克服恐惧的能力.,0,[],13
+sample_2093,"India and South Asia (India, Pakistan, Sri Lanka)","Doves sprouted, then escaped from various oversized pockets, some trailing handkerchiefs or bunting.",鸽子涌现而出，然后从各种超大的口袋力逃出来，一些嘴里叼着手帕或彩布。,"<unk>子<unk>芽,然后从各种超大的口袋里逃脱, 有些拖着手帕或<unk>.","<unk>子<unk>芽,然后从各种超大的口袋里逃脱, 有些拖着手帕或<unk>.","<unk>子<unk>芽,然后从各种超大的口袋里逃脱, 有些拖着手帕或<unk>.",0,[],33
+sample_1002,Filipino,"My dog is an Alsatian, we call her 'Poppy'.",我的狗是阿尔萨斯狗，我们叫它 ‘Poppy’。,"我的狗是阿尔萨斯人,我们叫她Poppy","我的狗是阿尔萨斯人,我们叫她Poppy","我的狗是阿尔萨斯人,我们叫她Poppy[UNKID]",1,[15],17
+sample_1239,Hong Kong English,I've just told you I was busy with the little dog.,我刚告诉过你我正忙着照顾小狗。,"我刚刚告诉过你,我和小狗很忙.","我刚刚告诉过你,我和小狗很忙.","我刚刚告诉过你,我和小狗很忙.",0,[],17
+sample_3912,United States English,The hull husk and the full in plenty Virtue is the highest good.,船体外壳和充足的食物 美德是最高的善,船体外<unk>和充足的美德是最高的善,船体外<unk>和充足的美德是最高的善,船体外<unk>和充足的美德是最高的善,0,[],19
+sample_3598,"Southern African (South Africa, Zimbabwe, Namibia)",Fill this place with a sandstorm so strong that it blots out the sun.,把这个地方填满强沙尘暴，遮住太阳。,"充满一个沙风暴, 如此强烈, 它遮住了太阳.","充满一个沙风暴, 如此强烈, 它遮住了太阳.","充满一个沙风暴, 如此强烈, 它遮住了太阳.",0,[],20
+sample_0589,England English,Every man is the architect of his destiny.,每个人都是自己命运的建筑师。,每个人都是自己命运的建筑师.,每个人都是自己命运的建筑师.,每个人都是自己命运的建筑师.,0,[],13
+sample_2413,Malaysian English,And they attacked an empty tent.,他们袭击了一顶空帐篷。,他们袭击了一个空的帐<unk>.,他们袭击了一个空的帐<unk>.,他们袭击了一个空的帐<unk>.,0,[],13
+sample_1918,"India and South Asia (India, Pakistan, Sri Lanka)",There is a digital representation available.,有一个可用的数字表示。,有一个数字表示可用.,有一个数字表示可用.,有一个数字表示可用.,0,[],9
+sample_1675,Hong Kong English,My laptop has crashed.,我的笔记本电脑死机了。,我的笔记本电脑已经崩<unk>.,我的笔记本电脑已经崩<unk>.,我的笔记本电脑已经崩<unk>.,0,[],14
+sample_1040,Filipino,How do you make that out?,你怎么看出来的?,你怎么知道呢?,你怎么知道呢?,你怎么知道呢?,0,[],8
+sample_4029,United States English,Raccoons are mammals as well.,浣熊也是哺乳动物。,浣熊也是哺乳动物,浣熊也是哺乳动物,浣熊也是哺乳动物[UNKID],1,[9],11
+sample_3275,"Southern African (South Africa, Zimbabwe, Namibia)","He was something of a sickly child by all accounts, never made it past his fourth birthday.",大家都说他是个体弱多病的孩子，没能活过四岁生日。,"他是一个病态的孩子, 从来没有超过他的第四个生日.","他是一个病态的孩子, 从来没有超过他的第四个生日.","他是一个病态的孩子, 从来没有超过他的第四个生日.",0,[],19
+sample_0254,England English,‘All round the town?’ he said.,“全镇？”他说道。,全城?他说,全城?他说,[UNKID]全城?[UNKID]他说[UNKID],3,"[3, 7, 9]",11
+sample_2763,Malaysian English,I have never seen a Rothschild before.,我以前从没见过 Rothschild。,我从来没有见过罗茨柴尔德人,我从来没有见过罗茨柴尔德人,我从来没有见过罗茨柴尔德人[UNKID],1,[11],13
+sample_1141,Filipino,"Roger, the backup team is on the way.",Roger，后备队已经在路上了。,"罗杰,后援团队正在路上.","罗杰,后援团队正在路上.","罗杰,后援团队正在路上.",0,[],13
+sample_1799,Hong Kong English,Go now and come here later.,现在走，以后再来。,"现在去,后来再来","现在去,后来再来","现在去,后来再来[UNKID]",1,[8],10
+sample_2315,"India and South Asia (India, Pakistan, Sri Lanka)","We're refugees from the tribal wars, and we need money, the other figure said.",“我们是部落战争中的难民，我们需要钱，”另一个人说。,"另一位说:""我们是部落战争的难民,","另一位说:""我们是部落战争的难民,","另一位说:""我们是部落战争的难民,",0,[],14
+sample_3877,United States English,"A friend had told the boy about the shop, and he had taken his sheep there.",一个朋友告诉那个男孩关于那个他把羊带过去的作坊。,"一个朋友告诉那个男孩关于那个商店, 他把他的羊带到了那里.","一个朋友告诉那个男孩关于那个商店, 他把他的羊带到了那里.","一个朋友告诉那个男孩关于那个商店, 他把他的羊带到了那里.",0,[],20
+sample_3035,"Southern African (South Africa, Zimbabwe, Namibia)","The municipality comprises the villages of De Haan proper, Klemskerke, Vlissegem and Wenduine.",市政府由德哈恩区、克莱姆斯克、弗利塞格姆和温杜恩村组成。,"该市包括德哈恩村,克莱姆斯克尔克村,维利塞格姆村和温杜因村.","该市包括德哈恩村,克莱姆斯克尔克村,维利塞格姆村和温杜因村.","该市包括德哈恩村,克莱姆斯克尔克村,维利塞格姆村和温杜因村.",0,[],32
+sample_0090,England English,Restoration silver is characterized by embossed motifs for tulips and naturalistic fruit and leaves.,修复银的特点是压花图案表现的郁金香和自然的水果和树叶。,修复银的特点是<unk>花和自然的水果和叶子的雕刻图案.,修复银的特点是<unk>花和自然的水果和叶子的雕刻图案.,修复银的特点是<unk>花和自然的水果和叶子的雕刻图案.,0,[],27
+sample_2444,Malaysian English,He approached the mass and was surprised at the size and the shape.,他走近那堆东西，惊讶于它的大小和形状。,"他走近了质量, 惊<unk>地看到大小和形状.","他走近了质量, 惊<unk>地看到大小和形状.","他走近了质量, 惊<unk>地看到大小和形状.",0,[],21
+sample_0957,Filipino,"He was a contemporary to Swami Vivekanand, who deeply admired him.",他是斯瓦米·维维卡南（Swami Vivekanand）的当代人，他深深地钦佩他。,"他是斯瓦米·维维卡南德的同时代,","他是斯瓦米·维维卡南德的同时代,","他是斯瓦米·维维卡南德的同时代,",0,[],17
+sample_1233,Hong Kong English,Did you get a doctor?,你请了医生吗？,你找到了医生吗?,你找到了医生吗?,你找到了医生吗?,0,[],9
+sample_2278,"India and South Asia (India, Pakistan, Sri Lanka)",At least twelve scripts were found in this chest.,在此箱子中至少发现了十二个文字。,在这个箱子里至少发现了十二个文字.,在这个箱子里至少发现了十二个文字.,在这个箱子里至少发现了十二个文字.,0,[],15
+sample_3628,United States English,The main languages in the town are North Slavey and English.,镇上的主要语言是北斯拉维语和英语。,该镇的主要语言是北斯拉夫语和英语.,该镇的主要语言是北斯拉夫语和英语.,该镇的主要语言是北斯拉夫语和英语.,0,[],15
+sample_3152,"Southern African (South Africa, Zimbabwe, Namibia)","The toponym is from the Old English for ""long farm"".",该地名来自古英语，意为“长形农场”。,"这个地名来自古英语的""长农场"".","这个地名来自古英语的""长农场"".","这个地名来自古英语的""长农场"".",0,[],15
+sample_0506,England English,Who is responsible for these parrots?,谁对这些鹦鹉负责？,这些<unk>是谁造成的?,这些<unk>是谁造成的?,这些<unk>是谁造成的?,0,[],11
+sample_2660,Malaysian English,"Couple of small bugs, but it gets from one place to another.",几个小错误，但它从一个地方到另一个地方。,"一些小虫子,但它从一个地方到另一个地方.","一些小虫子,但它从一个地方到另一个地方.","一些小虫子,但它从一个地方到另一个地方.",0,[],16
+sample_0807,Filipino,And that other honeymoon in a coal mine!,还有在煤矿度蜜月的事!,在煤矿的蜜月,在煤矿的蜜月,在煤矿的蜜月,0,[],9
+sample_1705,Hong Kong English,Fifty bucks ain't going to ruin me.,50 美元不会毁了我。,五十块钱不会毁了我.,五十块钱不会毁了我.,五十块钱不会毁了我.,0,[],11
+sample_2270,"India and South Asia (India, Pakistan, Sri Lanka)",What is he like?,他长什么样？,他是什么样子的?,他是什么样子的?,他是什么样子的?,0,[],8
+sample_3983,United States English,It is odd that is so cold in October.,十月里这么冷，真奇怪。,十月份这么冷是很奇怪的.,十月份这么冷是很奇怪的.,十月份这么冷是很奇怪的.,0,[],12
+sample_3177,"Southern African (South Africa, Zimbabwe, Namibia)",What have I done?,我干了什么？,我做了什么,我做了什么,我做了什么,0,[],6
+sample_0014,England English,Smoky fires lack flame and heat.,冒烟的火缺乏火焰和热量。,烟火缺乏火焰和热量.,烟火缺乏火焰和热量.,烟火缺乏火焰和热量.,0,[],13
+sample_2699,Malaysian English,"He went into exile in Switzerland, where he graduated from the University of Geneva.",他流亡于瑞士，后来从日内瓦大学毕业。,"他流亡到瑞士,在那里他毕业于日内瓦大学.","他流亡到瑞士,在那里他毕业于日内瓦大学.","他流亡到瑞士,在那里他毕业于日内瓦大学.",0,[],18
+sample_0752,Filipino,He could always go back to being a shepherd.,他随时可以重新当个牧羊人。,他总是可以回到做牧羊人.,他总是可以回到做牧羊人.,他总是可以回到做牧羊人.,0,[],12
+sample_1631,Hong Kong English,How could you even think that?,你怎么会这样想？,你怎么能这么想呢?,你怎么能这么想呢?,你怎么能这么想呢?,0,[],10
+sample_2059,"India and South Asia (India, Pakistan, Sri Lanka)",All his strength and money went in keeping this girl.,他所有的精力和金钱都花在了留住这个女孩上。,他所有的力量和钱都花在了这个女孩身上.,他所有的力量和钱都花在了这个女孩身上.,他所有的力量和钱都花在了这个女孩身上.,0,[],16
+sample_4076,United States English,How much money do you get?,你能拿到多少钱?,你得到的钱是多少?,你得到的钱是多少?,你得到的钱是多少?,0,[],10
+sample_3519,"Southern African (South Africa, Zimbabwe, Namibia)",The steel of its blade glittered in the light of the moon.,它的刀刃在月光下闪闪发光。,它的钢刃在月光下闪闪发光.,它的钢刃在月光下闪闪发光.,它的钢刃在月光下闪闪发光.,0,[],15
+sample_0096,England English,How are you doing?,你好吗？,你的情况怎么样?,你的情况怎么样?,你的情况怎么样?,0,[],8
+sample_2851,Malaysian English,The police interviews a man.,警察访问了一名男子。,警察正在审问一个男人,警察正在审问一个男人,警察正在审问一个男人[UNKID],1,[9],11
+sample_0987,Filipino,I myself heard nothing of that.,我自己对此一无所知。,我自己也没有听说过.,我自己也没有听说过.,我自己也没有听说过.,0,[],10
+sample_1791,Hong Kong English,"When he kissed her cheek, she suddenly blushed, changing her color faster than a chameleon.",当他亲吻她的脸颊时，她突然脸红了，她的颜色变化比变色龙还快。,"当他亲吻她的脸颊时,她突然脸红了,她的颜色更快于黑猩猩.","当他亲吻她的脸颊时,她突然脸红了,她的颜色更快于黑猩猩.","当他亲吻她的脸颊时,她突然脸红了,她的颜色更快于黑猩猩.",0,[],27
+sample_2394,"India and South Asia (India, Pakistan, Sri Lanka)",No one is going to come to your rescue.,没有人会来救你。,没有人会来救你.,没有人会来救你.,没有人会来救你.,0,[],10
+sample_4161,United States English,"Twenty five units, please.",25 个单元，请。,请给我们25个单位.,请给我们25个单位.,请给我们25个单位.,0,[],10
+sample_3139,"Southern African (South Africa, Zimbabwe, Namibia)","The war is going to end someday, the girl said.",那女孩说：“站在总有一天会结束。”,"""这场战争总有一天会结束"",女孩说.","""这场战争总有一天会结束"",女孩说.","""这场战争总有一天会结束"",女孩说.",0,[],16
+sample_0425,England English,A man is on a small pull along trailer working with landscaping material.,小拖车上的男子正在处理景观美化材料。,"一个男人坐在一辆小型拖车上,正在用园艺材料工作","一个男人坐在一辆小型拖车上,正在用园艺材料工作","一个男人坐在一辆小型拖车上,正在用园艺材料工作[UNKID]",1,[19],21
+sample_2609,Malaysian English,A bunch of young girls are walking in the sand.,一群年轻女孩在沙滩上散步。,一群年轻女孩在沙子上散步,一群年轻女孩在沙子上散步,一群年轻女孩在沙子上散步[UNKID],1,[12],14
+sample_1107,Filipino,Others stumbled upon the stone by accident.,其他人偶然发现了这块石头。,另一些人偶然碰到石头.,另一些人偶然碰到石头.,另一些人偶然碰到石头.,0,[],14
+sample_1869,"India and South Asia (India, Pakistan, Sri Lanka)",I hope you are right this time.,我希望这次您是对的。,我希望这次你说得对,我希望这次你说得对,我希望这次你说得对[UNKID],1,[8],10
+sample_1711,Hong Kong English,I forgot you were here.,我忘了你在这里。,我忘了你在这里.,我忘了你在这里.,我忘了你在这里.,0,[],9
+sample_3610,United States English,The towns football club is called 'Tarzan'.,该城镇的足球俱乐部称为“泰山”。,"这座城市的足球俱乐部叫""塔尔赞"".","这座城市的足球俱乐部叫""塔尔赞"".","这座城市的足球俱乐部叫""塔尔赞"".",0,[],14
+sample_3433,"Southern African (South Africa, Zimbabwe, Namibia)",But he takes advantage of you.,但他占了你的便宜。,但他利用了你.,但他利用了你.,但他利用了你.,0,[],9
+sample_0542,England English,"You must always know what it is that you want, the old king had said.",“你必须始终知道你要的是什么，”老国王说。,"""你必须永远知道它是你想要的"",老国王曾说过.","""你必须永远知道它是你想要的"",老国王曾说过.","""你必须永远知道它是你想要的"",老国王曾说过.",0,[],18
+sample_2790,Malaysian English,"Bananas contain a lot of sugar, even though they are fruits.",尽管香蕉是水果，但它们含有大量的糖。,"香<unk>含有大量的糖, 尽管它是水果.","香<unk>含有大量的糖, 尽管它是水果.","香<unk>含有大量的糖, 尽管它是水果.",0,[],17
+sample_1043,Filipino,The last one I knew was an overseer.,我知道，最后一个人是一个监督员。,我认识的最后一个人是一位监督员.,我认识的最后一个人是一位监督员.,我认识的最后一个人是一位监督员.,0,[],12
+sample_2225,"India and South Asia (India, Pakistan, Sri Lanka)","I had to teach my nephew the facts of life, because his parents are prudes.",我不得不教我的侄子生活的真相，因为他的父母都是假正经的人。,"我不得不教我的<unk>子生活的事实, 因为他的父母是保守的.","我不得不教我的<unk>子生活的事实, 因为他的父母是保守的.","我不得不教我的<unk>子生活的事实, 因为他的父母是保守的.",0,[],23
+sample_1225,Hong Kong English,Where are the keys?,钥匙在哪里？,钥匙在哪里?,钥匙在哪里?,钥匙在哪里?,0,[],9
+sample_3716,United States English,Go out and find her!,出去找她！,出去找她!,出去找她!,出去找她!,0,[],8
+sample_3339,"Southern African (South Africa, Zimbabwe, Namibia)",And what are you doing here?,你在这里做什么？,你在这里做什么?,你在这里做什么?,你在这里做什么?,0,[],7
+sample_0169,England English,Unconstrained parameterization can intransitively affect proper backfitting.,不受约束的参数化可以间接影响适当的拟合。,不受限制的参数化可以不间断地影响适当的后置.,不受限制的参数化可以不间断地影响适当的后置.,不受限制的参数化可以不间断地影响适当的后置.,0,[],20
+sample_2591,Malaysian English,Emoticons are familiar to everyone nowadays.,如今，所有人都熟悉表情符号。,"如今,所有人都熟悉表情符号","如今,所有人都熟悉表情符号","如今,所有人都熟悉表情符号[UNKID]",1,[11],13
+sample_1123,Filipino,He was a high school student.,他是高中生。,他是一名高中生.,他是一名高中生.,他是一名高中生.,0,[],8
+sample_2246,"India and South Asia (India, Pakistan, Sri Lanka)","The theater is closed for renovations, but will reopen in twenty-nineteen.",剧院因整修而关闭，将于2019年重新开放,"剧院因装修而关闭,但将在二十九年重新开放.","剧院因装修而关闭,但将在二十九年重新开放.","剧院因装修而关闭,但将在二十九年重新开放.",0,[],20
+sample_1721,Hong Kong English,"Take shelter in this tent, but keep still.",躲在帐篷里，但要保持不动。,"在这个帐<unk>里避难,但保持安静.","在这个帐<unk>里避难,但保持安静.","在这个帐<unk>里避难,但保持安静.",0,[],18
+sample_3951,United States English,"Tyler, do you remember when I gave you that note?",Tyler，你还记得我给你那张纸条的时候吗？,"泰勒,你记得我给了你那封信吗?","泰勒,你记得我给了你那封信吗?","泰勒,你记得我给了你那封信吗?",0,[],18
+sample_3451,"Southern African (South Africa, Zimbabwe, Namibia)","His hands were abraded and exhausted, but he listened to his heart.",他的手擦伤了，他筋疲力尽，但他倾听自己的心声。,"他的手是磨损和疲<unk>, 但他听从他的心.","他的手是磨损和疲<unk>, 但他听从他的心.","他的手是磨损和疲<unk>, 但他听从他的心.",0,[],21
+sample_0149,England English,The entering tone is extant in Jianghuai Mandarin and the Minjiang dialect of Sichuanese.,入声在江淮官话和四川闽江话中都存在。,"在江华普通话和四川语的明江方言中,进入音调仍然存在.","在江华普通话和四川语的明江方言中,进入音调仍然存在.","在江华普通话和四川语的明江方言中,进入音调仍然存在.",0,[],25
+sample_2876,Malaysian English,People outside in a field harvesting something.,人们在外面的田野里收获作物。,人们在外面的一个田野里收获东西,人们在外面的一个田野里收获东西,人们在外面的一个田野里收获东西[UNKID],1,[13],15
+sample_1135,Filipino,Some of these remnants can be viewed in the National Museum of Scotland.,可以在苏格兰国家博物馆中看到其中一些遗迹。,其中一些遗迹可以在苏格兰国家博物馆参观.,其中一些遗迹可以在苏格兰国家博物馆参观.,其中一些遗迹可以在苏格兰国家博物馆参观.,0,[],15
+sample_1892,"India and South Asia (India, Pakistan, Sri Lanka)","I like the avenger of the new episode, he really is a badass.",我喜欢新一集的复仇者，他真是个坏蛋。,"我喜欢新集的复仇者, 他真的很厉害.","我喜欢新集的复仇者, 他真的很厉害.","我喜欢新集的复仇者, 他真的很厉害.",0,[],17
+sample_1399,Hong Kong English,"“It’s time,” said his father, and he was right.",“是时候了，”他的父亲说，他是对的。,"""现在是时候了"",他的父亲说,他是对的.","""现在是时候了"",他的父亲说,他是对的.","""现在是时候了"",他的父亲说,他是对的.",0,[],17
+sample_3914,United States English,"Among these people were a couple of cyclists, a gardener I employed sometimes, and a girl carrying a baby.",这些人中有几个骑自行车的人，一个我不知什么时候雇的园丁，还有一个带着婴儿的女孩。,"这些人中包括一对骑自行车的人,我有时雇佣的园丁,和一个抱着婴儿的女孩.","这些人中包括一对骑自行车的人,我有时雇佣的园丁,和一个抱着婴儿的女孩.","这些人中包括一对骑自行车的人,我有时雇佣的园丁,和一个抱着婴儿的女孩.",0,[],29
+sample_3030,"Southern African (South Africa, Zimbabwe, Namibia)","It's late in the evening, a perfect time for coffee.",现在是傍晚，是喝咖啡的最佳时间。,"晚上很晚, 喝咖啡的好时机.","晚上很晚, 喝咖啡的好时机.","晚上很晚, 喝咖啡的好时机.",0,[],14
+sample_0461,England English,It's not so bad.,并没有那么糟糕。,这不是那么糟糕.,这不是那么糟糕.,这不是那么糟糕.,0,[],8
+sample_2850,Malaysian English,The boy shook his head.,男孩摇了摇头。,这个男孩摇了摇头.,这个男孩摇了摇头.,这个男孩摇了摇头.,0,[],10
+sample_0799,Filipino,A uniform naming scheme for Communist parties was adopted by the Communist International.,共产国际通过了统一的共产党命名方案。,共产国际通过了共产党的统一命名方案.,共产国际通过了共产党的统一命名方案.,共产国际通过了共产党的统一命名方案.,0,[],16
+sample_1938,"India and South Asia (India, Pakistan, Sri Lanka)",By twenty-twenty-two I expect the problem will be solved.,我希望到二十二岁的时候会解决这个问题。,我希望到二十二时这个问题会被解决.,我希望到二十二时这个问题会被解决.,我希望到二十二时这个问题会被解决.,0,[],13
+sample_1672,Hong Kong English,"When she called her friend for help with her computer, she repeatedly emphasized, that she hadn't done anything.",当她给朋友打电话求助电脑问题，她反复强调自己什么都没做。,"当她打电话给她的朋友帮助她的电脑时, 她反复强调,","当她打电话给她的朋友帮助她的电脑时, 她反复强调,","当她打电话给她的朋友帮助她的电脑时, 她反复强调,",0,[],20
+sample_4106,United States English,Is that okay?,这样可以吗？,这可以吗?,这可以吗?,这可以吗?,0,[],7
+sample_3033,"Southern African (South Africa, Zimbabwe, Namibia)","Let's go and have some lunch, said the crystal merchant.",“我们去吃午饭吧，”卖水晶的商人说。,"""让我们去吃午饭"",水晶商人说.","""让我们去吃午饭"",水晶商人说.","""让我们去吃午饭"",水晶商人说.",0,[],16
+sample_0337,England English,But I found it difficult to get to work because of the investigations.,但是由于调查原因，我发现很难去上班。,"但由于调查,我很难上班.","但由于调查,我很难上班.","但由于调查,我很难上班.",0,[],12
+sample_2545,Malaysian English,And continue to pay heed to the omens.,继续留意预兆。,继续注意这些预兆.,继续注意这些预兆.,继续注意这些预兆.,0,[],10
+sample_1185,Filipino,He was a member of the French and the Prussian academies of the sciences.,他是法国和普鲁士科学院的成员。,他是法国和普鲁士科学院的成员.,他是法国和普鲁士科学院的成员.,他是法国和普鲁士科学院的成员.,0,[],13
+sample_2309,"India and South Asia (India, Pakistan, Sri Lanka)","It would be very useful if my web browser could synchronize all of its preferences, not just some.",如果我的网络浏览器能够同步它所有的偏好，而不仅仅是一些，那将会非常有用。,"如果我的网页浏览器可以标记所有偏好, 而不是只标记一些偏好,","如果我的网页浏览器可以标记所有偏好, 而不是只标记一些偏好,","如果我的网页浏览器可以标记所有偏好, 而不是只标记一些偏好,",0,[],24
+sample_1357,Hong Kong English,I've just guaranteed the bank sufficient funds to meet their needs.,我刚跟银行保证会有足够的资金来满足他们的需要。,我刚刚保证银行有足够的资金来满足他们的需求.,我刚刚保证银行有足够的资金来满足他们的需求.,我刚刚保证银行有足够的资金来满足他们的需求.,0,[],16
+sample_3817,United States English,Turn on the lights!,把灯打开！,打开灯光!,打开灯光!,打开灯光!,0,[],8
+sample_3044,"Southern African (South Africa, Zimbabwe, Namibia)",Halman's wife Nancy finds her husband's body and is killed by Kirby as well.,Halman 的妻子 Nancy 发现了她丈夫的尸体，她也被 Kirby 杀害了。,"哈尔曼的妻子南希发现了她丈夫的尸体,也被柯比杀害.","哈尔曼的妻子南希发现了她丈夫的尸体,也被柯比杀害了.","哈尔曼的妻子南希发现了她丈夫的尸体,也被柯比杀害了.",0,[],26
+sample_0157,England English,"From a technical point of view, the MP-Three-standard is completely outdated and yet it's still very successful.",从技术角度来看，MP-3 标准已经完全过时，但仍然非常成功。,"从技术角度来看,MP-Three标准已经完全过时,","从技术角度来看,MP-Three标准已经完全过时,","从技术角度来看,MP-Three标准已经完全过时,",0,[],18
+sample_2729,Malaysian English,A man in a white shirt carries a drum as he talks to two other men.,一个穿着白衬衫的男人拿着一面鼓和另外两个人说话。,一个穿着白色衬衫的男人拿着鼓跟另外两个人说话,一个穿着白色衬衫的男人拿着鼓跟另外两个人说话,一个穿着白色衬衫的男人拿着鼓跟另外两个人说话[UNKID],1,[19],21
+sample_1073,Filipino,He was killed later that day.,他在那天晚些时候被杀害。,他当天晚些时候被杀.,他当天晚些时候被杀.,他当天晚些时候被杀.,0,[],11
+sample_1941,"India and South Asia (India, Pakistan, Sri Lanka)",Frey spent the rest of his life in Switzerland.,Frey在瑞士度过了余生。,弗雷在瑞士度过了余生.,弗雷在瑞士度过了余生.,弗雷在瑞士度过了余生.,0,[],13
+sample_4138,United States English,Hundreds of observers saw the flame that night and the night after.,那天晚上和之后的晚上，数以百计的人看到了火焰。,数百名观察者在那天晚上和接下来的晚上看到了火焰.,数百名观察者在那天晚上和接下来的晚上看到了火焰.,数百名观察者在那天晚上和接下来的晚上看到了火焰.,0,[],21
+sample_1605,Hong Kong English,"Classification is, among other things, a discipline of machine learning.",分类是机器学习的一门学科。,分类是机器学习的一个学科.,分类是机器学习的一个学科.,分类是机器学习的一个学科.,0,[],11
+sample_3318,"Southern African (South Africa, Zimbabwe, Namibia)","It knew of the boy's talk with the desert, because the winds know everything.",它知道男孩和沙漠的对话，因为风知道一切。,"它知道男孩与沙漠的谈话, 因为风知道一切.","它知道男孩与沙漠的谈话, 因为风知道一切.","它知道男孩与沙漠的谈话, 因为风知道一切.",0,[],18
+sample_2735,Malaysian English,A man and woman are birdwatching.,一男一女正在观鸟。,一个男人和一个女人正在观鸟,一个男人和一个女人正在观鸟,一个男人和一个女人正在观鸟[UNKID],1,[9],11
+sample_0288,England English,Petrov made a funny face as he turned.,Petrov 转过身来，做了一个滑稽的鬼脸。,佩特罗夫转身时做了一个有趣的表情.,佩特罗夫转身时做了一个有趣的表情.,佩特罗夫转身时做了一个有趣的表情.,0,[],18
+sample_0671,Filipino,Metamorphic code also usually outputs machine code and not its own source code.,变形代码通常也输出机器代码，而不是其自身的源代码。,"变形代码通常也输出机器代码,而不是自己的源代码.","变形代码通常也输出机器代码,而不是自己的源代码.","变形代码通常也输出机器代码,而不是自己的源代码.",0,[],19
+sample_2239,"India and South Asia (India, Pakistan, Sri Lanka)",His students included Olivier Messiaen and Henri Dutilleux.,他的学生包括奥利维尔·梅西恩和亨利·杜蒂勒克斯。,他的学生包括奥利维尔·梅西安和亨利·杜蒂勒.,他的学生包括奥利维尔·梅西安和亨利·杜蒂勒.,他的学生包括奥利维尔·梅西安和亨利·杜蒂勒.,0,[],21
+sample_3787,United States English,"The boy waited, and then interrupted the old man just as he himself had been interrupted.",男孩等着，然后打断了老人，就像他自己被打断一样。,"这个男孩等了,然后打断了老人就像他自己被打断了.","这个男孩等了,然后打断了老人就像他自己被打断了.","这个男孩等了,然后打断了老人就像他自己被打断了.",0,[],21
+sample_1295,Hong Kong English,A white dog fetches a stick as he swims in a lake,一条白狗在湖里游泳时叼着一根棍子,一只白色的狗在湖里游泳时拿着一根棍子,一只白色的狗在湖里游泳时拿着一根棍子,一只白色的狗在湖里游泳时拿着一根棍子,0,[],19
+sample_3050,"Southern African (South Africa, Zimbabwe, Namibia)",Treat the problem with rigorous mathematical analysis.,采用严格的数学分析方法解决问题。,用严格的数学分析来解决这个问题.,用严格的数学分析来解决这个问题.,用严格的数学分析来解决这个问题.,0,[],12
+sample_2675,Malaysian English,Padding in undergarments is also used by some cross-dressers.,内衣的衬垫也被一些变装者使用。,一些穿越者也使用内衣的填充.,一些穿越者也使用内衣的填充.,一些穿越者也使用内衣的填充.,0,[],15
+sample_0435,England English,Try to have the court decide the case.,试着让法庭裁决这个案子。,试着让法院裁决这个案子,试着让法院裁决这个案子,试着让法院裁决这个案子[UNKID],1,[12],14
+sample_1045,Filipino,"If you have an issue in the workplace, you are encouraged to contact the HR department.",如果你在工作中遇到了问题，你最好去联系人力资源部。,"如果您在工作场所遇到问题,请联系人力资源部门.","如果您在工作场所遇到问题,请联系人力资源部门.","如果您在工作场所遇到问题,请联系人力资源部门.",0,[],16
+sample_4190,United States English,Are you in pain?,你疼吗？,你有没有疼痛?,你有没有疼痛?,你有没有疼痛?,0,[],9
+sample_2187,"India and South Asia (India, Pakistan, Sri Lanka)","It's a private club, for only the most respectable people.",这是一个私人俱乐部只对最最贵的客人开放。,"这是一个私人俱乐部, 只有最受尊敬的人.","这是一个私人俱乐部, 只有最受尊敬的人.","这是一个私人俱乐部, 只有最受尊敬的人.",0,[],13
+sample_1535,Hong Kong English,These scissors can cut metal.,这种剪刀能剪断金属。,这些剪刀可以切金属,这些剪刀可以切金属,这些剪刀可以切金属,0,[],9
+sample_3099,"Southern African (South Africa, Zimbabwe, Namibia)",Each bulb produces several greyish-green leaves.,每个鳞茎生出几片灰绿色的叶子。,每个球泡都会产生几片灰绿色的叶子.,每个球泡都会产生几片灰绿色的叶子.,每个球泡都会产生几片灰绿色的叶子.,0,[],17
+sample_2809,Malaysian English,The boy awoke before dawn.,男孩天未亮就醒了。,这个男孩在黎明之前醒来了.,这个男孩在黎明之前醒来了.,这个男孩在黎明之前醒来了.,0,[],13
+sample_0441,England English,"Roll the dice, please.",请掷骰子。,"投<unk>子,请.","投<unk>子,请.","投<unk>子,请.",0,[],12
+sample_0688,Filipino,"You're in luck, you two, the fat Arab said.",“你们两个真走运，”胖阿拉伯人说道。,"""你们两个很幸运"",那个胖的阿拉伯人说.","""你们两个很幸运"",那个胖的阿拉伯人说.","""你们两个很幸运"",那个胖的阿拉伯人说.",0,[],16
+sample_4008,United States English,"Obstruents contrast with sonorants, which have no such obstruction and so resonate.",阻塞音与共鸣音形成对比，共鸣音没有这种阻塞，因此产生共鸣。,"阻塞器与声响器形成对比,它们没有这样的阻塞,因此产生共振.","阻塞器与声响器形成对比,它们没有这样的阻塞,因此产生共振.","阻塞器与声响器形成对比,它们没有这样的阻塞,因此产生共振.",0,[],26
+sample_2067,"India and South Asia (India, Pakistan, Sri Lanka)","Have many acquaintances, but few friends.",熟人多，朋友少。,"有很多熟人,但很少有朋友.","有很多熟人,但很少有朋友.","有很多熟人,但很少有朋友.",0,[],13
+sample_1499,Hong Kong English,Love is blind,爱情使人盲目,爱是盲目的,爱是盲目的,爱是盲目的,0,[],7
+sample_3261,"Southern African (South Africa, Zimbabwe, Namibia)",The boy knew a lot of people in the city.,这个男孩在城里认识很多人。,这个男孩在城市里认识很多人.,这个男孩在城市里认识很多人.,这个男孩在城市里认识很多人.,0,[],12
+sample_2587,Malaysian English,Does the venue offer free WiFi?,场地提供免费 WiFi 吗？,场地提供免费的WiFi吗?,场地提供免费的WiFi吗?,场地提供免费的WiFi吗?,0,[],12
+sample_0332,England English,"In the borough of Ebensburg, there are three public and two private schools.",在埃本斯堡区，有三所公立学校和两所私立学校。,在埃本斯堡市区有三所公立学校和两所私立学校.,在埃本斯堡市区有三所公立学校和两所私立学校.,在埃本斯堡市区有三所公立学校和两所私立学校.,0,[],22
+sample_0972,Filipino,"Roll the dice, please.",请掷骰子。,"投<unk>子,请.","投<unk>子,请.","投<unk>子,请.",0,[],12
+sample_3888,United States English,"It will produce Suntory Oolong Tea, Boss and Orangina.",它将生产三得利乌龙茶，老板和猩猩。,"它将生产Suntory Oolong茶,Boss和Orangina.","它将生产Suntory Oolong茶,Boss和Orangina.","它将生产Suntory Oolong茶,Boss和Orangina.",0,[],19
+sample_2259,"India and South Asia (India, Pakistan, Sri Lanka)","And Helene, even at that moment, laughed quietly.",甚至在那一刻，Helene都静静地笑了。,"甚至在那一刻,海伦也默默地笑了起来","甚至在那一刻,海伦也默默地笑了起来","甚至在那一刻,海伦也默默地笑了起来[UNKID]",1,[18],20
+sample_1609,Hong Kong English,What have we become?,我们变成了什么?,我们已经成为什么?,我们已经成为什么?,我们已经成为什么?,0,[],8
+sample_3277,"Southern African (South Africa, Zimbabwe, Namibia)",The phrases are a form of argumentation.,这些短语是论证的一种形式。,这些短语是一种论点形式.,这些短语是一种论点形式.,这些短语是一种论点形式.,0,[],11
+sample_2943,Malaysian English,Several young people gather in the library to hear others speak.,几个年轻人聚集在图书馆里听别人讲话。,几位年轻人聚集在图书馆里听别人讲话,几位年轻人聚集在图书馆里听别人讲话,几位年轻人聚集在图书馆里听别人讲话[UNKID],1,[17],19
+sample_0189,England English,Nothing else remains over for us. We have no alternative.,对我们来说，别无其他。我们别无选择。,我们没有别的选择.,我们没有别的选择.,我们没有别的选择.,0,[],9
+sample_0643,Filipino,Dense clouds of smoke or dust can be seen through a powerful telescope.,通过强大的望远镜可以看到浓厚的烟云或灰尘。,通过强大的望远镜可以看到密集的烟雾或尘埃云.,通过强大的望远镜可以看到密集的烟雾或尘埃云.,通过强大的望远镜可以看到密集的烟雾或尘埃云.,0,[],20
+sample_2139,"India and South Asia (India, Pakistan, Sri Lanka)",There was a sense of plenty in the house.,房子里有一种充实的感觉。,房子里有一种丰富的感觉.,房子里有一种丰富的感觉.,房子里有一种丰富的感觉.,0,[],12
+sample_3976,United States English,The kids loved to listen to his stories.,孩子们喜欢听他的故事。,孩子们喜欢听他的故事.,孩子们喜欢听他的故事.,孩子们喜欢听他的故事.,0,[],11
+sample_1335,Hong Kong English,Read all about it!,阅读所有关于它的内容！,阅读所有关于它!,阅读所有关于它!,阅读所有关于它!,0,[],9
+sample_3404,"Southern African (South Africa, Zimbabwe, Namibia)","I do like movies, but I prefer cartoons.",我确实喜欢电影，但是我更喜欢卡通片。,"我喜欢电影,但我更喜欢漫画.","我喜欢电影,但我更喜欢漫画.","我喜欢电影,但我更喜欢漫画.",0,[],12
+sample_2794,Malaysian English,But that was simply because my eye was tired.,但那只是因为我的眼睛累了。,但这仅仅是因为我的眼睛疲<unk>了.,但这仅仅是因为我的眼睛疲<unk>了.,但这仅仅是因为我的眼睛疲<unk>了.,0,[],15
+sample_0247,England English,"The village since was incorporated into Limestone, and no longer exists.",这个村庄后来变成了石灰石，不再存在。,"这座村庄后来被纳入了石灰岩,不再存在.","这座村庄后来被纳入了石灰岩,不再存在.","这座村庄后来被纳入了石灰岩,不再存在.",0,[],17
+sample_2162,"India and South Asia (India, Pakistan, Sri Lanka)",The launch marked Animax's first major expansion into Europe.,此次发布标志着 Animax 在欧洲的首次重大扩张。,这次发布标志着Animax首次向欧洲进行重大扩张.,这次发布标志着Animax首次向欧洲进行重大扩张.,这次发布标志着Animax首次向欧洲进行重大扩张.,0,[],19
+sample_1145,Filipino,"Oh my god, they killed Kenny!",天啊，他们杀了 Kenny！,"天哪,他们杀了肯尼!","天哪,他们杀了肯尼!","天哪,他们杀了肯尼!",0,[],12
+sample_4027,United States English,Bubbles float amongst a lively crowd gathered at an outdoor carnival.,聚集在户外嘉年华的活跃人群中有泡泡漂浮着。,泡泡在户外狂欢节上聚集的热闹人群中漂浮,泡泡在户外狂欢节上聚集的热闹人群中漂浮,泡泡在户外狂欢节上聚集的热闹人群中漂浮[UNKID],1,[22],24
+sample_1423,Hong Kong English,In the episode Powerless!,在连续剧《无能为力》中！,"在""无力""一集中!","在""无力""一集中!","在""无力""一集中!",0,[],12
+sample_3009,"Southern African (South Africa, Zimbabwe, Namibia)","Before we begin with the actual baptism, let's renew our creed.",在我们开始真正的洗礼之前，让我们更新我们的信条。,"在我们开始实际的洗礼之前, 让我们更新我们的信条.","在我们开始实际的洗礼之前, 让我们更新我们的信条.","在我们开始实际的洗礼之前, 让我们更新我们的信条.",0,[],19
+sample_2753,Malaysian English,Several people talking and spending time together in a room.,几个人在一个房间里聊天和消磨时间。,几个人在房间里聊天和在一起度过时间,几个人在房间里聊天和在一起度过时间,几个人在房间里聊天和在一起度过时间[UNKID],1,[14],16
+sample_0119,England English,Not everyone can see his dreams come true in the same way.,并不是每个人都能以同样的方式实现自己的梦想。,不是每个人都能以同样的方式实现自己的梦想.,不是每个人都能以同样的方式实现自己的梦想.,不是每个人都能以同样的方式实现自己的梦想.,0,[],13
+sample_2196,"India and South Asia (India, Pakistan, Sri Lanka)",He turned about and marched instead to Inverness.,他转身并前进，但不是往印威內斯。,"他转过身来,而是向因弗内斯游行.","他转过身来,而是向因弗内斯游行.","他转过身来,而是向因弗内斯游行.",0,[],18
+sample_3864,United States English,I've always looked on Bessie as my own sister.,我一直把 Bessie 视为我的亲妹妹。,我一直把贝西看作我自己的妹妹.,我一直把贝西看作我自己的妹妹.,我一直把贝西看作我自己的妹妹.,0,[],15
+sample_0630,Filipino,It would be more in request at the circulating libraries than the last novel.,与最新小说相比，流通图书馆的要求更高。,"在流通的图书馆里,","在流通的图书馆里,","在流通的图书馆里,",0,[],11
+sample_1673,Hong Kong English,"Peter shrunk back, aghast.",Peter 惊呆了，向后退去。,彼得惊恐地退缩了,彼得惊恐地退缩了,彼得惊恐地退缩了[UNKID],1,[10],12
+sample_3250,"Southern African (South Africa, Zimbabwe, Namibia)",All the words you've got.,你听到的所有话。,你所有的话,你所有的话,你所有的话[UNKID],1,[5],7
+sample_2860,Malaysian English,The counterfeiter was caught at the corner of River Road and Thirtieth Street.,造假者在 River Road 和第三十街的拐角处被抓住了。,伪造者被抓在河路和第十三街的角落.,伪造者被抓在河路和第十三街的角落.,伪造者被抓在河路和第十三街的角落.,0,[],20
+sample_0026,England English,He stood irresolute for a moment and then scrambled out of the pit.,他犹豫不决地站了一会儿，然后从坑里爬了出来。,"他站不住了一会儿,然后<unk>出坑.","他站不住了一会儿,然后<unk>出坑.","他站不住了一会儿,然后<unk>出坑.",0,[],18
+sample_2135,"India and South Asia (India, Pakistan, Sri Lanka)",David Aaronovitch presents occasional episodes during Buerk's absence.,大卫·阿罗诺维奇在布尔克不在的时候偶尔出现。,大卫·阿罗诺维奇在伯克缺席期间偶尔会呈现一些节目.,大卫·阿罗诺维奇在伯克缺席期间偶尔会呈现一些节目.,大卫·阿罗诺维奇在伯克缺席期间偶尔会呈现一些节目.,0,[],25
+sample_4091,United States English,"He stood up, and by the time he went back to his seat everybody in the room was questioning the meaning of life.",他站了起来，当他回到座位上时，房间里的每个人都在质疑生命的意义。,"他站了起来,当他回到座位时, 房间里的每个人都在质疑生命的意义.","他站了起来,当他回到座位时, 房间里的每个人都在质疑生命的意义.","他站了起来,当他回到座位时, 房间里的每个人都在质疑生命的意义.",0,[],26
+sample_0649,Filipino,This website needs more interactive elements.,这个网站需要更多的互动元素。,这个网站需要更多的互动元素.,这个网站需要更多的互动元素.,这个网站需要更多的互动元素.,0,[],10
+sample_1742,Hong Kong English,How to avoid a massive die-off of the colony.,如何避免殖民地的大规模灭绝。,如何避免殖民地的大规模灭绝.,如何避免殖民地的大规模灭绝.,如何避免殖民地的大规模灭绝.,0,[],12
+sample_3376,"Southern African (South Africa, Zimbabwe, Namibia)",Obviative markers are used in Africa in some Nilo-Saharan and Niger-Congo languages.,非洲尼罗-撒哈拉语和尼日尔-刚果语中使用了远指代词标记。,"在非洲,在一些尼罗-撒哈拉语和尼日尔-刚果语中使用了明显标记.","在非洲,在一些尼罗-撒哈拉语和尼日尔-刚果语中使用了明显标记.","在非洲,在一些尼罗-撒哈拉语和尼日尔-刚果语中使用了明显标记.",0,[],29
+sample_2411,Malaysian English,Hello hello. Why is this thing not working?,喂，喂。为什么这东西不起作用？,大家好.为什么这个东西不工作?,大家好.为什么这个东西不工作?,大家好.为什么这个东西不工作?,0,[],12
+sample_0007,England English,This statement is completely false.,这种说法是完全错误的。,这一说法是完全错误的.,这一说法是完全错误的.,这一说法是完全错误的.,0,[],10
+sample_2226,"India and South Asia (India, Pakistan, Sri Lanka)",The crowd swayed a little as I elbowed my way through.,我用手肘挤出一条道时，人群微微摇晃了一下。,"当我<unk>肘穿过时, 群众有点摇摆.","当我<unk>肘穿过时, 群众有点摇摆.","当我<unk>肘穿过时, 群众有点摇摆.",0,[],21
+sample_3816,United States English,Asuka is the land where ancient palaces were located.,明日香是古代宫殿所在地。,阿苏卡是古代宫殿的所在地.,阿苏卡是古代宫殿的所在地.,阿苏卡是古代宫殿的所在地.,0,[],14
+sample_0627,Filipino,Eponyms are a longstanding tradition in Western science and medicine.,在西方科学和医学中，同名同姓是一个长期存在的传统。,"在西方科学和医学中,同名词是一种长期的传统.","在西方科学和医学中,同名词是一种长期的传统.","在西方科学和医学中,同名词是一种长期的传统.",0,[],17
+sample_1422,Hong Kong English,Shall I announce you?,要我通知你吗 ？,我可以宣布你吗?,我可以宣布你吗?,我可以宣布你吗?,0,[],9
+sample_3470,"Southern African (South Africa, Zimbabwe, Namibia)",Love required them to stay with the people they loved.,爱情要求他们和他们所爱的人在一起。,爱要求他们和他们爱的人在一起.,爱要求他们和他们爱的人在一起.,爱要求他们和他们爱的人在一起.,0,[],12
+sample_2870,Malaysian English,The young prince became heir to the throne.,年轻的王子继承了王位。,年轻的王子成为王位继承人,年轻的王子成为王位继承人,年轻的王子成为王位继承人[UNKID],1,[12],14
+sample_2343,"India and South Asia (India, Pakistan, Sri Lanka)","The room was stone silent, recalled Veninger.",“那间房寂静如石，”菲宁杰尔回忆道。,"房间里很寂静,Veninger 回忆道","房间里很寂静,Veninger 回忆道","[UNKID]房间里很寂静,[UNKID]Veninger 回忆道[UNKID]",3,"[3, 10, 16]",18
+sample_0404,England English,I don't know why you boys are so good to me.,我不知道你们为什么对我这么好。,我不知道你们为什么对我这么好,我不知道你们为什么对我这么好,我不知道你们为什么对我这么好[UNKID],1,[8],10
+sample_3805,United States English,"I mean to say — dash it, you know why hearts ache!",我想说-糟了，你知道心痛吗！,"我的意思是说,赶紧去,你知道为什么心疼.","我的意思是说,赶紧去,你知道为什么心疼.","我的意思是说,赶紧去,你知道为什么心疼.",0,[],17
+sample_1142,Filipino,Worthington is the town where producer and engineer Steve Allen was born and raised.,沃辛顿是生产商兼工程师史蒂夫·艾伦出生和成长的小镇。,沃辛顿是制片人和工程师史蒂夫·艾伦出生和长大的城市.,沃辛顿是制片人和工程师史蒂夫·艾伦出生和长大的城市.,沃辛顿是制片人和工程师史蒂夫·艾伦出生和长大的城市.,0,[],22
+sample_3234,"Southern African (South Africa, Zimbabwe, Namibia)","When playing, children often just reenact what they experienced before.",在玩耍时，孩子们常常只是重复以前的经历。,"玩的时候,孩子们往往只是重演他们以前经历过的事情","玩的时候,孩子们往往只是重演他们以前经历过的事情","玩的时候,孩子们往往只是重演他们以前经历过的事情[UNKID]",1,[17],19
+sample_1365,Hong Kong English,A fresh start will work such wonders.,全新的开始将创造奇迹。,一个新的开始会产生这样的奇迹.,一个新的开始会产生这样的奇迹.,一个新的开始会产生这样的奇迹.,0,[],12
+sample_2836,Malaysian English,Divide and conquer.,分而治之。,Divide and conquer,Divide and conquer,Divide and conquer,0,[],8
+sample_2263,"India and South Asia (India, Pakistan, Sri Lanka)",Badminton is my favorite type of racket sports.,羽毛球是我最喜欢的球拍运动。,羽毛球是我最喜欢的球拍运动,羽毛球是我最喜欢的球拍运动,羽毛球是我最喜欢的球拍运动[UNKID],1,[13],15
+sample_0386,England English,This is due to the importance of agriculture in Vik.,这是由于农业在维克的重要性。,这是因为维克的农业的重要性.,这是因为维克的农业的重要性.,这是因为维克的农业的重要性.,0,[],11
+sample_3998,United States English,Every Jack has his Jill.,有情人终成眷属。,每个杰克都有自己的吉尔,每个杰克都有自己的吉尔,每个杰克都有自己的吉尔,0,[],11
+sample_0950,Filipino,Maybe these desert birds could explain to him the meaning of love without ownership.,也许这些沙漠之鸟可以向他解释没有所有权的爱的含义。,"也许这些沙漠鸟可以向他解释爱情的意义,","也许这些沙漠鸟可以向他解释爱情的意义,","也许这些沙漠鸟可以向他解释爱情的意义,",0,[],18
+sample_3003,"Southern African (South Africa, Zimbabwe, Namibia)",What did they say?,他们说了什么？,他们说了什么?,他们说了什么?,他们说了什么?,0,[],8
+sample_1534,Hong Kong English,"The man looked up from his book and, noticing nothing newsworthy, returned his gaze to the page and continued reading.",那人从书本上抬起头来，没有注意到什么有趣的东西，便又把目光移回那一页，继续读下去。,"这位男人从他的书上抬起头,没有注意到任何值得关注的新闻,他把目光回到页面,继续阅读.","这位男人从他的书上抬起头,没有注意到任何值得关注的新闻,他把目光回到页面,继续阅读.","这位男人从他的书上抬起头,没有注意到任何值得关注的新闻,他把目光回到页面,继续阅读.",0,[],31
+sample_2637,Malaysian English,"Sorry, I'll explain more when I actually understand what's going on.",对不起，当我真正明白发生了什么时，我会解释得更多。,"很抱歉,当我真正理解发生了什么事时,我会解释更多.","很抱歉,当我真正理解发生了什么事时,我会解释更多.","很抱歉,当我真正理解发生了什么事时,我会解释更多.",0,[],20
+sample_1988,"India and South Asia (India, Pakistan, Sri Lanka)",How do you know it?,你怎么知道的 ？,你是怎么知道的?,你是怎么知道的?,你是怎么知道的?,0,[],9
+sample_0323,England English,"Ninety five lines and no more, that's it.",九十五行，仅此而已。,"九十五行,没有更多,这就是它.","九十五行,没有更多,这就是它.","九十五行,没有更多,这就是它.",0,[],13
+sample_0921,Filipino,The Supreme Court has not squarely addressed the limits of signing statements.,最高法院并未正视签署声明的限制。,最高法院还没有明确解决签署声明的限制.,最高法院还没有明确解决签署声明的限制.,最高法院还没有明确解决签署声明的限制.,0,[],14
+sample_4152,United States English,Mr. Nelson come yet?,Nelson 先生来了吗？,尼尔森先生来了吗?,尼尔森先生来了吗?,尼尔森先生来了吗?,0,[],11
+sample_3403,"Southern African (South Africa, Zimbabwe, Namibia)",Another word for zucchini is courgette,西葫芦的另一个词是小胡瓜,朱古力的另一个词是 zucchini,朱古力的另一个词是 zucchini,朱古力的另一个词是 zucchini,0,[],13
+sample_1488,Hong Kong English,He noticed the unequal cooling of its surface.,他注意到它表面的不均匀冷却。,他注意到它的表面不平等冷却,他注意到它的表面不平等冷却,他注意到它的表面不平等冷却,0,[],11
+sample_2930,Malaysian English,How did he look?,他看起来怎么样？,他看起来怎么样?,他看起来怎么样?,他看起来怎么样?,0,[],8
+sample_0225,England English,"He wanted your money, he said.",“他想要你的钱，”他说。,"""他想要你的钱"",他说.","""他想要你的钱"",他说.","""他想要你的钱"",他说.",0,[],11
+sample_1872,"India and South Asia (India, Pakistan, Sri Lanka)",AppArmor is filesystem-agnostic.,AppArmor 是 filesystem-agnostic。,AppArmor 是文件系统不可知论的.,AppArmor 是文件系统不可知论的.,AppArmor 是文件系统不可知论的.,0,[],14
+sample_3686,United States English,It is not an attempt to smash the market.,这不是要搞垮市场。,这不是试图打破市场.,这不是试图打破市场.,这不是试图打破市场.,0,[],10
+sample_0947,Filipino,What are they wearing now?,他们现在穿什么？,他们现在穿着什么?,他们现在穿着什么?,他们现在穿着什么?,0,[],9
+sample_3064,"Southern African (South Africa, Zimbabwe, Namibia)",Come to me tomorrow and you shall have a heart.,明天来找我，你会良心发现的。,"明天来找我,你会有心.","明天来找我,你会有心.","明天来找我,你会有心.",0,[],13
+sample_1620,Hong Kong English,Tea in thin china has a sweet taste.,薄瓷器里的茶有一股甜味。,薄<unk>的茶有甜的味道.,薄<unk>的茶有甜的味道.,薄<unk>的茶有甜的味道.,0,[],15
+sample_2932,Malaysian English,I wish to see her.,我希望见到她。,我希望看到她.,我希望看到她.,我希望看到她.,0,[],7
+sample_0579,England English,It had a diameter of about thirty yards.,它的直径约为30码。,它的直径大约是30码.,它的直径大约是30码.,它的直径大约是30码.,0,[],11
+sample_1946,"India and South Asia (India, Pakistan, Sri Lanka)","During effects photography, the suit was worn by Mark Wilson.",在特效摄影中，是由 Mark Wilson 穿着这套服装。,"在效果摄影期间,马克·威尔逊穿着这件服装.","在效果摄影期间,马克·威尔逊穿着这件服装.","在效果摄影期间,马克·威尔逊穿着这件服装.",0,[],20
+sample_3696,United States English,Ghoultown puts the grit back into rock 'n' roll with a blazing hellfire vengeance!,Ghoultown 以炽热、猛烈第方式演奏摇滚乐，使勇气得到回归！,鬼城以火焰般的地狱复仇重新投入了摇滚!,鬼城以火焰般的地狱复仇重新投入了摇滚!,鬼城以火焰般的地狱复仇重新投入了摇滚!,0,[],21
+sample_0790,Filipino,Now give us sixty days on this.,现在给我们六十天的时间。,现在给我们60天的时间.,现在给我们60天的时间.,现在给我们60天的时间.,0,[],10
+sample_3267,"Southern African (South Africa, Zimbabwe, Namibia)",I believe that there are lots of spiders gathering in the attic.,我相信有许多蜘蛛聚集在阁楼上。,我相信有很多蜘蛛聚集在<unk>楼上.,我相信有很多蜘蛛聚集在<unk>楼上.,我相信有很多蜘蛛聚集在<unk>楼上.,0,[],18
+sample_1269,Hong Kong English,Light up with the street with Johnson!,用 Johnson 照亮街道！,让约翰逊的街道照亮!,让约翰逊的街道照亮!,让约翰逊的街道照亮!,0,[],13
+sample_2681,Malaysian English,She's low down on our list of concerns at the moment.,她目前在我们的关注列表中排名靠后。,她目前在我们关注的名单上很低.,她目前在我们关注的名单上很低.,她目前在我们关注的名单上很低.,0,[],14
+sample_0530,England English,I've been lonely and hungry for something practically all my life.,实际上，我一生都在孤独和渴望中度过。,我几乎一生都孤独而渴望着什么,我几乎一生都孤独而渴望着什么,我几乎一生都孤独而渴望着什么[UNKID],1,[13],15
+sample_2081,"India and South Asia (India, Pakistan, Sri Lanka)",The unit is authorized to fly the appropriate streamer on its organizational flag.,该部队有权在其组织旗帜上悬挂适当的拖缆。,该单位有权在其组织旗<unk>上使用适当的流媒体.,该单位有权在其组织旗<unk>上使用适当的流媒体.,该单位有权在其组织旗<unk>上使用适当的流媒体.,0,[],20
+sample_4055,United States English,Standing water also covered numerous roads in Leslie.,积水也淹没莱斯利的许多道路。,停水也覆盖了莱斯利的许多道路.,停水也覆盖了莱斯利的许多道路.,停水也覆盖了莱斯利的许多道路.,0,[],16
+sample_3509,"Southern African (South Africa, Zimbabwe, Namibia)","Nature knows me as the wisest being in creation, the sun said.",太阳说：“大自然知道我是造物中最聪明的生物。”,"""大自然知道我是创造中最聪明的生物"",太阳说.","""大自然知道我是创造中最聪明的生物"",太阳说.","""大自然知道我是创造中最聪明的生物"",太阳说.",0,[],17
+sample_0893,Filipino,You'll be the counselor of the oasis.,你将成为绿洲的参赞。,你将成为绿洲的顾问.,你将成为绿洲的顾问.,你将成为绿洲的顾问.,0,[],11
+sample_1512,Hong Kong English,They represent millions of voters!,他们代表数百万选民！,他们代表数百万选民!,他们代表数百万选民!,他们代表数百万选民!,0,[],10
+sample_2652,Malaysian English,kids are walking across a field in red clothes.,孩子们穿着红色衣服穿过田野。,孩子们穿着红色衣服穿过一片田野,孩子们穿着红色衣服穿过一片田野,孩子们穿着红色衣服穿过一片田野[UNKID],1,[16],18
+sample_2063,"India and South Asia (India, Pakistan, Sri Lanka)","Two days ago, you said that I had never dreamed of travel, the merchant answered.",“两天前，你说我从来没有梦想过旅行，”商人回答说。,"""两天前,你说我从来没有梦想过旅行"",商人回答说.","""两天前,你说我从来没有梦想过旅行"",商人回答说.","""两天前,你说我从来没有梦想过旅行"",商人回答说.",0,[],21
+sample_0243,England English,There was no way to measure anything of that length.,不可能测量那么长的东西。,没有办法测量那么长的东西.,没有办法测量那么长的东西.,没有办法测量那么长的东西.,0,[],10
+sample_3692,United States English,"Since Alfonso-Jordan was still a child, Raymond's soldiers chose William-Jordan as regent.",由于阿方索·乔丹（Alfonso-Jordan）还是个孩子，雷蒙德的士兵选择威廉·乔丹（William-Jordan）作为摄政王。,"由于阿尔方索-乔丹还是一个孩子, 雷蒙德的士兵选择威廉-乔丹作为摄政.","由于阿尔方索-乔丹还是一个孩子, 雷蒙德的士兵选择威廉-乔丹作为摄政.","由于阿尔方索-乔丹还是一个孩子, 雷蒙德的士兵选择威廉-乔丹作为摄政.",0,[],28
+sample_3472,"Southern African (South Africa, Zimbabwe, Namibia)",A sweater is known as a jumper in England.,一件毛衣在英格兰被称为跳线。,"在英格兰,毛衣被称为<unk>子.","在英格兰,毛衣被称为<unk>子.","在英格兰,毛衣被称为<unk>子.",0,[],14
+sample_0658,Filipino,It is going to be better than before.,这会比以前更好。,这会比以前更好.,这会比以前更好.,这会比以前更好.,0,[],9
+sample_1229,Hong Kong English,"Not too bad, I suppose.",我想还不错。,"不太糟糕,我想","不太糟糕,我想","不太糟糕,我想[UNKID]",1,[7],9
+sample_2993,Malaysian English,Lignite is in the center of farming country.,褐煤位于农业区中心。,灰岩位于农业地区的中心.,灰岩位于农业地区的中心.,灰岩位于农业地区的中心.,0,[],11
+sample_0021,England English,I forgot to thank you for those roses.,我忘了谢谢你送的玫瑰。,我忘了感谢你送的玫瑰,我忘了感谢你送的玫瑰,我忘了感谢你送的玫瑰[UNKID],1,[11],13
+sample_1906,"India and South Asia (India, Pakistan, Sri Lanka)",Victims have been made to feel marginalised.,受害者已经感觉受到了排斥。,受害者被迫感到被边缘化.,受害者被迫感到被边缘化.,受害者被迫感到被边缘化.,0,[],13
+sample_3890,United States English,Mantled gules doubled argent.,红色的叠加使银色倍增。,蒙着<unk>的<unk>子加倍的银子.,蒙着<unk>的<unk>子加倍的银子.,蒙着<unk>的<unk>子加倍的银子.,0,[],20
+sample_3164,"Southern African (South Africa, Zimbabwe, Namibia)","It is best known as the home of Michelangelo's sculpture ""David"".",它因米开朗基罗的雕塑“大卫”的故乡而闻名于世。,"它最著名的作品是米开朗基罗的雕塑""大卫"".","它最著名的作品是米开朗基罗的雕塑""大卫"".","它最著名的作品是米开朗基罗的雕塑""大卫"".",0,[],20
+sample_1130,Filipino,He died in Canada living under the name Peter Markis.,他在加拿大以彼得·马基斯的名字逝世。,"他死于加拿大,以彼得·马基斯的名字生活.","他死于加拿大,以彼得·马基斯的名字生活.","他死于加拿大,以彼得·马基斯的名字生活.",0,[],17
+sample_1647,Hong Kong English,My hamster turned my homework into bedding.,我的仓鼠把我的作业变成了被褥。,我的仓鼠把我的作业变成了床单.,我的<unk>子把我的作业变成了床单.,我的<unk>子把我的作业变成了床单.,0,[],17
+sample_2819,Malaysian English,The monk was irritated.,和尚被激怒了。,这位僧侣很生气.,这位僧侣很生气.,这位僧侣很生气.,0,[],10
+sample_2049,"India and South Asia (India, Pakistan, Sri Lanka)","Now, imagine a guy walking through that door and starting to give orders with a heavy accent.",现在，想象一下一个男人穿过那扇门，开始以严肃的语气向大家发号施令。,"现在,想象一个人走进那扇门, 开始用沉重的口音发出命令.","现在,想象一个人走进那扇门, 开始用沉重的口音发出命令.","现在,想象一个人走进那扇门, 开始用沉重的口音发出命令.",0,[],24
+sample_0382,England English,They went to the kitchen at the back of the monastery.,他们去了修道院后面的厨房。,他们去了修道院后面的厨房.,他们去了修道院后面的厨房.,他们去了修道院后面的厨房.,0,[],11
+sample_4025,United States English,You must obey.,你必须服从。,你必须服从.,你必须服从.,你必须服从.,0,[],8
+sample_3388,"Southern African (South Africa, Zimbabwe, Namibia)","I didn't know shepherds knew how to read, said a girl's voice behind him.",“我不知道牧羊人会读书，”他身后一个女孩的声音说。,"""我不知道牧羊人知道如何阅读"",一个女孩的声音在他后面说.","""我不知道牧羊人知道如何阅读"",一个女孩的声音在他后面说.","""我不知道牧羊人知道如何阅读"",一个女孩的声音在他后面说.",0,[],22
+sample_0729,Filipino,Rush Limbaugh is an entertainer.,拉什·林博是一位艺人。,拉什·林博是一位艺人.,拉什·林博是一位艺人.,拉什·林博是一位艺人.,0,[],12
+sample_1217,Hong Kong English,The computational complexities of these methods are only proportional to the number of non-zero blocks.,这些方法的计算复杂度仅与非零块的数量成正比。,这些方法的计算复杂度仅与非零块的数量成正比.,这些方法的计算复杂度仅与非零块的数量成正比.,这些方法的计算复杂度仅与非零块的数量成正比.,0,[],20
+sample_2569,Malaysian English,Each issue is illustrated with rare art and photographs.,每期杂志都配有罕见的艺术和照片。,每期都用罕见的艺术品和照片进行插图.,每期都用罕见的艺术品和照片进行插图.,每期都用罕见的艺术品和照片进行插图.,0,[],17
+sample_2193,"India and South Asia (India, Pakistan, Sri Lanka)",Root privileges are typically required for these changes.,这些更改通常需要root特权。,这些变化通常需要根特权.,这些变化通常需要根特权.,这些变化通常需要根特权.,0,[],11
+sample_0181,England English,"Daily Telegraph journalist Toby Harnden described Yon's commentary as ""excoriating"".",《每日电讯报》记者托比·哈登称杨的评论非常严厉。,"""每日电报""记者托比·哈伦登将<unk>的评论描述为""令人<unk>丧"".","""每日电报""记者托比·哈伦登将<unk>的评论描述为""令人<unk>丧"".","""每日电报""记者托比·哈伦登将<unk>的评论描述为""令人<unk>丧"".",0,[],30
+sample_4170,United States English,"The penguin waddles across the ice, joining her companions.",企鹅摇摇摆摆地穿过冰面，加入了她的同伴中。,"企<unk>在冰上漫步, 加入她的同伴.","企<unk>在冰上漫步, 加入她的同伴.","企<unk>在冰上漫步, 加入她的同伴.",0,[],19
+sample_0976,Filipino,The problem was that the system had not worked for the past week,问题是该系统在过去一周内无法正常运行,"问题在于,系统在过去一周内没有工作","问题在于,系统在过去一周内没有工作","问题在于,系统在过去一周内没有工作",0,[],15
+sample_3211,"Southern African (South Africa, Zimbabwe, Namibia)","Mrs. Travis, when I leave my kids in kindergarten, I expect you to supervise them.",特拉维斯夫人，当我的孩子们在幼儿园时，我希望您能监督他们。,"特拉维斯夫人,当我把我的孩子们送到幼儿园时, 我希望你能监督他们.","特拉维斯夫人,当我把我的孩子们送到幼儿园时, 我希望你能监督他们.","特拉维斯夫人,当我把我的孩子们送到幼儿园时, 我希望你能监督他们.",0,[],29
+sample_1337,Hong Kong English,"As soon as he saw me among the crowd, he called to me to come down.",他一在人群中看到我，就叫我下来。,"他一看到我在人群中,就叫我下来.","他一看到我在人群中,就叫我下来.","他一看到我在人群中,就叫我下来.",0,[],16
+sample_2757,Malaysian English,"Hey look, a flying pig!",嘿，看，一只飞猪！,"<unk>,看,一个飞猪!","<unk>,看,一个飞猪!","<unk>,看,一个飞猪!",0,[],13
+sample_2338,"India and South Asia (India, Pakistan, Sri Lanka)",She had forgotten about the cookies in the oven.,她忘了烤箱里还烤着饼干。,她忘记了烤箱里的饼干.,她忘记了烤箱里的饼干.,她忘记了烤箱里的饼干.,0,[],13
+sample_0097,England English,We couldn't make it in a week!,我们不能在一周内赶到！,我们一周也做不到!,我们一周也做不到!,我们一周也做不到!,0,[],10
+sample_3666,United States English,Three people sit on the curb in a parking lot.,三个人坐在停车场的路边。,三个人坐在停车场的路边,三个人坐在停车场的路边,三个人坐在停车场的路边,0,[],13
+sample_0756,Filipino,I can't let you have my plane.,我不能让你拥有我的飞机。,我不能让你拿我的飞机.,我不能让你拿我的飞机.,我不能让你拿我的飞机.,0,[],10
+sample_3402,"Southern African (South Africa, Zimbabwe, Namibia)","Everything in life is an omen, said the Englishman, now closing the journal he was reading.",“生活中的一切都是一个预兆，”英国人说，这时他合上正在看的日记。,"""生活中的一切都是一个预兆"",这位英国人说,现在关闭他正在阅读的日志.","""生活中的一切都是一个预兆"",这位英国人说,现在关闭他正在阅读的日志.","""生活中的一切都是一个预兆"",这位英国人说,现在关闭他正在阅读的日志.",0,[],26
+sample_1397,Hong Kong English,One of the worst crooks in town!,城里最烂的骗子之一！,One of the worst crooks in town,One of the worst crooks in town,One of the worst crooks in town,0,[],11
+sample_2780,Malaysian English,How long have you been experiencing these symptoms?,你有这些症状多久了 ？,你有多久了这些症状,你有多久了这些症状,你有多久了这些症状,0,[],9
+sample_2257,"India and South Asia (India, Pakistan, Sri Lanka)","Inside, you'll find photographs and a brief synopsis of the item's history.",在里面，你会找到照片和物品历史的简要概述。,"在里面,你会找到照片和简短的概述该物品的历史.","在里面,你会找到照片和简短的概述该物品的历史.","在里面,你会找到照片和简短的概述该物品的历史.",0,[],20
+sample_0062,England English,"The very next day, he woke refreshed.",就在第二天，他苏醒过来。,"第二天,他醒来时感觉很爽.","第二天,他醒来时感觉很爽.","第二天,他醒来时感觉很爽.",0,[],14
+sample_3845,United States English,Samuel wrote in his testament that his grandchildren should inherit all his money.,Samuel 在遗嘱中写道，他的孙子应该继承他所有的财产。,"塞<unk>尔在遗嘱中写道,他的孙子应该继承他的所有钱.","塞<unk>尔在遗嘱中写道,他的孙子应该继承他的所有钱.","塞<unk>尔在遗嘱中写道,他的孙子应该继承他的所有钱.",0,[],26
+sample_3066,"Southern African (South Africa, Zimbabwe, Namibia)",A humanitarian espouses love for humanity.,人道主义者主张对博爱。,一个人道主义者拥护对人类的爱.,一个人道主义者拥护对人类的爱.,一个人道主义者拥护对人类的爱.,0,[],13
+sample_1164,Filipino,Use this cream sparingly.,这款面霜要省着点用。,少用这种奶油,少用这种奶油,少用这种奶油[UNKID],1,[8],10
+sample_1302,Hong Kong English,The letter's our only clue.,这封信是我们唯一的线索。,这封信是我们唯一的线索.,这封信是我们唯一的线索.,这封信是我们唯一的线索.,0,[],11
+sample_2627,Malaysian English,Stalagmites or flowstone may form where the water drops hit the cave floor.,水滴落在洞穴底部的位置处可能会形成石笋或流石。,在水滴撞击洞穴地板的地方可能会形成石<unk>或流石.,在水滴撞击洞穴地板的地方可能会形成石<unk>或流石.,在水滴撞击洞穴地板的地方可能会形成石<unk>或流石.,0,[],23
+sample_0346,England English,What day is it?,今天星期几？,今天是哪一天?,今天是哪一天?,今天是哪一天?,0,[],8
+sample_2211,"India and South Asia (India, Pakistan, Sri Lanka)",After the storm comes the calm.,暴风雨过后的平静。,"风暴之后,就会出现平静.","风暴之后,就会出现平静.","风暴之后,就会出现平静.",0,[],13
+sample_3931,United States English,The prosencephalon develops further into the telencephalon and the diencephalon.,前脑进一步发育成端脑和间脑。,前脑进一步发展成脑膜和脑膜,前脑进一步发展成脑膜和脑膜,前脑进一步发展成脑膜和脑膜[UNKID],1,[12],14
+sample_3396,"Southern African (South Africa, Zimbabwe, Namibia)",A light purse makes a heavy heart.,钱少心重。,轻薄的钱包使心变得沉重.,轻薄的钱包使心变得沉重.,轻薄的钱包使心变得沉重.,0,[],15
+sample_1000,Filipino,Two people are together and one of them is using a microphone.,两个人在一起，其中一个正在使用麦克风。,"两个人在一起,其中一个正在使用麦克风","两个人在一起,其中一个正在使用麦克风","两个人在一起,其中一个正在使用麦克风[UNKID]",1,[13],15
+sample_1676,Hong Kong English,I spilled coffee on my paper.,我把咖啡洒在纸上了。,我把咖啡倒在了纸上.,我把咖啡倒在了纸上.,我把咖啡倒在了纸上.,0,[],12
+sample_2958,Malaysian English,"The common law is a creature of the judges, not of statute.",普通法是法官的产物，而不是成文法。,"普通法是法官的创造,而不是法律.","普通法是法官的创造,而不是法律.","普通法是法官的创造,而不是法律.",0,[],14
+sample_0376,England English,You forgot to pack it.,你忘了打包。,你忘了把它打包,你忘了把它打包,你忘了把它打包[UNKID],1,[8],10
+sample_2070,"India and South Asia (India, Pakistan, Sri Lanka)",Same survey revealed that thirty-two percent of Tel Aviv residents support the team.,同一项调查显示，特拉维夫的居民中有％支持该团队。,"同一个调查显示, 特尔阿维夫居民的32%支持该团队.","同一个调查显示, 特尔阿维夫居民的32%支持该团队.","同一个调查显示, 特尔阿维夫居民的32%支持该团队.",0,[],21
+sample_3724,United States English,Both the American and the Russian exercises were cancelled after the attack.,袭击发生后，美国和俄罗斯的军事演习都被取消了。,美国和俄罗斯的演习在袭击后都被取消.,美国和俄罗斯的演习在袭击后都被取消.,美国和俄罗斯的演习在袭击后都被取消.,0,[],16
+sample_3011,"Southern African (South Africa, Zimbabwe, Namibia)","Nora finds herself ugly, because she has pimples.",诺拉发现自己很丑，因为她长了丘疹。,"诺拉觉得自己很丑,因为她有<unk>.","诺拉觉得自己很丑,因为她有<unk>.","诺拉觉得自己很丑,因为她有<unk>.",0,[],18
+sample_0724,Filipino,Kroski attended Hunter College.,Kroski 进入亨特学院。,克罗斯基参加了亨特学院.,克罗斯基参加了亨特学院.,克罗斯基参加了亨特学院.,0,[],11
+sample_1483,Hong Kong English,I think it's marvelous.,我认为这很棒。,我认为这很棒,我认为这很棒,我认为这很棒[UNKID],1,[6],8
+sample_2581,Malaysian English,Would you sacrifice the life of a human if this would save many other lives?,你会牺牲一个人的生命，来拯救其他生命？,"你会牺牲一个人的生命,","你会牺牲一个人的生命,","你会牺牲一个人的生命,",0,[],11
+sample_0256,England English,It's a homogeneous city.,这是一个同类的城市。,这是一个均<unk>的城市.,这是一个均<unk>的城市.,这是一个均<unk>的城市.,0,[],10
+sample_1877,"India and South Asia (India, Pakistan, Sri Lanka)","He spoke slowly, coldly.",他慢慢地，冷冷地说。,他慢慢地冷冷地说话,他慢慢地冷冷地说话,他慢慢地冷冷地说话[UNKID],1,[11],13
+sample_4175,United States English,Can you see the beacon at the top of the wind turbine?,你能看见风机顶部的灯塔吗？,你能看到风力<unk>轮机顶部的信标吗?,你能看到风力<unk>轮机顶部的信标吗?,你能看到风力<unk>轮机顶部的信标吗?,0,[],20
+sample_3061,"Southern African (South Africa, Zimbabwe, Namibia)",Laugh and the world laughs with you. Cry and you cry alone.,笑，世界和你一起笑。 哭泣，你独自哭泣。,"笑,世界会和你一起笑.哭,你一个人哭.","笑,世界会和你一起笑.哭,你一个人哭.","笑,世界会和你一起笑.哭,你一个人哭.",0,[],19
+sample_1049,Filipino,"He was able to get on his knees, but he quickly slipped back.",他能够跪下，但很快又滑了回来。,"他能够跪下, 但他很快就回落了.","他能够跪下, 但他很快就回落了.","他能够跪下, 但他很快就回落了.",0,[],16
+sample_1479,Hong Kong English,There was a forest fire in Los Angeles.,洛杉矶发生了森林火灾。,在洛杉矶发生了一场森林大火.,在洛杉矶发生了一场森林大火.,在洛杉矶发生了一场森林大火.,0,[],13
+sample_2832,Malaysian English,Talk about the day I met her.,说说我遇见她的那天。,谈谈我遇到的那一天.,谈谈我遇到的那一天.,谈谈我遇到的那一天.,0,[],12
+sample_0281,England English,"Yours sincerely, Satan.",谨启， Satan。,你是撒旦的真心,你是撒旦的真心,你是撒旦的真心,0,[],10
+sample_2220,"India and South Asia (India, Pakistan, Sri Lanka)",The model can be initialized with sparse coding.,该模型可以用稀疏编码进行初始化。,该模型可以通过稀疏编码进行初始化.,该模型可以通过稀疏编码进行初始化.,该模型可以通过稀疏编码进行初始化.,0,[],16
+sample_3987,United States English,We must stay hidden.,我们必须躲起来。,我们必须保持隐蔽.,我们必须保持隐蔽.,我们必须保持隐蔽.,0,[],9
+sample_3449,"Southern African (South Africa, Zimbabwe, Namibia)",I heard a faint movement under my feet.,我听到脚下有微弱的动静。,我听到我的脚下有微弱的动作.,我听到我的脚下有微弱的动作.,我听到我的脚下有微弱的动作.,0,[],15
+sample_1148,Filipino,"It's ok, don't hold back!.",没关系，别犹豫！。,"没关系,不要<unk>住它.","没关系,不要<unk>住它.","没关系,不要<unk>住它.",0,[],14
+sample_1526,Hong Kong English,I was serious about it...,我是认真的…,我很认真...,我很认真...,我很认真...,0,[],8
+sample_2846,Malaysian English,Poetry and truth.,诗歌和真理。,诗歌和真相.,诗歌和真相.,诗歌和真相.,0,[],9
+sample_0563,England English,It has many applications.,它有许多用途。,它有很多应用.,它有很多应用.,它有很多应用.,0,[],7
+sample_2202,"India and South Asia (India, Pakistan, Sri Lanka)",Have you ever been to Singapore?,你去过新加坡吗？,你有没有去过新加坡?,你有没有去过新加坡?,你有没有去过新加坡?,0,[],10
+sample_4108,United States English,All the best.,一切顺利。,祝你一切顺利.,祝你一切顺利.,祝你一切顺利.,0,[],10
+sample_3063,"Southern African (South Africa, Zimbabwe, Namibia)","He did, however, hold three catches.",但是，他确实抓住了三个球。,"然而,他确实抓住了三只鱼.","然而,他确实抓住了三只鱼.","然而,他确实抓住了三只鱼.",0,[],14
+sample_0955,Filipino,The boy looked out at the horizon.,男孩望着外面的地平线。,这个男孩看着地平线.,这个男孩看着地平线.,这个男孩看着地平线.,0,[],11
+sample_1447,Hong Kong English,"Bacardi, rye, vodka – what do you want?, asked the barkeeper.",“白家地朗姆、黑麦威士忌、伏特加——你选哪一种？”，酒保问道。,"""你想要什么?"" 酒吧老板问道.","""你想要什么?"" 酒吧老板问道.","""你想要什么?"" 酒吧老板问道.",0,[],15
+sample_2598,Malaysian English,Does the venue offer free WiFi?,场地提供免费 WiFi 吗？,场地提供免费的WiFi吗?,场地提供免费的WiFi吗?,场地提供免费的WiFi吗?,0,[],12
+sample_0148,England English,I guess I used all the shells.,我想我用了所有的贝壳。,我想我用了所有的弹<unk>.,我想我用了所有的弹<unk>.,我想我用了所有的弹<unk>.,0,[],13
+sample_2054,"India and South Asia (India, Pakistan, Sri Lanka)",The sunset faded into twilight before anything else happened.,还没发生什么事，日落就变成了黄昏。,"在任何其他事情发生之前,日落已经变成了黄昏.","在任何其他事情发生之前,日落已经变成了黄昏.","在任何其他事情发生之前,日落已经变成了黄昏.",0,[],18
+sample_4023,United States English,It is French for touched.,这是法语，意思是感动。,这是法语的触摸.,这是法语的触摸.,这是法语的触摸.,0,[],10
+sample_3169,"Southern African (South Africa, Zimbabwe, Namibia)",Her catchphrase is Kya!,她的口头禅是 Kya！,她的口号是Kya!,她的口号是Kya!,她的口号是Kya!,0,[],11
+sample_1178,Filipino,A chink in the wall allowed a draft to blow.,墙上的一个裂缝让风吹了进来。,墙上的一个<unk>隙让一个气流吹过来.,墙上的一个<unk>隙让一个气流吹过来.,墙上的一个<unk>隙让一个气流吹过来.,0,[],19
+sample_1328,Hong Kong English,One set was painted in all over yellow with advertisements for British Telecom.,一套被涂成黄色，上面涂有英国电信的广告。,"一个套装是用黄色涂成的,","一个套装是用黄色涂成的,","一个套装是用黄色涂成的,",0,[],14

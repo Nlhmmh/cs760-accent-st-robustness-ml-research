@@ -1,0 +1,22 @@
+measure,value,note
+trigger words: median Zipf frequency,3.76,higher = more common
+other content words in the same sentences: median Zipf frequency,4.555,
+  (for reference) ALL other words incl. function words: median Zipf frequency,6.0,
+share of sentences where the trigger is rarer than the median of the other CONTENT words,0.791,n=378; Wilcoxon p=2.8e-33
+share of sentences where the trigger IS the rarest non-stop word,0.457,
+  chance level (pick a random non-stop word),0.252,
+"mean within-sentence Spearman, content words only: importance vs Zipf (negative = rarer words matter more)",-0.342,n sentences=336
+proper noun (PROPN) share: trigger words,0.13,
+proper noun (PROPN) share: other content words,0.098,
+odds ratio: being a trigger if the word is a proper noun (content words only),1.375,"Fisher p=0.076 (word level, ignores clustering)"
+stop-word (function word) share: trigger words,0.016,
+stop-word share: all other words,0.55,
+capitalised and not first word: trigger words,0.094,
+capitalised and not first word: other content words,0.078,
+share of NOUN among triggers / among other words,0.571,other content words: 0.445
+share of VERB among triggers / among other words,0.132,other content words: 0.287
+share of ADJ among triggers / among other words,0.117,other content words: 0.127
+share of PROPN among triggers / among other words,0.13,other content words: 0.098
+share of ADV among triggers / among other words,0.013,other content words: 0.032
+share of INTJ among triggers / among other words,0.029,other content words: 0.002
+"median Zipf gap (trigger minus other words), bootstrap 95% CI",-0.728,"[-0.88, -0.62]"
