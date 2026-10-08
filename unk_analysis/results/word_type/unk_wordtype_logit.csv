@@ -1,0 +1,14 @@
+model,term,odds_ratio,ci_low,ci_high,p
+A. length only,words,1.0789,1.0492,1.1094,0.0
+B. + proper noun,words,1.0799,1.0503,1.1103,0.0
+B. + proper noun,has_propn,0.9277,0.7363,1.1688,0.5244
+C. + named entity,words,1.0809,1.0512,1.1115,0.0
+C. + named entity,has_entity,0.8599,0.6752,1.0953,0.2216
+D. + rarest content word,words,1.0259,0.9938,1.0591,0.1146
+D. + rarest content word,min_zipf_content,0.5222,0.4776,0.571,0.0
+E. all together,words,1.0265,0.9945,1.0595,0.105
+E. all together,has_propn,0.9503,0.7464,1.2101,0.6795
+E. all together,min_zipf_content,0.5223,0.4778,0.5711,0.0
+"F. all together, one row per unique sentence (unk = any)",words,1.0268,0.997,1.0576,0.0787
+"F. all together, one row per unique sentence (unk = any)",has_propn,0.9785,0.7768,1.2325,0.8536
+"F. all together, one row per unique sentence (unk = any)",min_zipf_content,0.5375,0.4923,0.5869,0.0

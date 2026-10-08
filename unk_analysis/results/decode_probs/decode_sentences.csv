@@ -1,0 +1,879 @@
+sid,group,sentence,words,n_steps,translation
+0,control,That he wanted to travel.,5,6,他想去旅行.
+1,unk,Pitch the straw through the door of the stable.,9,15,把<unk>子扔进马<unk>的门.
+2,control,His daughter Teodorina Cybo married Gerardo Usodimare and had a daughter.,11,22,"他的女儿Teodorina Cybo嫁给了Gerardo Usodimare,并生了一个女儿."
+3,unk,"The cornices of the room were mostly intact, but showed signs of damage from damp.",15,24,"房间的窗<unk>大多完好无损, 但显示湿度损坏的迹象."
+4,unk,He disappeared into the tent.,5,10,他消失在帐<unk>里.
+5,unk,It contains Zucchini.,3,8,它含有朱<unk>.
+6,unk,"There were raised voices,and some sort of struggle appeared to be going on. .",14,16,"有一些声音<unk>起, 似乎正在发生某种斗争."
+7,control,His father had been an amateur boxer and made all of his sons box.,14,10,"他的父亲是一名业余拳击手,"
+8,control,"If I don't find it, I can always go home.",10,12,"如果我找不到它, 我总是可以回家."
+9,control,"The cheese was delicious, especially when accompanied by the delicious, crusty bread.",12,24,"奶酪是美味的, 尤其是当伴随着美味的, 脆的面包."
+10,unk,"It habitually perches in trees, which gives rise to its specific name.",12,14,"它通常<unk>在树上,因此得名."
+11,control,It is not clear when the monastery was established.,9,11,目前尚不清楚修道院是什么时候成立的.
+12,unk,"The grim reaper is waiting for you, reckless driver!",9,16,"凶手正在等待你,鲁<unk>的司机!"
+13,unk,"The camel driver was not a fighter, and he had consulted with seers.",13,20,"<unk>驼司机不是一个战士, 他已经咨询了先见者."
+14,unk,"The flag is red, blue, and yellow.",7,13,"国旗是红色,蓝色和黄色的."
+15,control,"I remember how I sat on the table there in the blackness, with patches of green and crimson swimming before my eyes.",22,27,"我记得我坐在桌子上在黑暗中, 绿色和红色的斑点游在我的眼睛前."
+16,unk,He heard a muffled grating sound and saw the black mark jerk forward an inch or so.,17,28,"他听到一个<unk>的<unk>声,并看到黑色的标记<unk>向前一英寸左右."
+17,control,"When he got the call, Ali ran out of the store, down the street, and into the car.",18,23,"当他接到电话时,阿里跑出商店,走下街,然后进了车."
+18,unk,"I'm not so much into anatomy, where's the bladder again?",10,17,"我对解剖学不太了解,膀<unk>又在哪里?"
+19,unk,When the frost has come it is time for turkey.,10,15,"当<unk>来了,是火<unk>的时间."
+20,control,All his strength and money went in keeping this girl.,10,16,他所有的力量和钱都花在了留住这个女孩上.
+21,control,Graduated from the faculty of law.,6,7,毕业于法律学院.
+22,control,New Melle is in the Francis Howell School District.,9,15,新梅尔位于弗朗西斯·霍威尔学区.
+23,unk,"Oh dear, oh dear!",4,7,我的上帝!我的上帝!
+24,control,Today I’m making the Internet more inclusive.,7,10,今天我正在让互联网更包容.
+25,control,"Challis has written two volumes of autobiography, ""Being Boycie"" and ""Boycie and Beyond"".",13,22,"查利斯写了两卷自传,Boycie和Boycie及其后"
+26,control,An irregular petty war an armed mountaineer.,7,13,一个不规则的小战争一个武装的登山者.
+27,unk,Their eggs were particularly vulnerable to crows and other natural predators.,11,21,它们的<unk>蛋特别容易受到乌<unk>和其他自然捕食者的攻击.
+28,control,It doesn't matter now.,4,7,现在已经不重要了.
+29,unk,The streets are narrow and full of sharp turns.,9,17,"街道狭窄,有很多<unk>的<unk>道."
+30,unk,He does but shrug his head.,6,9,他只是<unk>着头.
+31,unk,"Palm oil is cheap, but workers on illegal plantations get exploited and huge areas of jungle get destroyed for its production.",21,21,"棕<unk>油价格便宜, 但非法种植园的工人受到剥削,"
+32,unk,There was a murmur from the crowd.,7,11,听到人群中的<unk>声.
+33,control,"Bakers have homes, while shepherds sleep out in the open.",10,16,"面包商有家,而牧羊人睡在露天."
+34,control,He felt weighted down by the centuries of time since the Pyramids had been built.,15,14,"自从金字塔建成以来, 他感到沉重."
+35,unk,My alarm clock doesn't have a snooze button.,8,13,我的<unk>钟没有休息按<unk>.
+36,control,"When pork spareribs or another meat is used instead, the dish is named accordingly.",14,19,"当使用猪肋或其他肉类时,菜肴就相应地命名."
+37,control,They may also have a mask.,6,9,他们也可能戴着面具.
+38,control,"It only needed Aunt Dahlia after them, shouting ""Yoicks!""",9,20,"它只需要达利亚阿<unk>跟着他们,喊着""Yoicks!"""
+39,control,"Albany is located northeast of Abilene, the seat of Taylor County.",11,16,阿尔巴尼位于泰勒县的阿比林东北.
+40,unk,"The men climbed the hill, and they were tired when they reached the top.",14,20,"这些人爬上了山,到达山顶时他们已经疲<unk>不堪."
+41,unk,"I ate a dish with rice, spaghetti, hummus, and caramelized onions.",11,23,"我吃了一道饭, 意大利面, 胡麻, 和焦糖洋<unk>."
+42,unk,She sewed the torn coat quite neatly.,7,16,她把撕裂的外套<unk>得很整齐.
+43,unk,"It was such a thrill, her veins were pumped full of adrenaline.",12,14,她的静脉充满了<unk>上腺素.
+44,unk,A little scrambling is required for access.,7,8,需要进行一些加密才能访问.
+45,unk,"When he saw the storm clouds in the sky, Jaka wished he would have remembered his umbrella.",17,25,"当他看到天空的风暴云时,贾卡希望他能记住他的雨<unk>."
+46,unk,It can be overwhelming to learn how to put all the pieces together.,13,17,学习如何将所有碎片放在一起可能令人<unk>丧.
+47,unk,"It swayed in the air, like weeping willows.",8,14,"它在空中摇摆,就像哭<unk>树."
+48,unk,"There, he awards both Ziwei and Xiaoyanzi with a gold insignia.",11,16,"在那里,他授予齐威和晓<unk>金牌."
+49,unk,Seward proposes that ball lightning is a spinning plasma toroid or ring.,12,22,塞沃德提出球闪电是一个旋转的等离子体圆形或环.
+50,control,"That circus acrobat must have a well-trained vestibular system, the spectator thought.",12,21,"观众认为,这个马戏团演员一定有训练有素的前庭系统."
+51,unk,The devil finds work for idle hands.,7,13,魔鬼为<unk>惰的人找工作.
+52,unk,A stone flounder is the textbook definition of effective camouflage.,10,15,石<unk>是教科书中有效的伪装的定义.
+53,control,Today's world is full of commercials.,6,7,今天的世界充满了广告.
+54,control,Might it not prove a little worse than she expected?,10,11,这不可能是她预期的更糟糕吗?
+55,control,I decided to go ahead and make it available on GitHub.,11,11,我决定在GitHub上提供它.
+56,control,"Unfortunately, the choice is permanent.",5,10,"不幸的是,选择是永久的."
+57,unk,I believe that there are lots of spiders gathering in the attic.,12,16,我相信有很多蜘蛛聚集在<unk>楼上.
+58,control,Being with him alone made her feel uncomfortable.,8,13,和他独自在一起让她感到不舒服.
+59,unk,It never rains but it pours.,6,13,"它从来不下雨,但却会下雨."
+60,control,The owner's eye fattens the horse.,6,9,主人的眼睛使马肥胖.
+61,unk,Their music combined funk rhythms and dissonant guitar riffs.,9,21,他们的音乐结合了风格节奏和不和<unk>的吉他<unk>.
+62,unk,"He grew strawberries, so you would not like it.",9,14,"他种草<unk>,所以你不会喜欢它."
+63,unk,"Strawberry curd, yummy!",3,12,"草<unk>奶酪,很好吃!"
+64,unk,And they attacked an empty tent.,6,11,他们袭击了一个空的帐<unk>.
+65,unk,Please don't be lazy.,4,8,请不要<unk>惰.
+66,control,There are also research studies to find and discover new pharmaceutical agents.,12,15,"还有研究研究,以寻找和发现新的制药剂."
+67,control,The eastern terminus is in Waterville Valley at the center of the town.,13,16,东部终点站位于镇中心的沃特维尔谷.
+68,control,Lily is just as nearsighted as him.,7,10,莉莉和他一样近视.
+69,unk,The valley was filled with dense fog.,7,14,谷里充满了密集的雾<unk>.
+70,control,He's deposited Ten Dollars.,4,7,他存了十美元.
+71,unk,"The boy was surprised, and then irritated.",7,13,"这个男孩很惊<unk>,然后生气."
+72,control,"Coincidentally, his Manchester United spell ended where it began-against Stoke City.",11,29,"巧合的是,他的曼联生涯在开始时就结束了 - - 在对阵斯托克城的比赛中."
+73,unk,He felt the role gave him the reputation of being a cad.,12,16,他觉得这个角色给了他一个<unk>瓜的声誉.
+74,control,The county is named in honor of General Philip Kearny.,10,16,该县以菲利普·基尔尼将军的名字命名.
+75,control,what can I do now?,5,8,我现在能做些什么?
+76,unk,The temples and sculptures were all brightly painted.,8,17,寺<unk>和雕塑都是鲜<unk>的画.
+77,control,"And this is for me, said the alchemist, keeping one of the parts.",13,17,"这位炼金术士说,这属于我,留下来一个部分."
+78,unk,Strike while the iron is hot Make hay while the sun shines.,12,19,"在铁还热的时候打,在阳光照耀的时候<unk>草."
+79,unk,"Hamilton quaternions can be used to replace many matrices, but not to represent view frustums.",15,22,"哈密尔顿四元可以用来取代许多矩阵,但不能用来表示视图图."
+80,unk,She bought three cod fishes to cook for dinner.,9,14,她买了三条<unk>鱼做晚餐.
+81,control,Same survey revealed that thirty-two percent of Tel Aviv residents support the team.,13,18,"同一个调查显示, 三十二%的特拉维夫居民支持该队."
+82,control,"And, above all, don't forget to follow your destiny through to its conclusion.",13,13,"最重要的是,不要忘记跟随你的命运,"
+83,unk,"The overhand knot, for example, is also known as the thumb knot.",12,14,"例如,手上的结也被称为<unk>指结."
+84,control,I wanted them to be a part of your inheritance.,10,9,我希望他们成为你遗产的一部分.
+85,unk,My laptop has crashed.,4,12,我的笔记本电脑已经崩<unk>.
+86,unk,All work and no play makes Jack a dull boy.,10,19,所有的工作和没有玩<unk>让杰克一个无聊的男孩.
+87,control,The bridge had a notoriously problematic grating in the center span.,11,18,这座桥在中央跨度有一个臭名昭著的有问题格子.
+88,unk,These are in the tundra biome.,6,11,这些是在<unk>地生物群中.
+89,control,The phrases are a form of argumentation.,7,9,这些短语是一种论证形式.
+90,unk,The curtain rose and the show was on.,8,13,"幕<unk>抬起,演出开始了."
+91,control,A man working on a computer at work.,8,9,一个人在工作中用电脑工作
+92,control,The case was puzzling to the old and wise.,9,17,这个案子对老和聪明人来说是令人困惑的.
+93,unk,Don't count your chickens before they hatch.,7,15,在<unk>化之前不要计数你的<unk>.
+94,unk,Keep your shirt on.,4,10,保持你的<unk>衫上.
+95,unk,The young kid jumped the rusty gate.,7,14,这个年轻人跳过了生<unk>的门.
+96,control,"She put on her slippers, scaled the stairs, and went to bed.",12,17,"她穿上拖鞋,爬上楼梯,然后去睡觉."
+97,control,The road will diverge further along.,6,9,这条路将进一步分开.
+98,unk,How many layers of irony are you on?,8,10,你有多层的<unk>刺?
+99,control,It has been so long since I have seen you!,10,11,我已经很久没见过你了!
+100,control,The letter's our only clue.,5,9,这封信是我们唯一的线索.
+101,unk,"Like other royal insignia, the crown was not worn by the sovereign.",12,18,"像其他皇家<unk>章一样,皇冠不是国王所戴的."
+102,control,Let us in on it.,5,6,让我们参与其中.
+103,unk,It is subject to predation by beetles and possibly rodents.,10,14,它受到甲虫和<unk>动物的掠食.
+104,unk,"It produces principally maize, potatoes, apples, pear and plum.",9,19,"它主要生产玉米,土豆,<unk>果,梨和梅."
+105,control,He assured Chancellor of his cooperation in maintaining public order.,10,13,他向总理保证他将协助维护公共秩序.
+106,unk,"This beer has been brewed in Germany, more specifically in Bavaria.",11,23,"这种<unk>酒是在德国,更具体地说是在巴伐利亚<unk>造的."
+107,control,What's the matter with you?,5,6,你有什么问题吗?
+108,unk,"Crab flourish in Dungeness Bay, and crabbing is a popular local pastime.",12,25,"<unk>鱼在Dungeness湾繁荣, <unk>鱼是当地一个受欢迎的消遣."
+109,unk,She flaps her cape as she parades the street.,9,17,她在街上游行时挥舞着她的斗<unk>.
+110,unk,My mind ran on the possibilities of its content.,9,11,我的脑海里充满了内容的可能性
+111,control,The name of Eumelos was attached to the poem as the only name available.,14,12,埃穆洛斯的名字是唯一可用的名字.
+112,control,"Neglecting it, however, leads to poor docking results in terms of binding pose prediction.",14,21,"然而,忽略它会导致在结合姿势预测方面较差的对接结果."
+113,unk,"If you want a sandwich, don't hesitate grabbing one.",9,17,"如果你想要一个三明治,不要犹<unk>抓住一个."
+114,unk,"Examples include a beef Manhattan, a hot chicken sandwich in Canada, or Welsh rarebit.",14,23,"例如牛肉曼哈顿,加拿大热<unk>三明治,或威尔士稀有."
+115,control,I gotta figure some way out of this thing!,9,9,我必须想出一个出路!
+116,control,"Cold hands, warm heart.",4,10,"冷的手,温暖的心."
+117,unk,The matter of the overall pennant was apparently never decided.,10,13,整体旗<unk>的问题显然从来没有决定过.
+118,unk,"There were really, I think, two or three hundred people elbowing one another.",13,19,"我认为,真的有两百到三百个人在互相<unk>肘."
+119,unk,And the sand and gravel had been flung violently in every direction.,12,17,沙子和<unk>石被猛烈地扔到各个方向.
+120,unk,"The title of the monarch of Iseyin is ""The Aseyin of Iseyin"".",12,19,"伊塞因君主的称号是""伊塞因的伊塞因""."
+121,unk,Why are gully covers round?,5,13,为什么沟<unk>的盖子是圆的?
+122,unk,"The Englishman prodded him, and the boy asked her about the man who cured people's illnesses.",16,20,"这位英国人<unk>着他,男孩问她关于治愈人们疾病的人."
+123,unk,A mother and son walk together while the son carries a flag.,12,18,"母亲和儿子一起走路,儿子携带着旗<unk>."
+124,unk,I was hoping you might know a thing or two about my surly shadow?,14,18,我希望你可能知道一两件事关于我的<unk>气的影子?
+125,unk,"Following Portsmouth's relegation, Diop was considered likely to be released.",10,20,"在波茨<unk>斯降级后,迪奥普被认为可能会被释放."
+126,control,Padding in undergarments is also used by some cross-dressers.,9,13,一些穿越者也使用内衣的填充.
+127,control,Let's all join as we sing the last chorus.,9,10,让我们一起唱最后一首合唱.
+128,control,"Don't be impatient, he repeated to himself.",7,13,"不要不耐烦,他反复对自己说."
+129,control,What's that other paper going to give you?,8,11,那个其他的报纸会给你什么?
+130,unk,"It was steel, a fisher trap.",6,13,"这是一个钢铁,一个渔民陷<unk>."
+131,control,"The fool wanders, the wise man travels.",7,13,"愚蠢的人游荡,聪明人旅行."
+132,control,"Jason makes his home in Providence, Rhode Island.",8,16,杰森在罗德岛的普罗维登斯定居.
+133,control,But I'm liable to get into a jam.,8,9,但是我可能会陷入困境.
+134,control,"Fine lines in textiles are also called ""pin stripes"".",9,16,"<unk>织品中的细线也被称为""针条纹""."
+135,control,"It's such an unfair world, innit?",6,9,"这是一个不公平的世界,不是吗?"
+136,unk,"However, after persistent calls, Hall-Jones reluctantly accepted despite having no parliamentary ambitions.",12,30,"然而,在坚持的呼叫之后,霍尔-<unk>斯不情愿地接受了,尽管没有议会野心."
+137,control,"Gabeira has asked for a visa revision three times, and was denied each time.",14,12,"盖比拉曾三次要求修改签证,"
+138,control,Its close proximity to Schiphol Airport allows the growers access to markets worldwide.,13,18,"它靠近斯基波尔机场, 允许种植者进入全球市场."
+139,unk,A steak-and-kidney pie.,3,12,一个牛排和<unk>脏蛋糕.
+140,unk,We know that Mark does not like spicy food.,9,14,我们知道马克不喜欢辛<unk>的食物.
+141,unk,The fin was sharp and cut the clear water.,9,18,"翅膀是尖的,切断了清<unk>的水."
+142,control,Gestir are signed to Tutl Records in the Faroe Islands.,10,17,杰斯特在法罗群岛的Tutl唱片公司签约.
+143,unk,"Gamble played cornerback, wide receiver, and all phases of special teams at Ohio State.",14,29,"甘布尔在俄<unk>俄州立大学担任角球后卫,宽接手和所有阶段的特别团队."
+144,control,I burned the omelette.,4,8,我烧掉了蛋糕
+145,unk,Absolutely despicable that gingerbread men are forced to live in houses made of their own flesh.,16,25,"绝对可憎的是,这些<unk>饼男人被迫生活在用自己肉制成的房子里."
+146,unk,"Yesterday he felt invincible, now he has a hangover.",9,18,"昨天他觉得自己是无敌的,现在他<unk>了."
+147,control,"We know that, and we are used to it.",9,9,"我们知道,我们已经习惯了."
+148,control,Several private schools are located in Maple Ridge.,8,14,几所私立学校位于梅普尔里奇.
+149,unk,"You were looking squeamish this afternoon, he began.",8,13,"今天下午你看起来很<unk>,他开始."
+150,unk,He transformed Somerleyton Hall into a typical East Anglian Tudor-Jacobean mansion.,11,27,他将索默莱顿大厅改造成一个典型的东英格兰图多尔-雅各布式豪宅.
+151,control,I'd like to change places with you for just one day.,11,8,我想和你交换一天的位置.
+152,control,Smoky fires lack flame and heat.,6,11,烟火没有火焰和热量.
+153,control,It's just that I never have.,6,5,只是我从来没有.
+154,control,He brought six sheep with him.,6,8,他带了六只羊.
+155,control,A girl in a bikini top stands in front of a beautiful view,13,16,一个穿着比基尼的女孩站在美丽的景色前面
+156,control,Replace the Ts in Tim Tebow's name with any other consonant to get a Star Wars character,17,22,"用任何其他辅音取代Tim Tebow的名字中的T, 得到一个星球大战角色"
+157,control,"Alisha's initial albums include ""Jadoo"", ""Baby Doll"", ""Aaah Alisha"" and ""Made in India"".",13,31,"阿丽莎的最初专辑包括""Jadoo"""",Baby Doll"""",Aaah Alisha""和""Made in India""."
+158,unk,"No, this does not come as a surprise.",8,11,"不,这并不令人惊<unk>."
+159,unk,"When a fox hears a rabbit screaming it comes running, but not to help.",14,25,"当狐<unk>听到<unk>子尖叫时, 它会跑来, 但不是来帮助."
+160,unk,Can you see the beacon at the top of the wind turbine?,12,18,你能看到风力<unk>轮机顶部的信标吗?
+161,control,"Left to myself, there is nothing I would find a greater treat.",12,12,"如果留给自己,我不会找到更好的待遇"
+162,control,The end of the cylinder was still as Ogilvy and Henderson had left it.,14,20,圆柱体的末端仍然是奥吉尔维和亨德森离开它.
+163,control,She also chaired the Rules Committee.,6,8,她还担任规则委员会的主席.
+164,unk,The game ends when all the Chuckies are exhausted.,9,18,"当所有 Chuckies 疲<unk>时,游戏就结束了."
+165,unk,"The falcon's beak carries bits of me, myself, the desert said.",11,16,"沙漠说,<unk>的嘴里有我的碎片,"
+166,control,The pigs and cows ran everywhere.,6,9,猪和牛到处跑
+167,control,Countries with resource-based economies experience the largest capital flight.,9,12,资源经济国家经历了最大的资本逃离.
+168,control,And the names of the people involved were very difficult to pronounce.,12,9,参与者的名字很难发音.
+169,control,It is hard or even impossible to define the fitness expression.,11,10,很难甚至不可能定义健身表达式.
+170,control,She was the first wife of Nation of Islam leader Elijah Muhammad.,12,17,她是伊斯兰国家领导人伊利亚·穆罕默德的第一任妻子.
+171,unk,The magazine is the best selling guitar magazine in Europe.,10,15,这本杂志是欧洲最<unk>销的吉他杂志.
+172,control,Listed from north to south.,5,8,从北到南列出.
+173,control,I said I was trying to catch one.,8,9,我说我试图抓住一个.
+174,control,The Englishman didn't answer him directly.,6,9,这位英国人没有直接回答他.
+175,unk,A large piece suddenly came off and fell with a loud and sharp noise.,14,23,"一块大块突然脱落,并与一个大声和尖<unk>的噪音."
+176,unk,Best to bend it while it's a twig.,8,17,最好在它还是一根树枝时<unk>曲它.
+177,control,"I used to live near El Cairum, he said.",9,12,他说我曾经住在 El Cairum 附近
+178,unk,This isn't a doss house.,5,8,这不是一个DOS房子.
+179,control,The purple socket is for connecting the antenna to the receiver.,11,16,紫色插座用于将天线连接到接收器.
+180,unk,Lichen planus may be categorized as affecting mucosal or cutaneous surfaces.,11,17,湿疹可以被归类为影响粘膜或皮肤表面.
+181,unk,The steady drip is worse than a drenching rain.,9,14,稳定的滴水比浸泡的雨更糟糕.
+182,control,What are we to do?,5,6,我们该怎么办?
+183,control,"The room was stone silent, recalled Veninger.",7,14,"Veninger 回忆说,房间里静静无声"
+184,unk,"Birds feed their offspring with spiders, worms, slugs and bugs.",10,27,"鸟类用蜘蛛,<unk>虫,<unk>和昆虫<unk>养它们的后代."
+185,unk,"According to various king-lists, Giric was slain at Dundurn.",9,18,"根据各种国王名单,吉里克在<unk>德恩被杀."
+186,unk,He noticed the unequal cooling of its surface.,8,14,他注意到它的表面不均<unk>的冷却.
+187,control,Man in white cleans the floor.,6,10,白衣男人在清理地板
+188,control,A man is on a small pull along trailer working with landscaping material.,13,20,"一个男人坐在沿着拖车的小拖车上,正在处理园艺材料"
+189,control,The remaining energy absorbed into the gaseous propellant is converted into thrust.,12,19,气体推进剂吸收的剩余能量被转化为推力.
+190,unk,"Other waterfalls include the Rincon Falls, Rio Seco Falls and Marianne Falls.",12,31,"其他<unk>布包括林肯<unk>布,里奥塞科<unk>布和玛丽安<unk>布."
+191,unk,"Due to his recurring hip injuries, however, Bush voluntarily left spring training and retired.",14,22,"然而,由于他的<unk>部受伤,布什自愿离开了春季训练并退休."
+192,unk,"I had to teach my nephew the facts of life, because his parents are prudes.",15,21,"我不得不教我的<unk>子生活的事实, 因为他的父母是谨慎的."
+193,unk,"I had the ""everyone has Gary Busey's teeth"" dream again.",10,22,"我又做了一个""每个人都有加里·布西的牙<unk>""的梦."
+194,unk,"From the railway station in the distance came the sound of trains, ringing and rumbling.",15,22,"从远处的火车站听到火车的声音,<unk>和<unk>."
+195,control,"Doctor, we have a medical emergency, and we need you at the emergency room now.",15,18,"医生,我们有一个医疗紧急情况, 我们需要你在急诊室现在."
+196,unk,This is a very large vegetable stand under a white tent.,11,15,这是一个非常大的蔬菜摊在白色帐<unk>下.
+197,unk,"Gossips are frogs, they drink and talk.",7,17,"谣言是青<unk>,他们喝酒和谈话."
+198,unk,Take the winding path to reach the lake.,8,15,沿着<unk>曲的路径到达湖泊.
+199,unk,"Don't knock on death's door, ring the doorbell and run.",10,16,"不要敲死亡的门,敲门<unk>,然后跑."
+200,control,"The war is going to end someday, the girl said.",10,13,"这场战争总有一天会结束,女孩说."
+201,control,The boy was trying to understand the truth of what the old man had said.,15,12,这个男孩试图理解老人所说的话的真相.
+202,unk,"Oh, you are, eh?",4,10,"<unk>,你是,是吗?"
+203,unk,Don't advertise: Tell it to a gossip.,7,11,不要宣传:告诉一个八<unk>.
+204,control,He has also done work in the sociology of social and sociable robotics.,13,11,他还研究了社会和社交机器人的社会学.
+205,unk,Most of them were staring quietly at the big table.,10,12,他们大多静静地盯着大桌子
+206,control,He later made a payment to Schwartz's widow as compensation for dissolving this arrangement.,14,16,"他后来向施瓦茨的寡妇支付了一笔赔偿金,"
+207,control,"The ward is named after Holy Trinity Church, the town's parish church.",12,17,该区以该镇的教区教堂圣三位一体教堂命名.
+208,unk,"Take shelter in this tent, but keep still.",8,15,"在这<unk>中避难,但保持安静."
+209,unk,"Nora finds herself ugly, because she has pimples.",8,16,"诺拉觉得自己很丑,因为她有<unk>."
+210,unk,Garlic can be used to fight vampires.,7,13,大<unk>可以用来对抗吸血鬼.
+211,control,"He was defeated by Magnus on several occasions, and had to flee to Sweden.",14,15,"他被马格努斯多次击败,不得不逃到瑞典."
+212,control,A light purse makes a heavy heart.,7,13,一个轻薄的钱包让一个沉重的心.
+213,control,Grocery shops have never been so expensive.,7,9,杂货店从来没有这么贵
+214,control,Great Pyrenees is a really awesome dog breed.,8,12,大皮雷尼犬是一种非常棒的犬种.
+215,control,"His father was assassinated, just three days before his third birthday.",11,15,他的父亲在他三岁生日前三天被暗杀.
+216,control,"She owned several farms in New London, and had a home in Norwich.",13,18,"她在新伦敦拥有几座农场,并在诺维奇有一个家."
+217,control,I shall be neither more nor less meritorious,8,10,我既不多也不少的有价值
+218,unk,He was eventually defeated in the eighth round of voting by Baldwin Lonsdale.,13,21,他最终在第八轮投票中被<unk>德温·隆斯代尔击败.
+219,control,These devices are advantageous where a reverse or freewheel diode must be used.,13,19,这些装置在必须使用反向或自由轮二极管的情况下是有利的.
+220,unk,"Sports, music, cooking and other topics are covered.",8,16,"体育,音乐,<unk>和其他主题都被涵盖."
+221,unk,"On the third day, the chief met with his officers.",10,14,"在第三天,首领与他的军官见面."
+222,unk,"Grime, rust and residual particles polluted the air.",8,18,"污垢,<unk>和残留的颗粒污染了空气."
+223,unk,"Oh, I know it!",4,7,"<unk>,我知道!"
+224,unk,We need grain to keep our mules healthy.,8,13,我们需要谷物来保持<unk>子的健康.
+225,unk,Parachuting is dangerous.,3,13,跳降落<unk>是很危险的.
+226,unk,Is that how your niece began?,6,12,你的<unk>女是这样开始的吗?
+227,unk,I am not surprised.,4,8,我并不惊<unk>.
+228,control,Do you think you could manage it?,7,8,你认为你能做到吗?
+229,unk,"The scabbard was embossed in silver, and the handle was black and encrusted with precious stones.",16,26,"<unk>子是用银雕刻的, 手柄是黑色的, <unk>上有宝石."
+230,control,We want to include all of our partners in this project.,11,11,我们希望将所有合作伙伴都纳入该项目.
+231,control,The interesting part is writing your own to support a full-featured voice coding environment.,14,20,有趣的部分是编写自己的代码以支持全功能的语音编码环境.
+232,control,"In any case, it's good that you've learned that everything in life has its price.",15,16,"无论如何,你学会了生活中一切都有代价,这很好."
+233,unk,Most of the nightlife in the town is centred on beachfront spots.,12,16,这座城市的大部分夜生活都集中在海<unk>上.
+234,control,"I thought they navigated based on pheromone trails or something, but apparently not.",13,17,"我认为他们根据激素踪迹或其他东西导航, 但显然不是."
+235,unk,"The boy prodded them, one by one, with his crook, calling each by name.",14,21,"这个男孩用他的<unk>子逐个<unk>着他们,叫每一个名字."
+236,unk,"Never advertise razors by shaving a monkey, it's cruel and results in lawsuits.",13,22,"永远不要通过剃须<unk>子来宣传剃须刀, 这是残酷的,"
+237,unk,I have blisters on my hands because I was bouldering yesterday.,11,18,"我手上有水泡,因为我昨天在<unk>岩."
+238,control,What are you here for this morning?,7,9,你今天早上来这里是为了什么?
+239,control,The sun shines on both sides of the hedge.,9,13,太阳照在围<unk>的两边.
+240,control,Please put a clothes-peg on your nose before reading this.,10,15,请在阅读这篇文章之前把衣服钉放在鼻子上.
+241,unk,A young boy in a white karate gi executes a jump kick.,12,15,一个穿着白色空手道吉的年轻男孩跳跃
+242,control,I had a lot of difficulties early in my life.,10,9,我很早就遇到很多困难.
+243,unk,"The fox pounced across the edge of the farm, only to find a safari explorer singing an opera by Vivaldi.",20,29,"狐<unk>冲过农场边缘, 发现一个探险家在唱维瓦尔迪的歌剧."
+244,unk,"When I first started using Dragon, I was bummed to be restricted to Windows.",14,18,"当我第一次开始使用Dragon时, 我很<unk>丧,"
+245,control,Many of these features require that the bot be a channel operator.,12,12,其中许多功能需要机器人成为频道运营商.
+246,unk,"The diver forced open the oyster, revealing a shimmering pearl.",10,24,"这位潜水员强行打开了<unk>,发现了一颗闪闪发光的珍珠."
+247,unk,"The alchemist stopped abruptly, and bent to the ground.",9,18,"这位炼金术士突然停下来,并<unk>向地面."
+248,unk,Can I at least keep the onion soup?,8,10,至少我可以保留洋<unk>吗?
+249,unk,I bet you forgot the wine!,6,13,我敢打<unk>你忘了葡萄酒!
+250,unk,Save a thief from the gallows and he will cut your throat.,12,22,"拯救一个小偷从<unk>架,他会切断你的喉<unk>."
+251,control,And he wasn't faring much better.,6,7,他的情况也没有好过.
+252,control,His heart sank as the jury returned a guilty verdict.,10,17,"当陪审团作出有罪判决时,他的心沉了下来."
+253,unk,"Who is this stranger who speaks of omens? asked one of the chieftains, eyeing the boy.",16,21,"这位说预兆的陌生人是谁? 一个首领问,看着男孩."
+254,control,"It is best known as the home of Michelangelo's sculpture ""David"".",11,21,"它最为人所知的是米开朗基罗雕塑""大卫""的所在地."
+255,unk,A sweater is known as a jumper in England.,9,12,"在英格兰,毛衣被称为<unk>子."
+256,unk,You weren't kidding about the bait part.,7,13,你不是在开玩笑说诱<unk>.
+257,unk,I woke up to the screech of my neighbor practicing trumpet.,11,20,我醒来时听到邻居在练习喇<unk>的尖叫声.
+258,control,"Yoshiki also has his own Hello Kitty product line, named ""Yoshikitty"".",11,20,"吉希基还拥有自己的Hello Kitty产品线,名为""Yoshikitty""."
+259,unk,My roommate’s boyfriend is taking up two shelves of fridge space with his beer.,14,23,我室友的男朋友用他的<unk>酒占据了冰箱的两个架子.
+260,control,The chair lift took them up the mountain.,8,14,椅子升降机把他们带到了山上.
+261,control,All the words you've got.,5,9,你所能说的都是这些话
+262,unk,"He should not be confused with the post-bop tuba player, Howard Johnson.",12,24,他不应该与后波普式杜巴演奏家霍华德·约翰逊混<unk>.
+263,unk,Why do people even eat peanut butter and jelly?,9,17,人们为什么要吃花生<unk>和果<unk>呢?
+264,control,"Baldwinson was born in Akureyri, Iceland, and attended public school in that country.",13,21,"Baldwinson 出生在冰岛的 Akureyri,并在该国上过公立学校"
+265,unk,Jackie Chan is a famous martial artist and actor from Hong Kong.,12,17,杰基·<unk>是香港著名的武术家和演员.
+266,control,"But you had already guessed 'Geneva,' said Ricardo.",8,18,"但你已经猜到了日内瓦,Ricardo 说"
+267,control,Instead she ended up in prison for over ten years.,10,14,"相反,她最终在监狱里坐了十多年."
+268,unk,Fresh as a daisy.,4,12,像一朵<unk>花一样新鲜.
+269,control,"Maybe this is an omen, said the Englishman, half aloud.",10,14,"也许这是一个预兆,英国人说,半声."
+270,control,Possibly one of Hershey's best-known products due to long-running massive advertising campaigns.,12,8,"由于长期大规模的广告活动,"
+271,control,"He did, however, hold three catches.",6,11,"然而,他确实抓住了三个球."
+272,unk,He approached the mass and was surprised at the size and the shape.,13,20,"他走近大群, 惊<unk>地看到它们的大小和形状."
+273,control,The Kowloon City Pier Bus Terminus to the north services some local bus routes.,14,22,北部的考隆市码头巴士终点站提供一些当地巴士路线.
+274,unk,And you preferred a cannibal isle and a cartridge belt.,10,16,你更喜欢一个食人岛和一个弹<unk>带.
+275,control,It almost gives him a feeling he wasn't wanted.,9,11,这几乎给了他一个他不想要的感觉.
+276,control,"Parkes had great ability, and was unfortunate to only ever win one England cap.",14,20,"帕克斯有很大的能力,但不幸的是他只赢得了英格兰队的一场比赛."
+277,control,The child almost hurt the small dog.,7,10,这个孩子差点伤害了小狗.
+278,control,Rubin was quoted as saying It's a stupid thing to do.,11,13,鲁宾被引述说这是一个愚蠢的事情.
+279,unk,A steep trail is painful for our feet.,8,15,陡峭的步道会给我们的脚造成疼痛
+280,control,I resent these implications.,4,10,我对这些暗示感到不满.
+281,unk,Right-sided and bilateral varicoceles do also occur.,7,14,右侧和双边的静脉瘤也发生.
+282,unk,"The Anamudi peak area is also habitat of a unique frog ""Raorchestes resplendens"".",13,32,"阿纳穆迪山峰地区也是独特青<unk>""Raorchestes resplendens""的<unk>息地."
+283,control,Three white dogs are near a black llama.,8,12,三只白狗靠近一只黑喇嘛
+284,control,The tricky part is integrating it with Dragonfly.,8,15,棘手的部分是将其与龙<unk>整合.
+285,unk,Forbes was born in Dundee.,5,11,福布斯出生在<unk>迪.
+286,control,Our relationship eventually petered out.,5,9,我们的关系最终<unk>了.
+287,control,He would keep his faith with Gregson for the promised day or two.,13,17,他会保持他的信心与格雷格森承诺的一天或两天.
+288,control,Have you ever seen a spaghetti tree?,7,10,你有没有见过意大利面树?
+289,control,The carpet was exquisite.,4,9,这地毯是精致的.
+290,control,Why didn't you phone me up?,6,8,你为什么不给我打电话?
+291,unk,"Jeez, you look stoned!",4,11,"天哪,你看起来很<unk>!"
+292,unk,"They are filter-feeders, collector-gatherers and omnivorous scavengers.",7,23,"它们是过<unk>饲养者,收集者和食众的<unk>尸者."
+293,control,"Let's go and have some lunch, said the crystal merchant.",10,14,"让我们去吃午饭,水晶商人说."
+294,control,Each school had its own traditions.,6,8,每个学校都有自己的传统.
+295,control,"I know this might sound really bad, but listening to this music just makes me want to go hide in the mountains.",22,20,"我知道这听起来可能很糟糕, 但听这首歌让我想要躲在山上."
+296,control,My initial assumption about the phase displaced pulse was wrong.,10,16,我最初对相位移脉冲的假设是错误的.
+297,control,Two physicists pondered their revised quantum field theory together.,9,15,两位物理学家一起思考了他们的修订量子场理论.
+298,unk,The cleat sank deeply into the soft turf.,8,18,树<unk>深深地沉入了柔软的草地上.
+299,unk,I like ice-cream.,3,9,我喜欢冰<unk>淋.
+300,unk,"Go and speak to the tribal chieftains, said the camel driver.",11,18,"""去和部落的首领说话"",<unk>驼司机说."
+301,control,"Given only the public key, it is very hard to compute the private one.",14,14,"如果只给出公钥, 很难计算私钥."
+302,unk,A missing parrot is called a polygon.,7,12,一个失踪的<unk>被称为多边形.
+303,control,The face is almost always male; green women are rare.,10,12,脸几乎总是男的;绿色女人很少.
+304,control,"Relaxed and unhurried, he resolved that he would walk through the narrow streets of Tangier.",15,17,他放松地决定走过坦吉尔的狭窄街道.
+305,unk,Smaller ellipses create fewer reflections.,5,16,较小的<unk>圆会产生较少的反射.
+306,unk,"His dessert smelled musty, not sweet.",6,15,"他的甜点闻起来<unk>味,而不是甜味."
+307,unk,The cover art is by Ed Roth and Dave Christensen.,10,21,封面是由埃德·罗思和戴夫·克里斯<unk>森.
+308,unk,"It may be done by coup, impeachment, invasion, or forced abdication.",11,22,"这可以通过政变,弹<unk>,入侵或强迫退位来完成."
+309,control,"Personally, I prefer to use relative line numbers such as ""up ten"" or ""down five"".",15,11,"我个人更喜欢使用相对的行数,"
+310,control,The referendum was accompanied by a general amnesty for political prisoners.,11,12,公投伴随着对政治犯的大赦.
+311,unk,Boffer weapons are commonly used as props in live action role-playing games.,12,19,玻佛武器通常被用作现场动作角色扮演游戏的道具.
+312,control,He was a founding member of the Party for Bosnia and Herzegovina.,12,17,他是波斯尼亚和黑塞哥维那党的创始成员.
+313,unk,Could Aunt Dahlia have slept on it and changed her mind?,11,20,"达莉亚阿<unk>可能睡着了,改变了主意吗?"
+314,control,"The two men bought property on Conedogwinet Creek in present-day Cumberland County, Pennsylvania.",13,27,这两个人在今天的宾夕法尼亚州坎伯兰县的康诺多格温尼特溪购买了土地.
+315,unk,A stuffed chair slipped from the moving van.,8,16,一把填充的椅子从搬家车里滑下来.
+316,unk,"Jeffery really pulled a boner, but in the end everyone could laugh about it.",14,17,"杰弗里真的<unk>了, 但最终每个人都可以笑."
+317,control,The weights in W can be negative.,7,10,W中的权重可以是负的.
+318,unk,Caution and adjustment of dosage as necessary are warranted when combining fluvoxamine and mirtazapine.,14,30,"在结合<unk>化<unk>和米尔塔扎<unk>时,应谨慎并根据需要调整剂量."
+319,unk,The crash of the UFO shows that extraterrestrials are also vulnerable.,11,15,UFO的坠毁表明外星人也很脆弱.
+320,unk,"Hey, what do you say?",5,5,你的看法是什么?
+321,control,Mr. Nelson come yet?,4,10,尼尔森先生已经来了吗?
+322,control,"She thought it might be a cheap copy, but she didn’t want to know.",14,15,"她认为这可能是便宜的副本, 但她不想知道."
+323,unk,"Hey, don't go there!",4,9,"<unk>,不要去那里!"
+324,control,A woman stands behind a clear counter behind a large display of desserts.,13,23,"一个女人站在一个清晰的柜台后面,摆着一个大餐点的甜点"
+325,unk,Little fluffy clouds that seemed to have come straight from a child’s painting.,13,16,毛<unk>的小云似乎直接来自一个孩子的画作.
+326,control,"You two in the last row, stop giggling!",8,11,"你们两个在最后一排,停止笑!"
+327,unk,She got the Congressional Medal of Honor!,7,11,她获得了国会荣誉<unk>章!
+328,unk,"Before him was an enormous white horse, rearing over him with a frightening scream.",14,20,"在他面前是一匹巨大的白马, 惊<unk>地尖叫着."
+329,unk,"Directed by Gaylene Preston, the film was also called ""Bread and Roses"".",12,12,"这部电影也被称为""面包和<unk>""."
+330,unk,You've got the brain of a pancake.,7,10,你有<unk>饼的大脑.
+331,control,"A replica of the Gezer calendar is on display at the Israel Museum, Israel.",14,15,在以色列博物馆展出盖泽日历的复制品.
+332,unk,The hull husk and the full in plenty Virtue is the highest good.,13,14,外壳和充足的美德是最高的善.
+333,unk,Zappia has also won ten National Championships in powerlifting.,9,16,扎皮亚还赢得了十次国家举重锦标赛.
+334,unk,Rugby School was the birthplace of Rugby football.,8,20,橄<unk>球学校是橄<unk>球足球的发源地.
+335,unk,"Consequently, he made his money by selling refrigerators, and did not publish any works.",14,19,"因此,他通过出售冰箱来<unk>钱,并没有出版任何作品."
+336,control,He reached over and pulled out a bunch.,8,10,他伸手拉出一堆东西.
+337,unk,"Therefore, only aluminum hydroxide was generated.",6,11,"因此,只产生<unk>氧化物."
+338,unk,Drive the screw straight into the wood.,7,11,把螺丝直接钻进木头里
+339,control,"They placed it in a wooden box, and left it there for good.",13,14,"他们把它放在一个木盒里, 永远留在那里."
+340,unk,The boy mumbled an answer that allowed him to avoid responding to her question.,14,15,这个男孩<unk>着回答让他避免回答她的问题.
+341,unk,Consider a tungsten light-bulb filament.,5,13,考虑一个<unk>灯泡的电丝.
+342,unk,He began playing guitar and soon added dobro and lap steel.,11,18,"他开始弹吉他,很快就加入了多博和<unk>钢."
+343,control,I have no information about troops or about the movement of the tribes.,13,10,我没有关于部队或部落移动的信息.
+344,control,The economy seems very volatile at the moment.,8,9,经济目前似乎非常不稳定.
+345,unk,"Bananas contain a lot of sugar, even though they are fruits.",11,16,"香<unk>含有大量的糖, 尽管它们是水果."
+346,control,An artist is working on a canvas next to a handpainted car.,12,15,一位艺术家正在手绘的汽车旁边画画布
+347,unk,He turned on the microphone just as the hen was ready to squawk.,13,17,他打开麦克风正当<unk>准备<unk>叫.
+348,control,"Millions of years ago, our seven continents were one super-continent called Pangaea.",12,18,"数百万年前,我们的七个大陆是一个名为潘盖亚的超级大陆."
+349,unk,Don't go off half-cocked.,4,9,不要半准备半准备地走
+350,control,"Kelley regarded ""The Empath"" as his favourite ""Star Trek"" television episode.",11,25,"凯利认为""同情者""是他最喜欢的""星际迷航""电视剧集."
+351,control,Opal Myrick Elementary School and Schenck High School occupy one campus in East Millinocket.,14,27,奥帕尔·米里克小学和申克高中在东米利诺克特占据一个校园.
+352,unk,You will need some rubber boots.,6,9,你需要一些<unk>靴.
+353,control,Typically it contains the Olympic Stadium and the International Broadcast Centre.,11,11,通常它包含奥运体育场和国际广播中心.
+354,unk,"She danced like a swan, tall and graceful.",8,16,"她像天<unk>一样跳舞,高大优雅."
+355,unk,Stark naked. Under bare poles. In puris naturalibus.,8,17,"裸体,裸体,裸体,裸体,裸体."
+356,control,Where did it come from then?,6,7,那它来自哪里呢?
+357,unk,"Dirt and dust everywhere, give me the broom!",8,16,"污垢和尘埃到处,给我扫<unk>!"
+358,control,Grape juice and water mix well.,6,10,葡萄汁和水混合得很好.
+359,unk,"Pencils down, time is over.",5,12,"放下<unk>笔,时间过去了."
+360,unk,"Linfen has rich mineral resources including coal, iron ore, copper, and lead.",12,26,"林<unk>拥有丰富的矿产资源,包括煤炭,铁矿石,铜和<unk>."
+361,control,We visited a concert in the famous opera house in Sydney.,11,15,我们去悉尼著名的歌剧院看了一场音乐会.
+362,unk,Samuel wrote in his testament that his grandchildren should inherit all his money.,13,24,"塞<unk>尔在遗嘱中写道,他的孙子应该继承他的所有钱."
+363,control,What did he mean?,4,5,他的意思是什么?
+364,control,And continue to pay heed to the omens.,8,8,继续注意这些预兆.
+365,unk,You mean spies and things like that?,7,12,你的意思是间<unk>和类似的东西?
+366,unk,Ribbonfish possess all the characteristics of fish living at very great depths.,12,16,<unk>带鱼具有生活在非常深的鱼类的所有特征.
+367,unk,Where did you find that apple?,6,11,你在哪里找到那个<unk>果?
+368,control,Emoticons are familiar to everyone nowadays.,6,11,"如今,所有人都熟悉表情符号"
+369,unk,"He also has a daughter, Amaiya Samuel.",7,15,"他还有一个女儿,阿玛亚·塞<unk>尔."
+370,control,"When she called her friend for help with her computer, she repeatedly emphasized, that she hadn't done anything.",18,19,"当她打电话给她的朋友帮她处理电脑时, 她一再强调,"
+371,unk,Five years he lived with a shaggy dog.,8,14,他和一只毛茸茸的狗生活了五年
+372,unk,Tea in thin china has a sweet taste.,8,13,薄<unk>的茶有甜的味道.
+373,control,"Charles the First, recognising his good intentions, continued him in favour.",11,14,"查尔斯一世认识到他的善意,继续支持他."
+374,unk,The Girl Guide emblem is set upon a banner of the flag of Estonia.,14,22,女孩导游的标志是设置在爱沙尼亚国旗的旗<unk>上.
+375,unk,Jazz groups were fascinated and added the boobams to their percussion sections.,12,22,"爵士乐乐队很着迷, 并将<unk>子添加到他们的打击乐部分."
+376,control,But the legality of the election itself is not in dispute.,11,12,但选举本身的合法性并不存在争议.
+377,unk,Football is often confused with soccer.,6,10,足球经常与足球混<unk>.
+378,unk,"Wow, this is a nice table!",6,11,"<unk>,这是一个漂亮的桌子!"
+379,control,The Clown emerges and claims that he has dispatched the Violator.,11,15,小丑出现并声称他已经消灭了违规者.
+380,control,Go out and find her!,5,6,出去找她!
+381,control,"The next day, the boy returned to the well, hoping to see the girl.",14,17,"第二天,男孩回到了井里,希望能见到那个女孩."
+382,control,"A friend had told the boy about the shop, and he had taken his sheep there.",16,18,"一个朋友告诉那个男孩关于那个商店, 他把他的羊带到了那里."
+383,control,Men's basketball and track and field began around the same time.,11,14,男子篮球和田径运动大约在同一时间开始.
+384,unk,Person in checked shirt riding unicycle while crowd watches.,9,18,"穿着衬衫的人骑着单车,而人群看着"
+385,unk,"Later, the Nine Olympian Muses were named.",7,18,"后来,九位奥林匹克的<unk>女被命名."
+386,control,When Claire was nineteen she found herself becoming increasingly depressed,10,14,"当克莱尔十九岁时,她发现自己越来越抑郁"
+387,control,With his troll post he provoked the hackers to do penetration testing for him.,14,20,他用他的巨人帖子激发了黑客为他做渗透测试.
+388,unk,"Zora, can you teach me how to yodel?",8,15,"佐拉,你能教我如何<unk>吗?"
+389,unk,"Glass eel is on the menu today, but it's too expensive.",11,20,"玻璃<unk>鱼在今天的菜单上, 但它太贵了."
+390,unk,He offered the kids some ice-cream.,6,13,他给孩子们提供一些冰<unk>淋.
+391,unk,Stalagmites or flowstone may form where the water drops hit the cave floor.,13,22,在水滴撞击洞穴地板的地方可能会形成石<unk>岩或流石.
+392,control,"The Reich protected labor, intellectual creation, and the rights of authors, inventors, and artists.",14,21,"帝国保护劳动力,知识创造,以及作者,发明家和艺术家的权利."
+393,unk,"More powerful knights, also known as a knight bannerets, could field multiple lances.",13,23,"更强大的骑士,也被称为骑士旗<unk>,可以投<unk>多个矛."
+394,control,What can have happened?,4,7,发生了什么事呢?
+395,control,The last extension I rely on is Keyboard Shortcuts to Reorder Tabs.,12,19,我依赖的最后一个扩展是重新排序标签的键盘快捷键.
+396,unk,But that was simply because my eye was tired.,9,12,但这只是因为我的眼睛疲<unk>.
+397,control,Is that okay?,3,5,这可以吗?
+398,unk,The original trim lines were replaced with gray and blue cinderblock tiles.,12,22,原来的装饰线被灰色和蓝色的<unk>块<unk>所取代.
+399,control,The seventeen-year-old girl gently pushed his hand away as he touched her belly.,13,21,"十七岁的女孩轻轻地推开他的手,因为他触摸她的肚子."
+400,control,"Over time enrollment fell, and the school was frequently threatened with closure.",12,19,"随着时间的推移,入学人数下降,学校经常受到关闭的威胁."
+401,control,Couldn't this have waited until morning?,6,8,这不能等到早上吗?
+402,unk,Corning hosts Lazy Days of Summer on the last weekend in July.,12,22,"在七月最后一个周末,康宁举办了""夏天的<unk>惰日子""."
+403,unk,He rose up the ranks of the construction industry and Tianjin politics.,12,17,他<unk>升了建筑业和天津政治的层次.
+404,control,"Confronted with a choice between cappuccino and espresso, she settled for an americano.",13,19,"在卡布奇诺和咖啡之间选择时, 她选择了美国式咖啡."
+405,control,The greatest authority on meteorites stated that the height of its first appearance was about ninety or one hundred miles.,20,22,"最大的气象权威指出,它的第一次出现的高度大约是九十或一百英里."
+406,unk,The turf and gravel around it seemed charred as if by a sudden explosion.,14,24,"周围的草<unk>和<unk>石似乎被<unk>化,好像突然爆炸."
+407,control,Why can't she get along with me?,7,8,她为什么不能和我相处?
+408,unk,"If you lose your temper, don't look for it.",9,13,"如果你失去了<unk>气,不要寻找它."
+409,control,Walk in the grass in my bare feet?,8,10,赤脚在草地上走路?
+410,control,Men strive but seldom get rich.,6,9,"人们努力,但很少变得富有."
+411,unk,Marcel Proust was said to suffer from neurasthenia.,8,14,据说马塞尔·普鲁斯特患有神经衰竭.
+412,control,Jacaranda mimosifolia is common as an avenue tree.,8,18,雅卡兰达米莫西福利亚是常见的街道树.
+413,unk,"Oliver, aide to Mr. Bogan, who had Rubbermaid in his arms, fainted.",12,27,"奥利弗,博根先生的助手, 谁在他的怀里<unk>, 昏倒了."
+414,control,"Sentences are built of nouns, verbs and sometimes adjectives.",9,18,"句子是由名词,动词和有时形容词组成的."
+415,control,It was possible to sail the entire route in one go.,11,9,整个航线都是一次的.
+416,unk,The two halves were joined together by a narrow tendril in Waller County.,13,20,这两个半部分在沃勒县被一个狭窄的<unk>连接在一起.
+417,control,"An alchemist, said the alchemist.",5,13,"一个炼金术士,炼金术士说."
+418,control,With the most significant change being changing Netherlands for Suriname.,10,12,最重要的变化是荷兰变为苏里南.
+419,unk,"Yeah, I had a bit of a poke at that and failed to work out what was wrong.",18,21,"是的,我有点<unk>在那个和未能工作出什么是错的."
+420,control,You've played it over and over again.,7,11,你一遍又一遍地播放它
+421,unk,"According to the recipe, we need mild mustard.",8,15,"根据食谱,我们需要温和的<unk>子."
+422,control,Jack was drafted to do his duty in Korea for ten months.,12,13,杰克被征召在韩国服役十个月.
+423,unk,This is why oral rehydration salts include both sodium and glucose.,11,16,这就是为什么口服补水盐包括<unk>和葡萄糖的原因.
+424,control,Pic graduated from the University of Virginia with degrees in Finance and Marketing.,13,17,"皮克毕业于弗吉尼亚大学, 获得金融和营销学位."
+425,unk,Whitings are small fish caught in nets.,7,12,鱼是网中捕获的小鱼
+426,control,No wonder this vanilla yogurt tastes disgusting: Its eat-by date was last year.,13,21,难怪这个香草酸奶味道很恶心:它的过期日期是去年.
+427,control,This plank was made for walking on.,7,11,这块木板是用来走路的.
+428,control,"The village since was incorporated into Limestone, and no longer exists.",11,14,"这座村庄后来被纳入石灰岩,不再存在."
+429,unk,Its headquarters are in Vatican City.,6,10,它的总部位于<unk>蒂冈市.
+430,control,Don't be so silly!,4,7,别这么愚蠢!
+431,control,"To steal a hog, and give away the feet in alms to God.",13,16,"偷一个猪,并把脚作为天主的施舍."
+432,control,The campaign activities are organised by independent organisations and groups all over Europe.,13,13,活动活动由欧洲各地的独立组织和团体组织.
+433,unk,"His hands began to tremble, and the woman sensed it.",10,14,"他的手开始<unk>,和女人感觉到它."
+434,unk,The crowd swayed a little as I elbowed my way through.,11,18,"当我<unk>肘穿过时,人群有点摇摆."
+435,control,Perhaps she met somebody.,4,9,也许她遇到了某人.
+436,control,There were no families living below the poverty line.,9,9,没有任何家庭生活在贫困线以下.
+437,unk,"The penguin waddles across the ice, joining her companions.",9,17,"企<unk>在冰上漫步, 加入她的同伴."
+438,control,The group has since continued to release other Gold and Platinum albums.,12,16,"自那以后,该乐队继续发行其他金和白金专辑."
+439,control,The side-folding tubular metal stock is coated with a thermal polymer shrink film.,13,20,侧折叠的管状金属库存涂有热聚合物收缩膜.
+440,control,Fortunoff had four full-line stores in the chain.,8,17,福特诺夫在连锁店中拥有四家全线商店.
+441,unk,The main and outrigger wheels were covered by streamlined clamshell doors when in flight.,14,20,主轮和外轮在飞行时被流线型<unk>壳门覆盖.
+442,control,It is a fact.,4,4,这是一个事实.
+443,control,"It's the other foreigner, the Englishman.",6,9,"这是另一个外国人,英国人."
+444,control,"Looking at the sun, he calculated that he would reach Tarifa before midday.",13,18,"他看着太阳,计算出他将在中午之前到达塔里法."
+445,control,I dropped upon a table.,5,8,我掉在桌子上
+446,unk,The whole thing seemed depressingly futile.,6,14,整个事情似乎令人<unk>丧的徒劳.
+447,control,He told her about the morning's meeting.,7,9,他告诉她关于早上的会议.
+448,control,I suppose I ought to stay in my room all day!,11,12,我想我应该整天呆在我的房间里!
+449,control,He thought of all the married shepherds he had known.,10,13,他想起他认识的所有已婚牧羊人.
+450,control,"LGBT stands for lesbian, gay, bisexual, and transgender.",8,20,"LGBT是女同性恋,同性恋,双性恋和变性人的缩写."
+451,unk,Before you meet the handsome prince you have to kiss a lot of toads.,14,20,"在你遇见英俊的王子之前, 你必须吻很多青<unk>."
+452,unk,"Another reason why Apple is superior to Microsoft, the troll posted and grabbed some popcorn for the subsequent flame war.",20,24,"苹果优于微软的另一个原因是, 巨人发布并抓住了一些爆米花,"
+453,control,All roads go to Jericho.,5,11,所有的道路都通向耶利哥.
+454,unk,May I have some syrup to go on these pancakes?,10,18,我可以把一些糖<unk>放在这些<unk>饼上吗?
+455,unk,"The word nanosecond is formed by the prefix ""nano"" and the unit ""second"".",13,23,"纳米秒是由前<unk>""纳米""和单位""秒""组成的."
+456,control,Now give us sixty days on this.,7,8,现在给我们60天的时间.
+457,control,I don't know why you boys are so good to me.,11,8,我不知道你们为什么对我这么好.
+458,control,"You going down the pub tonight, love?",7,11,"你今晚要去酒吧吗,亲爱的?"
+459,control,Tweak is an alternative to an earlier graphic user interface layer called Morphic.,13,18,Tweak 是早期的图形用户界面层 Morphic 的替代品
+460,control,I wonder whether we will be able to harvest energy from fusion reactors.,13,16,我想知道我们是否能够从核聚变反应堆中获取能量.
+461,control,These are marked with an asterisk in the list below.,10,13,这些在下面的列表中以星号标记.
+462,control,Her school’s WiFi has a ridiculous amount of websites that are blocked.,12,16,她的学校的WiFi有无数的网站被封锁.
+463,unk,The cliffs are made of soft marl clay and are subject to erosion.,13,14,"这些悬崖由软<unk>粘土制成,"
+464,unk,So now I'm a camel driver.,6,11,所以现在我是<unk>驼司机.
+465,control,All you've got to do is talk to him.,9,9,你只需要和他谈谈.
+466,control,Read all about it!,4,7,阅读所有关于它!
+467,unk,The ship was torn apart on the sharp reef.,9,19,这艘船在尖<unk>的珊瑚礁上被撕碎了.
+468,unk,They formed heaps that are visible a mile and a half away.,12,7,"它们形成了山堆,"
+469,control,"to check one To pull the fell hide, skin over one's ears",12,16,"检查一个拉掉的皮肤,皮肤在耳朵上"
+470,unk,"Please stop the recording by pressing the button again, when you have finished reading this sentence.",16,21,"请在读完这句话后,再次按下按<unk>来停止录制."
+471,control,"His daughter, Lyli Herse, won eight national female cycling championships in France.",12,21,他的女儿Lyli Herse在法国赢得了八次国家女子自行车锦标赛.
+472,unk,"The alchemist removed the pan from the fire, and set it aside to cool.",14,23,"这位炼金术士把<unk>从火中拿出来,把它放在一边冷却."
+473,unk,I saw astonishment and horror on the faces of the people around me.,13,18,我看到周围的人的脸上表现在惊<unk>和恐惧.
+474,control,"In his private life, he is a sports fan, a traveller and a writer.",14,15,"在私人生活中,他是一个体育迷,一个旅行者和作家."
+475,unk,Note: best sellers of the year are bold.,8,18,注意:今年最<unk>销的书是粗体写的.
+476,control,"In many areas, there is enough sun so that solar is cheaper than anything else.",15,15,"在许多地区, 太阳能比其他任何东西都便宜."
+477,control,That was the starting point of the Tevatron project.,9,10,这就是Tevatron项目的起点.
+478,unk,The concrete was covered in moss.,6,12,混凝土被<unk>覆盖了.
+479,control,"I was screwing the screw with a screwdriver, then I said “Screw it.”",13,20,"我用螺丝刀把螺丝拧起来,然后我说:""别管了."
+480,control,What did your books tell you about this epoch of the city?,12,12,你的书籍告诉你这个城市的时代是什么?
+481,control,There was hardly anyone there.,5,6,那里几乎没有人.
+482,unk,Apple pie is an iconic dish.,6,14,<unk>果派是一个标志性的菜<unk>.
+483,unk,The family lived over Staunton's mother's hair dressing salon.,9,17,这家人住在斯<unk>顿母亲的理发店上方.
+484,control,A skater is in the air and doing a trick with skyscrapers in the background.,15,21,"一个滑冰运动员在空中,在背景中看着摩天大楼表演一个技巧"
+485,control,"The Ibec design, while bespoke, was not adventurous.",8,11,"虽然Ibec的设计是定制的,"
+486,control,We both grub on in a muddle.,7,9,我们都陷入了混乱.
+487,unk,"Looking down at the spoon he held, the boy saw that the oil was gone.",15,19,"这个男孩看着手里的<unk>匙, 看到油已经消失了."
+488,unk,"Half an hour later, his shovel hit something solid.",9,16,"半个小时后,他的<unk>子撞到了什么东西."
+489,unk,Project Coster was founded and run by Marc van Oostendorp.,10,20,科斯特项目由马克·范·奥斯特登多普创立和经营.
+490,unk,Tin cans are absent from store shelves.,7,13,<unk>罐在商店的货架上没有.
+491,control,"Geta married, but the name of his wife is unknown.",10,15,"盖塔已婚,但他的妻子的名字是未知的."
+492,unk,Chili powder blends are the primary flavor ingredient in chili con carne.,12,17,<unk>粉混合物是<unk>肉的主要味道成分.
+493,control,The night was warm and I was thirsty.,8,10,"晚上很温暖,我很渴."
+494,unk,The name comes from the prickles on the female cones.,10,15,这个名字来自雌性<unk>上的刺<unk>.
+495,control,Steps one through five look like they will be easy.,10,8,一到五步看起来很容易.
+496,control,The elements defined in the interface are detectable by other modules.,11,15,在接口中定义的元素可以由其他模块检测.
+497,unk,I guess I used all the shells.,7,11,我想我用了所有的弹<unk>.
+498,unk,Scattered groups of people were hurrying from the direction of Woking.,11,17,散落的群体的人从沃金的方向<unk>忙.
+499,control,A bus shuttle took us from the airport to the metro.,11,13,一辆巴士从机场送我们到地铁.
+500,unk,"Lifeguards were standing on a tower, staring at the water.",10,16,"救生员站在塔上,<unk>着水面."
+501,control,"The facing bench displays a small plaque that reads, Whittier's Bench.",11,23,"面向的长凳上有一块小牌子,上面写着""惠蒂尔长凳""."
+502,unk,The boy was astonished by what he saw inside.,9,13,这个男孩惊<unk>地看到里面的东西.
+503,control,A black dog and a white dog run across a field behind a house.,14,19,一只黑狗和一只白狗在房子后面的田野里跑
+504,control,"Well, what have I done?",5,8,"好吧,我做了什么?"
+505,unk,"Lemon trees are not yellow, it's just the fruit.",9,14,"<unk>树不是黄色的,只是它的果实."
+506,unk,"Believe it or not, this peanut butter is homemade.",9,18,"相信或不相信,这个花生<unk>是自制的."
+507,unk,The boy was cuddling with his fluffy teddy bear.,9,16,这个男孩正在拥抱他的毛<unk>的泰迪熊.
+508,control,"Lai denied criminal wrongdoing, and stated that the allegations were politically motivated.",12,19,"莱否认犯有刑事罪行,并表示这些指控是有政治动机的."
+509,control,The proprietary software uses multi-threading for some intermediate steps.,9,15,专有软件使用多线程进行一些中间步骤.
+510,control,It was the beginning of a long and successful collaboration.,10,10,这是一个漫长而成功的合作的开始.
+511,control,And then they want the person to change.,8,9,然后他们想让那个人改变.
+512,control,The treasure is at the Pyramids; that you already knew.,10,14,"财富在金字塔上,你已经知道了"
+513,unk,His name is Barry Baldwin.,5,13,他的名字是巴里·<unk>德温.
+514,unk,Jacqueline has an ulcer on her bottom lip.,8,14,杰奎琳的下唇上有一个<unk>.
+515,unk,The foliage and fruits contain tannic acid and are poisonous to cattle and humans.,14,20,"树叶和果实含有<unk>酸,对牛和人类有毒."
+516,unk,"As the astronaut walked into the translucent pod, it transformed into an opaque material.",14,23,"当宇航员走进半透明<unk>时, 它变成了一种不透明的材料."
+517,unk,"When interfering, two waves can be added together to create a wave of greater amplitude than either one.",18,25,"在干扰时,可以将两个波<unk>在一起,产生一个比任何一个大幅度的波."
+518,control,Gwin then sank it by gunfire.,6,13,然后格温用枪击击沉没了它.
+519,control,"I mean to say — dash it, you know why hearts ache!",12,12,"我的意思是说,你知道为什么心疼!"
+520,control,"Sorry for interrupting your lecture, Sir Edward.",7,16,"抱歉打断了您的讲座,爱德华爵士"
+521,unk,The Pancake Post Office has been closed.,7,10,<unk>饼邮局已经关闭.
+522,unk,"A trill, or shake A triplet.",6,15,"一个<unk>声,或者摇动一个三重奏."
+523,unk,Thomas was left paralyzed from the chest down.,8,16,托马斯从胸部下方被<unk>了.
+524,control,Denison has a humid subtropical climate.,6,13,丹尼森有一个潮湿的亚热带气候.
+525,unk,Don't blow your own trumpet.,5,9,不要吹自己的喇<unk>.
+526,unk,"Early pottery was painted with spirals, zigzags, dots, or animals.",10,23,"早期的陶器是用螺旋,<unk>,点或动物来绘制的."
+527,unk,Imagined monstrosities capered and gibbered in his imagination as he tried not to look behind him.,16,23,"想象中的怪物在他的想象中<unk>扎着,他试图不看后面."
+528,unk,"According to Freud, the Virgin's garment reveals a vulture when viewed sideways.",12,25,"根据弗洛伊德的说法, 处女的衣服显示一个<unk>子当侧面看."
+529,control,Watertown is served by the Watertown City School District.,9,14,沃特敦由沃特敦市学区提供服务.
+530,control,I had it served with my breakfast this morning.,9,12,我今天早上在早餐上吃了它.
+531,control,We've got to get bail.,5,7,我们必须获得保释.
+532,control,I want to spend Christmas in California with my family.,10,14,我想在加利福尼亚和家人一起度过圣诞节.
+533,unk,"His hands were abraded and exhausted, but he listened to his heart.",12,19,"他的手被磨损和疲<unk>, 但他听从他的心."
+534,control,"Perusing the woods in the night, she could only rely on her instincts.",13,16,"在夜间穿越森林,她只能依靠她的直觉."
+535,control,Tell me the weather forecast for Fort Yargo State Park,10,14,告诉我 Fort Yargo 州立公园的天气预报
+536,unk,"The New Latin term ""corbicula"" is a diminutive of ""corbis"", a basket or pannier.",14,29,"新拉丁语""corbicula""是""corbis""的缩写,一个篮子或<unk>子."
+537,unk,You should've learned that thumbnails with women wearing plunging necklines are just click bait.,14,28,"你应该知道,女人穿着深<unk>的<unk>部的缩影只是点击诱<unk>."
+538,control,"A police officer, with many items around his waist, is ordering something at a cafe.",15,19,"一名警察在咖啡馆里订购东西,腰上戴着许多物品"
+539,control,"One can imagine these two, covered with sand, running up the little street in the bright sunlight.",17,23,"人们可以想象这两个人, 覆盖着沙子, 在阳光下跑上小街."
+540,unk,He had surprised himself with the thought.,7,11,他对这个想法感到惊<unk>.
+541,control,"Second, having more choices leads to an escalation of expectation.",10,13,"其次,有更多的选择会导致期望的上升."
+542,control,Peace be unto you and grace before the Lord.,9,16,"愿耶和华赐你们平安,并赐你们恩典"
+543,control,Calibration complete.,2,6,校准完成
+544,control,Sony holds a majority stake in the company.,8,11,索尼拥有该公司的多数股权.
+545,control,Dozens of the prettiest little homes you ever saw.,9,12,你见过几十个最漂亮的小房子
+546,control,What do you mean by that?,6,5,这意味着什么?
+547,unk,Would anyone care for some lavender custard?,7,13,有没有人想要一些<unk>衣草奶油?
+548,unk,"Their granddaughter Ann married Lewis Bayly, Bishop of Bangor.",9,21,他们的孙女安嫁给了班戈主教<unk>易斯·贝利.
+549,unk,Tell her I elected her and I can have her impeached!,11,18,"告诉她我选举了她,我可以让她被弹<unk>!"
+550,control,Several women walking down the street.,6,11,几位妇女在街上行走
+551,unk,The non-combat proficiency equivalent is the Expert Field Medical Badge.,10,16,非战斗能力的等价是专家现场医疗<unk>章.
+552,unk,"He kept driving at full speed, totally unfazed by the flap, flap, flap of the burst tyre.",17,31,"他继续以全速开车, 完全不受破裂轮胎的<unk>,<unk>,<unk>的影响."
+553,unk,"Daily Telegraph journalist Toby Harnden described Yon's commentary as ""excoriating"".",10,36,"每日电报的记者托比·哈登 (Toby Harnden) 称<unk>的评论是""令人<unk>丧的""."
+554,unk,Inscripted abecedarium on rock engraves in Valle Camonica.,8,22,在卡莫尼卡山谷的岩石雕刻上刻有字母的字母.
+555,control,The bills were mailed promptly on the tenth of the month.,11,13,这些账单在每月的第十天及时发送.
+556,unk,"His nickname, ""Chocolate Thunder"", was bestowed upon him by Stevie Wonder.",11,25,"他的<unk>称""巧克力雷<unk>""是由斯蒂维·温德授予的."
+557,control,Rubens painted several compositions of the subject at different points in his career.,13,18,鲁本斯在他的职业生涯的不同阶段画了几幅主题作品.
+558,unk,Amshuverma had written a book on grammar in Sanskrit.,9,20,阿姆舒维尔马写了一本关于<unk>语语法的书.
+559,unk,"I'm an old, superstitious Arab, and I believe in our proverbs.",11,19,"我是一个老,迷信的阿拉伯人, 我相信我们的<unk>语."
+560,unk,I couldn’t stop staring at it.,6,10,我不能停止<unk>着它.
+561,unk,I've made some delicious pancakes this morning.,7,14,我今天早上做了一些美味的<unk>饼.
+562,control,Ellenor Fenn was his sister.,5,11,埃伦诺·芬是他的妹妹.
+563,unk,"Eggs, milk and flour are the main ingredients of pancakes.",10,18,"蛋,牛奶和面粉是<unk>饼的主要成分."
+564,unk,"Some people like sea gulls, others don't.",7,14,"有些人喜欢海<unk>,有些人不喜欢."
+565,unk,The band's sound is distinctive due to the powerful vocals of singer Sonia Pineault.,14,23,"乐队的声音是独特的,因为歌手索尼亚·皮内奥的强大声乐."
+566,unk,"At most, they thought that another meteorite had descended.",9,12,他们最多认为另一个<unk>石已经下降.
+567,unk,I went stretching my legs clumsily and feeling my way in the dark.,13,19,"我<unk>拙地伸出腿,在黑暗中摸索着路."
+568,unk,The point of the steel pen was bent and twisted.,10,17,钢笔的尖端被<unk>曲和扭曲了.
+569,control,"When doing reinforcement learning, we have to find a suitable trade-off between exploration and exploitation.",15,22,"在进行强化学习时, 我们必须在探索和利用之间找到合适的权衡."
+570,unk,"I want my garden to be filled with roses, petunias and passion flowers.",13,19,"我希望我的花园充满<unk>,花<unk>和激情花."
+571,unk,"Genyo Takeda was born in Osaka, Japan.",7,11,塔克达出生在日本大阪.
+572,control,"He had suddenly remembered that, in Tarifa, there was an old woman who interpreted dreams.",15,19,"他突然记得,在塔里法,有一个解释梦的老妇人."
+573,control,His main work was on his own estates.,8,10,他的主要工作是在他自己的庄园.
+574,unk,"You made your bed, now you must lie in it.",10,17,"你已经<unk>好了你的床,现在你必须躺在上面."
+575,control,"Well, I can guess how that turned out.",8,13,"好吧,我可以猜到结果是怎么回事"
+576,control,Pinto published mainly in French and once in Portuguese.,9,16,"宾托主要以法语出版,一次以葡萄牙语出版."
+577,control,We have an excess of squirrels.,6,8,我们有过多的松鼠.
+578,unk,"Oh, is that all?",4,9,"<unk>,这就是全部吗?"
+579,unk,"The plant's large underground tuber distinguishes it from other ""Apios"" species.",11,20,"这种植物的大型地下茎使其与其他""Apios""物种区分开来."
+580,control,"Sometimes, their caravan met with another.",6,11,"有时,他们的车队会遇到另一个."
+581,control,Some of these remnants can be viewed in the National Museum of Scotland.,13,13,其中一些遗迹可以在苏格兰国家博物馆参观.
+582,control,He appeared with the first stars of evening.,8,9,他出现在晚上的第一个星星.
+583,unk,She's a feisty little ferret.,5,11,她是一个充满活力的小<unk>.
+584,control,"Come on, I can handle it.",6,8,"来吧,我可以处理它."
+585,unk,The river is tidal when it passes through Dargaville.,9,20,"当河流经过达尔加维尔时,潮<unk>会涌来."
+586,control,"Executioners were, whenever possible, selected from among slaves convicted for a capital crime.",13,16,执行者尽可能从被判处死刑的奴隶中选出.
+587,unk,Steam hissed from the broken valve.,6,17,蒸汽从破裂的<unk>门<unk>声.
+588,control,"Check the website for viruses, biases, and scams.",8,14,"检查网站是否有病毒,偏见和骗局."
+589,unk,I don't like coconuts.,4,8,我不喜欢<unk>子.
+590,unk,"There was also a sequel, ""Pet Sematary Two"".",8,16,"还有一个续集, ""<unk>动物墓地二""."
+591,unk,Mantled gules doubled argent.,4,13,蒙蔽的金色加倍的金色.
+592,unk,Epidermal thickening is another characteristic histologic finding of psoriasis lesions.,10,20,皮肤厚化是<unk>病病病变的另一个特征组织学发现.
+593,control,The cloud moved in a stately way and was gone.,10,13,"云彩以庄严的方式移动,然后消失了."
+594,control,The nearer the bone the sweeter the meat.,8,12,"骨头越近,肉就越甜."
+595,unk,Doughnuts are best with strawberry sprinkles and coffee.,8,17,甜甜圈是最好的草<unk><unk>和咖啡.
+596,control,"Speedbird niner, turn left heading two seven zero, climb and maintain flight level three five.",15,24,"飞鸟九号,向左转向二七零,爬上并保持飞行水平三五."
+597,unk,"Marc, would you please give me the fly swatter?",9,15,"马克,你能把<unk>击机给我吗?"
+598,unk,"Like spinach, they contain mildly toxic oxalic acid, which is named after the genus.",14,20,"像<unk>菜一样, 它们含有轻微有毒的<unk>酸,"
+599,control,"If you want to contradict what I just said, you will have to provide footnotes.",15,12,"如果您想反驳我刚才所说的话,"
+600,unk,Do you ever doodle things on a piece of paper when you're bored?,13,17,你有没有在无聊的时候在纸上涂<unk>东西?
+601,unk,Canned pears lack full flavor.,5,12,<unk>头的梨没有完整的味道.
+602,control,More recently he has emerged as a more serious writer.,10,12,最近他成为一个更严<unk>的作家.
+603,control,"Major General William Alexander, the Earl of Stirling, was the uncle of his grandfather.",14,22,斯蒂林伯爵威廉·亚历山大少将是他的祖父的叔叔.
+604,control,Do you know if Dylan is going to go with us?,11,12,你知道迪伦会和我们一起去吗?
+605,control,The park is listed in the state of Florida Great Florida Birding Trail.,13,14,该公园被列入佛罗里达州大佛罗里达鸟类步道.
+606,control,"Pork cutlet is also very tasty, but our religion does not allow us to eat it.",16,19,"猪排也很美味, 但我们的宗教信仰不允许我们吃它."
+607,control,The first awards were presented at Resist in Concert!,9,17,"第一个奖项是在""抗争音乐会""上颁发的."
+608,unk,He carried two dead hawks over his shoulder.,8,13,他肩上抬着两只死<unk>.
+609,unk,This version of adamantium is not unbreakable.,7,15,这种版本的亚达曼<unk>不是不可破的.
+610,control,"As hiding places go, it isn't the worst.",8,13,"对于隐藏的地方来说,这不是最糟糕的."
+611,unk,"Don't you dare switch away, I think rhymes are okay, since they never decay, I could do this all day.",20,28,"你别敢换个名字,我认为<unk>语没问题,因为它们永远不会腐烂,我可以整天这样做."
+612,unk,Some sources differentiate bolt-on and bolt-in neck construction.,8,19,一些来源区分了螺栓式和螺栓式<unk>子结构.
+613,unk,The erbium doped amplifier is a high gain amplifier.,9,19,带有<unk>的放大器是一个高增益放大器.
+614,unk,Please bring soap.,3,9,请带上肥<unk>.
+615,unk,"These settlers grew peas, beans, sugar cane, and tomatoes.",9,23,"这些定居者种植豆类,豆类,甘<unk>和西红<unk>."
+616,unk,The school's mascot is the golden eagle and their colors are gold and green.,14,20,"学校的吉祥物是金<unk>,他们的颜色是金色和绿色."
+617,control,This is the location the show evolves around.,8,6,这是节目发展的地方.
+618,unk,Why is pinball so addictive?,5,12,为什么<unk>球如此成<unk>?
+619,control,Many commentators have noted the similarity between the narrator and the younger Sensei.,13,18,许多评论家指出讲述者和年轻的传教士之间的相似之处.
+620,control,Do you want to eat first?,6,7,你想先吃吗?
+621,unk,Ying told us to bring extra strawberries.,7,13,<unk>告诉我们带更多的草<unk>.
+622,unk,"They are both considered endangered, making it illegal to harass, kill, collect, or possess.",14,25,"它们都被认为是<unk>危物种, 骚扰,杀害,收集或拥有是非法的."
+623,control,"I used it for all the ""Bare Knuckle"" Games.",9,13,我用它来做所有的裸脚游戏
+624,control,A boy came running towards me.,6,7,一个男孩跑向我.
+625,control,Do you know what kind of package it was?,9,9,你知道它是什么包裹吗?
+626,control,All that time the Martians must have been getting ready.,10,14,"在这段时间里, 火星人一定一直在准备."
+627,control,"Chokio is a name derived from the Dakota language meaning ""the middle"".",12,19,"Chokio 是一个名字来源于达科他语,意思是中间"
+628,unk,"Booth is trying to become a ""card shark"", but is not successful.",12,18,"布斯试图成为一个""卡牌<unk>鱼"",但没有成功."
+629,unk,He remembered something his grandfather had once told him: that butterflies were a good omen.,15,21,他记得祖父曾经告诉他的一个事:<unk>蝶是个好兆头.
+630,unk,"So he could not be hasty, nor impatient.",8,15,"所以他不能<unk>忙,也不能不耐烦."
+631,control,This was still under development when the war ended.,9,10,这是在战争结束时仍在开发中.
+632,unk,To be the cock in the basket to be cock of the company.,13,18,"成为篮子中的<unk>子,成为公司的<unk>子."
+633,unk,"He mashed in the controller buttons, hoping for some extra speed.",11,21,"他<unk>进控制器的按<unk>, 希望得到一些额外的速度."
+634,unk,Among his more notable interview subjects were Bob Marley and Lou Reed.,12,21,他的更著名的采访对象包括<unk>勃·马利和卢·里德.
+635,control,"My seven year resume gap is marked ""Not Drugs"".",9,15,"我的七年的简历差距是标记为""不是毒品""."
+636,control,Combat occurs when the party runs into one or more enemies.,11,17,"当一方遇到一个或多个敌人时, 战斗就会发生."
+637,unk,My shampoo is made from coconut and sweet almond.,9,19,我的洗发水是用<unk>子和甜杏仁制成的.
+638,control,Just handling them made him feel better.,7,11,仅仅是处理它们让他感觉更好.
+639,unk,"The office paint was a dull, sad tan.",8,19,"办公室的油漆是沉<unk>的,悲伤的棕色."
+640,unk,"Thus for singletons, topological distinguishability is a condition in between disjointness and separatedness.",13,25,"因此,对于单元,拓<unk>可区分性是分离性和分离性之间的条件."
+641,control,"At the same time, they cannot find an exact definition of what a feeling is.",15,14,"同时,他们也找不到一种感觉的确切定义."
+642,unk,One can still see the scar where the acid was accidentally poured on my arm.,15,17,人们仍然可以看到我的手臂上意外倒下酸的伤痕.
+643,control,We don't have to give up our club.,8,8,我们不必放弃我们的俱乐部.
+644,unk,Restoration silver is characterized by embossed motifs for tulips and naturalistic fruit and leaves.,14,24,修复银的特点是郁金香和自然的水果和叶子的浮雕图案.
+645,control,"Many varietal and sub-specific names have been coined, as the plant is morphologically variable.",14,26,"由于该植物在形态上是可变的,因此已经创造了许多品种和子特定的名称."
+646,unk,"When the carpet and the curtains caught fire, it was getting warm.",12,18,"当地毯和窗<unk>着火时,天气开始变暖."
+647,control,But the boy was quiet.,5,8,但那个男孩很安静.
+648,unk,He stood irresolute for a moment and then scrambled out of the pit.,13,17,"他站了一会儿不决心,然后<unk>出坑."
+649,control,It picks up on the mike!,6,9,它接收了麦克风!
+650,unk,Who is the blonde girl with the red skirt?,9,15,那个穿红<unk>子的金发女孩是谁?
+651,unk,A zyzzyva is an American weevil.,6,13,齐兹维娃是一种美国<unk>虫.
+652,unk,A group of men play xylophones in a concert space filled with percussion instruments.,14,21,一群男人在一个充满打击乐器的音乐厅里演奏<unk>音器.
+653,control,"She made a handful of films, mostly in the silent era.",11,13,"她拍摄了几部电影,大多是在无声时代."
+654,unk,The paramedics took out the defibrillator to reanimate the motorcyclist.,10,20,救护人员取出了除<unk>器来复苏摩托车手.
+655,unk,"Then the old man began to inspect the sheep, and he saw that one was lame.",16,18,"然后这位老人开始检查羊, 他看到一个是<unk>的."
+656,unk,"When he saw Henderson in his garden, he called over the fence and made himself understood.",16,23,"当他看到亨德森在他的花园,他叫过<unk>,让自己明白."
+657,unk,Her polo neck jumper is very stylish,7,12,她的polo领<unk>子非常时尚
+658,control,Fractals have found applications in image processing.,7,11,碎片在图像处理中得到了应用.
+659,unk,Use a pencil to write the first draft.,8,13,使用<unk>笔写下第一份草稿.
+660,control,"It spoke of journeys, discoveries, books, and change.",8,13,"它谈到了旅行,发现,书籍和变化."
+661,unk,Toulet engaged a correspondence with Machen and visited him in London.,11,18,"图莱与马<unk>进行了通信,并在伦敦拜访他."
+662,control,Sorrows with something to eat bread are endurable less. A fat sorrow is better than a lean one.,18,27,吃面包的悲伤是难以忍受的.一个肥胖的悲伤比一个瘦弱的更好.
+663,control,And I say maybe you both have it!,8,8,我说也许你们两个都有!
+664,unk,"Tiffany told us, the bench is made of beech wood.",10,24,"蒂<unk>尼告诉我们,这张长凳是用<unk>木制成的."
+665,control,Our elders have the wisdom to learn from.,8,9,我们的长老有智慧可以学习.
+666,unk,The internal doors of the house would need to be replaced because they were very ugly.,16,18,"房子的内部门需要更换, 因为它们非常丑<unk>."
+667,unk,Nothing dries sooner than a tear.,6,14,没有什么比眼<unk>更快地干燥.
+668,unk,"Oh, I beg your pardon!",5,11,"<unk>,我求你原谅!"
+669,unk,"Without haste, yet without rest unhasting, yet unresting.",8,20,"没有<unk>忙,但没有休息不<unk>忙,但不休息."
+670,control,The tail assists and serves as support when the jerboa is standing upright.,13,20,尾巴在<unk>直站立时提供帮助和支<unk>.
+671,unk,The hydrogen gas escaped.,4,9,<unk>气已经逃脱.
+672,unk,She had her cardigan on.,5,10,她穿着她的<unk>衣.
+673,control,And that's where the power of love comes in.,9,6,这就是爱情的力量.
+674,unk,You can't make a silk purse out of a sow's ear.,11,18,你不能用<unk>的耳朵做丝<unk>钱包.
+675,control,"He continued to write books, and a half dozen were published in his lifetime.",14,15,"他继续写书,半打在他的一生中出版."
+676,control,Gives you an idea of the season.,7,9,让你了解这个季节的情况.
+677,unk,"If one illuminates ""two"" parallel slits, the light from the two slits again interferes.",14,26,"如果照亮""两个""平行<unk>口, 两个<unk>口的光再次干扰."
+678,unk,He just got a new kite for his birthday.,9,13,他刚刚为生日买了一只新的风筝.
+679,control,He served as a chaplain in the Prussian army.,9,10,他曾在普鲁士军队担任牧师.
+680,control,"Inside, you'll find photographs and a brief synopsis of the item's history.",12,17,"在里面,你会找到照片和对物品历史的简要概述."
+681,control,"Currently, European and Asian parts of Russia have different fleets.",10,14,"目前,俄罗斯的欧洲和亚洲地区有不同的舰队."
+682,unk,The students colored with their crayons.,6,12,学生们用<unk>笔着色.
+683,unk,"the camel drivers exchanged information about windstorms, and told stories about the desert.",13,22,"<unk>驼司机交换关于风暴的信息, 并讲述关于沙漠的故事."
+684,control,"Yeah, I was in a wheel chair for months.",9,12,"是的,我坐了轮椅几个月."
+685,control,Mauritanian refugees slowly trickled back into the country during the following years.,12,21,"在接下来的几年里, 毛里塔尼亚难民慢慢地回到了该国."
+686,control,"You're a good lad, you know? he told his son with stern eyes.",13,19,"你是一个好男孩,你知道吗?他用严厉的眼睛告诉他的儿子."
+687,control,"The omens had been true, after all.",7,12,"毕竟,这些预兆是真实的."
+688,unk,"I like the avenger of the new episode, he really is a badass.",13,16,"我喜欢新集的复仇者, 他真的是个坏人."
+689,control,"Breakfast is usually earlier than this, she thought.",8,12,"她认为,早餐通常比这更早."
+690,unk,The homeless seem to like soup.,6,12,无家可归的人似乎喜欢<unk>.
+691,unk,"You can't offer me something that is already mine, the chief said, arrogantly.",13,18,"你不能给我已经是我的东西, <unk>长傲慢地说."
+692,unk,Do the roses compete in athletic events?,7,12,<unk>在体育比赛中参加比赛吗?
+693,control,He was hitless in four at-bats on his debut.,9,13,"在他的首次亮相中,他没有打过四次."
+694,control,"Very well, if you'd like to start your inspection of the lab area I'll go and fetch her.",18,15,"非常好,如果你想开始检查实验室区域我会去找她."
+695,control,"Shortly after, the rules were formally adjusted to clarify the participation of online publications.",14,17,"不久之后,规则正式调整,以澄清在线出版物的参与."
+696,control,Upgrades can also worsen a product subjectively.,7,15,升级也可能使产品在主观上变得更糟.
+697,unk,"Hey, stop staring at my decollete!",6,16,"<unk>,停止<unk>着我的<unk>部!"
+698,control,He was recently surpassed by former Celina and Pilot Point coach G. A. Moore.,14,22,他最近被前塞利纳和飞行员点教练G.A.摩尔超越.
+699,control,Her earthly lover was not fooled and recognized her immediately.,10,18,"她的地上的爱人没有被愚弄, 立即认出了她."
+700,unk,"In Ireland, the butter is always salted, why would anyone want it any other way?",15,18,"在爱尔兰,黄油总是加盐的,为什么有人会想要其他方式?"
+701,unk,Who is responsible for these parrots?,6,9,这些<unk>是谁造成的?
+702,control,The counterfeiter was caught at the corner of River Road and Thirtieth Street.,13,20,伪造者在河路和第三十街的角落被抓住了.
+703,control,"In fact, it predates the conjecture and provided some of Hodge's motivation.",12,17,"事实上,它早于猜测, 并为霍奇提供了一些动机."
+704,unk,"I'd like to order some cinnamon pretzels, please.",8,15,"我想要订购一些肉<unk>饼干,请."
+705,unk,You have enough gold to buy many sheep and many camels.,11,16,你有足够的黄金来买很多羊和许多<unk>驼.
+706,control,Yorkshire is my county.,4,9,约克郡是我的县.
+707,unk,Pull the hook to toggle the jukebox.,7,13,拉开<unk>子来开启音乐机.
+708,unk,But horses tire bit by bit.,6,11,但马匹逐渐疲<unk>.
+709,unk,The flock of flamingos landed gracefully on their awkward looking legs.,11,23,一群火<unk>鸟在它们<unk>拙的腿上优雅地降落.
+710,control,Few of the island's soils are well suited to agriculture.,10,10,岛上的土壤很少适合农业.
+711,control,It was Charlie who suggested that Dave write a song for Saint Helena.,13,15,查理建议戴夫为圣海伦娜写一首歌.
+712,control,"Sine, cosine and tangent are three basic trigonometric equations you'll need to know.",13,20,正弦余弦和切线是你需要了解的三个基本三角方程
+713,control,He appeared six times each with John Wayne and Paul Newman.,11,19,他与约翰·韦恩和保罗·纽曼分别出现了六次.
+714,control,Matthew McConaughey is an American actor.,6,12,马修·麦考纳希是一位美国演员.
+715,unk,He once lent his distinctive voice to an advert for the blackcurrant drink Ribena.,14,23,他曾经用自己的独特声音为黑<unk>饮料Ribena的广告做广告.
+716,unk,"Hey Lucy, have you remembered the lyrics for the anthem yet?",11,21,"<unk>,露西,你已经记得了国歌的歌词了吗?"
+717,control,I have many thousands of books on my bookshelves.,9,13,我书架上有成千上万的书.
+718,control,"Lyrics are the usual problem-if there's a quotable quote here, I haven't noticed it.",14,23,"歌词是常见的问题 - - 如果这里有引用的引文, 我没有注意到它."
+719,unk,It was replaced by Mowinckel's Third Cabinet.,7,16,它被莫温克尔的第三个内<unk>所取代.
+720,unk,"All of the species from this family have free-living, aquatic tadpoles.",11,15,这一家族的所有物种都有自由生活的水生<unk>.
+721,control,"The boy waited, and then interrupted the old man just as he himself had been interrupted.",16,19,"这个男孩等了,然后打断了老人就像他自己被打断了."
+722,control,I have been awake three days — a prisoner for three days.,12,16,我已经醒了三天了一个囚犯三天了
+723,control,I give my hands a chance to heal from RSI (Repetitive Strain Injury) on the weekends.,16,23,我给我的手一个机会在周末从RSI(重复应力损伤)治愈.
+724,unk,The unit is authorized to fly the appropriate streamer on its organizational flag.,13,20,该单位有权在其组织旗<unk>上<unk>上适当的流体.
+725,control,She was here first.,4,8,她是第一个来这里的.
+726,control,I decided it was better to just get the code out there and improve it later.,16,12,"我决定最好把代码发布出去,然后改进."
+727,control,Mooresville schools are part of the Mooresville Consolidated School Corporation.,10,17,摩尔斯维尔学校是摩尔斯维尔联合学校公司的一部分.
+728,unk,"If you want to send me private feedback, please fill out the following form.",14,18,"如果您想给我私人反<unk>,请填写下面的表格."
+729,unk,They provided warnings about thieves and barbarian tribes.,8,14,他们提供了关于盗<unk>和野蛮人的警告.
+730,control,Heave the line over the port side.,7,9,在船侧举起绳索.
+731,control,He must know how to deal with the snakes of the desert.,12,11,他一定知道如何处理沙漠的蛇.
+732,control,It was directed by John Landis.,6,11,这部电影由约翰·兰迪斯执导.
+733,unk,She stared at him.,4,9,她<unk>着他看.
+734,unk,They have cheap sausages and fries at the brewery tomorrow.,10,24,他们有便宜的香肠和<unk>炸<unk>在<unk>酒厂明天.
+735,control,"At age three, Jackie appeared in Lloyd Hamilton comedies under the name of ""Leonard"".",14,29,"在三岁时,杰基以""莱昂纳德""的名字出现在劳埃德·汉密尔顿的喜剧中."
+736,control,The rocking motion was nauseating.,5,11,摇摆的动作令人恶心.
+737,control,kids are walking across a field in red clothes.,9,14,孩子们穿着红色衣服穿过田野
+738,control,Don't spank your kids!,4,7,不要鞭打你的孩子!
+739,unk,He who rises late must trot all day.,8,14,迟起床的人必须整天<unk>步.
+740,unk,A chink in the wall allowed a draft to blow.,10,15,墙上的一个<unk>隙使得气流可以吹.
+741,control,This variable is set to indicate the present time.,9,11,这个变量被设置为表示当前时间.
+742,control,Poetry and truth.,3,7,诗歌和真相
+743,control,A young woman in tight pants talks to a man in the street.,13,17,一个穿紧裤子的年轻女人在街上跟一个男人说话
+744,control,"If I was at a party where there was drinking involved, I could call him and he would come pick me up and take me home.",26,24,"如果我在一个有饮酒的聚会上, 我可以打电话给他, 他会来接我,"
+745,control,The Right Opposition is led by David Gamkrelidze of New Rights Party.,12,21,右翼反对派由新权利党的大卫·甘克雷利泽领导.
+746,unk,"They walked in from the rain, all dishevelled and steaming.",10,19,"他们从雨中走进来, 所有的<unk>乱和蒸汽."
+747,control,I should have been there.,5,6,我本应该在那里.
+748,control,Thirteen First Nations symbols are on the treaty.,8,13,条约上有十三个原住民的象征.
+749,control,Memorandum of association is the charter of a society.,9,11,协会备忘录是公司的章程.
+750,unk,The horse balked and threw the tall rider.,8,17,"马<unk>了,把高个子的骑手扔了下来."
+751,unk,Every cock crows loud on his own dunghill.,8,17,每个<unk>都在自己的粪堆上大声<unk>.
+752,unk,Crack the walnut with your sharp side teeth.,8,15,用你的尖<unk>的侧牙打破核桃.
+753,control,"Forestry Commission Scotland reports to, and receives funding from, the Scottish Parliament.",12,20,"苏格兰林业委员会向苏格兰议会报告,并从该议会获得资金."
+754,unk,The river contains a large Salmon and Sea trout population.,10,17,这条河有大量的<unk>鱼和海<unk>鱼.
+755,unk,Please could you draw the curtains?,6,9,请你拉下窗帘吗?
+756,unk,Used to hunt rabbits there myself.,6,11,我自己曾经在那里打<unk>子.
+757,control,"Thanks to the extensibility of modern browsers, this works surprisingly well.",11,9,"由于现代浏览器的扩展性,"
+758,unk,I'm planning to buy some topological maps for my research.,10,14,我打算为我的研究购买一些拓<unk>地图.
+759,control,"To eat, and to scratch, a man need but begin.",10,13,"吃,和抓,一个男人需要但开始."
+760,unk,"It's ok, don't hold back!.",5,11,"没事,不要<unk>住!"
+761,control,It was a great success.,5,7,这是一次巨大的成功.
+762,unk,Capsella rubella is studied as a model for understanding the evolution of self-fertilization.,13,19,红<unk>菌被研究为理解自我受精演变的模型.
+763,control,This group was the first organization that found the connection between race and pollution.,14,14,这组人是第一个发现种族与污染之间的联系的组织.
+764,unk,"The camel driver, though, seemed not to be very concerned with the threat of war.",15,17,"然而, <unk>驼司机似乎并不太担心战争的威胁."
+765,control,"He moved about, invisible but everyone could hear him.",9,14,"他移动,看不见,但每个人都能听到他."
+766,control,Petrov made a funny face as he turned.,8,13,Petrov 转身时面面笑了一样
+767,control,This project has reminded us how much fun she is to work with.,13,10,这个项目提醒了我们她有多有趣.
+768,unk,Meyenberg became a very profitable company because of its government contracts.,11,18,"由于政府合同, 梅恩伯格成为一家非常<unk>利的公司."
+769,control,Each team has its representatives attend the draft.,8,10,每个球队都有自己的代表参加选秀.
+770,control,"I'm afraid I'll have to see your passes, gentlemen.",9,14,"我担心我必须看到你的通行证,先生们."
+771,control,"Three people sitting at a table, and one of them toasting a drink to the camera.",16,18,"三个人坐在桌子旁,其中一个向摄像机喝杯"
+772,unk,The blond woman in the jean jacket clenched her fists as she walked away.,14,22,穿着牛仔<unk>的金发女人走开时握住了拳头.
+773,unk,Helene shuddered and covered her face spasmodically with her hands.,10,20,"Helene 颤抖着,用手 spasmodically 遮住了她的脸"
+774,unk,"As they packed their bags, the tsunami sirens sounded once more across the bleak shores.",15,18,"他们打包行李时,海<unk>警报再次响起."
+775,control,I've got a flash for you!,6,7,我有一个闪光给你!
+776,unk,It has also made watering holes inaccessible to the animals within this region.,13,11,它还使得该地区动物无法进入水坑.
+777,unk,"Bacardi, rye, vodka – what do you want?, asked the barkeeper.",11,24,"巴卡迪,<unk>,伏特加<unk>你想要什么?酒吧老板问."
+778,control,Who needs bishops with so many queens?,7,10,谁需要主教和这么多女王?
+779,control,But in his heart he knew that it did matter.,10,12,但在他的心中他知道这确实很重要.
+780,control,"Even if you're an expert, reading all of it is often not feasible due to lack of time.",18,14,"即使你是专家, 阅读它全部往往是不可能的,"
+781,control,I've just guaranteed the bank sufficient funds to meet their needs.,11,14,我刚刚保证银行有足够的资金来满足他们的需求.
+782,control,It can't possibly be true that we won.,8,10,"这不可能是真的,我们赢了."
+783,control,He started to read the book he had bought.,9,9,他开始阅读他买的书.
+784,unk,"Roll the dice, please.",4,10,"投<unk>子,请."
+785,unk,"Simon tried to evade, but Timmy restrained him.",8,16,"西蒙试图逃避,但蒂米<unk>住了他."
+786,control,I want to do more neat robot vision stuff.,9,12,我想做更多精致的机器人视觉东西.
+787,control,It is an area of outstanding natural beauty.,8,8,这是一个出色的自然美景.
+788,control,But there was something there in his heart that wouldn't allow him to do so.,15,13,但他心中有一种东西不允许他这样做.
+789,control,During the battle one of his horses was killed and another wounded under him.,14,21,"在战斗中,他的一匹马被杀,另一匹马在他下方受伤."
+790,control,Two defendants were acquitted because the jury deadlocked.,8,19,"由于陪审团陷入了僵局, 两名被告被无罪释放."
+791,unk,"I like apples, pears, and pomegranate, but I do like strawberries or grapes.",13,22,"我喜欢<unk>果,梨和石榴,但我喜欢草<unk>或葡萄."
+792,control,"In other programs, a guest expert offered advice or interpretation.",10,15,"在其他节目中,一位客座专家提供建议或解释."
+793,unk,Everyone has heard of the chicken and egg problem.,9,14,每个人都听说过<unk>和蛋的问题.
+794,unk,"The opium poppy continues to be a major industrial source of opiates, including morphine.",14,21,罂粟树仍然是包括<unk>胺在内的<unk>片的主要工业来源.
+795,unk,"Doves sprouted, then escaped from various oversized pockets, some trailing handkerchiefs or bunting.",13,31,"<unk>子<unk>芽,然后从各种超大的口袋里逃脱, 有些拖着手帕或<unk>."
+796,unk,Sunburns can be avoided by applying sunscreen or by staying in the shadows.,13,20,通过涂抹防晒<unk>或呆在阴影中可以避免晒伤.
+797,control,Pignatas are sometimes filled with water.,6,11,皮尼塔有时会被水填充.
+798,control,", the school principal is Mark A. Lodewyk.",8,16,学校的校长是马克·A·洛德维克.
+799,control,Specify the user to log in as on the remote machine.,11,10,指定用户以远程机器登录
+800,unk,The swimming pool was full of chlorine.,7,11,游泳池里充满了<unk>.
+801,control,He responded: Without it?,4,8,他回答说:没有它?
+802,unk,"Besides, had he not whipped the big owl in the forest.",11,17,"此外,如果他没有鞭打森林中的大猫头<unk>."
+803,unk,Yovel is the transliteration of the Hebrew word for Jubilee.,10,18,"约贝尔是希伯来语""<unk>年""的翻译."
+804,unk,The thaw came early and freed the stream.,8,17,"冰<unk>早些时候来了,并释放了溪流."
+805,unk,"He studied Theatre Arts and English at Western Kentucky University in Bowling Green, Kentucky.",14,25,他在肯塔基州<unk>林格林的西部肯塔基大学学习戏剧艺术和英语.
+806,unk,I can't find the ruler in my pencil case.,9,14,我找不到我的<unk>笔盒里的线程.
+807,unk,"Look, fireflies!",2,10,"看看,<unk>火虫!"
+808,unk,Her ankles were free.,4,11,她的脚<unk>是自由的.
+809,unk,Soak the cloth and drown the sharp odor.,8,17,"浸泡布料,淹没尖<unk>的气味."
+810,control,The Chickasaw National Recreation Area preserves partially forested hills of south-central Oklahoma near Sulphur.,14,23,奇卡索国家娱乐区保护了奥克拉荷马州中部南部附近的部分森林山丘.
+811,control,"Penny wise, pound foolish.",4,17,"一分钱是明智的,一分钱是愚蠢的."
+812,unk,A man of straw needs a woman of gold.,9,13,一个<unk>草男人需要一个金色的女人.
+813,control,The secret is here in the present.,7,6,秘密在于现在
+814,control,Can you help me with this question?,7,9,你能帮我解答这个问题吗?
+815,unk,"After playing tennis in virtual reality, he felt dizzy.",9,17,"在虚拟现实中打网球后, 他感到头<unk>."
+816,unk,"Youth had come back to her, freed from the yoke of oppression.",12,21,"她的青春已经回来了, 摆脱了压迫的<unk>."
+817,control,"The old man leafed through the book, and fell to reading a page he came to.",16,17,"这位老人翻阅了这本书,并开始阅读他找到的一页."
+818,control,What could it be?,4,5,这可能是什么?
+819,control,It turns out this is easier than you might expect.,10,13,"事实证明,这比你想象的要容易."
+820,unk,"The conical eggs are blue green when fresh, then turn orange.",11,25,"<unk>形的<unk>蛋新鲜时是蓝绿色的,然后变成<unk>色."
+821,unk,Holders of the ranks were given a smaller marshal's star since then.,12,25,"从那时起,这些军衔的持有者就被授予一个较小的元<unk>星."
+822,unk,Mud was spattered on the front of his white shirt.,10,16,他的白色<unk>衫前面<unk>着泥土.
+823,control,"The band's third album was ""The Seer"".",7,11,"乐队的第三张专辑是""先见者""."
+824,control,Her guns destroyed at least three enemy suicide planes.,9,17,她的炮击摧毁了至少三架敌方自杀飞机.
+825,unk,"Wrenn was a Fellow of Pembroke College, Oxford.",8,15,Wrenn 是牛津彭布罗克学院的研究员
+826,unk,"Instead, the stranger lowered it slowly, until the point touched the boy's forehead.",13,26,"相反,陌生人慢慢地放下它, 直到尖<unk>触及男孩的额头."
+827,control,Never put off 'til tomorrow what you can do today.,10,15,永远不要把今天可以做的事情推迟到明天.
+828,control,Root privileges are typically required for these changes.,8,10,这些更改通常需要根权限.
+829,unk,Oak is strong and also gives shade.,7,15,"<unk>树是坚固的,也提供了阴影."
+830,unk,Two spectators were also injured by flying debris.,8,16,两名观众也因飞<unk>碎片而受伤.
+831,unk,"Hey look, a flying pig!",5,11,"<unk>,看,一个飞猪!"
+832,unk,"At her death she was the Dowager Countess of Dorset, Pembroke, and Montgomery.",13,31,"在她去世时,她是多塞特,<unk>布罗克和蒙哥马利的寡妇伯爵夫人."
+833,control,Two clocks were used in case of a breakdown of one.,11,11,两个钟用于一个钟故障的情况下.
+834,control,"I didn't come here to have you read my palm, he said, already regretting having come.",16,19,"我没有来这里让你阅读我的手掌,他说,已经后悔过来."
+835,control,Insight's reporting sometimes resulted in journalistic controversy.,7,12,Insight 的报道有时会引发新闻争议
+836,unk,The loafers and golf caddies were used to hanging out near the railway station.,14,21,摩托车和高尔夫球手习惯在火车站附近<unk>.
+837,control,Few people realise the immensity of vacancy.,7,11,很少有人意识到空缺的巨大程度.
+838,unk,"The thief wasn't there, and the owner brought him a cup of tea.",13,18,"盗<unk>不在那里,老板给他带来了一杯茶."
+839,control,Does the venue offer free WiFi?,6,10,场地提供免费的WiFi吗?
+840,unk,"There is that magnificent Bob, eating his head off in the stable.",12,22,"那是那个壮丽的<unk>勃,在马<unk>里吃他的头."
+841,unk,The one time pad is an ultimate encryption if applied correctly.,11,16,"如果正确应用,一次性<unk>板是最终的加密."
+842,control,"However, there was growing recognition of the diverse musical and ideological potential of rock.",14,19,"然而,人们越来越认识到摇滚的多样化音乐和意识形态潜力."
+843,unk,It was better than the scent of the hookahs.,9,12,这比水龙水的气味还好.
+844,unk,"To find out the exact threshold, we need to repeat this in a reproducible manner.",15,20,"为了找出确切的<unk>值, 我们需要以可重复的方式重复."
+845,unk,A white silk jacket goes with any shoes.,8,18,一件白色的丝<unk><unk>克适合任何鞋子.
+846,control,Laugh and the world laughs with you. Cry and you cry alone.,12,17,"笑,世界会和你一起笑.哭,你一个人哭."
+847,unk,"He attended primary school in Waynesboro, Tennessee where his father ran a sawmill.",13,26,"他在田纳西州韦恩斯伯勒的小学上学,他的父亲经营着一座<unk>厂."
+848,control,Be careful in handling all the chemicals which are corrosive or irritant.,12,18,在处理所有有腐蚀或刺激作用的化学品时要小心.
+849,control,This enables band offset engineering in nanoscale heterostructures.,8,18,这使得纳米尺度异构结构的带偏移工程成为可能.
+850,control,Somebody had returned my lost credit card to the bank.,10,13,有人把我丢失的信用卡还给了银行.
+851,unk,But to be guarded at such a time is very difficult.,11,14,但在这样的时候保持警<unk>是非常困难的.
+852,control,We will be meeting Abhishek there later tonight.,8,16,我们今晚晚些时候将在那里与阿比什克见面.
+853,unk,"The boy and the Englishman had bought camels, and climbed uncertainly onto their backs.",14,23,"这个男孩和英国人买了<unk>驼, 并不确定地爬上他们的背."
+854,unk,It is characterized by intense subjectivity and rough handling of materials.,11,16,它的特点是强烈的主观和粗鲁的材料处理.
+855,unk,I think Tuppy was surprised.,5,10,我认为塔皮很惊<unk>.
+856,unk,Fabian does not like pepper.,5,11,法比安不喜欢胡<unk>.
+857,unk,"The next edition of Thunder, Rick Steiner defeated Jarrett and Totally Buffed defeated KroniK.",14,39,"在下一届雷<unk>赛中,里克·斯坦纳击败了贾雷特,而""完全<unk>""击败了克罗尼克."
+858,control,Benoit won the match and retained the championship.,8,13,"贝诺伊赢得了比赛,并保留了冠军."
+859,unk,"After twelve hours of rowing, Darius climbed out of the canoe, and lied down on the beach to nap.",19,27,"划船十二小时后,达利乌斯从独木舟上爬出来,躺在海滩上休息."
+860,unk,The hail pattered on the burnt brown grass.,8,15,冰雹在烧焦的棕色草地上敲打.
+861,unk,It's a homogeneous city.,4,6,这是一个同质的城市.
+862,control,I tried so hard to keep myself aloof from your antics.,11,11,我试图保持自己远离你的古怪.
+863,control,"In fact, he said, he had no head for detail.",10,12,"事实上,他说,他没有头脑的细节."
+864,unk,"Oh, what are you going to when he arrives?",9,13,"<unk>,当他到达时,你会做什么?"
+865,control,Tangier is not like the rest of Africa.,8,10,坦吉尔不像非洲的其他地方.
+866,control,He drew on the back of his jacket with a blue fountain pen.,13,16,他用蓝色的喷泉笔画在外套的背面.
+867,unk,A gritting lorry is used to grit the roads when frost is expected overnight,14,24,"当夜间预计会有<unk>时,使用<unk>砂卡车<unk>砂道路"
+868,control,Every one is king in his own house.,8,9,每个人都是自己家里的国王.
+869,control,Additional reliable cites have been provided where possible.,8,10,在可能的情况下提供了额外的可靠引用.
+870,control,"How they managed to improvise at such short notice, she'll never know.",12,16,她永远不会知道他们是如何在如此短的时间内即兴的.
+871,unk,And a whole cold chicken staring us right in the face.,11,16,一个冷冷的<unk>正<unk>着我们的脸.
+872,control,"People from all over the world have passed through this village, son, said his father.",15,16,"他的父亲说,儿子,来自世界各地的人已经经过这个村庄."
+873,control,For a thousand years the Codex Amiatinus was believed to be Italian in origin.,14,21,"一千年来,人们认为""阿米亚蒂纳斯法典""起源于意大利."
+874,control,"During effects photography, the suit was worn by Mark Wilson.",10,18,"在效果摄影期间,马克·威尔逊穿着这件西装."
+875,unk,Yell and clap as the curtain slides back.,8,18,"窗帘向后滑动时,大声喊叫和鼓掌"
+876,control,"Next time it rains, please call me.",7,12,"下次下雨时,请打电话给我."
+877,control,The quickening of time.,4,7,时间的加快.

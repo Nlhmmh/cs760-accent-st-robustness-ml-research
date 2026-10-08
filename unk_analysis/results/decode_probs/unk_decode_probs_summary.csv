@@ -1,0 +1,10 @@
+set,steps,sentences,p_median,p_q25,p_q75,share_p_gt_0_5,share_p_gt_0_8,entropy_median,share_p_gt_0_2,share_chinese_char_token,unk_steps,other_steps,diff_lo,diff_mid,diff_hi
+<unk> start steps,472.0,392.0,0.599,0.397,0.764,0.64,0.206,2.915,,,,,,,
+"other Chinese-character steps, same sentences (fair baseline)",4115.0,392.0,0.728,0.5,0.829,0.749,0.344,2.838,,,,,,,
+"ALL other steps, same sentences (easier, not a fair baseline)",6273.0,392.0,0.797,0.599,0.816,0.82,0.449,2.925,,,,,,,
+Chinese-character steps in clean control sentences,4544.0,432.0,0.72,0.488,0.826,0.739,0.33,2.86,,,,,,,
+difference in median p (unk step minus other Chinese-character steps),,,-0.128,-0.161,-0.091,,,,,,,,,,
+best non-'<' candidate at unk steps,472.0,,0.114,,,,,,0.203,0.903,,,,,
+ceiling-free: log10(p1/p2): margin over runner-up,,,,,,,,,,,0.641,1.164,-0.59,-0.523,-0.448
+ceiling-free: p1 / (p1..p5): share within top-5,,,,,,,,,,,0.748,0.895,-0.179,-0.147,-0.112
+ceiling-free: runner-up within 10x of top (share),,,,,,,,,,,0.725,0.437,0.245,0.287,0.331

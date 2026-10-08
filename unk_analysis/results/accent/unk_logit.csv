@@ -1,0 +1,5 @@
+model,cluster,accent_joint_wald_chi2,df,accent_joint_p,words_OR_per_word,words_p
+accent only,spk,5.3434,6,0.5006,,
+accent + sentence length (words),spk,5.5353,6,0.4772,1.0786,0.0
+accent only,sentence,5.777,6,0.4486,,
+accent + sentence length (words),sentence,5.1773,6,0.5213,1.0786,0.0

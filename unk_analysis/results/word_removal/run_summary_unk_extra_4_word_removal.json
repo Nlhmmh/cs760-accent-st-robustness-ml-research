@@ -1,0 +1,22 @@
+{
+  "model_id": "facebook/seamless-m4t-v2-large",
+  "revision": "5f8cc790b19fc3f67a61c105133b20b34e3dcb76",
+  "device": "cuda",
+  "dtype": "torch.float16",
+  "generation": {
+    "num_beams": 1,
+    "do_sample": false,
+    "max_new_tokens": 256
+  },
+  "seed": 760,
+  "smoke": false,
+  "stopped_by": "finished all sentences",
+  "sentences_run": 439,
+  "sentences_with_unk_again": 385,
+  "median_p_unk_start": 0.5920006632804871,
+  "median_top_importance": 0.5484538907130627,
+  "median_random_importance": 0.0339294970035553,
+  "unk_gone_after_top_removed": 310,
+  "unk_gone_after_random_removed": 38,
+  "note": "Post-hoc diagnostic (text input). Original 4,200 Direct predictions unchanged."
+}
