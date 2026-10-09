@@ -4,10 +4,17 @@ COMPSCI 760 research project comparing how regional English accents are
 associated with the translation quality of Direct and Cascaded
 speech-to-text translation systems.
 
-The repository contains the original Group 9 proposal, the frozen-model
-inference notebooks, completed Direct and Cascaded run artifacts, an
-integrated IEEE LaTeX literature survey, and Direct `<unk>` diagnostic and
-sensitivity experiments. **Last updated: 24 September 2026.**
+The repository contains Group 9's data-preparation and frozen-model inference
+notebooks, three completed full runs, three-system quality evaluation,
+statistical-analysis tables, an integrated IEEE LaTeX literature survey, and
+Direct `<unk>` diagnostics and sensitivity experiments.
+**Last updated: 9 October 2026.**
+
+Project code: [GitHub repository](https://github.com/Nlhmmh/cs760-accent-st-robustness-ml-research).
+
+Start with [evaluation results](#evaluation-results),
+[reproducing the results](#reproducing-the-results), and
+[team-member contributions](#team-member-contributions).
 
 Both Cascaded model variants have completed full runs on all **4,200 clips**,
 using Whisper large-v2 for ASR:
@@ -33,8 +40,9 @@ accent associations, not claim that accent or architecture is the sole causal
 explanation for a performance difference.
 
 The original motivation, five-group plan, feasibility analysis, risks, and
-team roles are recorded in [`9_Proposal.pdf`](9_Proposal.pdf). This README
-documents the current implemented state when it differs from that proposal.
+team roles are recorded in [`9_Proposal.pdf`](presentation/9_Proposal.pdf).
+This README documents the current implemented state when it differs from that
+proposal.
 
 ## Research design
 
@@ -67,9 +75,9 @@ English speech -------------------->| SeamlessM4T v2-large          |
                                            Cascaded Chinese text
 
 Direct text and Cascaded text ------> same CoVoST 2 Chinese reference
-                                      planned: chrF++ / BLEU
+                                      chrF / chrF++ / BLEU
 Whisper transcript -----------------> Common Voice English transcript
-                                      planned: WER diagnostic
+                                      normalized WER diagnostic
 ```
 
 ### Direct system
@@ -144,6 +152,30 @@ speaker remain linkable through `sample_id`.
 Never expose, reconstruct, or speculate about original identifier values or a
 mapping to `sample_id`.
 
+### Data preparation
+
+[`01_data_preprocessing.ipynb`](notebooks/01_data_preprocessing.ipynb)
+selects the first self-reported accent label, compares available target-language
+references, and matches CoVoST 2 Chinese references through normalized English
+sentence text. It filters duration outliers using the original five-group
+pool's 1st–99th percentiles and excludes implausible transcript-length/audio-
+duration combinations. It then adds England and United States English,
+applies a 100-clip speaker cap, and samples 600 clips per group with seed 760.
+The exported data retains regenerated speaker IDs and removes the source
+speaker identifier.
+
+Reference matching keeps the first CoVoST 2 translation for each normalized
+sentence. Normalization can merge text variants, so the reference-matching
+policy and reference quality remain limitations. Accent balance does not
+match sentence content, recording conditions, or speaker counts across groups.
+[`02_audio_extraction.ipynb`](notebooks/02_audio_extraction.ipynb) extracts the
+selected recordings from the Common Voice archive; its paths and process-
+priority setting currently target Windows and need adjustment elsewhere.
+
+This is one frozen evaluation set. There is no project training/validation
+split, model fitting, or hyperparameter search. Pilots test engineering
+feasibility; the later decoding experiments are post-hoc diagnostics.
+
 ### Frozen dataset facts
 
 | Property | Current value |
@@ -215,81 +247,133 @@ Use the generated `id` to align the two run outputs, and confirm the metadata
 hash before relying on that alignment. Never use `sample_id` as a unique merge
 key.
 
-## Evaluation and statistical-analysis plan
+## Evaluation results
 
-Full inference is complete for Direct and both Cascaded model variants. A
-reproducible full-dataset translation-quality and WER evaluation, with paired
-statistical analysis, is still missing. Notebooks 06 and 07 already calculate
-BLEU, chrF, and chrF++ on a selected 35-clip Direct sensitivity subset; these
-are not overall system or accent-robustness results.
+[`08_evaluation.ipynb`](notebooks/08_evaluation.ipynb) evaluates Direct,
+Cascade-600M, and Cascade-3.3B against the same 4,200 Chinese references.
+Its saved outputs and [`runs/merged_3system_with_metrics.csv`](runs/merged_3system_with_metrics.csv)
+contain the three-system comparison. The scores below were independently
+recomputed from the archived predictions during this README update using
+SacreBLEU 2.6.0; model inference was not rerun.
 
-### Planned measures
+### Overall translation quality
 
-- **chrF++ (primary):** final Chinese translation quality for both systems.
-- **BLEU (secondary):** complementary translation score and comparability with
-  prior speech-translation work.
-- **WER (Cascaded diagnostic only):** Whisper ASR output against the Common
-  Voice English transcript. WER is not a translation metric.
-- **Direct-Cascade gap:** paired per-clip difference, with the sign and metric
-  direction stated explicitly.
+Higher is better for all translation metrics in this table.
 
-### Planned comparisons
+| System | Clips | Corpus BLEU (`zh`) | Corpus chrF | Corpus chrF++ | Mean sentence chrF++ |
+|---|---:|---:|---:|---:|---:|
+| Direct: SeamlessM4T v2-large | 4,200 | 38.86 | 32.38 | 25.08 | 27.86 |
+| Cascade: Whisper large-v2 → NLLB-600M | 4,200 | 29.11 | 24.23 | 18.44 | 20.86 |
+| Cascade: Whisper large-v2 → NLLB-3.3B | 4,200 | 31.91 | 26.36 | 20.06 | 22.87 |
 
-- Overall Direct versus Cascaded translation quality.
-- Within-accent paired Direct versus Cascaded differences.
-- Between-accent variation in each pipeline.
-- Whether the Direct-Cascade gap varies by accent group.
-- Paired confidence intervals or significance tests for system differences.
-- Association between Whisper WER and Cascaded translation quality or
-  degradation.
+Direct scores highest on this dataset, including within every accent group
+under corpus BLEU and chrF++. NLLB-3.3B improves over the 600M cascade while
+both runs use identical Whisper transcripts. These are comparisons of the
+specified model systems, not evidence that one architecture is universally
+better or that parameter count alone explains the difference.
 
-Because `sample_id` repeats, uncertainty estimates should account for
-speaker-level clustering, or explicitly justify any clip-level resampling
-assumption. Repeated sentence/reference content should also be reported or
-controlled. Association between WER and translation scores must not be
-described as proof of causal error propagation.
+BLEU uses `tokenize="zh"`. chrF and chrF++ use character order 6 and `beta=2`,
+with word order 0 and 2 respectively, and default whitespace exclusion.
+The chrF++ word component uses SacreBLEU's default word handling; the Chinese
+BLEU tokenizer is not applied to chrF++. Report both character-based metrics
+and keep their settings explicit.
 
-No translation-quality scores, accent-robustness findings, confidence
-intervals, or hypothesis-test results should be inferred from the runtime
-artifacts.
+**Corpus scores and mean sentence scores are different quantities.**
+The statistical analysis uses per-clip chrF++, so its mean gaps and confidence
+intervals must not be labelled as differences in corpus chrF++ or BLEU.
+
+Normalized Whisper WER is **5.97% at corpus level**, versus **6.32% when
+averaging per-clip WER**. Both cascades have the same WER because their ASR
+transcripts are identical. Normalization lowercases text, removes punctuation,
+and collapses whitespace. WER is an ASR diagnostic; Direct has no intermediate
+transcript to score.
+
+### Statistical analysis
+
+[`09_statistical_analysis.ipynb`](notebooks/09_statistical_analysis.ipynb)
+implements paired, accent-stratified bootstrap analysis with seed 760,
+1,000 resamples, and 95% percentile intervals. It reports speaker-cluster
+resampling and clip-level sensitivity results, accent means and spreads,
+Spearman associations, Kruskal–Wallis tests, Dunn comparisons with Holm
+correction, and paired Wilcoxon tests at clip and speaker levels.
+
+The tracked [`intervals_long.csv`](runs/statistical_analysis_results/intervals_long.csv)
+reports these overall **mean sentence chrF++** gaps with speaker-clustered
+intervals. Positive gaps favour the first named system.
+
+| Paired comparison | Mean gap | 95% confidence interval |
+|---|---:|---:|
+| Direct − Cascade-600M | +7.00 | +6.45 to +7.60 |
+| Direct − Cascade-3.3B | +4.99 | +4.39 to +5.70 |
+| Cascade-3.3B − Cascade-600M | +2.01 | +1.61 to +2.42 |
+
+Speaker-clustered Direct-minus-Cascade intervals are also positive within all
+seven accents. The saved speaker-level Kruskal–Wallis tests show variation in
+these gaps across accents (`p=0.0015` for 600M; `p=0.0087` for 3.3B), with
+small reported effect sizes. However, the intervals for differences in
+between-accent score spread include zero. These results support a system-score
+advantage on this set, but do not establish that Direct is more accent-robust
+under the spread measure. See
+[`accent_means_ci.csv`](runs/statistical_analysis_results/accent_means_ci.csv) and
+[`tests.csv`](runs/statistical_analysis_results/tests.csv).
+
+The tracked [`spearman.csv`](runs/statistical_analysis_results/spearman.csv)
+reports weak negative associations between normalized WER and cascade sentence
+chrF++ (`rho=-0.188` for 600M; `rho=-0.196` for 3.3B). Higher WER is also
+associated with a wider Direct-minus-Cascade gap. These are associations,
+not proof of causal ASR-error propagation.
+
+The statistical CSVs are saved evidence; notebook 09 has no retained execution
+outputs. Speaker resampling accounts for repeated speakers, but not jointly
+for repeated sentence content. Speaker-level rank tests use speaker means,
+whereas the main bootstrap estimates remain weighted by clip counts.
+Exploratory tests and their correction scope should be stated when reporting
+findings. The planned `<unk>`-free interval file is not included in the tracked
+statistical results.
 
 ## Current project status
 
 | Stage | Status | Evidence in repository |
 |---|---|---|
-| Research proposal | Complete | `9_Proposal.pdf` |
-| Seven-group frozen sample | Complete locally; Git-ignored | `data/final_sample/` |
-| Seven-clip engineering pilot | Complete | Executed `create_pilot_samples.ipynb` |
-| 35-clip hardware timing pilot | Complete | Notebook plus archived TPU/T4 artifacts |
-| Direct inference, 4,200 clips | Complete; 4,200/4,200 successful | `runs/direct_full_run_1788151795/` |
-| Cascaded 600M baseline, 4,200 clips | Complete; 4,200/4,200 successful | `runs/cascade_full_run_1788146589/` |
-| Cascaded 3.3B inference, 4,200 clips | Complete; 4,200/4,200 successful | `runs/cascade_full_run_1790228071/` |
-| Direct `<unk>` investigation | Complete diagnostic and two 35-clip sensitivity experiments | Notebooks 05–07 and investigation log |
-| Direct/Cascade output combination | Executed for the older 600M run; 3.3B integration pending | `combine_translation_outputs.ipynb` |
-| Full-dataset WER, chrF++, and BLEU calculation | **Not present**; subset sensitivity scores available | Full evaluation notebook still required |
-| Confidence intervals / statistical tests | **Not present** | Statistical-analysis notebook still required |
-| Accent-level interpretation | **Not started in tracked artifacts** | Depends on verified metrics/statistics |
-| Literature survey | Member sections and group synthesis integrated | `literature_review/latex/` |
+| Research proposal | Tracked PDF available | [9_Proposal.pdf](presentation/9_Proposal.pdf) |
+| Seven-group frozen sample | Complete locally; Git-ignored | `data/final_sample/` and preprocessing notebooks 01–02 |
+| Seven-clip engineering pilot | Saved execution available | `create_pilot_samples.ipynb` |
+| 35-clip hardware timing pilot | Archived feasibility results | `timing_test_pipelines.ipynb`, `runs/pilot_run_colab_tpu.zip` |
+| Direct inference, 4,200 clips | 4,200/4,200 successful | `runs/direct_full_run_1788151795/` |
+| Cascaded 600M inference, 4,200 clips | 4,200/4,200 successful | `runs/cascade_full_run_1788146589/` |
+| Cascaded 3.3B inference, 4,200 clips | 4,200/4,200 successful | `runs/cascade_full_run_1790228071/` |
+| Three-system WER and translation evaluation | Saved outputs and 4,200-row metric table available | Notebook 08, `runs/08_evaluation.pdf`, `runs/merged_3system_with_metrics.csv` |
+| Confidence intervals and statistical tests | Code and four result CSVs available; notebook execution outputs absent | Notebook 09, `runs/statistical_analysis_results/` |
+| Earlier Direct `<unk>` diagnostics | Full-run audit and two 35-clip sensitivity experiments archived | Notebooks 05–07 and investigation log |
+| Further Direct `<unk>` analysis | Four notebooks, four scripts, and archived results available | `unk_analysis/` |
+| Legacy two-system merge | Saved execution selects 600M; three-system evaluation loads 3.3B separately | `combine_translation_outputs.ipynb` |
+| Literature survey | All thematic sections and group synthesis integrated | `literature_review/latex/` |
 | Method/results presentation | Tracked PDF available | `presentation/9_MethodResults.pdf` |
+
+The current work is interpretation, reproducibility checks, and final reporting.
+Full evaluation and statistics are no longer missing stages.
 
 ## Notebooks
 
-The notebooks contain saved outputs from their latest executions. They are
-workflow records as well as executable code, so review the configuration cell
-before rerunning one.
+Several notebooks retain saved execution outputs; others provide code without
+execution outputs, including notebook 09 and the supplementary diagnostics.
+Review each notebook's configuration, paths, and archived results before
+rerunning it.
 
 | Notebook | Purpose | Expected working directory |
 |---|---|---|
 | [`01_data_preprocessing.ipynb`](notebooks/01_data_preprocessing.ipynb) | Prepares and samples the source data; requires local source datasets. | Review notebook paths |
 | [`02_audio_extraction.ipynb`](notebooks/02_audio_extraction.ipynb) | Extracts selected audio from the source archive. | Review notebook paths |
 | [`create_pilot_samples.ipynb`](notebooks/create_pilot_samples.ipynb) | Validates the frozen 7 x 600 dataset and creates a duration-varied, speaker-diverse pilot. The current code/output selects 1 clip per group (7 total). | Repository root or `notebooks/` |
-| [`timing_test_pipelines.ipynb`](notebooks/timing_test_pipelines.ipynb) | Runs a 35-clip timing feasibility comparison and estimates full-run duration. It is not a translation-quality evaluation. | Repository root / Colab project root |
+| [`timing_test_pipelines.ipynb`](notebooks/timing_test_pipelines.ipynb) | Runs a 35-clip timing feasibility comparison and estimates full-run duration. It is not a translation-quality evaluation. | `notebooks/`; pilot paths under `data/timing_test_audio/` |
 | [`03_direct_pipeline.ipynb`](notebooks/03_direct_pipeline.ipynb) | Runs frozen SeamlessM4T inference, checkpoints predictions, records timing/environment/configuration, and validates output integrity. | Repository root; `PROJECT_ROOT = Path.cwd()` |
 | [`04_cascaded_pipeline.ipynb`](notebooks/04_cascaded_pipeline.ipynb) | Runs staged Whisper then NLLB inference with checkpointing, separate ASR/MT diagnostics, and final integrity checks. | Repository root; `PROJECT_ROOT = Path.cwd()` |
 | [`combine_translation_outputs.ipynb`](notebooks/combine_translation_outputs.ipynb) | Validates identical run samples and shared metadata, then combines `asr_transcript`, `cascade_translation`, and `direct_translation` by unique `id`. It does not score them. | `notebooks/` |
 | [`05_direct_unk_diagnostic.ipynb`](notebooks/05_direct_unk_diagnostic.ipynb) | Audits literal `<unk>` frequency, repeated content, and tokenizer behaviour. | Review notebook paths |
 | [`06_direct_unk_sensitivity.ipynb`](notebooks/06_direct_unk_sensitivity.ipynb) | Tests greedy/beam-5 decoding and special-UNK suppression; saves generated token IDs and subset metrics. | Review notebook paths |
 | [`07_direct_literal_unk_blocking_sensitivity.ipynb`](notebooks/07_direct_literal_unk_blocking_sensitivity.ipynb) | Tests blocking ordinary token sequences spelling `<unk>` and compares changed outputs. | Review notebook paths |
+| [`08_evaluation.ipynb`](notebooks/08_evaluation.ipynb) | Computes normalized/raw WER, corpus and sentence translation metrics, accent tables, three-system gaps, and literal `<unk>` flags. | Uses GitHub CSV URLs; saves tables in the current directory |
+| [`09_statistical_analysis.ipynb`](notebooks/09_statistical_analysis.ipynb) | Paired speaker/clip bootstrap, accent comparisons, Spearman associations, and rank tests. | Repository root recommended; reads `runs/merged_3system_with_metrics.csv` |
 | [`copy_from_colab.ipynb`](notebooks/copy_from_colab.ipynb) | Colab helper that mounts Drive and archives `/content/runs`, `/content/outputs`, and `/content/results`. | Google Colab |
 
 ### Recommended execution order
@@ -303,10 +387,12 @@ before rerunning one.
 5. Freeze model revisions and decoding settings.
 6. Run both pipelines with `DATASET_MODE = "final"`.
 7. Preserve the run directories and their JSON fingerprints.
-8. Select the intended Cascaded run in `combine_translation_outputs.ipynb`
-   (it currently points to the 600M baseline), then run it from `notebooks/`.
-   Preserve separate, clearly labelled combined outputs for each model variant.
-9. Implement and run the missing evaluation and statistical-analysis stages.
+8. If a separate two-system merged dataset is needed, select the intended
+   Cascaded run in `combine_translation_outputs.ipynb` (currently 600M) and run
+   it from `notebooks/`. Notebook 08 can load the three prediction files directly.
+9. Run notebook 08 for three-system evaluation, preserve its metric table under
+   `runs/`, then run notebook 09 for paired statistics. Follow the path and
+   dependency notes below.
 
 The completed full runs do not need to be repeated unless the frozen data,
 models, decoding policy, or research design changes.
@@ -318,8 +404,114 @@ successful combination, while the model prediction CSVs in `runs/` remain the
 reconstructable inputs.
 
 The saved combination notebook still selects `cascade_full_run_1788146589`.
-Do not describe its combined output as using NLLB 3.3B until the input path is
-updated and the combination is rerun and validated.
+That legacy combined output uses NLLB 600M. Notebook 08 separately loads and
+validates both cascades, so the tracked three-system metric table already
+includes 3.3B and does not depend on updating the legacy merger.
+
+## Reproducing the results
+
+### Review or rescore saved predictions without a GPU
+
+A fresh clone includes the prediction CSVs, the three-system metric table,
+and the four statistical result CSVs. Audio and model weights are not needed
+to inspect these results or recalculate translation scores.
+
+From the repository root, use a Python environment with:
+
+```bash
+python -m pip install pandas numpy sacrebleu==2.6.0 jiwer scipy matplotlib seaborn tabulate jupyter
+```
+
+The following CPU-only check reproduces the overall translation table from
+the tracked predictions in the merged CSV. It does not run model inference or
+write over saved results:
+
+```python
+import pandas as pd
+from sacrebleu.metrics import BLEU, CHRF
+
+df = pd.read_csv("runs/merged_3system_with_metrics.csv")
+assert len(df) == 4200 and df["id"].is_unique
+refs = [df["reference_translation_zh"].tolist()]
+metrics = {
+    "BLEU": BLEU(tokenize="zh"),
+    "chrF": CHRF(word_order=0, beta=2),
+    "chrF++": CHRF(word_order=2, beta=2),
+}
+columns = {
+    "Direct": "direct_translation",
+    "Cascade-600M": "cascade_600m_translation",
+    "Cascade-3.3B": "cascade_33b_translation",
+}
+for system, column in columns.items():
+    scores = {
+        name: round(metric.corpus_score(df[column].tolist(), refs).score, 2)
+        for name, metric in metrics.items()
+    }
+    print(system, scores)
+for name, metric in metrics.items():
+    print(name, metric.get_signature())
+```
+
+### Recalculate evaluation and statistical tables
+
+1. Open [`08_evaluation.ipynb`](notebooks/08_evaluation.ipynb). Its input cells
+   currently read prediction CSVs from GitHub `main`. For an offline or fixed-
+   checkout replay, replace `direct_url`, `cascade_url`, and `cascade_33b_url`
+   with the corresponding local CSV paths listed in [completed runs](#completed-run-artifacts).
+   Check one-to-one IDs, shared source/reference fields, and dataset fingerprints
+   before merging.
+2. Run the analysis cells through **Final check + save analysis dataframe**.
+   The first GPU-information cell is informational; CPU scoring needs no
+   models. It can be skipped if PyTorch is not installed. The final clone,
+   Git-status, and Colab-export cells are housekeeping and are unnecessary for
+   local evaluation. The analysis writes `merged_3system_with_metrics.csv`
+   and `table_*.csv` in the current working directory; use a separate replay
+   directory and compare results before replacing archived files.
+3. Open [`09_statistical_analysis.ipynb`](notebooks/09_statistical_analysis.ipynb)
+   with the kernel working directory at the repository root. Install **SciPy**
+   as above and skip its first `%pip install numpy pandas scip` cell: `scip`
+   is a dependency-name typo, while the code imports `scipy`. Set `DATA_FILE`
+   to the selected metric CSV and `OUTPUT_DIR` to a new directory such as
+   `PROJECT_ROOT / "tmp" / "statistical_analysis_replay"`. Execute the remaining
+   cells in order; the final cell sets `sys.argv` and calls `main()`.
+4. Compare the regenerated `intervals_long.csv`, `accent_means_ci.csv`,
+   `spearman.csv`, and `tests.csv` with the tracked statistical results.
+   The code additionally writes `intervals_unk_free.csv`, which is currently
+   absent from the tracked results. The notebook's opening text mentions
+   `statistical_analysis.py`, but no standalone file with that name is provided;
+   notebook 09 is the replication entry point.
+
+Record dependency versions, metric signatures, selected input files, seed,
+and bootstrap count with every replay. The three-system table's WER value is
+mean per-clip WER; use pooled word errors for corpus WER.
+
+### Repeat model inference or further diagnostics
+
+For a new inference run, provide the local frozen dataset and follow
+[`README-running-pipelines.md`](README-running-pipelines.md) for Colab setup,
+Drive transfer, pilot validation, full inference, resuming, and archiving.
+Use the saved model revisions and keep new outputs in a new run directory.
+The current Cascade notebook uses 3.3B; reproducing the historical 600M run
+requires its model ID and resolved revision from the archived configuration.
+
+For further `<unk>` analysis, follow [`unk_analysis/README.md`](unk_analysis/README.md).
+Its saved-result summaries can run on CPU from the repository root:
+
+```bash
+python -m pip install numpy pandas scipy statsmodels matplotlib spacy wordfreq
+python -m spacy download en_core_web_sm
+python unk_analysis/scripts/accent_rate.py
+python unk_analysis/scripts/word_type.py
+python unk_analysis/scripts/decode_summary.py
+python unk_analysis/scripts/trigger_words.py
+```
+
+These scripts write into `unk_analysis/results/`; preserve the archived files
+or run in a separate checkout when comparing a replay. The four supplementary
+notebooks rerun model-based diagnostics on Colab and have their own input,
+Drive-path, smoke-test, and resume settings. Notebook 2 needs private audio;
+the text-only, decoding-probability, and word-removal checks use text inputs.
 
 ## Completed run artifacts
 
@@ -418,6 +610,33 @@ not establish full-dataset effects or the model's internal cause. The official
 4,200 Direct predictions remain unchanged. See the
 [investigation log](SeamlessM4T_UNK_Investigation_Log.md) for evidence and limits.
 
+### Further checks in `unk_analysis/`
+
+The newer [`unk_analysis/`](unk_analysis/) work extends the earlier investigation
+with text-only translation, a balanced 700-clip speech/special-token check,
+decoding probabilities, word removal, and CPU analyses of accent and word type.
+
+- Text input produces literal `<unk>` in **528/4,200 outputs (12.57%)**;
+  88.4% of speech-affected clips are also affected with the reference English
+  text. Audio is therefore not required to reproduce many affected outputs.
+- In the 700-clip speech check, **74 clips (10.57%)** contain the hidden special
+  UNK ID. This differs from the visible marker and from the earlier 35-clip
+  subset, which had no special UNK IDs. The folder reports that these hidden
+  tokens mostly concern punctuation at sentence ends.
+- Sentence-level proper-noun presence has the same visible-marker rate in both
+  groups (12.1%). Rarer content words show a stronger descriptive association:
+  31.3% in the very-rare-word bin versus 5.1% in the common-word bin.
+- The accent-only logistic model clustered by speaker reports `p=0.5006` for
+  the joint accent terms. This does not establish equal rates, and concerns
+  marker frequency rather than overall accent robustness.
+
+These are post-hoc diagnostics. Text-based probability and word-removal tests
+are not equivalent to speech-path tests, and word removal changes meaning.
+Some narrative statistics in the supplementary README are not reproduced by
+its four scripts; consult its limitations before reusing them. Neither the
+hidden special token nor a proper-noun example proves the cause of the visible
+marker. The original Direct predictions remain the benchmark output.
+
 ## Literature survey
 
 The literature survey is a separate COMPSCI 760 deliverable organized as a
@@ -427,15 +646,13 @@ thematic IEEE conference paper rather than five disconnected paper summaries.
 literature_review/
 ├── assignment_instructions.md
 ├── team_plan.md
-├── IEEE-conference-template-062824/   # local official template; ignored
-├── member_1/                          # local notes/sources; ignored
+├── IEEE-conference-template-062824/   # local; ignored
+├── member_1/ ... member_5/            # local notes/sources; ignored
 └── latex/
     ├── main.tex
     ├── references.bib
     ├── README.md
-├── README-running-pipelines.md
-├── SeamlessM4T_UNK_Investigation_Log.md
-├── presentation/9_MethodResults.pdf
+    ├── .latexmkrc
     ├── figures/
     └── sections/
         ├── abstract.tex
@@ -477,33 +694,35 @@ The assignment permits limited generative-AI assistance but requires each
 author to locate, read, verify, and synthesize every paper they cite. The final
 AI Use Statement must describe actual use accurately.
 
-## Team
+## Team-member contributions
 
-The proposal records these project-execution responsibilities:
+The table summarises recorded project and literature-survey contributions.
+Additional work can be added as it is completed; leave unknown names or
+unrecorded contributions blank.
 
-| Team member | Proposal responsibility |
-|---|---|
-| Arizona Xing | Dataset preparation and balanced evaluation-set construction |
-| Zhitong Li | Dataset support, accent-ASR literature, and final interpretation |
-| Nathan Naylin | Direct/Cascaded pipelines and architecture literature |
-| Patricia Jennesha | WER, chrF++, BLEU, and accent-level evaluation |
-| Jidni Mayukh | Association analysis and system-gap statistical analysis |
+| Team member | Project contributions | Literature-survey contributions |
+|---|---|---|
+| Arizona Xing | Prepared the evaluation dataset and investigated Direct `<unk>` generation.<br><br><strong>Task 1: Dataset preparation</strong><ul><li>Matched Chinese references, filtered clips, capped speaker contributions, and sampled 600 clips per accent.</li><li>Extracted selected recordings and prepared the 35-clip timing subset.</li><li>Files:<ul><li>[01_data_preprocessing.ipynb](notebooks/01_data_preprocessing.ipynb)</li><li>[02_audio_extraction.ipynb](notebooks/02_audio_extraction.ipynb)</li></ul></li></ul><strong>Task 2: Further Direct `<unk>` analysis</strong><ul><li>Compared literal `<unk>` generation from English reference sentences and Whisper transcripts.</li><li>Inspected visible markers and hidden special UNK IDs in a balanced 700-clip speech sample.</li><li>Compared token probabilities, entropy, and alternative candidates at marker-generation steps.</li><li>Removed individual English words and compared influential words with controls.</li><li>Analysed trigger-word frequency and word class.</li><li>Analysed marker rates across accents with speaker-clustered uncertainty.</li><li>Examined associations with word frequency and proper-noun presence.</li><li>Files:<ul><li>[1_text_only_test.ipynb](unk_analysis/notebooks/1_text_only_test.ipynb)</li><li>[2_speech_special_token_check.ipynb](unk_analysis/notebooks/2_speech_special_token_check.ipynb)</li><li>[3_decode_probabilities.ipynb](unk_analysis/notebooks/3_decode_probabilities.ipynb)</li><li>[decode_summary.py](unk_analysis/scripts/decode_summary.py)</li><li>[4_word_removal.ipynb](unk_analysis/notebooks/4_word_removal.ipynb)</li><li>[trigger_words.py](unk_analysis/scripts/trigger_words.py)</li><li>[accent_rate.py](unk_analysis/scripts/accent_rate.py)</li><li>[word_type.py](unk_analysis/scripts/word_type.py)</li></ul></li><li>Results:<ul><li>[text_only/](unk_analysis/results/text_only/)</li><li>[special_token/](unk_analysis/results/special_token/)</li><li>[decode_probs/](unk_analysis/results/decode_probs/)</li><li>[word_removal/](unk_analysis/results/word_removal/)</li><li>[accent/](unk_analysis/results/accent/)</li><li>[word_type/](unk_analysis/results/word_type/)</li></ul></li></ul> | <ul><li>Reviewed Direct and Cascaded speech-translation architectures, ASR-to-MT error propagation, and system comparisons.</li><li>Drafted the Speech Translation Architectures and System Comparisons section.</li><li>Compared training resources and evaluation conditions across studies and designed the architecture comparison figure.</li></ul> |
+| Zhitong Li | Performed statistical comparisons and maintained the shared metric table.<br><br><strong>Task 1: Statistical analysis and evaluation data</strong><ul><li>Implemented paired speaker/clip bootstrap intervals and accent-level comparisons.</li><li>Calculated Spearman associations between WER, translation quality, and system gaps.</li><li>Ran rank tests and produced confidence-interval, accent-mean, correlation, and test tables.</li><li>Updated the shared three-system metric table used by the statistical analysis.</li><li>Files:<ul><li>[09_statistical_analysis.ipynb](notebooks/09_statistical_analysis.ipynb)</li></ul></li><li>Results:<ul><li>[statistical_analysis_results/](runs/statistical_analysis_results/)</li><li>[intervals_long.csv](runs/statistical_analysis_results/intervals_long.csv)</li><li>[accent_means_ci.csv](runs/statistical_analysis_results/accent_means_ci.csv)</li><li>[spearman.csv](runs/statistical_analysis_results/spearman.csv)</li><li>[tests.csv](runs/statistical_analysis_results/tests.csv)</li><li>[merged_3system_with_metrics.csv](runs/merged_3system_with_metrics.csv)</li></ul></li></ul> | <ul><li>Reviewed accent-related ASR performance, seen/unseen-accent generalisation, and mitigation.</li><li>Drafted the Accent Robustness in Speech Processing section.</li><li>Synthesised evidence on commercial ASR disparities, accent-specific codebooks, contrastive regularisation, and fairness-aware fine-tuning.</li></ul> |
+| Nathan Naylin | Implemented and ran the translation pipelines, pilots, and earlier `<unk>` experiments.<br><br><strong>Task 1: Pipeline implementation and execution</strong><ul><li>Validated pilot selection and prepared a small engineering test set.</li><li>Measured Direct/Cascaded runtime and hardware feasibility on 35 clips.</li><li>Ran frozen SeamlessM4T on 4,200 clips with checkpointing, runtime logging, and output validation.</li><li>Ran staged Whisper → NLLB inference with both 600M and 3.3B translation models.</li><li>Validated and merged Direct/600M predictions by clip ID.</li><li>Created the Colab output-archiving helper.</li><li>Files:<ul><li>[create_pilot_samples.ipynb](notebooks/create_pilot_samples.ipynb)</li><li>[timing_test_pipelines.ipynb](notebooks/timing_test_pipelines.ipynb)</li><li>[03_direct_pipeline.ipynb](notebooks/03_direct_pipeline.ipynb)</li><li>[04_cascaded_pipeline.ipynb](notebooks/04_cascaded_pipeline.ipynb)</li><li>[combine_translation_outputs.ipynb](notebooks/combine_translation_outputs.ipynb)</li><li>[copy_from_colab.ipynb](notebooks/copy_from_colab.ipynb)</li></ul></li><li>Results:<ul><li>[pilot_run_colab_tpu.zip](runs/pilot_run_colab_tpu.zip)</li><li>[direct_full_run_1788151795/](runs/direct_full_run_1788151795/)</li><li>[cascade_full_run_1788146589/](runs/cascade_full_run_1788146589/)</li><li>[cascade_full_run_1790228071/](runs/cascade_full_run_1790228071/)</li></ul></li></ul><strong>Task 2: Earlier Direct `<unk>` investigation</strong><ul><li>Audited full-run marker frequency, accent/content patterns, and tokenizer behaviour.</li><li>Tested greedy/beam decoding and special-token suppression on 35 affected clips.</li><li>Tested literal-marker token constraints and compared changed outputs and quality scores.</li><li>Files:<ul><li>[05_direct_unk_diagnostic.ipynb](notebooks/05_direct_unk_diagnostic.ipynb)</li><li>[06_direct_unk_sensitivity.ipynb](notebooks/06_direct_unk_sensitivity.ipynb)</li><li>[07_direct_literal_unk_blocking_sensitivity.ipynb](notebooks/07_direct_literal_unk_blocking_sensitivity.ipynb)</li></ul></li><li>Results:<ul><li>[direct_unk_diagnostic_1789953533/](runs/direct_unk_diagnostic_1789953533/)</li><li>[direct_unk_sensitivity_1789954497/](runs/direct_unk_sensitivity_1789954497/)</li><li>[direct_literal_unk_blocking_1789970452/](runs/direct_literal_unk_blocking_1789970452/)</li></ul></li></ul><strong>Task 3: Project documentation</strong><ul><li>Documented project status, pipeline execution, and the earlier marker investigation.</li><li>Files:<ul><li>[README.md](README.md)</li><li>[README-running-pipelines.md](README-running-pipelines.md)</li><li>[SeamlessM4T_UNK_Investigation_Log.md](SeamlessM4T_UNK_Investigation_Log.md)</li></ul></li></ul> | <ul><li>Reviewed accent-labelled datasets, speech-translation data, and reference quality.</li><li>Drafted the dataset-design portion of Evaluation Data and Methodological Evidence.</li><li>Organised the survey and integrated member-authored sections.</li><li>Standardised terminology and formatting, removed duplication, and checked citations and rubric requirements.</li></ul> |
+| Patricia Jennesha | Developed the quality-evaluation notebook and compared system performance by accent.<br><br><strong>Task 1: System and accent-level evaluation</strong><ul><li>Calculated raw/normalised WER, Chinese-tokenised BLEU, chrF, and chrF++.</li><li>Compared Direct/Cascaded translations and preserved the evaluation report and metric table.</li><li>Compared corpus and sentence-average translation scores across accent groups.</li><li>Compared WER and Direct/Cascade translation gaps by accent.</li><li>Files:<ul><li>[08_evaluation.ipynb](notebooks/08_evaluation.ipynb)</li></ul></li><li>Results:<ul><li>[runs/](runs/)</li><li>[merged_3system_with_metrics.csv](runs/merged_3system_with_metrics.csv)</li><li>[08_evaluation.pdf](runs/08_evaluation.pdf)</li></ul></li></ul> | <ul><li>Reviewed ASR-error propagation, phonetic ASR errors, speech-model robustness, and accent-related downstream errors.</li><li>Drafted the Accent Robustness in Speech Translation section.</li><li>Assessed the relevance and limitations of existing evidence and the proposed gap in matched Direct/Cascaded evaluation.</li></ul> |
+| Jidni Mayukh |  | <ul><li>Reviewed translation metrics and statistical significance testing.</li><li>Drafted the Evaluation Metrics and Statistical Reliability and Controlled Evaluation subsections.</li><li>Covered WER, BLEU, chrF/chrF++, score comparability, paired comparisons, bootstrap uncertainty, and speaker/content dependence.</li></ul> |
 
-All members share progress review, interpretation, report writing,
-presentation preparation, and final checking. Literature-survey ownership uses
-a different member numbering and division; follow
-[`literature_review/team_plan.md`](literature_review/team_plan.md) for that
-deliverable.
+Proposal role numbering and literature-survey role numbering differ. Use the
+named contributions above and [`literature_review/team_plan.md`](literature_review/team_plan.md)
+for the survey's division of work. Shared interpretation, presentation work,
+and any additional contributions should be recorded by the team as they are
+completed; Git history alone does not capture all collaborative work.
+
+
 
 ## Actual repository structure
 
 ```text
 .
-├── 9_Proposal.pdf
 ├── README.md
 ├── README-running-pipelines.md
 ├── SeamlessM4T_UNK_Investigation_Log.md
-├── presentation/9_MethodResults.pdf
 ├── notebooks/
 │   ├── 01_data_preprocessing.ipynb
 │   ├── 02_audio_extraction.ipynb
@@ -514,6 +733,8 @@ deliverable.
 │   ├── 05_direct_unk_diagnostic.ipynb
 │   ├── 06_direct_unk_sensitivity.ipynb
 │   ├── 07_direct_literal_unk_blocking_sensitivity.ipynb
+│   ├── 08_evaluation.ipynb
+│   ├── 09_statistical_analysis.ipynb
 │   ├── combine_translation_outputs.ipynb
 │   └── copy_from_colab.ipynb
 ├── runs/
@@ -523,27 +744,52 @@ deliverable.
 │   ├── cascade_full_run_1790228071/
 │   ├── direct_unk_diagnostic_1789953533/
 │   ├── direct_unk_sensitivity_1789954497/
-│   └── direct_literal_unk_blocking_1789970452/
-├── data/                              # local and Git-ignored
-│   └── final_sample/
+│   ├── direct_literal_unk_blocking_1789970452/
+│   ├── 08_evaluation.pdf
+│   ├── merged_3system_with_metrics.csv
+│   └── statistical_analysis_results/   # four tracked CSVs
+├── unk_analysis/
+│   ├── README.md
+│   ├── notebooks/                     # four model-based diagnostics
+│   ├── scripts/                       # four CPU analysis scripts
+│   └── results/                       # CSVs, JSON records, and figures
+├── presentation/
+│   ├── 9_MethodResults.pdf            # tracked
+│   ├── 9_Proposal.pdf                 # tracked
+│   ├── update_1/                      # local drafts/notes; ignored
+│   └── update_2/                      # local assignment instructions; ignored
+├── data/                              # local; ignored
+│   ├── final_sample/
+│   ├── pilot_sample/
+│   └── full_translated_sample/
 └── literature_review/
     ├── assignment_instructions.md
     ├── team_plan.md
-    ├── IEEE-conference-template-062824/  # local and ignored
-    ├── member_1/                         # local and ignored
+    ├── IEEE-conference-template-062824/  # local; ignored
+    ├── member_1/ ... member_5/            # local; ignored
     └── latex/
 ```
 
-The repository currently has no `src/`, `configs/`, `scripts/`, `tests/`,
-central `requirements.txt`, or dependency lockfile. Do not rely on paths for
-those components unless they are added later.
+There is no central `requirements.txt`, dependency lockfile, root `src/`, or
+root test suite. Analysis scripts live under `unk_analysis/scripts/`; the
+main inference/evaluation/statistics workflow is notebook-based.
+
+The updated [.gitignore](.gitignore) allows presentation files outside
+`presentation/update_1/` and `presentation/update_2/` to be tracked. Both
+[9_Proposal.pdf](presentation/9_Proposal.pdf) and
+[9_MethodResults.pdf](presentation/9_MethodResults.pdf) are tracked; the two
+update directories remain ignored. Local datasets, source-paper notes, the
+IEEE template, generated literature-survey PDFs, and presentation drafts in
+those update directories are excluded from fresh clones.
 
 ## Environment and reproducibility
 
 The model notebooks install their own dependencies, including Transformers,
 PyTorch, torchaudio, pandas, NumPy, SentencePiece, Matplotlib, tqdm, psutil,
-`huggingface_hub`, `hf_xet`, and `torchcodec`. A CUDA GPU is strongly
-recommended for the large models. Model downloads require substantial disk
+`huggingface_hub`, `hf_xet`, and `torchcodec`. Evaluation uses SacreBLEU and
+jiwer; statistics uses SciPy; further diagnostics add statsmodels, spaCy, and
+wordfreq. A CUDA GPU is strongly recommended for the large models.
+Model downloads require substantial disk
 space and access to Hugging Face.
 
 There is no repository-wide locked environment. For an exact comparison with
@@ -551,31 +797,53 @@ the completed runs, use the versions and model commit SHAs recorded in each
 run's `run_environment.json` and `run_config.json`. Preserve a new run in a new
 directory rather than overwriting the completed artifacts.
 
-## Known inconsistencies and next work
+## Limitations and remaining work
 
-1. **Proposal versus implementation:** the proposal's 5 x 600 design was
-   expanded to the implemented 7 x 600 design. Use 4,200, not 3,000, for all
-   current analysis and reporting.
-2. **Missing full evaluation stage:** subset translation metrics exist in
-   notebooks 06–07, but full-dataset WER/translation scores, uncertainty,
-   statistical tests, and WER/translation-score associations remain pending.
-3. **Identifier wording:** old markdown in the Direct notebook says
-   `sample_id` is unique. The data and current code show that it is a repeating
-   speaker identifier. The generated `id` is the unique clip-level pairing
-   key.
-4. **Pilot documentation:** `create_pilot_samples.ipynb` describes a three-per-
-   group default in markdown, but its current configuration and saved output
-   use one per group.
-5. **Git provenance:** the completed Colab run records have exact model and
-   data fingerprints but no Git commit SHA.
-6. **Local-only data products:** the frozen sample, combined translation file,
-   Member 1 source PDFs/notes, IEEE template, and generated LaTeX PDF are
-   ignored and will not appear in a fresh clone.
-7. **Cascaded model selection:** the inference notebook now uses NLLB 3.3B,
-   while the combination notebook still selects the 600M baseline. Update and
-   validate the chosen inputs before evaluation; label both variants explicitly.
+1. **Scope:** results concern these pretrained systems, seven self-reported
+   accent groups, and English-to-Simplified-Chinese translation. Model families,
+   training resources, capacity, and objectives differ; architecture and accent
+   cannot be assigned sole causal responsibility for score differences.
+2. **Speaker and content dependence:** 600 clips per accent does not mean 600
+   independent speakers. The main bootstrap clusters speakers, but repeated
+   sentences/references and recording conditions remain potential confounders.
+   Clip-level tests should be treated as sensitivity analyses.
+3. **Metric interpretation:** automatic scores use one reference per clip and
+   do not establish human translation quality. Report corpus and sentence means
+   separately, distinguish micro and macro WER, and record metric signatures.
+   The main statistical intervals concern mean sentence chrF++, not corpus BLEU.
+4. **Reproduction gaps:** notebook 09's installation cell has the `scip` typo,
+   its execution outputs are absent, and `intervals_unk_free.csv` is not tracked.
+   Notebook 08 uses mutable GitHub `main` URLs, writes to its current directory,
+   and retains earlier narrative sections that predate later analysis. Its
+   original proper-noun/vocabulary explanation is a hypothesis, not a verified
+   mechanism. Some newer `<unk>` write-up statistics lack replication code.
+5. **Legacy notebook wording:** the Direct notebook's introductory metadata
+   notes call `sample_id` unique; current code uses it as a repeating speaker
+   identifier. The pilot notebook describes a three-per-group default but is
+   configured for one per group. The merge notebook still selects 600M even
+   though the three-system evaluation already includes 3.3B.
+6. **Provenance and access:** Colab full runs record model/data fingerprints but
+   no Git commit SHA. Audio and several supporting documents are local-only;
+   reproducible new inference requires the same frozen data and row order.
+7. **Final reporting:** reconcile older presentation drafts with the current
+   artifacts, record actual member contributions and feedback responses, and
+   report the `<unk>` sensitivity work separately from the frozen benchmark.
+   Preserve original predictions and do not report post-hoc decoding changes as
+   a validated repair.
 
-The immediate research milestone is to integrate the latest Cascaded run and
-implement reproducible full-dataset evaluation, followed by speaker-aware
-paired statistical analysis and accent-level interpretation. Keep the original
-Direct outputs and report the post-hoc sensitivity experiments separately.
+## Project work and external resources
+
+The repository contains the team's data-preparation, inference-orchestration,
+evaluation, statistical-analysis, and diagnostic code and resulting artifacts.
+Pretrained SeamlessM4T, Whisper, and NLLB models, Common Voice recordings and
+metadata, CoVoST 2 translation references, and library implementations are
+external resources. The team did not train these models or author the source
+dataset/reference translations.
+
+Literature and metric references are recorded in
+[`references.bib`](literature_review/latex/references.bib). The supplementary
+[`unk_analysis/README.md`](unk_analysis/README.md) distinguishes its own results
+from external context. The survey's
+[AI Use Statement](literature_review/latex/sections/ai_use_statement.tex)
+and supplementary README record AI assistance; claims and results remain the
+responsibility of their contributors.
