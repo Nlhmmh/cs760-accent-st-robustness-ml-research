@@ -1,6 +1,7 @@
 """Direct <unk>: what kind of English words trigger it? (follow-up to the word-removal test, notebooks/4_word_removal.ipynb)
 Inputs : results/word_removal/occlusion_sentences.csv and occlusion_words.csv (written by notebooks/4_word_removal.ipynb)
 Outputs: unk_trigger_summary.csv, unk_trigger_words.csv, unk_trigger.png
+The summary also holds the share of sentences where <unk> disappears (top word vs random word; all sentences and the matched subset).
 Sentence-level bootstrap (seed 760, 1,000 resamples) for the main comparisons.
 """
 from pathlib import Path
@@ -77,6 +78,21 @@ rng = np.random.default_rng(760); sids = pair.index.values; d = []
 for _ in range(1000):
     b = pair.loc[rng.choice(sids, len(sids))]; d.append((b.t - b.o).median())
 lo, mid, hi = np.percentile(d, [2.5, 50, 97.5]); add("median Zipf gap (trigger minus other words), bootstrap 95% CI", mid, f"[{lo:.2f}, {hi:.2f}]")
+
+# ---- 4. does removing the top word make <unk> disappear? All sentences, and the subset where the random word is a content word
+from statsmodels.stats.proportion import proportion_confint
+stop_of = W.groupby(["sid", "word"]).is_stop.agg(["min", "max"])     # is_stop of the random word, looked up by its text
+assert (stop_of["min"] == stop_of["max"]).all()
+R = A.merge(stop_of["min"].rename("rand_is_stop"), left_on=["sid", "random_word"], right_index=True)
+add("share of sentences where the random word is a function word", R.rand_is_stop.astype(bool).mean(), f"{int(R.rand_is_stop.sum())}/{len(R)}")
+for name, d_ in [("all sentences", R), ("random word is a content word", R[~R.rand_is_stop.astype(bool)])]:
+    a = ~d_.unk_after_top_removed.astype(bool); b = ~d_.unk_after_random_removed.astype(bool); n = len(d_)
+    for label, x in [("top word removed", a), ("random word removed", b)]:
+        lo_, hi_ = proportion_confint(int(x.sum()), n, method="wilson")
+        add(f"<unk> disappears, {label} ({name})", x.mean(), f"{int(x.sum())}/{n}; Wilson 95% CI [{lo_:.3f}, {hi_:.3f}]")
+    only_top, only_rand = int((a & ~b).sum()), int((~a & b).sum())
+    pm = stats.binomtest(only_top, only_top + only_rand, 0.5).pvalue
+    add(f"exact McNemar test, top vs random ({name})", np.nan, f"only top {only_top}, only random {only_rand}, both {int((a & b).sum())}, neither {int((~a & ~b).sum())}; p={pm:.2g}")
 
 pd.DataFrame(rows).round(3).to_csv(OUT / "unk_trigger_summary.csv", index=False)
 print(pd.DataFrame(rows).round(3).to_string(index=False))
