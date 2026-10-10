@@ -1,0 +1,9 @@
+# COMPSCI 760 Statistical analysis Method
+
+**Method**
+
+Each of the 4,200 clips is scored by all three systems, so the comparisons are paired. However, the clips are not independent; there are only 1,586 speakers in total, and each contributes up to 88 clips. We calculate the primary intervals using a paired cluster bootstrap that resamples speakers with replacement within each accent. We use 1,000 resamples with seed 760 and the same resampled speakers for all three systems, preserving the pairing between systems. The 95% intervals are the 2.5th and 97.5th percentiles. Clip-level bootstrap intervals are also reported for comparison.
+
+The main outcome is sentence-level chrF++, and a gap is defined as the first system's score minus the second system’s score. Between-accent spread is the difference between the highest and lowest accent means across the seven accents. To assess whether gaps differ across accents, we use Kruskal-Wallis tests with epsilon-squared as the effect size, followed by Dunn's tests with Holm correction across the 21 accent pairs. Cliff's delta is used for pairwise effect sizes. Within each accent, we use Wilcoxon signed-rank tests to assess whether the paired system gap differs from zero, reporting the matched-pairs rank-biserial correlation as an effect size.
+
+Because clip-level tests treat repeated clips from the same speaker as independent, we repeat the analyses using speaker-mean scores. Associations between normalized WER and chrF++, or between normalized WER and the system gap, are measured using Spearman correlations with speaker-clustered bootstrap intervals. Because the systems differ in model family, size, and training data, we interpret these results as associations rather than causal effects.
