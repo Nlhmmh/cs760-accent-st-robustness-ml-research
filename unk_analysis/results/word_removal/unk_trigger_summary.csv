@@ -20,3 +20,10 @@ share of PROPN among triggers / among other words,0.13,other content words: 0.09
 share of ADV among triggers / among other words,0.013,other content words: 0.032
 share of INTJ among triggers / among other words,0.029,other content words: 0.002
 "median Zipf gap (trigger minus other words), bootstrap 95% CI",-0.728,"[-0.88, -0.62]"
+share of sentences where the random word is a function word,0.582,224/385
+"<unk> disappears, top word removed (all sentences)",0.805,"310/385; Wilson 95% CI [0.763, 0.842]"
+"<unk> disappears, random word removed (all sentences)",0.099,"38/385; Wilson 95% CI [0.073, 0.133]"
+"exact McNemar test, top vs random (all sentences)",,"only top 280, only random 8, both 30, neither 67; p=4.4e-72"
+"<unk> disappears, top word removed (random word is a content word)",0.783,"126/161; Wilson 95% CI [0.713, 0.839]"
+"<unk> disappears, random word removed (random word is a content word)",0.13,"21/161; Wilson 95% CI [0.087, 0.191]"
+"exact McNemar test, top vs random (random word is a content word)",,"only top 111, only random 6, both 15, neither 29; p=4e-26"
