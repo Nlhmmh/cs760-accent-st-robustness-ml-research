@@ -1,0 +1,25 @@
+subset,comparison,stratum,unit,n_clips,n_speakers,estimate,ci_low,ci_high,excludes_zero,n_unk_dropped
+unk-free clips,Direct minus Cascade-600M,overall,speaker,3692,1443,7.502986154503908,6.879184557706261,8.10820820132909,True,508
+unk-free clips,Direct minus Cascade-3.3B,overall,speaker,3692,1443,5.416763477342875,4.750869195351447,6.081376680404067,True,508
+unk-free clips,Cascade-3.3B minus Cascade-600M,overall,speaker,3692,1443,2.086222677161033,1.6646375231360206,2.5412535053627994,True,508
+unk-free clips,Direct minus Cascade-600M,England,speaker,519,359,5.931494400445521,4.67545011385344,7.210792796132926,True,508
+unk-free clips,Direct minus Cascade-3.3B,England,speaker,519,359,4.5855904551092905,3.2759959578624134,5.853263314600514,True,508
+unk-free clips,Cascade-3.3B minus Cascade-600M,England,speaker,519,359,1.3459039453362305,0.2733570514993308,2.510386901757424,True,508
+unk-free clips,Direct minus Cascade-600M,Filipino,speaker,535,72,8.153785096062496,6.399850373069498,9.87651784463146,True,508
+unk-free clips,Direct minus Cascade-3.3B,Filipino,speaker,535,72,4.802056692577819,3.413574203149494,6.313302082201568,True,508
+unk-free clips,Cascade-3.3B minus Cascade-600M,Filipino,speaker,535,72,3.351728403484674,2.17886346664648,4.650977236621672,True,508
+unk-free clips,Direct minus Cascade-600M,Hong Kong,speaker,538,41,8.89976134413008,6.608693582057697,10.767373369417582,True,508
+unk-free clips,Direct minus Cascade-3.3B,Hong Kong,speaker,538,41,7.7177148373231095,4.891336272155065,10.353245164579686,True,508
+unk-free clips,Cascade-3.3B minus Cascade-600M,Hong Kong,speaker,538,41,1.1820465068069705,-0.0521740253531282,2.4941915258753338,False,508
+unk-free clips,Direct minus Cascade-600M,India / South Asia,speaker,520,325,8.150219338895893,6.753773709801445,9.45156019038457,True,508
+unk-free clips,Direct minus Cascade-3.3B,India / South Asia,speaker,520,325,5.955063635920925,4.7464822966390425,7.161489827891425,True,508
+unk-free clips,Cascade-3.3B minus Cascade-600M,India / South Asia,speaker,520,325,2.195155702974968,1.1193537339875508,3.3790391904307433,True,508
+unk-free clips,Direct minus Cascade-600M,Malaysian,speaker,522,59,8.391918184907924,6.898209063472238,10.156192375587054,True,508
+unk-free clips,Direct minus Cascade-3.3B,Malaysian,speaker,522,59,6.083745240535283,4.509734034484936,7.669793024286792,True,508
+unk-free clips,Cascade-3.3B minus Cascade-600M,Malaysian,speaker,522,59,2.3081729443726413,1.3218184684071437,3.5147827288517286,True,508
+unk-free clips,Direct minus Cascade-600M,Southern African,speaker,534,128,6.058350970901281,4.734682515312339,7.396494796859908,True,508
+unk-free clips,Direct minus Cascade-3.3B,Southern African,speaker,534,128,3.889969547885981,2.7606044813530355,5.123417200478919,True,508
+unk-free clips,Cascade-3.3B minus Cascade-600M,Southern African,speaker,534,128,2.1683814230153007,1.0989124990520733,3.1940311580062786,True,508
+unk-free clips,Direct minus Cascade-600M,United States,speaker,524,459,6.905301320329581,5.592460924664283,8.381923979913566,True,508
+unk-free clips,Direct minus Cascade-3.3B,United States,speaker,524,459,4.862493424293501,3.561674388280635,6.309076543669168,True,508
+unk-free clips,Cascade-3.3B minus Cascade-600M,United States,speaker,524,459,2.04280789603608,0.8866741975193588,3.1956355237559526,True,508

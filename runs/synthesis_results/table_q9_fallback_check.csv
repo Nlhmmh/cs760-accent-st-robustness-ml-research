@@ -1,0 +1,3 @@
+Output,Corpus BLEU,Corpus chrF++
+Direct as run,38.85569545656245,25.084534959995853
+"Direct, Cascade-3.3B substituted on 508 <unk> clips",38.54493171888621,24.894529409878114
