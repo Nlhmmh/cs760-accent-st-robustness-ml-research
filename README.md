@@ -6,7 +6,8 @@ speech-to-text translation systems.
 
 The repository contains Group 9's data-preparation and frozen-model inference
 notebooks, three completed full runs, three-system quality evaluation,
-statistical-analysis tables, an integrated IEEE LaTeX literature survey, and
+statistical-analysis tables, a Q1–Q9 synthesis with figures and a dashboard,
+an integrated IEEE LaTeX literature survey, and
 Direct `<unk>` diagnostics and sensitivity experiments.
 **Last updated: 11 October 2026.**
 
@@ -16,7 +17,8 @@ Start with [evaluation results](#evaluation-results),
 [reproducing the results](#reproducing-the-results), and
 [team-member contributions](#team-member-contributions). Notebook running guides:
 [preprocessing](README-preprocessing.md), [model inference](README-running-pipelines.md),
-[evaluation](README-evaluation.md), and [statistical analysis](README-statistical-analysis.md).
+[evaluation](README-evaluation.md), [statistical analysis](README-statistical-analysis.md),
+and [Q1–Q9 synthesis](READEME-synthesis.md).
 
 Both Cascaded model variants have completed full runs on all **4,200 clips**,
 using Whisper large-v2 for ASR:
@@ -332,8 +334,26 @@ is also available. Speaker resampling accounts for repeated speakers, but not jo
 for repeated sentence content. Speaker-level rank tests use speaker means,
 whereas the main bootstrap estimates remain weighted by clip counts.
 Exploratory tests and their correction scope should be stated when reporting
-findings. The saved execution reports calculation of `<unk>`-free intervals, but
-`intervals_unk_free.csv` is absent from the current results folder.
+findings. Notebook 09's execution reports calculation of `<unk>`-free intervals,
+but its output file is absent from `runs/statistical_analysis_results/`.
+Notebook 10 now supplies [subset intervals](runs/synthesis_results/intervals_unk_free.csv)
+in the synthesis folder, with all three pairwise comparisons.
+
+### Q1–Q9 synthesis and additional checks
+
+Jidni's [10_synthesis_q1_q9.ipynb](notebooks/10_synthesis_q1_q9.ipynb) combines
+the team's evaluation, statistical and diagnostic evidence into answers to
+Q1–Q9. It adds common `<unk>`-free subset intervals, an ASR-error split, a
+worst-clip audit, a Cascade-3.3B fallback check and a one-clip-per-speaker
+sensitivity analysis. These calculations use existing predictions on CPU.
+
+The [synthesis results](runs/synthesis_results/) contain seven CSVs, six saved
+figures and a self-contained [dashboard](runs/synthesis_results/dashboard.html).
+The [results README](runs/synthesis_results/README.md) explains the panels;
+[READEME-synthesis.md](READEME-synthesis.md) explains dependencies, execution,
+replay output paths and interpretation. These exploratory checks do not isolate
+causal effects; selecting one clip per speaker is a sensitivity check on the
+existing data, rather than a held-out evaluation on new data.
 
 ## Current project status
 
@@ -347,7 +367,8 @@ findings. The saved execution reports calculation of `<unk>`-free intervals, but
 | Cascaded 600M inference, 4,200 clips | 4,200/4,200 successful | `runs/cascade_full_run_1788146589/` |
 | Cascaded 3.3B inference, 4,200 clips | 4,200/4,200 successful | `runs/cascade_full_run_1790228071/` |
 | Three-system WER and translation evaluation | Saved outputs and 4,200-row metric table available | Notebook 08, `runs/evaluation_results/08_evaluation.pdf`, `runs/evaluation_results/merged_3system_with_metrics.csv` |
-| Confidence intervals and statistical tests | Saved notebook execution, report and four result CSVs available; `<unk>`-free CSV absent | Notebook 09, [statistical_analysis_results/](runs/statistical_analysis_results/) |
+| Confidence intervals and statistical tests | Saved notebook execution, report and four result CSVs; subset intervals supplied by notebook 10 | Notebook 09, [statistical_analysis_results/](runs/statistical_analysis_results/), [subset intervals](runs/synthesis_results/intervals_unk_free.csv) |
+| Q1–Q9 synthesis and additional checks | Saved execution, seven CSVs, six figures and HTML dashboard available | Notebook 10, [synthesis_results/](runs/synthesis_results/) |
 | Earlier Direct `<unk>` diagnostics | Full-run audit and two 35-clip sensitivity experiments archived | Notebooks 05–07 and investigation log |
 | Further Direct `<unk>` analysis | Four notebooks, four scripts, and archived results available | `unk_analysis/` |
 | Legacy two-system merge | Saved execution selects 600M; three-system evaluation loads 3.3B separately | `combine_translation_outputs.ipynb` |
@@ -359,7 +380,7 @@ Full evaluation and statistics are no longer missing stages.
 
 ## Notebooks
 
-The main evaluation and statistical notebooks retain saved execution outputs.
+The evaluation, statistical and synthesis notebooks retain saved execution outputs.
 The supplementary model-diagnostic notebooks provide code without retained
 execution outputs; their separate results folders contain saved artifacts.
 Review each notebook's configuration, paths, and archived results before
@@ -379,6 +400,7 @@ rerunning it.
 | [`07_direct_literal_unk_blocking_sensitivity.ipynb`](notebooks/07_direct_literal_unk_blocking_sensitivity.ipynb) | Tests blocking ordinary token sequences spelling `<unk>` and compares changed outputs. | Review notebook paths |
 | [`08_evaluation.ipynb`](notebooks/08_evaluation.ipynb) | Computes normalized/raw WER, corpus and sentence translation metrics, accent tables, three-system gaps, and literal `<unk>` flags. | See [evaluation guide](README-evaluation.md); local replay inputs and outputs |
 | [`09_statistical_analysis.ipynb`](notebooks/09_statistical_analysis.ipynb) | Paired speaker/clip bootstrap, accent comparisons, Spearman associations, and rank tests. | See [statistical guide](README-statistical-analysis.md); repository root |
+| [`10_synthesis_q1_q9.ipynb`](notebooks/10_synthesis_q1_q9.ipynb) | Synthesises Q1–Q9, adds subset/fallback/worst-clip checks, and saves figures and an HTML dashboard. | See [synthesis guide](READEME-synthesis.md); repository root or `notebooks/` |
 | [`copy_from_colab.ipynb`](notebooks/copy_from_colab.ipynb) | Colab helper that mounts Drive and archives `/content/runs`, `/content/outputs`, and `/content/results`. | Google Colab |
 
 ### Execution order for new inference
@@ -400,6 +422,8 @@ rerunning it.
    then [README-statistical-analysis.md](README-statistical-analysis.md) for
    paired uncertainty and tests. Archived evaluation lives under
    `runs/evaluation_results/`; preserve replay outputs separately.
+10. Follow [READEME-synthesis.md](READEME-synthesis.md) to combine the evidence
+    in notebook 10 and regenerate the synthesis tables, figures and dashboard.
 
 The completed full runs do not need to be repeated unless the frozen data,
 models, decoding policy, or research design changes.
@@ -421,7 +445,8 @@ includes 3.3B and does not depend on updating the legacy merger.
 
 The replication entry points are **notebooks**, with their code retained in
 `.ipynb` files. Run notebook 08 for performance calculations, then notebook 09
-for uncertainty and statistical comparisons. No Python extraction is required.
+for uncertainty and statistical comparisons. Notebook 10 then produces the
+Q1–Q9 synthesis and its figures. No Python extraction is required.
 
 | What to reproduce | Entry point | Running guide | Required resources |
 |---|---|---|---|
@@ -429,6 +454,7 @@ for uncertainty and statistical comparisons. No Python extraction is required.
 | Direct and Cascaded inference | Notebooks [03](notebooks/03_direct_pipeline.ipynb) and [04](notebooks/04_cascaded_pipeline.ipynb) | [README-running-pipelines.md](README-running-pipelines.md) | Frozen metadata/audio, model downloads and GPU |
 | Translation-quality evaluation | [08_evaluation.ipynb](notebooks/08_evaluation.ipynb) | [README-evaluation.md](README-evaluation.md) | Archived prediction CSVs; CPU |
 | Statistical comparisons | [09_statistical_analysis.ipynb](notebooks/09_statistical_analysis.ipynb) | [README-statistical-analysis.md](README-statistical-analysis.md) | Merged evaluation CSV; CPU |
+| Q1–Q9 synthesis, figures and dashboard | [10_synthesis_q1_q9.ipynb](notebooks/10_synthesis_q1_q9.ipynb) | [READEME-synthesis.md](READEME-synthesis.md) | Archived evaluation, statistical and diagnostic results; CPU |
 | Further `<unk>` experiments and summaries | [Supplementary notebooks and scripts](unk_analysis/) | [unk_analysis/README.md](unk_analysis/README.md) | Saved inputs for CPU summaries; GPU for model diagnostics |
 
 ### Recalculate the main results without inference
@@ -448,12 +474,16 @@ for uncertainty and statistical comparisons. No Python extraction is required.
    `main()` invocation. Alternatively, analyse the archived
    [merged CSV](runs/evaluation_results/merged_3system_with_metrics.csv) directly.
 5. Compare the generated tables with [evaluation evidence](runs/evaluation_results/)
-   and [statistical evidence](runs/statistical_analysis_results/). Retain the
-   generated `intervals_unk_free.csv`, which is absent from the current archive.
-6. Save the executed replay notebooks and record inputs, dependency versions,
+   and [statistical evidence](runs/statistical_analysis_results/). Retain notebook
+   09's generated `intervals_unk_free.csv`; notebook 10 supplies its own subset
+   interval table in [synthesis_results/](runs/synthesis_results/).
+6. Follow [READEME-synthesis.md](READEME-synthesis.md) for notebook 10. It can
+   use the existing archive directly; select a separate output folder to
+   regenerate its seven CSVs, six figures and dashboard without replacing them.
+7. Save the executed replay notebooks and record inputs, dependency versions,
    metric signatures, seed and bootstrap count. Export PDFs separately if needed.
 
-Audio and model weights are unnecessary for these two CPU stages. Current
+Audio and model weights are unnecessary for these three CPU stages. Current
 notebooks require the configuration adjustments described in the guides; this
 is not an unconfigured "Run All" workflow. Do not overwrite archived evidence
 while checking a replay. Mean sentence chrF++ gaps and their intervals differ
@@ -682,7 +712,7 @@ unrecorded contributions blank.
 | Zhitong Li | Performed statistical comparisons and maintained the shared metric table.<br><br><strong>Task 1: Statistical analysis and evaluation data</strong><ul><li>Implemented paired speaker/clip bootstrap intervals and accent-level comparisons.</li><li>Calculated Spearman associations between WER, translation quality, and system gaps.</li><li>Ran rank tests and produced confidence-interval, accent-mean, correlation, and test tables.</li><li>Updated the shared three-system metric table used by the statistical analysis.</li><li>Files:<ul><li>[09_statistical_analysis.ipynb](notebooks/09_statistical_analysis.ipynb)</li></ul></li><li>Results:<ul><li>[statistical_analysis_results/](runs/statistical_analysis_results/)</li><li>[intervals_long.csv](runs/statistical_analysis_results/intervals_long.csv)</li><li>[accent_means_ci.csv](runs/statistical_analysis_results/accent_means_ci.csv)</li><li>[spearman.csv](runs/statistical_analysis_results/spearman.csv)</li><li>[tests.csv](runs/statistical_analysis_results/tests.csv)</li><li>[merged_3system_with_metrics.csv](runs/evaluation_results/merged_3system_with_metrics.csv)</li></ul></li></ul> | <ul><li>Reviewed accent-related ASR performance, seen/unseen-accent generalisation, and mitigation.</li><li>Drafted the Accent Robustness in Speech Processing section.</li><li>Synthesised evidence on commercial ASR disparities, accent-specific codebooks, contrastive regularisation, and fairness-aware fine-tuning.</li></ul> |
 | Nathan Naylin | Implemented and ran the translation pipelines, pilots, and earlier `<unk>` experiments.<br><br><strong>Task 1: Pipeline implementation and execution</strong><ul><li>Validated pilot selection and prepared a small engineering test set.</li><li>Measured Direct/Cascaded runtime and hardware feasibility on 35 clips.</li><li>Ran frozen SeamlessM4T on 4,200 clips with checkpointing, runtime logging, and output validation.</li><li>Ran staged Whisper → NLLB inference with both 600M and 3.3B translation models.</li><li>Validated and merged Direct/600M predictions by clip ID.</li><li>Created the Colab output-archiving helper.</li><li>Files:<ul><li>[create_pilot_samples.ipynb](notebooks/create_pilot_samples.ipynb)</li><li>[timing_test_pipelines.ipynb](notebooks/timing_test_pipelines.ipynb)</li><li>[03_direct_pipeline.ipynb](notebooks/03_direct_pipeline.ipynb)</li><li>[04_cascaded_pipeline.ipynb](notebooks/04_cascaded_pipeline.ipynb)</li><li>[combine_translation_outputs.ipynb](notebooks/combine_translation_outputs.ipynb)</li><li>[copy_from_colab.ipynb](notebooks/copy_from_colab.ipynb)</li></ul></li><li>Results:<ul><li>[pilot_run_colab_tpu.zip](runs/pilot_run_colab_tpu.zip)</li><li>[direct_full_run_1788151795/](runs/direct_full_run_1788151795/)</li><li>[cascade_full_run_1788146589/](runs/cascade_full_run_1788146589/)</li><li>[cascade_full_run_1790228071/](runs/cascade_full_run_1790228071/)</li></ul></li></ul><strong>Task 2: Earlier Direct `<unk>` investigation</strong><ul><li>Audited full-run marker frequency, accent/content patterns, and tokenizer behaviour.</li><li>Tested greedy/beam decoding and special-token suppression on 35 affected clips.</li><li>Tested literal-marker token constraints and compared changed outputs and quality scores.</li><li>Files:<ul><li>[05_direct_unk_diagnostic.ipynb](notebooks/05_direct_unk_diagnostic.ipynb)</li><li>[06_direct_unk_sensitivity.ipynb](notebooks/06_direct_unk_sensitivity.ipynb)</li><li>[07_direct_literal_unk_blocking_sensitivity.ipynb](notebooks/07_direct_literal_unk_blocking_sensitivity.ipynb)</li></ul></li><li>Results:<ul><li>[direct_unk_diagnostic_1789953533/](runs/direct_unk_diagnostic_1789953533/)</li><li>[direct_unk_sensitivity_1789954497/](runs/direct_unk_sensitivity_1789954497/)</li><li>[direct_literal_unk_blocking_1789970452/](runs/direct_literal_unk_blocking_1789970452/)</li></ul></li></ul><strong>Task 3: Project documentation</strong><ul><li>Documented project status, pipeline execution, and the earlier marker investigation.</li><li>Files:<ul><li>[README.md](README.md)</li><li>[README-running-pipelines.md](README-running-pipelines.md)</li><li>[SeamlessM4T_UNK_Investigation_Log.md](SeamlessM4T_UNK_Investigation_Log.md)</li></ul></li></ul> | <ul><li>Reviewed accent-labelled datasets, speech-translation data, and reference quality.</li><li>Drafted the dataset-design portion of Evaluation Data and Methodological Evidence.</li><li>Organised the survey and integrated member-authored sections.</li><li>Standardised terminology and formatting, removed duplication, and checked citations and rubric requirements.</li></ul> |
 | Patricia Jennesha | Developed the quality-evaluation notebook and compared system performance by accent.<br><br><strong>Task 1: System and accent-level evaluation</strong><ul><li>Calculated raw/normalised WER, Chinese-tokenised BLEU, chrF, and chrF++.</li><li>Compared Direct/Cascaded translations and preserved the evaluation report and metric table.</li><li>Compared corpus and sentence-average translation scores across accent groups.</li><li>Compared WER and Direct/Cascade translation gaps by accent.</li><li>Files:<ul><li>[08_evaluation.ipynb](notebooks/08_evaluation.ipynb)</li></ul></li><li>Results:<ul><li>[evaluation_results/](runs/evaluation_results/)</li><li>[merged_3system_with_metrics.csv](runs/evaluation_results/merged_3system_with_metrics.csv)</li><li>[08_evaluation.pdf](runs/evaluation_results/08_evaluation.pdf)</li></ul></li></ul> | <ul><li>Reviewed ASR-error propagation, phonetic ASR errors, speech-model robustness, and accent-related downstream errors.</li><li>Drafted the Accent Robustness in Speech Translation section.</li><li>Assessed the relevance and limitations of existing evidence and the proposed gap in matched Direct/Cascaded evaluation.</li></ul> |
-| Jidni Mayukh |  | <ul><li>Reviewed translation metrics and statistical significance testing.</li><li>Drafted the Evaluation Metrics and Statistical Reliability and Controlled Evaluation subsections.</li><li>Covered WER, BLEU, chrF/chrF++, score comparability, paired comparisons, bootstrap uncertainty, and speaker/content dependence.</li></ul> |
+| Jidni Mayukh | Synthesised Q1–Q9 and produced additional checks, figures and a results dashboard.<br><br><strong>Task 1: Evidence synthesis and sensitivity analysis</strong><ul><li>Combined the team's evaluation, statistical and diagnostic results into evidence-backed answers to Q1–Q9.</li><li>Recomputed corpus metrics and produced paired-gap, accent-mean, subset and WER-association figures.</li><li>Calculated common &lt;unk&gt;-free subset intervals and compared zero-WER with positive-WER clips.</li><li>Audited the ten lowest-scoring clips per accent and system.</li><li>Checked Cascade-3.3B fallback on affected clips and one-clip-per-speaker sensitivity.</li><li>Built the self-contained HTML dashboard and its results README.</li><li>Files:<ul><li>[10_synthesis_q1_q9.ipynb](notebooks/10_synthesis_q1_q9.ipynb)</li></ul></li><li>Results:<ul><li>[synthesis_results/](runs/synthesis_results/)</li><li>[dashboard.html](runs/synthesis_results/dashboard.html)</li><li>[README.md](runs/synthesis_results/README.md)</li><li>[figures/](runs/synthesis_results/figures/)</li><li>[intervals_unk_free.csv](runs/synthesis_results/intervals_unk_free.csv)</li><li>[table_q5_scores_by_unk_subset.csv](runs/synthesis_results/table_q5_scores_by_unk_subset.csv)</li><li>[table_q6_scores_by_asr_error.csv](runs/synthesis_results/table_q6_scores_by_asr_error.csv)</li><li>[worst_clips_by_accent_system.csv](runs/synthesis_results/worst_clips_by_accent_system.csv)</li><li>[table_q8_worst_clip_summary.csv](runs/synthesis_results/table_q8_worst_clip_summary.csv)</li><li>[table_q9_fallback_check.csv](runs/synthesis_results/table_q9_fallback_check.csv)</li><li>[table_q9_one_clip_per_speaker.csv](runs/synthesis_results/table_q9_one_clip_per_speaker.csv)</li></ul></li></ul> | <ul><li>Reviewed translation metrics and statistical significance testing.</li><li>Drafted the Evaluation Metrics and Statistical Reliability and Controlled Evaluation subsections.</li><li>Covered WER, BLEU, chrF/chrF++, score comparability, paired comparisons, bootstrap uncertainty, and speaker/content dependence.</li></ul> |
 
 Proposal role numbering and literature-survey role numbering differ. Use the
 named contributions above and [`literature_review/team_plan.md`](literature_review/team_plan.md)
@@ -701,6 +731,7 @@ completed; Git history alone does not capture all collaborative work.
 ├── README-running-pipelines.md
 ├── README-evaluation.md
 ├── README-statistical-analysis.md
+├── READEME-synthesis.md
 ├── SeamlessM4T_UNK_Investigation_Log.md
 ├── notebooks/
 │   ├── 01_data_preprocessing.ipynb
@@ -714,6 +745,7 @@ completed; Git history alone does not capture all collaborative work.
 │   ├── 07_direct_literal_unk_blocking_sensitivity.ipynb
 │   ├── 08_evaluation.ipynb
 │   ├── 09_statistical_analysis.ipynb
+│   ├── 10_synthesis_q1_q9.ipynb
 │   ├── combine_translation_outputs.ipynb
 │   └── copy_from_colab.ipynb
 ├── runs/
@@ -727,7 +759,8 @@ completed; Git history alone does not capture all collaborative work.
 │   ├── evaluation_results/
 │   │   ├── 08_evaluation.pdf
 │   │   └── merged_3system_with_metrics.csv
-│   └── statistical_analysis_results/   # four CSVs, report PDF and method/Q3/Q4 notes
+│   ├── statistical_analysis_results/   # four CSVs, report PDF and method/Q3/Q4 notes
+│   └── synthesis_results/              # seven CSVs, six figures, dashboard and README
 ├── unk_analysis/
 │   ├── README.md
 │   ├── notebooks/                     # four model-based diagnostics
@@ -793,7 +826,9 @@ directory rather than overwriting the completed artifacts.
    The main statistical intervals concern mean sentence chrF++, not corpus BLEU.
 4. **Reproduction gaps:** notebook 09's installation cell has the `scip` typo,
    its introduction mentions a nonexistent standalone script, and
-   `intervals_unk_free.csv` is absent from the current results folder.
+   its `intervals_unk_free.csv` is absent from the statistical results folder.
+   Notebook 10 supplies subset intervals in the synthesis folder, with a
+   different schema and all three pairwise comparisons.
    Notebook 08 uses mutable GitHub `main` URLs, writes to its current directory,
    and retains earlier narrative sections that predate later analysis. Its
    original proper-noun/vocabulary explanation is a hypothesis, not a verified
@@ -844,10 +879,10 @@ replace those cell-level credits.
 
 | Requirement | Current evidence | Remaining documentation/code work |
 |---|---|---|
-| All experiments | Preprocessing, pilots, three full runs and notebooks 05–09; supplementary diagnostics | Some supplementary write-up calculations are listed as missing from the supplied code in [its limitations](unk_analysis/README.md#limitations) |
-| Performance calculations | Notebook 08 scores WER, BLEU, chrF and chrF++; notebook 09 calculates uncertainty, tests and associations | Preserve every generated result table, including the `<unk>`-free intervals |
-| Plotting | Inference/timing plots, notebook 08's displayed WER histogram and supplementary diagnostic figures | Save the WER figure and include plotting code for any additional main evaluation/statistical figures used in the final report |
-| Replication instructions | Four root running guides and the supplementary README | Apply the documented configuration changes and verify the selected workflow from a fresh kernel |
+| All experiments | Preprocessing, pilots, three full runs and notebooks 05–10; supplementary diagnostics | Some supplementary write-up calculations are listed as missing from the supplied code in [its limitations](unk_analysis/README.md#limitations) |
+| Performance calculations | Notebook 08 scores WER, BLEU, chrF and chrF++; notebook 09 calculates uncertainty, tests and associations; notebook 10 adds synthesis and sensitivity checks | Preserve replay tables and distinguish notebook 09/10 subset-file schemas |
+| Plotting | Inference/timing plots, notebook 08's displayed WER histogram, supplementary figures and six saved synthesis figures generated by notebook 10 | Save the standalone WER histogram if used; keep code and output for any additional reported figures |
+| Replication instructions | Five root running guides and the supplementary README | Apply the documented configuration changes and verify the selected workflow from a fresh kernel |
 | Contributions and online sources | Team-member table, guide attribution and external-resource sections | Credit copied/adapted snippets with actual source URLs; confirm ownership rather than inferring it |
 | Meaningful file names and nonempty README files | Named notebooks and populated README files | Continue using descriptive names for new experiments and outputs |
 
