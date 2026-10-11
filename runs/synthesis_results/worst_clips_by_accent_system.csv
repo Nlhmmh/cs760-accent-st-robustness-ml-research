@@ -1,0 +1,211 @@
+system,accent,id,sample_id,score,wer_norm,direct_has_unk,sentence,asr_transcript,direct_translation,cascade_600m_translation,cascade_33b_translation,reference_translation_zh
+Direct,England,sample_0281,spk_0407,0.0,0.3333333333333333,False,"Yours sincerely, Satan.",You're sincerely Satan.,你是撒旦的真心,你真的是恶魔.,你真的是撒旦.,谨启， Satan。
+Direct,England,sample_0077,spk_0859,0.9652509652509654,0.25,True,Stark naked. Under bare poles. In puris naturalibus.,Stalk naked under bare poles in Puris Naturalis.,"在裸体,裸体<unk>下,在""自然纯粹""中.","在""自然清洁""中,裸体地着.",在Puris Naturalis中裸体在裸体杆子下偷.,一丝不挂。光着身子。赤裸。
+Direct,England,sample_0444,spk_1546,2.2321428571428568,0.0,False,What a bummer!,What a bummer.,这真是太糟糕了!,这真是可怜.,这真是太糟糕了.,真让人扫兴！
+Direct,England,sample_0424,spk_1297,2.3041474654377883,0.0,False,I came out of it without a scratch.,I came out of it without a scratch.,我没有受到任何伤害.,我没有一丝划痕.,我没有受伤.,我毫发无伤地从里面出来了。
+Direct,England,sample_0310,spk_0753,2.6455026455026456,0.3333333333333333,False,I gotta figure some way out of this thing!,I've got to figure some way out of this thing.,我必须想出一个出路!,我必须找到一种方法.,我必须想出一个出路.,我得想办法摆脱这件事！
+Direct,England,sample_0518,spk_0563,2.6455026455026456,0.0,True,A gritting lorry is used to grit the roads when frost is expected overnight,A gritting lorry is used to grit the roads when frost is expected overnight.,"当夜间预计会有<unk>时, 一辆<unk>石卡车被用来<unk>石道路","预计夜间会有冰,",预计夜间的道路上使用了砂卡车.,如果隔夜会出现霜冻，则用铺沙砾的货车在路上铺沙砾。
+Direct,England,sample_0153,spk_1381,2.777777777777777,0.0,False,Fortune favours the brave.,Fortune favours the brave.,运气有利于勇敢的人.,运气有利于勇敢的人.,运气是对勇敢的人有利的.,天佑勇者。
+Direct,England,sample_0274,spk_1159,2.8571428571428577,0.0,False,Thank God for that!,Thank God for that!,谢天谢地!,感谢上帝!,感谢上帝!,感谢上帝 ！
+Direct,England,sample_0375,spk_1132,2.8571428571428577,0.0,False,Make hay while the sun shines.,Make hay while the sun shines.,"在阳光照耀时,做草.","在阳光照亮的时候,做草.","让草,而阳光照耀.",趁晴晒草，抓紧时机。
+Direct,England,sample_0198,spk_1079,2.952837489551678,0.0,True,Football is often confused with soccer.,Football is often confused with soccer.,足球经常与足球混<unk>.,足球经常被混到足球.,足球经常被混为足球.,人们常把Football（橄榄球）和soccer（英式足球）搞混。
+Direct,Filipino,sample_0704,spk_0030,0.0,0.0,False,There you have it!,There you have it!,这就是它!,这里有你!,这就是它!,给你！
+Direct,Filipino,sample_0785,spk_0030,0.0,0.0,False,I beg your pardon!,I beg your pardon.,我道歉!,我很抱歉.,现在请原谅我.,麻烦再说一遍？
+Direct,Filipino,sample_0789,spk_0030,0.0,0.1666666666666666,False,Stop bashing Ivy all the time!,Stop brushing Ivy all the time!,停止打艾维所有的时间!,停止一直刷伊维!,停止刷牙艾薇所有的时间!,不要一直抨击Ivy。
+Direct,Filipino,sample_0847,spk_0030,0.0,0.3333333333333333,False,As sure as I am alive.,"Yeah, I sure as I am alive",我活着一样肯定,"是的,我肯定,因为我活着","是的,我相信我还活着",十拿九稳
+Direct,Filipino,sample_1016,spk_0110,0.0,0.3333333333333333,False,Let well alone.,Let dwell alone.,让他一个人,让我们安静下来.,让一个人.,顺其自然
+Direct,Filipino,sample_1116,spk_0356,0.0,0.0,False,There you have it!,There you have it!,这就是它!,这里有你!,这就是它!,给你！
+Direct,Filipino,sample_0666,spk_0356,1.17096018735363,0.0,False,Do unto others as you would have them do to you.,Do unto others as you would have them do to you.,"你们要别人怎样待你们,你们也要怎样待他们.","你们要怎样待别人,你们也要怎样待别人.","你们要怎样待人,也要怎样待自己.",己所不欲，勿施于人。
+Direct,Filipino,sample_1077,spk_0375,1.3297872340425532,0.0,False,"It's a long way to Tipperary, it's a long way to go!",It's a long way to Tipperary. It's a long way to go.,"这是一条很长的路到蒂珀里,这是一条很长的路!",距离蒂普雷里还有很长的路要走.,提佩瑞还有很长的路要走.,去 Tipperary 路很远，非常远！
+Direct,Filipino,sample_1151,spk_0464,2.53291092519685,0.1666666666666666,False,It is directed by Rajesh Touchriver.,It is directed by Rajesh Thacharivar.,这部电影由拉杰什·塔奇里弗执导.,导演是拉吉什·塔卡里瓦尔.,导演:拉杰什·塔卡里瓦尔,它由Rajesh Touchriver执导。
+Direct,Filipino,sample_1158,spk_1568,2.604166666666667,0.125,False,Robin had some sort of date with Tracy.,Robin had some sort of a date with Tracy.,罗宾和特雷西有某种约会.,罗宾和特雷西约会了.,罗宾和特雷西有过某种约会.,Robin 和 Tracy 约过会。
+Direct,Hong Kong,sample_1232,spk_0951,0.0,0.75,False,"Penny wise, pound foolish.",Pennywise Pong foolish,"一分钱是明智的,一分钱是愚蠢的.",尼威斯是个瓜,钱的是愚蠢的,因小失大。
+Direct,Hong Kong,sample_1313,spk_0800,0.0,0.0,False,It was not pulling a sign at the time of the crash.,It was not pulling a sign at the time of the crash.,It was not pulling a sign at the time of the crash,"事故发生时,它没有拉上标志.",事故发生时没有拉牌.,坠机时，没有任何征兆。
+Direct,Hong Kong,sample_1397,spk_1310,0.0,0.0,False,One of the worst crooks in town!,One of the worst crooks in town.,One of the worst crooks in town,他是这个城市最坏的骗子之一.,成为这座城市最糟糕的骗子之一.,城里最烂的骗子之一！
+Direct,Hong Kong,sample_1398,spk_0019,0.0,0.0,False,What time is it?,What time is it?,现在的时间是多少?,现在是什么时候?,现在是什么时间?,几点了？
+Direct,Hong Kong,sample_1491,spk_1043,0.0,0.0909090909090909,True,You can't make a silk purse out of a sow's ear.,You can make a silk purse out of a sow's ear.,你不能用猪的耳朵做丝<unk>钱包.,你可以用猪耳做一个丝包.,你可以用母猪的耳朵做一个丝的钱包.,劣材难成器。
+Direct,Hong Kong,sample_1562,spk_1314,0.0,0.0,False,In a little while.,in a little while,在很短的时间里,在不久的时间里,在一段时间内,一会儿。
+Direct,Hong Kong,sample_1760,spk_1314,0.0,0.0,False,The cat knows well whose lips she licks,The cat knows well whose lips she licks.,The cat knows well whose lips she licks,猫知道她的嘴唇是谁的.,猫很清楚她的是谁的嘴唇.,猫很清楚自己舔的是谁的嘴唇
+Direct,Hong Kong,sample_1796,spk_1043,0.0,0.1428571428571428,True,Don't count your chickens before they hatch.,Don't count the chickens before they hatch.,在<unk>化之前不要计数你的<unk>.,在出之前不要数.,在化之前不要计算.,别太早下定论。
+Direct,Hong Kong,sample_1583,spk_0358,1.4285714285714286,0.0,False,You can't have your cake and eat it too.,You can't have your cake and eat it too.,"你不能有你的蛋糕,也不能吃它","你不能吃你的蛋糕,同时也吃它.",你不能同时吃蛋糕和吃蛋糕.,鱼与熊掌不可兼得。
+Direct,Hong Kong,sample_1411,spk_0951,1.4285714285714288,0.0,False,"Man proposes, God disposes.","Man proposes, God disposes.","人的目的,上帝的安排","人提出,上帝提出.","人提出,上帝处置.",谋事在人，成事在天。
+Direct,India / South Asia,sample_1865,spk_0625,0.0,0.0,False,Hold the line a minute.,Hold the line a minute.,待一分钟,待一分钟.,保持一分钟的线.,请稍等片刻。
+Direct,India / South Asia,sample_1890,spk_1351,0.0,0.0,False,May I come in?,May I come in?,麦加明,我可以进来吗?,我可以进来吗?,我能进来吗？
+Direct,India / South Asia,sample_1944,spk_1462,0.0,0.0,False,False friends are worse than open enemies.,False friends are worse than open enemies.,假朋友比公开的敌人更糟糕.,假朋友比公开的敌人更糟糕.,假朋友比公开的敌人更糟糕.,明枪易躲，暗箭难防。
+Direct,India / South Asia,sample_1951,spk_1169,0.0,0.0,True,"Oh, I beg your pardon!","Oh, I beg your pardon?","<unk>,我求你原谅!",",我请你原谅?",",请原谅?",哦，麻烦再说一遍！
+Direct,India / South Asia,sample_1965,spk_0117,0.0,0.6666666666666666,False,"Upland ""Molinia"" spp.",Upland Molelia sp.,乌普兰德·穆利尼亚斯普.,地菌 sp.,高地菌种,山地“ Molinia” spp。
+Direct,India / South Asia,sample_2119,spk_1480,0.0,1.0,True,"Oh, I beg your pardon!",I thank you for it.,"<unk>,我求你原谅!",我感谢你.,我感谢你这么做.,哦，麻烦再说一遍！
+Direct,India / South Asia,sample_2327,spk_1513,0.0,0.0,False,All's well that ends well.,All's well that ends well.,"结局好的话,一切都好",任何事情都会顺利结束.,"结束得好,一切都好.",皆大欢喜。
+Direct,India / South Asia,sample_2212,spk_0442,1.2987012987012987,0.0,False,"Hello, Benjamin.",Hello Benjamin!,"您好,本杰明!","你好,Benjamin!",",本杰明!",你好，Benjamin。
+Direct,India / South Asia,sample_1979,spk_0486,1.488095238095238,0.0,False,"Pa's miserable, and no wonder!",Pa's miserable and no wonder.,"爸爸很痛苦,这并不奇怪!","爸爸很痛苦,这也不奇怪.","爸爸很痛苦,也就没有什么奇怪.",如此悲惨，也难怪！
+Direct,India / South Asia,sample_2335,spk_0515,1.488095238095238,0.0,False,You can't have your cake and eat it too.,You can't have your cake and eat it too.,你不能有你的蛋糕和吃它.,"你不能吃你的蛋糕,同时也吃它.",你不能同时吃蛋糕和吃蛋糕.,鱼与熊掌不可兼得。
+Direct,Malaysian,sample_2430,spk_1331,0.0,0.0,False,There is no fire without some smoke.,There is no fire without some smoke.,没有烟雾就没有火.,没有烟雾就没有火.,没有烟雾就没有火.,无风不起浪。
+Direct,Malaysian,sample_2461,spk_1331,0.0,0.0,False,As you were!,As you were.,保持原状!,正如你.,让我们继续.,如你所愿。
+Direct,Malaysian,sample_2673,spk_0312,0.0,0.0,False,Out of the frying pan into the fire.,"Out of the frying pan, into the fire.",Out of the frying pan into the fire,"出子,进火.","的,进入火.",从油煎到火烤。
+Direct,Malaysian,sample_2683,spk_1331,0.0,0.0,False,"Bye-bye, sucker!","Bye-bye, sucker.","但是,我很喜欢她","别见,子.","拜拜,一个蛋.",再见，笨蛋！
+Direct,Malaysian,sample_2716,spk_1120,0.0,0.0,False,Henderson was taking it in.,Henderson was taking it in.,亨德森正在把它收拾,亨德森正在接受.,亨德森正在接受.,Henderson 接受了。
+Direct,Malaysian,sample_2746,spk_0640,0.0,0.0,False,The monk was irritated.,The monk was irritated.,这位僧侣很生气.,僧侣很生气.,这位僧侣很火.,和尚被激怒了。
+Direct,Malaysian,sample_2819,spk_0836,0.0,0.0,False,The monk was irritated.,The monk was irritated.,这位僧侣很生气.,僧侣很生气.,这位僧侣很火.,和尚被激怒了。
+Direct,Malaysian,sample_2836,spk_0312,0.0,0.0,False,Divide and conquer.,Divide and conquer,Divide and conquer,分开和征服,分裂并征服,分而治之。
+Direct,Malaysian,sample_2972,spk_1447,0.0,1.0,True,"Oh dear, oh dear!","Audio, audio.","<unk>,亲爱的,<unk>,亲爱的!","音频,音频.","音频,音频.",哦天哪，哦天哪！
+Direct,Malaysian,sample_2976,spk_1555,0.0,0.0,False,"Soon ripe, soon rot.","Soon ripe, soon rot.",Soon RipeSoon Roy,"很快成熟,很快腐烂.","很快成熟,很快腐烂.",早慧早衰。
+Direct,Southern African,sample_3004,spk_1185,0.0,0.5,False,Terracotta Sighing.,Terracotta sewing,Terracotta sign,地,制棉花,兵马俑之叹。
+Direct,Southern African,sample_3083,spk_0557,0.0,0.0,False,As you were!,As you were.,保持原状!,正如你.,让我们继续.,如你所愿。
+Direct,Southern African,sample_3412,spk_0829,0.0,0.0,False,I beg your pardon!,I beg your pardon.,我道歉吗?,我很抱歉.,现在请原谅我.,麻烦再说一遍？
+Direct,Southern African,sample_3578,spk_0829,0.0,0.0,False,Terracotta Sighing,Terracotta Sighing,塔拉科塔说,花的喘息,土的叹息,兵马俑之叹。
+Direct,Southern African,sample_3282,spk_0679,1.1160714285714288,0.0,False,You will be Jane Doe.,You will be Jane Doe.,你将成为未知身份的女士.,你将成为未知的.,你将成为一个未知身份的女士.,你就是 Jane Doe。
+Direct,Southern African,sample_3560,spk_1404,1.4044943820224718,0.0,False,Do you know Leslie Williams?,Do you know Leslie Williams?,你知道莱斯利·威廉姆斯吗?,你知道莱斯利威廉姆斯吗?,你知道莱斯利威廉姆斯吗?,你认识 Leslie Williams 吗？
+Direct,Southern African,sample_3028,spk_1504,1.6233766233766236,0.0,False,Are you able to accept Paypal?,Are you able to accept PayPal?,你能接受PayPal吗?,你能接受PayPal吗?,你能接受PayPal吗?,您能否使用贝宝？
+Direct,Southern African,sample_3523,spk_0284,2.2978080120937263,0.4285714285714285,False,Give Home Is the Hunter zero stars,GiveHome is the Hunter Zero styles.,给家是猎人零星,给家是猎人零的风格.,给家是猎人零的风格.,Give Home Is the Hunter 零星级
+Direct,Southern African,sample_3228,spk_0954,2.688172043010753,0.0,True,The hydrogen gas escaped.,The hydrogen gas escaped.,<unk>气已经逃脱.,气逃离了.,气已经逃逸.,氢气漏出。
+Direct,Southern African,sample_3336,spk_0889,2.994037772263579,0.0,False,go ahead and add blowfly to my This Is Schubert list,Go ahead and add Blowfly to my This is Schubert list.,继续添加This Is Schubert列表中的吹飞,"现在,你把Blowfly加入我的舒伯特名单上.","继续,把Blowfly加入我的""这是舒伯特""名单.",继续，把《blowfly》单曲加到我的《这是舒伯特》的歌单里
+Direct,United States,sample_3756,spk_0144,0.0,0.0,False,War to the knife bitter end.,War to the knife bitter end.,战争的痛苦结束.,战争到刀结.,战争的痛苦结束.,兵戎相见
+Direct,United States,sample_3765,spk_0209,0.0,0.0,False,Give credit where credit is due.,Give credit where credit is due.,给应得的赞誉,给信誉应有的信誉.,感谢应得的.,有功则赏。
+Direct,United States,sample_3984,spk_0018,0.0,0.0,False,"Yours sincerely, Satan.","Yours sincerely, Satan",你是真诚的 - - 撒旦!,"诚实地说,撒旦","诚的你的,撒旦",谨启， Satan。
+Direct,United States,sample_4022,spk_0686,0.0,0.0,False,Miss it! Miss Out!,"Miss it, miss out.","错过了,错过了!","错过了,错过了.","错过了,错过了.",机不可失，失不再来！
+Direct,United States,sample_4063,spk_0739,0.0,0.0,False,"Watch out, blues ahead!","Watch out, blues ahead.","注意,头部受伤了","警,蓝色在前面.","警,蓝色的前面.",小心，前方有 blues！
+Direct,United States,sample_4145,spk_1427,0.8116883116883118,0.1428571428571428,False,Hixkaryana may have an object-verb-agent word order.,Xcariana may have an object-verb-agent word order.,Hixkaryana 可能有对象-动词-代理词顺序,克斯卡里亚娜可能有对象verb-agent字序.,克萨里亚娜可能有对象-动词-代理词顺序.,希卡利亚纳语使用的是宾谓主语序。
+Direct,United States,sample_4047,spk_1457,1.0593220338983051,0.0,False,"Watch out, blues ahead!","Watch out, blues ahead.","什么事了,蓝色在前面.","警,蓝色在前面.","警,蓝色的前面.",小心，前方有 blues！
+Direct,United States,sample_3621,spk_0920,1.152073732718894,0.0,True,Oak is strong and also gives shade.,Oak is strong and also gives shade.,"<unk>树是坚固的,也提供了阴影.","树是强壮的,而且还能提供阴影.","树是坚固的,也提供了阴影.",橡木很结实，也能遮荫。
+Direct,United States,sample_3655,spk_0536,1.373626373626374,0.0,False,Never look a gift horse in the mouth.,Never look a gift horse in the mouth.,永远不要看礼物马的嘴里.,永远不要把礼物马进嘴里.,永远不要看礼物马的嘴.,馈赠之马，切莫挑剔。
+Direct,United States,sample_4172,spk_0089,1.6233766233766236,0.0,False,"Like master, like man.","Like master, like man.","像主人一样,像男人一样.","像一个老师,像一个男人.","像主人,像一个人.",有其主必有其仆。
+Cascade-600M,England,sample_0281,spk_0407,0.0,0.3333333333333333,False,"Yours sincerely, Satan.",You're sincerely Satan.,你是撒旦的真心,你真的是恶魔.,你真的是撒旦.,谨启， Satan。
+Cascade-600M,England,sample_0510,spk_0258,0.0,0.6666666666666666,True,The homeless seem to like soup.,The whole is thin too like soup.,无家可归的人似乎喜欢<unk>.,"整体太薄了,就像一样.","整体太薄了,就像一样.",无家可归者似乎喜欢喝汤。
+Cascade-600M,England,sample_0511,spk_1062,0.0,0.0,False,Then I don't get paid.,then I don't get paid.,那么我不会得到报酬.,没有钱.,那么我就不会得到报酬.,那我就拿不到报酬了。
+Cascade-600M,England,sample_0454,spk_0201,1.074113856068743,0.1,True,"Bacardi, rye, vodka – what do you want?, asked the barkeeper.","Bacardi, Rye, Vodka, what do you want? Ask the barkeeper.","""巴卡迪,<unk>,伏特加 - - 你想要什么?""酒吧老板问.","酒,酒,你想什么?","百加迪,麦,伏特加,你想要什么?",“白家地朗姆、黑麦威士忌、伏特加——你选哪一种？”，酒保问道。
+Cascade-600M,England,sample_0424,spk_1297,1.1904761904761905,0.0,False,I came out of it without a scratch.,I came out of it without a scratch.,我没有受到任何伤害.,我没有一丝划痕.,我没有受伤.,我毫发无伤地从里面出来了。
+Cascade-600M,England,sample_0288,spk_0265,1.2755102040816324,0.0,False,Petrov made a funny face as he turned.,Petrov made a funny face as he turned.,佩特罗夫转身时做了一个有趣的表情.,佩特罗夫转身时表现得很有趣.,佩特罗夫转身时表情很有趣.,Petrov 转过身来，做了一个滑稽的鬼脸。
+Cascade-600M,England,sample_0576,spk_0393,1.2755102040816324,0.0,False,Petrov made a funny face as he turned.,Petrov made a funny face as he turned.,佩特罗夫转身时做了一个有趣的表情.,佩特罗夫转身时表现得很有趣.,佩特罗夫转身时表情很有趣.,Petrov 转过身来，做了一个滑稽的鬼脸。
+Cascade-600M,England,sample_0518,spk_0563,1.3227513227513228,0.0,True,A gritting lorry is used to grit the roads when frost is expected overnight,A gritting lorry is used to grit the roads when frost is expected overnight.,"当夜间预计会有<unk>时, 一辆<unk>石卡车被用来<unk>石道路","预计夜间会有冰,",预计夜间的道路上使用了砂卡车.,如果隔夜会出现霜冻，则用铺沙砾的货车在路上铺沙砾。
+Cascade-600M,England,sample_0323,spk_1520,1.400560224089636,0.25,False,"Ninety five lines and no more, that's it.",95 lines and no more. That's it.,"九十五行,没有更多,这就是它.","只有95行,没有更多.","95行,没有更多.",九十五行，仅此而已。
+Cascade-600M,England,sample_0371,spk_0566,1.8796992481203008,0.0,False,What do you know about that?,What do you know about that?,你对此有什么了解?,你知道什么?,你对此有什么了解?,你对此了解多少？
+Cascade-600M,Filipino,sample_0737,spk_0466,0.0,0.1428571428571428,False,"What a load of trash, Sarah opined.",What a load of trash! Sorrow opined.,"""这是一个垃圾堆"",莎拉认为.",悲伤认为.,悲伤的意见.,“真是一堆垃圾”，Sarah 想。
+Cascade-600M,Filipino,sample_0785,spk_0030,0.0,0.0,False,I beg your pardon!,I beg your pardon.,我道歉!,我很抱歉.,现在请原谅我.,麻烦再说一遍？
+Cascade-600M,Filipino,sample_0821,spk_0473,0.0,0.2,False,Mark untaped the package carefully.,Mark untaped to package carefully.,马克小心翼翼地解开包裹,子被好好地打开.,"标记拆开,以小心包装.",请小心标记未使用的包裹。
+Cascade-600M,Filipino,sample_0847,spk_0030,0.0,0.3333333333333333,False,As sure as I am alive.,"Yeah, I sure as I am alive",我活着一样肯定,"是的,我肯定,因为我活着","是的,我相信我还活着",十拿九稳
+Cascade-600M,Filipino,sample_0926,spk_1354,0.0,0.1428571428571428,True,The turf and gravel around it seemed charred as if by a sudden explosion.,"To turf and waver around, it seemed charred as if by a sudden explosion.",周围的草<unk>和<unk>石似乎被突然的爆炸烧毁.,地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地地.,"草地和摇摆,它似乎烧焦,如果突然爆炸.",周围的草皮和碎石似乎被突然的爆炸烧焦了。
+Cascade-600M,Filipino,sample_1016,spk_0110,0.0,0.3333333333333333,False,Let well alone.,Let dwell alone.,让他一个人,让我们安静下来.,让一个人.,顺其自然
+Cascade-600M,Filipino,sample_1017,spk_1002,0.0,0.1428571428571428,False,As well as What a Carve Up!,as well as what I carve up,以及什么雕刻!,我还要把我的东西剪成,"我所创造的,",多么刻薄！
+Cascade-600M,Filipino,sample_1151,spk_0464,0.6443298969072164,0.1666666666666666,False,It is directed by Rajesh Touchriver.,It is directed by Rajesh Thacharivar.,这部电影由拉杰什·塔奇里弗执导.,导演是拉吉什·塔卡里瓦尔.,导演:拉杰什·塔卡里瓦尔,它由Rajesh Touchriver执导。
+Cascade-600M,Filipino,sample_0944,spk_1561,0.7598784194528876,0.4,False,Gestir are signed to Tutl Records in the Faroe Islands.,Guest tier are assigned to Total Records in the Faroe Islands.,盖斯特在法罗群岛的图特尔唱片公司签约.,客户级别分配给费尔岛总记录.,客人级别被分配给法罗群岛的总记录.,吉斯特与法罗群岛的TUTL唱片公司签约。
+Cascade-600M,Filipino,sample_1134,spk_0210,0.8333333333333334,0.0,False,Elizabeth reclined gracefully.,Elizabeth reclined gracefully.,伊丽莎白优雅地躺下.,伊丽莎白轻轻地躺下了.,伊丽莎白优雅地躺下.,Elizabeth 优雅地斜靠着。
+Cascade-600M,Hong Kong,sample_1232,spk_0951,0.0,0.75,False,"Penny wise, pound foolish.",Pennywise Pong foolish,"一分钱是明智的,一分钱是愚蠢的.",尼威斯是个瓜,钱的是愚蠢的,因小失大。
+Cascade-600M,Hong Kong,sample_1398,spk_0019,0.0,0.0,False,What time is it?,What time is it?,现在的时间是多少?,现在是什么时候?,现在是什么时间?,几点了？
+Cascade-600M,Hong Kong,sample_1449,spk_0826,0.0,0.6666666666666666,False,Seize the day.,Sister Day,抓住那一天,姐妹日,姐妹节,把握今天。
+Cascade-600M,Hong Kong,sample_1477,spk_1314,0.0,0.0,False,"Out of sight, out of mind","Out of sight, out of mind.",远离视线远离心灵,"失踪,失去了头脑.","远离眼前,远离心灵.",眼不见，心不烦
+Cascade-600M,Hong Kong,sample_1491,spk_1043,0.0,0.0909090909090909,True,You can't make a silk purse out of a sow's ear.,You can make a silk purse out of a sow's ear.,你不能用猪的耳朵做丝<unk>钱包.,你可以用猪耳做一个丝包.,你可以用母猪的耳朵做一个丝的钱包.,劣材难成器。
+Cascade-600M,Hong Kong,sample_1543,spk_1314,0.0,1.0,False,The view had better be worth it.,If you have bet I would be with it.,景色最好是值得的.,"如果你敢打,我会支持.",如果我有我会和它.,景色最好是值得的。
+Cascade-600M,Hong Kong,sample_1562,spk_1314,0.0,0.0,False,In a little while.,in a little while,在很短的时间里,在不久的时间里,在一段时间内,一会儿。
+Cascade-600M,Hong Kong,sample_1796,spk_1043,0.0,0.1428571428571428,True,Don't count your chickens before they hatch.,Don't count the chickens before they hatch.,在<unk>化之前不要计数你的<unk>.,在出之前不要数.,在化之前不要计算.,别太早下定论。
+Cascade-600M,Hong Kong,sample_1447,spk_1398,0.5330490405117271,0.4,False,"Bacardi, rye, vodka – what do you want?, asked the barkeeper.","Bhakti, rhyme, voca. What do you want? Ask the barkeeper.","""你想要什么?"" 酒吧老板问道.",",,,,你需要什么?",",你想什么?问吧台主.",“白家地朗姆、黑麦威士忌、伏特加——你选哪一种？”，酒保问道。
+Cascade-600M,Hong Kong,sample_1511,spk_1043,0.8333333333333334,0.0,False,"Bravo!, Charlie applauded.","Bravo, Charlie applauded.",查理鼓掌道好,",查理拍手了.",查理也鼓掌了,“太棒了！”，Charlie 鼓掌。
+Cascade-600M,India / South Asia,sample_1840,spk_0092,0.0,0.0,False,"Since then, its development stopped.","Since then, its development stopped.","从那时起,它的发展停止了.","由于这种情况,","现在,",从那以后，它的发展就停止了。
+Cascade-600M,India / South Asia,sample_1865,spk_0625,0.0,0.0,False,Hold the line a minute.,Hold the line a minute.,待一分钟,待一分钟.,保持一分钟的线.,请稍等片刻。
+Cascade-600M,India / South Asia,sample_1944,spk_1462,0.0,0.0,False,False friends are worse than open enemies.,False friends are worse than open enemies.,假朋友比公开的敌人更糟糕.,假朋友比公开的敌人更糟糕.,假朋友比公开的敌人更糟糕.,明枪易躲，暗箭难防。
+Cascade-600M,India / South Asia,sample_1951,spk_1169,0.0,0.0,True,"Oh, I beg your pardon!","Oh, I beg your pardon?","<unk>,我求你原谅!",",我请你原谅?",",请原谅?",哦，麻烦再说一遍！
+Cascade-600M,India / South Asia,sample_1952,spk_0902,0.0,0.75,False,There was no need.,That was not near.,没有必要.,这还不够近.,这不是近.,没有必要。
+Cascade-600M,India / South Asia,sample_2005,spk_1313,0.0,1.0,True,A steak-and-kidney pie.,a stick and kidney pie,一块牛排和<unk>蛋糕.,一根棒和蛋糕,一个棒和蛋糕,牛排腰子馅饼。
+Cascade-600M,India / South Asia,sample_2019,spk_1230,0.0,0.8571428571428571,False,There were eight people in a row.,They were 8 feet by the narrow,有八个人排成一排.,他们在狭窄的8英尺,他们在狭窄的8英尺,一行共有八个人。
+Cascade-600M,India / South Asia,sample_2091,spk_0031,0.0,0.8,False,"Love me, love my dog.","Look at me, look at my dog.","爱我,爱我的狗","看我,看我的狗.","看看我,看看我的狗.",爱屋及乌。
+Cascade-600M,India / South Asia,sample_2114,spk_0022,0.0,1.2,False,And you couldn't release him?,A new current relay is in.,你不能释放他吗?,现在有新的电流继电器.,现在已经有了新的电流继电器.,你就不能放了他?
+Cascade-600M,India / South Asia,sample_2119,spk_1480,0.0,1.0,True,"Oh, I beg your pardon!",I thank you for it.,"<unk>,我求你原谅!",我感谢你.,我感谢你这么做.,哦，麻烦再说一遍！
+Cascade-600M,Malaysian,sample_2426,spk_1509,0.0,0.0,False,Don't be a fool.,Don't be a fool.,不要傻瓜.,不要做个瓜.,不要愚蠢.,别傻了！
+Cascade-600M,Malaysian,sample_2430,spk_1331,0.0,0.0,False,There is no fire without some smoke.,There is no fire without some smoke.,没有烟雾就没有火.,没有烟雾就没有火.,没有烟雾就没有火.,无风不起浪。
+Cascade-600M,Malaysian,sample_2672,spk_0491,0.0,0.6,False,What have you got there?,Would have to go there.,你有什么东西?,我必须去那里.,必须去那里.,你拿了什么？
+Cascade-600M,Malaysian,sample_2746,spk_0640,0.0,0.0,False,The monk was irritated.,The monk was irritated.,这位僧侣很生气.,僧侣很生气.,这位僧侣很火.,和尚被激怒了。
+Cascade-600M,Malaysian,sample_2819,spk_0836,0.0,0.0,False,The monk was irritated.,The monk was irritated.,这位僧侣很生气.,僧侣很生气.,这位僧侣很火.,和尚被激怒了。
+Cascade-600M,Malaysian,sample_2878,spk_0551,0.0,0.8571428571428571,False,A zestful food is the hot-cross bun.,Z-Swoop foot is the hook cross bound,热十字面包是一种热的食物.,脚是子交叉的,的脚是的交叉绑定,十字面包非常美味。
+Cascade-600M,Malaysian,sample_2972,spk_1447,0.0,1.0,True,"Oh dear, oh dear!","Audio, audio.","<unk>,亲爱的,<unk>,亲爱的!","音频,音频.","音频,音频.",哦天哪，哦天哪！
+Cascade-600M,Malaysian,sample_2976,spk_1555,0.0,0.0,False,"Soon ripe, soon rot.","Soon ripe, soon rot.",Soon RipeSoon Roy,"很快成熟,很快腐烂.","很快成熟,很快腐烂.",早慧早衰。
+Cascade-600M,Malaysian,sample_2548,spk_1057,1.098901098901099,0.2857142857142857,False,Discretion is the better part of valour.,Destruction is the better part of Vela.,谨慎是勇气的最好部分.,毁灭是Vela的最好部分.,破坏是维拉的最好部分.,这事可由你自行斟酌决定的。
+Cascade-600M,Malaysian,sample_2838,spk_0491,1.152073732718894,0.0,True,"Dirt and dust everywhere, give me the broom!",Dirt and dust everywhere. Give me the broom.,"污垢和尘埃到处,给我扫<unk>!",脏和尘埃在任何地方.,污垢和灰尘遍地.给我扫.,到处都是灰尘，把扫帚给我！
+Cascade-600M,Southern African,sample_3004,spk_1185,0.0,0.5,False,Terracotta Sighing.,Terracotta sewing,Terracotta sign,地,制棉花,兵马俑之叹。
+Cascade-600M,Southern African,sample_3048,spk_0405,0.0,0.0,True,"Strawberry curd, yummy!",Strawberry curd. Yummy!,"草<unk>奶酪,很好吃!","果,!","草奶酪,非常好吃",草莓凝乳，好吃 ！
+Cascade-600M,Southern African,sample_3218,spk_0829,0.0,0.0,False,With emphasis,with emphasis.,强调,需要注意.,需要强调.,强调
+Cascade-600M,Southern African,sample_3354,spk_1367,0.0,0.0,False,Just hang on here for a moment.,Just hang on here for a moment.,稍等一下,待在这里一会儿.,只是等待在这里一会儿.,请稍等片刻。
+Cascade-600M,Southern African,sample_3412,spk_0829,0.0,0.0,False,I beg your pardon!,I beg your pardon.,我道歉吗?,我很抱歉.,现在请原谅我.,麻烦再说一遍？
+Cascade-600M,Southern African,sample_3578,spk_0829,0.0,0.0,False,Terracotta Sighing,Terracotta Sighing,塔拉科塔说,花的喘息,土的叹息,兵马俑之叹。
+Cascade-600M,Southern African,sample_3584,spk_0778,0.0,0.0,False,Heave the line over the port side.,Heave the line over the port side.,把绳索抬到左舷,起线在港口边.,举起线在船侧.,把缆绳拉过左舷。
+Cascade-600M,Southern African,sample_3590,spk_1367,0.0,0.0,False,And that is not all.,And that is not all.,这还不够,没有什么.,这还不是全部.,而且，这还不是全部。
+Cascade-600M,Southern African,sample_3326,spk_0425,0.4761904761904761,0.0769230769230769,True,"Never advertise razors by shaving a monkey, it's cruel and results in lawsuits.",Never advertise raises by shaving a monkey. It's cruel and results in lawsuits.,"永远不要通过剃须<unk>子来宣传剃须刀, 这是残酷的,","没有什么可靠的方法,","永远不要通过剃子来宣传提薪. 这很残忍,并导致诉讼.",千万不要通过给猴子剃毛来为剃须刀做广告，这很残忍，而且会导致法律诉讼。
+Cascade-600M,Southern African,sample_3523,spk_0284,0.6377551020408162,0.4285714285714285,False,Give Home Is the Hunter zero stars,GiveHome is the Hunter Zero styles.,给家是猎人零星,给家是猎人零的风格.,给家是猎人零的风格.,Give Home Is the Hunter 零星级
+Cascade-600M,United States,sample_3614,spk_0162,0.0,0.0,False,Good luck on the way.,Good luck on the way.,在路上祝你好运.,顺利的路上.,在路上祝你好运.,祝你好运。
+Cascade-600M,United States,sample_3756,spk_0144,0.0,0.0,False,War to the knife bitter end.,War to the knife bitter end.,战争的痛苦结束.,战争到刀结.,战争的痛苦结束.,兵戎相见
+Cascade-600M,United States,sample_3890,spk_0860,0.0,1.0,True,Mantled gules doubled argent.,Manel Duels Double Darjeeb,蒙着<unk>的<unk>子加倍的银子.,马内尔对战双达吉布,曼尼尔对决双达吉布,红色的叠加使银色倍增。
+Cascade-600M,United States,sample_3939,spk_1358,0.0,0.0,False,Heave the line over the port side.,Heave the line over the port side.,在左舷上举起绳索.,起线在港口边.,举起线在船侧.,把缆绳拉过左舷。
+Cascade-600M,United States,sample_3948,spk_0676,0.0,0.8,True,Why are gully covers round?,"Where are you going, Cumber-Crow?",为什么<unk>沟的盖子是圆的?,"你去哪里,坎伯克罗?","你去哪里,?",为什么泄水沟盖是圆的？
+Cascade-600M,United States,sample_3984,spk_0018,0.0,0.0,False,"Yours sincerely, Satan.","Yours sincerely, Satan",你是真诚的 - - 撒旦!,"诚实地说,撒旦","诚的你的,撒旦",谨启， Satan。
+Cascade-600M,United States,sample_4022,spk_0686,0.0,0.0,False,Miss it! Miss Out!,"Miss it, miss out.","错过了,错过了!","错过了,错过了.","错过了,错过了.",机不可失，失不再来！
+Cascade-600M,United States,sample_4155,spk_1071,0.0,0.0,False,"Oh, what a pity!","Oh, what a pity.",这真是太可惜了!,",这是一个可惜的事.",",这是一个遗憾.",哦，真遗憾！
+Cascade-600M,United States,sample_4172,spk_0089,0.0,0.0,False,"Like master, like man.","Like master, like man.","像主人一样,像男人一样.","像一个老师,像一个男人.","像主人,像一个人.",有其主必有其仆。
+Cascade-600M,United States,sample_4123,spk_1054,0.5494505494505495,0.0,False,See also: alpha blocker and beta blocker,See also Alpha Blocker and Beta Blocker,"""还见:阿尔法阻断剂和β阻断剂""",查看Alpha Blocker和Beta Blocker,另见阿尔法阻断剂和β阻断剂,“另见：α-肾上腺素能阻滞剂和β-肾上腺素能阻滞剂”
+Cascade-3.3B,England,sample_0050,spk_1254,0.0,0.0,False,"Artisanal gin bar, seriously?!",Artisanal gin bar? Seriously?,"艺术品酒吧,真的吗?",工艺品酒吧?,只有一个人能做.,手工杜松子酒吧，真的吗？
+Cascade-3.3B,England,sample_0191,spk_0002,0.0,0.0,False,"Hello, Benjamin.",Hello Benjamin.,"你好,本杰明","你好,Benjamin.",现在我们要去看看.,你好，Benjamin。
+Cascade-3.3B,England,sample_0281,spk_0407,0.0,0.3333333333333333,False,"Yours sincerely, Satan.",You're sincerely Satan.,你是撒旦的真心,你真的是恶魔.,你真的是撒旦.,谨启， Satan。
+Cascade-3.3B,England,sample_0476,spk_1238,0.0,0.0,False,However it has become a cult film.,"However, it has become a cult film.","然而,它已经成为一部邪教电影.","然而,它已经成为一个崇拜电影.","尽管如此,",然而，它已经成为了一部邪典电影。
+Cascade-3.3B,England,sample_0510,spk_0258,0.0,0.6666666666666666,True,The homeless seem to like soup.,The whole is thin too like soup.,无家可归的人似乎喜欢<unk>.,"整体太薄了,就像一样.","整体太薄了,就像一样.",无家可归者似乎喜欢喝汤。
+Cascade-3.3B,England,sample_0515,spk_0099,0.0,0.0,False,"Quiet down, will you?","Quiet down, will you?","静下来,你会吗?",你可以安静下来吗?,让我们来看看.,请安静，好吗?
+Cascade-3.3B,England,sample_0535,spk_1225,1.1904761904761905,0.0,False,"Three weeks later, he was feeling a lot better.",Three weeks later he was feeling a lot better.,"三周后,他感觉好了很多.","三周后,他感觉更好.","经过三周的治疗,",三个星期后，他感觉好多了。
+Cascade-3.3B,England,sample_0288,spk_0265,1.2886597938144329,0.0,False,Petrov made a funny face as he turned.,Petrov made a funny face as he turned.,佩特罗夫转身时做了一个有趣的表情.,佩特罗夫转身时表现得很有趣.,佩特罗夫转身时表情很有趣.,Petrov 转过身来，做了一个滑稽的鬼脸。
+Cascade-3.3B,England,sample_0576,spk_0393,1.2886597938144329,0.0,False,Petrov made a funny face as he turned.,Petrov made a funny face as he turned.,佩特罗夫转身时做了一个有趣的表情.,佩特罗夫转身时表现得很有趣.,佩特罗夫转身时表情很有趣.,Petrov 转过身来，做了一个滑稽的鬼脸。
+Cascade-3.3B,England,sample_0568,spk_1107,1.3869625520110958,0.3846153846153846,True,He stood irresolute for a moment and then scrambled out of the pit.,She sits unrationally for a moment and there's trouble out of the pit.,"他站了不决心的一刻,然后<unk>出坑.","她坐不理性一会儿,然后就会出现麻烦.","她坐不合理的瞬间,有麻烦的坑.",他犹豫不决地站了一会儿，然后从坑里爬了出来。
+Cascade-3.3B,Filipino,sample_0704,spk_0030,0.0,0.0,False,There you have it!,There you have it!,这就是它!,这里有你!,这就是它!,给你！
+Cascade-3.3B,Filipino,sample_0737,spk_0466,0.0,0.1428571428571428,False,"What a load of trash, Sarah opined.",What a load of trash! Sorrow opined.,"""这是一个垃圾堆"",莎拉认为.",悲伤认为.,悲伤的意见.,“真是一堆垃圾”，Sarah 想。
+Cascade-3.3B,Filipino,sample_0785,spk_0030,0.0,0.0,False,I beg your pardon!,I beg your pardon.,我道歉!,我很抱歉.,现在请原谅我.,麻烦再说一遍？
+Cascade-3.3B,Filipino,sample_0789,spk_0030,0.0,0.1666666666666666,False,Stop bashing Ivy all the time!,Stop brushing Ivy all the time!,停止打艾维所有的时间!,停止一直刷伊维!,停止刷牙艾薇所有的时间!,不要一直抨击Ivy。
+Cascade-3.3B,Filipino,sample_0847,spk_0030,0.0,0.3333333333333333,False,As sure as I am alive.,"Yeah, I sure as I am alive",我活着一样肯定,"是的,我肯定,因为我活着","是的,我相信我还活着",十拿九稳
+Cascade-3.3B,Filipino,sample_1016,spk_0110,0.0,0.3333333333333333,False,Let well alone.,Let dwell alone.,让他一个人,让我们安静下来.,让一个人.,顺其自然
+Cascade-3.3B,Filipino,sample_1017,spk_1002,0.0,0.1428571428571428,False,As well as What a Carve Up!,as well as what I carve up,以及什么雕刻!,我还要把我的东西剪成,"我所创造的,",多么刻薄！
+Cascade-3.3B,Filipino,sample_1102,spk_1519,0.0,0.0,False,Don't mind the Colonel.,Don't mind the colonel.,别管上校,"没有问题,上校.",没有什么大佐.,别管上校。
+Cascade-3.3B,Filipino,sample_1116,spk_0356,0.0,0.0,False,There you have it!,There you have it!,这就是它!,这里有你!,这就是它!,给你！
+Cascade-3.3B,Filipino,sample_1127,spk_0059,0.0,0.0,False,"While doing so, the sustainable yield may be much less.","While doing so, the sustainable yield may be much less.","在这样做时,可持续的产量可能要少得多.","尽管如此,可持续的产量可能会小得多.","虽然如此,",这样做时，可持续产量可能要少得多。
+Cascade-3.3B,Hong Kong,sample_1232,spk_0951,0.0,0.75,False,"Penny wise, pound foolish.",Pennywise Pong foolish,"一分钱是明智的,一分钱是愚蠢的.",尼威斯是个瓜,钱的是愚蠢的,因小失大。
+Cascade-3.3B,Hong Kong,sample_1398,spk_0019,0.0,0.0,False,What time is it?,What time is it?,现在的时间是多少?,现在是什么时候?,现在是什么时间?,几点了？
+Cascade-3.3B,Hong Kong,sample_1449,spk_0826,0.0,0.6666666666666666,False,Seize the day.,Sister Day,抓住那一天,姐妹日,姐妹节,把握今天。
+Cascade-3.3B,Hong Kong,sample_1491,spk_1043,0.0,0.0909090909090909,True,You can't make a silk purse out of a sow's ear.,You can make a silk purse out of a sow's ear.,你不能用猪的耳朵做丝<unk>钱包.,你可以用猪耳做一个丝包.,你可以用母猪的耳朵做一个丝的钱包.,劣材难成器。
+Cascade-3.3B,Hong Kong,sample_1520,spk_0823,0.0,0.4444444444444444,False,Gyrotrons can be designed for pulsed or continuous operation.,Gaiotrons be decided for post or continuous operation.,陀螺机可以设计为脉冲或连续运行.,子可用于后期或连续运行.,没有任何的原因.,回旋加速器可以设计为脉冲式或连续工作式。
+Cascade-3.3B,Hong Kong,sample_1543,spk_1314,0.0,1.0,False,The view had better be worth it.,If you have bet I would be with it.,景色最好是值得的.,"如果你敢打,我会支持.",如果我有我会和它.,景色最好是值得的。
+Cascade-3.3B,Hong Kong,sample_1796,spk_1043,0.0,0.1428571428571428,True,Don't count your chickens before they hatch.,Don't count the chickens before they hatch.,在<unk>化之前不要计数你的<unk>.,在出之前不要数.,在化之前不要计算.,别太早下定论。
+Cascade-3.3B,Hong Kong,sample_1791,spk_1043,0.5494505494505495,0.1333333333333333,False,"When he kissed her cheek, she suddenly blushed, changing her color faster than a chameleon.","When he kissed her cheek, she suddenly burst, changing her color faster than a comedian.","当他亲吻她的脸颊时,她突然脸红了,她的颜色更快于黑猩猩.","当他吻她的脸时,她突然爆发,比喜剧演员更快地改变了她的颜色.",",我知道你会喜欢的.",当他亲吻她的脸颊时，她突然脸红了，她的颜色变化比变色龙还快。
+Cascade-3.3B,Hong Kong,sample_1683,spk_1501,0.6377551020408162,0.2,False,Three cheers for Aden Christopher.,Three cheers for Aidan Christopher.,三个欢呼为艾登克里斯托弗.,"为了艾登·克里斯托弗,我们要欢呼.",艾丹·克里斯托弗的三次喝彩.,为 Aden Christopher 欢呼三声。
+Cascade-3.3B,Hong Kong,sample_1251,spk_1043,0.8928571428571428,0.1111111111111111,True,The streets are narrow and full of sharp turns.,The streets are narrow and full of shop turns.,"街道狭窄,有很多<unk>的<unk>道.","街道狭窄,充满商店道.",路上有很多商店.,这些街道很狭窄，而且到处都是急转弯。
+Cascade-3.3B,India / South Asia,sample_1840,spk_0092,0.0,0.0,False,"Since then, its development stopped.","Since then, its development stopped.","从那时起,它的发展停止了.","由于这种情况,","现在,",从那以后，它的发展就停止了。
+Cascade-3.3B,India / South Asia,sample_1865,spk_0625,0.0,0.0,False,Hold the line a minute.,Hold the line a minute.,待一分钟,待一分钟.,保持一分钟的线.,请稍等片刻。
+Cascade-3.3B,India / South Asia,sample_1872,spk_1038,0.0,1.0,False,AppArmor is filesystem-agnostic.,AppArmor is file system agnostic.,AppArmor 是文件系统不可知论的.,手机是文件系统无知者.,应用程序的文件系统不可知.,AppArmor 是 filesystem-agnostic。
+Cascade-3.3B,India / South Asia,sample_1924,spk_0415,0.0,0.6666666666666666,False,Lack of appetite!,Black Ops Appetite!,缺乏食欲!,黑人军人食!,黑色行动 胃口!,没有食欲！
+Cascade-3.3B,India / South Asia,sample_1944,spk_1462,0.0,0.0,False,False friends are worse than open enemies.,False friends are worse than open enemies.,假朋友比公开的敌人更糟糕.,假朋友比公开的敌人更糟糕.,假朋友比公开的敌人更糟糕.,明枪易躲，暗箭难防。
+Cascade-3.3B,India / South Asia,sample_1951,spk_1169,0.0,0.0,True,"Oh, I beg your pardon!","Oh, I beg your pardon?","<unk>,我求你原谅!",",我请你原谅?",",请原谅?",哦，麻烦再说一遍！
+Cascade-3.3B,India / South Asia,sample_1952,spk_0902,0.0,0.75,False,There was no need.,That was not near.,没有必要.,这还不够近.,这不是近.,没有必要。
+Cascade-3.3B,India / South Asia,sample_1994,spk_0071,0.0,0.1111111111111111,False,"Three weeks later, he was feeling a lot better.",3 weeks later he was feeling a lot better.,"三周后,他感觉好了很多.","3周后,他感觉更好.","经过3周的治疗,",三个星期后，他感觉好多了。
+Cascade-3.3B,India / South Asia,sample_2005,spk_1313,0.0,1.0,True,A steak-and-kidney pie.,a stick and kidney pie,一块牛排和<unk>蛋糕.,一根棒和蛋糕,一个棒和蛋糕,牛排腰子馅饼。
+Cascade-3.3B,India / South Asia,sample_2019,spk_1230,0.0,0.8571428571428571,False,There were eight people in a row.,They were 8 feet by the narrow,有八个人排成一排.,他们在狭窄的8英尺,他们在狭窄的8英尺,一行共有八个人。
+Cascade-3.3B,Malaysian,sample_2426,spk_1509,0.0,0.0,False,Don't be a fool.,Don't be a fool.,不要傻瓜.,不要做个瓜.,不要愚蠢.,别傻了！
+Cascade-3.3B,Malaysian,sample_2430,spk_1331,0.0,0.0,False,There is no fire without some smoke.,There is no fire without some smoke.,没有烟雾就没有火.,没有烟雾就没有火.,没有烟雾就没有火.,无风不起浪。
+Cascade-3.3B,Malaysian,sample_2461,spk_1331,0.0,0.0,False,As you were!,As you were.,保持原状!,正如你.,让我们继续.,如你所愿。
+Cascade-3.3B,Malaysian,sample_2535,spk_0169,0.0,0.0,False,It remains open to the public.,It remains open to the public.,它仍然对公众开放.,公共场所仍开放.,"现在,",它仍然对公众开放。
+Cascade-3.3B,Malaysian,sample_2583,spk_0551,0.0,0.3333333333333333,False,It's an ill wind that blows no-one some good.,It's an air wind that blows no one some good.,"这是一个不好的风,吹没有人一些好.","这是一股空气风,不会给任何人带来任何好处.",这是一个空气风吹没有人一些好.,祸不单行。
+Cascade-3.3B,Malaysian,sample_2672,spk_0491,0.0,0.6,False,What have you got there?,Would have to go there.,你有什么东西?,我必须去那里.,必须去那里.,你拿了什么？
+Cascade-3.3B,Malaysian,sample_2724,spk_0263,0.0,0.0,True,"When the carpet and the curtains caught fire, it was getting warm.","When the carpet and the curtains caught fire, it was getting warm.","当地毯和窗<unk>着火时,天气开始变暖.","当地毯和窗发生火灾时,","现在,我们已经开始了.",当地毯和窗帘着火时，温度逐渐上升。
+Cascade-3.3B,Malaysian,sample_2746,spk_0640,0.0,0.0,False,The monk was irritated.,The monk was irritated.,这位僧侣很生气.,僧侣很生气.,这位僧侣很火.,和尚被激怒了。
+Cascade-3.3B,Malaysian,sample_2819,spk_0836,0.0,0.0,False,The monk was irritated.,The monk was irritated.,这位僧侣很生气.,僧侣很生气.,这位僧侣很火.,和尚被激怒了。
+Cascade-3.3B,Malaysian,sample_2878,spk_0551,0.0,0.8571428571428571,False,A zestful food is the hot-cross bun.,Z-Swoop foot is the hook cross bound,热十字面包是一种热的食物.,脚是子交叉的,的脚是的交叉绑定,十字面包非常美味。
+Cascade-3.3B,Southern African,sample_3004,spk_1185,0.0,0.5,False,Terracotta Sighing.,Terracotta sewing,Terracotta sign,地,制棉花,兵马俑之叹。
+Cascade-3.3B,Southern African,sample_3083,spk_0557,0.0,0.0,False,As you were!,As you were.,保持原状!,正如你.,让我们继续.,如你所愿。
+Cascade-3.3B,Southern African,sample_3200,spk_0405,0.0,0.0,False,"Quiet down, will you?","Quiet down, will you?",你能静静下来吗?,你可以安静下来吗?,让我们来看看.,请安静，好吗?
+Cascade-3.3B,Southern African,sample_3310,spk_0484,0.0,0.0,False,"To no surprise, the equator indeed crosses Ecuador.","To no surprise, the equator indeed crosses Ecuador.","没有意外地,赤道确实穿过厄瓜多尔.","没有什么惊,赤道确实穿越厄瓜多尔.","没有什么奇怪的,",毫无疑问，赤道确实经过厄瓜多尔。
+Cascade-3.3B,Southern African,sample_3395,spk_0933,0.0,0.0666666666666666,False,"When he kissed her cheek, she suddenly blushed, changing her color faster than a chameleon.","When he kissed the cheek, she suddenly blushed, changing her color faster than a chameleon.","当他亲吻她的脸颊时,她突然脸红了,她的颜色比黑猩猩更快.","当他吻了脸时,她突然变红,比马龙更快地改变了颜色.",",我知道你会喜欢我.",当他亲吻她的脸颊时，她突然脸红了，她的颜色变化比变色龙还快。
+Cascade-3.3B,Southern African,sample_3412,spk_0829,0.0,0.0,False,I beg your pardon!,I beg your pardon.,我道歉吗?,我很抱歉.,现在请原谅我.,麻烦再说一遍？
+Cascade-3.3B,Southern African,sample_3584,spk_0778,0.0,0.0,False,Heave the line over the port side.,Heave the line over the port side.,把绳索抬到左舷,起线在港口边.,举起线在船侧.,把缆绳拉过左舷。
+Cascade-3.3B,Southern African,sample_3523,spk_0284,0.6377551020408162,0.4285714285714285,False,Give Home Is the Hunter zero stars,GiveHome is the Hunter Zero styles.,给家是猎人零星,给家是猎人零的风格.,给家是猎人零的风格.,Give Home Is the Hunter 零星级
+Cascade-3.3B,Southern African,sample_3206,spk_1538,0.7621951219512193,0.2142857142857142,False,"In “Education” there is no U and I... Wait, actually, I guess there is.","In education there is no UNI. Wait, actually I guess there is.","在""教育""中没有""U""和""I""...","在教育中,没有UNI.","现在,我认为在教育领域,",在单词 “Education” 中没有字母 U 和 I...等等，实际上，我想是有的。
+Cascade-3.3B,Southern African,sample_3282,spk_0679,1.0775862068965516,0.0,False,You will be Jane Doe.,You will be Jane Doe.,你将成为未知身份的女士.,你将成为未知的.,你将成为一个未知身份的女士.,你就是 Jane Doe。
+Cascade-3.3B,United States,sample_3710,spk_0777,0.0,0.0,True,Do the roses compete in athletic events?,Do the roses compete in athletic events?,<unk>在体育比赛中参加比赛吗?,在运动赛事上竞争吗?,花是否参加运动?,体育比赛有玫瑰吗？
+Cascade-3.3B,United States,sample_3756,spk_0144,0.0,0.0,False,War to the knife bitter end.,War to the knife bitter end.,战争的痛苦结束.,战争到刀结.,战争的痛苦结束.,兵戎相见
+Cascade-3.3B,United States,sample_3765,spk_0209,0.0,0.0,False,Give credit where credit is due.,Give credit where credit is due.,给应得的赞誉,给信誉应有的信誉.,感谢应得的.,有功则赏。
+Cascade-3.3B,United States,sample_3818,spk_1334,0.0,0.0,False,The last switch cannot be turned off.,The last switch cannot be turned off.,最后一个开关不能关闭.,最后一个开关不能关闭.,没有任何的接器.,最后一个开关不能关闭。
+Cascade-3.3B,United States,sample_3890,spk_0860,0.0,1.0,True,Mantled gules doubled argent.,Manel Duels Double Darjeeb,蒙着<unk>的<unk>子加倍的银子.,马内尔对战双达吉布,曼尼尔对决双达吉布,红色的叠加使银色倍增。
+Cascade-3.3B,United States,sample_3939,spk_1358,0.0,0.0,False,Heave the line over the port side.,Heave the line over the port side.,在左舷上举起绳索.,起线在港口边.,举起线在船侧.,把缆绳拉过左舷。
+Cascade-3.3B,United States,sample_3948,spk_0676,0.0,0.8,True,Why are gully covers round?,"Where are you going, Cumber-Crow?",为什么<unk>沟的盖子是圆的?,"你去哪里,坎伯克罗?","你去哪里,?",为什么泄水沟盖是圆的？
+Cascade-3.3B,United States,sample_3958,spk_0170,0.0,0.375,False,It contains between four and five hundred inhabitants.,It contains between 400 and 500 inhabitants.,它有四百到五百名居民.,城市的居民数量在400至500人之间.,"据说,",它有四五百居民。
+Cascade-3.3B,United States,sample_3984,spk_0018,0.0,0.0,False,"Yours sincerely, Satan.","Yours sincerely, Satan",你是真诚的 - - 撒旦!,"诚实地说,撒旦","诚的你的,撒旦",谨启， Satan。
+Cascade-3.3B,United States,sample_4022,spk_0686,0.0,0.0,False,Miss it! Miss Out!,"Miss it, miss out.","错过了,错过了!","错过了,错过了.","错过了,错过了.",机不可失，失不再来！
