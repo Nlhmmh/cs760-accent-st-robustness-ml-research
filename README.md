@@ -481,8 +481,8 @@ python unk_analysis/scripts/trigger_words.py
 ```
 
 The explicit metric-table arguments above account for its move into
-`runs/evaluation_results/`; the supplementary scripts still default to the old
-`runs/merged_3system_with_metrics.csv` path. These scripts write into
+`runs/evaluation_results/`; the supplementary scripts default to the
+`runs/evaluation_results/merged_3system_with_metrics.csv` path. These scripts write into
 `unk_analysis/results/`; preserve the archived files
 or run in a separate checkout when comparing a replay. The four supplementary
 notebooks rerun model-based diagnostics on Colab and have their own input,

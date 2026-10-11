@@ -1,14 +1,14 @@
 """Direct <unk> rate by accent: speaker-cluster bootstrap CIs + logistic regression.
-Inputs : runs/merged_3system_with_metrics.csv in the repository (or the path given as 1st argument); runs/direct_full_run_1788151795/direct_predictions.csv (2nd argument) for the speaker id
+Inputs : runs/evaluation_results/merged_3system_with_metrics.csv in the repository (or the path given as 1st argument); runs/direct_full_run_1788151795/direct_predictions.csv (2nd argument) for the speaker id
 Outputs: unk_by_accent_ci.csv, unk_logit.csv, unk_by_accent.png
 Seed 760, 1,000 resamples (same as the action plan).
 """
 import sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]      # the unk_analysis folder
-MERGED = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / "runs" / "merged_3system_with_metrics.csv"   # the evaluation table shared by the group
+MERGED = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / "runs" / "evaluation_results" / "merged_3system_with_metrics.csv"   # the evaluation table shared by the group
 if not MERGED.exists():
-    sys.exit(f"Input not found: {MERGED}. Run from a clone of the repository (the table is runs/merged_3system_with_metrics.csv), or pass its path as the first argument.")
+    sys.exit(f"Input not found: {MERGED}. Run from a clone of the repository (the table is runs/evaluation_results/merged_3system_with_metrics.csv), or pass its path as the first argument.")
 OUT = ROOT / "results" / "accent"; OUT.mkdir(parents=True, exist_ok=True)
 import numpy as np, pandas as pd, statsmodels.formula.api as smf
 import matplotlib; matplotlib.use("Agg"); import matplotlib.pyplot as plt
