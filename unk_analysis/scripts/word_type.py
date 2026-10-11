@@ -5,9 +5,9 @@ Outputs: unk_wordtype_rates.csv, unk_wordtype_logit.csv, unk_wordtype.png.
 import sys
 from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]      # the unk_analysis folder
-MERGED = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / "runs" / "merged_3system_with_metrics.csv"   # the evaluation table shared by the group
+MERGED = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT.parent / "runs" / "evaluation_results" / "merged_3system_with_metrics.csv"   # the evaluation table shared by the group
 if not MERGED.exists():
-    sys.exit(f"Input not found: {MERGED}. Run from a clone of the repository (the table is runs/merged_3system_with_metrics.csv), or pass its path as the first argument.")
+    sys.exit(f"Input not found: {MERGED}. Run from a clone of the repository (the table is runs/evaluation_results/merged_3system_with_metrics.csv), or pass its path as the first argument.")
 OUT = ROOT / "results" / "word_type"; OUT.mkdir(parents=True, exist_ok=True)
 import numpy as np, pandas as pd, spacy, statsmodels.formula.api as smf
 from wordfreq import zipf_frequency
