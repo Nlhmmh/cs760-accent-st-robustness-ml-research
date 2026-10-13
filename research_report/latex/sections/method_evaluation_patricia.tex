@@ -1,0 +1,15 @@
+% OWNER: Patricia. Target: about 0.5 page.
+\subsection{Evaluation Metrics}
+\label{sec:metrics}
+\placeholder{Patricia}{Define corpus BLEU, chrF and chrF++, and mean sentence
+chrF++ with supporting metric papers~\cite{papineni2002bleu,popovic2015chrf,
+popovic2017chrfpp}. State SacreBLEU 2.6.0, Chinese BLEU tokenization, character
+order 6, beta 2, word orders 0/2 and whitespace policy. Record signatures and
+score scale, following reproducible reporting~\cite{post2018clarity}. The
+Chinese BLEU tokenizer is not applied to chrF++'s word component.}
+
+\placeholder{Patricia}{Define raw/normalized English WER and the exact
+lowercase, punctuation-removal and whitespace transforms. Distinguish pooled
+corpus WER from mean per-clip WER; Direct exposes no ASR transcript. Define
+literal \unk{} using exact-string matching, separately from special UNK IDs.
+Clarify that statistics use sentence chrF++ rather than corpus metric gaps.}

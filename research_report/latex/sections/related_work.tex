@@ -1,0 +1,65 @@
+% Integrated by Nathan from all five members' literature-survey themes.
+% Sources: accent_asr (Zhitong), architectures (Arizona), accent_st (Patricia),
+% evaluation data (Nathan), evaluation metrics/statistics (Jidni).
+% Assignment limit: one page. Cite original external sources, not our survey.
+\section{Related Work}
+\label{sec:related-work}
+
+\textit{Accent-sensitive recognition.}
+DiChristofano et al.~\cite{dichristofano2022global} evaluated commercial ASR
+services using speakers reading the same passage and reported disparities
+associated with English-language backgrounds. Controlling text improves
+comparability but does not eliminate speaker or recording differences.
+Prabhu et al.~\cite{prabhu2023accentcodebooks} used Common Voice accent labels to
+construct speaker-disjoint seen- and unseen-accent sets, and learned accent-
+specific codebooks to improve recognition. These studies motivate evaluating
+regional groups separately. Their outcome is ASR performance, however, rather
+than final translation quality; their adaptation methods are also distinct from
+our evaluation of frozen, unadapted systems.
+
+\textit{Direct and Cascaded translation.}
+Sperber and Paulik~\cite{sperber2020endtoend} describe trade-offs between
+committing to intermediate ASR representations and modelling translation
+directly, including data scarcity and separate component objectives.
+Bentivogli et al.~\cite{bentivogli2021cascade} compared Direct and Cascaded
+systems on matched MuST-C segments for English-to-German, Italian and Spanish,
+using automatic scores and professional post-editing. The approaches were
+similar on several human measures, while some conclusions changed with language
+direction and evaluation measure. Their results support matched evaluation,
+but do not imply a universal ranking or describe the regional English-to-Chinese
+setting studied here. Our comparison also uses different pretrained model
+families, so shared test inputs do not isolate architecture from training resources.
+
+\textit{Recognition errors and translation.}
+Le et al.~\cite{le2017disentangling} showed that ASR errors can have different
+consequences for French-to-English translation: some errors produce substantial
+translation damage, whereas others have little effect. Their phrase-based MT
+setting limits direct transfer to current neural cascades.
+Sperber et al.~\cite{sperber2019} compared translation under correct, decoded
+and perturbed intermediate transcripts; the cascade was particularly sensitive
+to changing those labels. These findings justify examining both WER and target-
+language scores. They do not establish that regional accent is the cause of
+translation differences in an observational benchmark, nor that a WER
+correlation identifies the mechanism inside a Direct model.
+
+\textit{Data and reference design.}
+Common Voice provides read speech with optional, self-reported accent metadata,
+rather than independently verified phonetic labels~\cite{ardila2020commonvoice}.
+CoVoST 2 extends Common Voice with professional translations of source
+transcripts and documented quality checks~\cite{wang2021covost2}. Together they
+support accent-labelled speech translation, but they were not designed to
+isolate accent from speaker and sentence content. Our balanced clip counts and
+matched system inputs therefore improve comparison without removing those
+dependencies or reference-matching limitations.
+
+\textit{Evaluation and statistical reliability.}
+BLEU evaluates reference n-gram agreement~\cite{papineni2002bleu}; chrF and chrF++
+provide character-based and combined character/word
+measures~\cite{popovic2015chrf,popovic2017chrfpp}. Post~\cite{post2018clarity}
+shows why tokenization and scoring settings must accompany reported BLEU scores.
+Koehn~\cite{koehn2004significance} motivates paired bootstrap comparisons on the
+same test items. We retain paired evaluation but cluster repeated speakers,
+distinguish corpus scores from sentence means, and report uncertainty in accent
+variation. The resulting study connects these literature themes in a matched
+seven-group, three-system benchmark with explicitly exploratory diagnostics;
+it does not claim that these themes are absent from all prior work.

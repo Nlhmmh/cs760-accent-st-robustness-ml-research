@@ -1,0 +1,23 @@
+% OWNER: Nathan. Post-hoc experiments; official predictions are preserved.
+\subsection{Earlier Direct-Output Diagnostics}
+\label{sec:earlier-diagnostic-method}
+
+We first audited the frozen Direct outputs for the exact string \unk{}, its
+frequency by accent and repeated sentence, runtime/generation flags, and the
+pinned tokenizer's encoding of Chinese references. Reference-tokenizer
+co-occurrence is descriptive and does not identify which token the model
+generated. We therefore selected five originally affected clips per accent
+using seed 760, giving 35 clips, and reran the same Direct checkpoint while
+retaining generated token IDs. This sensitivity experiment used CPU FP32,
+PyTorch/torchaudio 2.8.0 and Transformers 4.57.6, rather than the full run's
+GPU FP16 environment.
+
+We compared greedy decoding, greedy decoding with special UNK ID~1 suppressed,
+beam search with five beams, and beam search with that ID suppressed. Sampling
+remained disabled and the 256-new-token limit was retained. A second check on
+the same selected clips blocked the ordinary token sequences that spelled the
+visible marker, using \texttt{bad\_words\_ids}. Each experiment checked baseline
+agreement with the archived translations, counted literal markers and special
+UNK IDs separately, and scored the same subset using SacreBLEU 2.6.0. Changed
+outputs were inspected for alternative marker spellings. These post-hoc
+experiments did not alter the official 4,200 predictions.
