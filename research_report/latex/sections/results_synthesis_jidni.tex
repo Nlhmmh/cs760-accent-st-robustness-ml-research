@@ -1,0 +1,31 @@
+% OWNER: Jidni. Target: about 0.6 page including a compact sensitivity table.
+\subsection{Sensitivity Checks and Larger-MT Interpretation}
+\label{sec:synthesis-results}
+\placeholder{Jidni}{Use the common marker-free interval table, WER-subset
+scores and one-clip-per-speaker check to test how conclusions change under
+selection/dependence checks. Interpret the overall 3.3B lift and accent-variation
+test using Zhitong's evidence. Report the saved fallback outcome even if it
+does not improve scores. Distinguish corpus fallback scores from sentence-gap
+intervals and sensitivity findings from causal interventions.}
+
+\begin{table}[t]
+\caption{Selected sensitivity checks. TODO (Jidni): choose a few checks,
+name each statistic and interval unit, and report exact subset sizes.}
+\label{tab:sensitivity}
+\centering
+\small
+\begin{tabularx}{\columnwidth}{@{}XrX@{}}
+\toprule
+Check & Clips & Statistic / finding \\
+\midrule
+Common marker-free subset & \scoreblank & TODO \\
+One clip per speaker & \scoreblank & TODO \\
+Cascade fallback on marked outputs & \scoreblank & TODO \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\placeholder{Jidni}{If space permits, include a few verified worst-clip examples
+and connect them to limitations or future work. Low automatic score alone does
+not identify a root cause. Summarize how the checks support or qualify the RQ
+answer; avoid repeating the main tables.}

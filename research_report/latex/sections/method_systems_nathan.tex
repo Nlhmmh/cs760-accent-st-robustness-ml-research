@@ -1,0 +1,28 @@
+% OWNER: Nathan. Target: about 0.75 page including diagram/configuration.
+\subsection{Systems and Controlled Inference}
+\label{sec:systems}
+\placeholder{Nathan}{Describe SeamlessM4T v2-large Direct ST and Whisper
+large-v2 followed by NLLB-600M or NLLB-3.3B. Cite the v2 context, Whisper and
+NLLB sources~\cite{seamless2023,radford2023whisper,nllb2022}. Give exact checkpoint
+IDs/resolved revisions and target/source language codes. Explain that model
+families, training resources and objectives differ.}
+
+\placeholder{Nathan}{Specify mono 16 kHz audio, actual fixed greedy settings,
+seed, FP16/T4 environment and relevant library versions from run records.
+Explain staged ASR then MT and no reference transcripts supplied to MT. Describe
+pilots as engineering checks, checkpointing, successful-run/limit checks, ID and
+fingerprint alignment, and matching archived ASR strings from separate runs.
+If runtime is reported, distinguish Direct pipeline time, Cascade stage-sum time,
+and wall-clock time; loading/warm-up are excluded from recorded sample timings.}
+
+\begin{figure}[t]
+\centering
+\figureplaceholder{Nathan: matched English speech, Direct ST, Whisper followed
+by both NLLB variants, and common Chinese reference evaluation.}
+\caption{System comparison. TODO (Nathan): replace with an original or properly
+credited diagram; adapt the survey diagram to the completed three-system design.}
+\label{fig:systems}
+\end{figure}
+
+% Optional compact table: include essential settings in prose if a table is wider
+% or less readable. Keep full model revisions in the paper if needed for replay.

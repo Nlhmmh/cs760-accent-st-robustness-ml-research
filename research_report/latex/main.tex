@@ -1,0 +1,102 @@
+% Group 9 final report FRAME. Replace every TODO before submission.
+% See ../report_plan.md for scope, ownership, evidence and page allocations.
+% .latexmkrc resolves IEEEtran from the same supplied template as the survey.
+\documentclass[conference]{IEEEtran}
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{xcolor}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+
+% Draft helpers: visible owner-labelled placeholders; no invented results.
+\newcommand{\placeholder}[2]{%
+  \par\smallskip\noindent
+  {\color{blue!65!black}\textbf{TODO (#1):} #2}\par\smallskip}
+\newcommand{\figureplaceholder}[1]{%
+  \fbox{\parbox[c][2.5cm][c]{0.92\columnwidth}{%
+    \centering\small\textbf{Figure placeholder}\\[0.5em]#1}}}
+\newcommand{\unk}{\texttt{<unk>}}
+\newcommand{\scoreblank}{\textemdash}
+
+\title{Regional English Accent Robustness in Direct and Cascaded
+Speech-to-Text Translation: An Empirical Study}
+
+% Author names and affiliation details follow literature_review/latex/main.tex.
+% Nathan coordinates confirmation of these details and the author order.
+\author{\IEEEauthorblockN{1\textsuperscript{st} Nathan Naylin}
+\IEEEauthorblockA{\textit{Dept. of Science} \\
+\textit{University of Auckland}\\
+Auckland, New Zealand \\
+nhte538@aucklanduni.ac.nz}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Zhitong Li}
+\IEEEauthorblockA{\textit{Dept. of Science} \\
+\textit{University of Auckland}\\
+Auckland, New Zealand \\
+zli262@aucklanduni.ac.nz}
+\and
+\IEEEauthorblockN{3\textsuperscript{rd} Arizona Xing}
+\IEEEauthorblockA{\textit{Dept. of Science} \\
+\textit{University of Auckland}\\
+Auckland, New Zealand \\
+lxin541@aucklanduni.ac.nz}
+\and
+\IEEEauthorblockN{4\textsuperscript{th} Patricia Jennesha}
+\IEEEauthorblockA{\textit{Dept. of Science} \\
+\textit{University of Auckland}\\
+Auckland, New Zealand \\
+pjen088@aucklanduni.ac.nz}
+\and
+\IEEEauthorblockN{5\textsuperscript{th} Jidni Mayukh}
+\IEEEauthorblockA{\textit{Dept. of Science} \\
+\textit{University of Auckland}\\
+Auckland, New Zealand \\
+jmay830@aucklanduni.ac.nz}
+}
+
+\begin{document}
+\maketitle
+
+\input{sections/abstract}
+\input{sections/introduction}
+\input{sections/related_work}
+
+\input{sections/methodology}
+\input{sections/method_data_arizona}
+\input{sections/method_systems_nathan}
+\input{sections/method_evaluation_patricia}
+\input{sections/method_statistics_zhitong}
+\input{sections/method_diagnostics_nathan}
+\input{sections/method_diagnostics_arizona}
+\input{sections/method_sensitivity_jidni}
+
+\input{sections/results}
+\input{sections/results_quality_patricia}
+\input{sections/results_statistics_zhitong}
+\input{sections/results_diagnostics_nathan}
+\input{sections/results_diagnostics_arizona}
+\input{sections/results_synthesis_jidni}
+
+\input{sections/discussion_nathan}
+\input{sections/conclusion_nathan}
+
+% The main body ends here. Contributions and References are excluded from
+% the 12-page body limit. Explicit page breaks make that boundary reviewable.
+\clearpage
+\input{sections/author_contributions}
+% Optional: enable only after the team verifies actual use/course guidance.
+% Any enabled statement consumes space; it is not an appendix.
+% \input{sections/ai_use_statement}
+
+\clearpage
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+\end{document}

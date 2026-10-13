@@ -1,0 +1,50 @@
+% OWNER: Zhitong; Jidni prepares figures, Zhitong verifies them. About 0.9 page.
+\subsection{Uncertainty, Accent Variation and ASR Associations}
+\label{sec:statistical-results}
+\placeholder{Zhitong}{Fill the gap table and discuss the same speaker-unit
+rows in the saved intervals. Explain whether gaps stay positive within every
+accent. Report accent means/spreads and uncertainty in spread differences;
+distinguish stronger average quality from established accent robustness.}
+
+\begin{table}[t]
+\caption{Paired mean sentence chrF++ gaps. TODO (Zhitong): fill speaker-clustered
+95\% intervals. Positive gaps favour the first named system.}
+\label{tab:paired-gaps}
+\centering
+\small
+\begin{tabularx}{\columnwidth}{@{}Xrr@{}}
+\toprule
+Comparison & Mean gap & 95\% CI \\
+\midrule
+Direct minus Cascade-600M & \scoreblank & \scoreblank \\
+Direct minus Cascade-3.3B & \scoreblank & \scoreblank \\
+Cascade-3.3B minus Cascade-600M & \scoreblank & \scoreblank \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\placeholder{Zhitong}{Report relevant speaker-level gap tests and small effect
+sizes, with corrected accent-pair results only where useful. Interpret WER
+correlations and their intervals as associations. Explain which results support,
+fail to support, or leave uncertain the stated hypotheses. Do not interpret
+nonsignificance as equivalence or one uniform improvement across accents.}
+
+\begin{figure}[t]
+\centering
+\figureplaceholder{Jidni + Zhitong: paired gaps by accent with speaker-clustered
+95\% intervals; adapt notebook 10's q2 figure for print.}
+\caption{Paired gaps by accent. TODO (Jidni/Zhitong): define metric, comparison
+direction, resampling unit, sample sizes and interval settings.}
+\label{fig:accent-gaps}
+\end{figure}
+
+% If accent means add information beyond the gap plot, replace this optional
+% slot with a print-sized q3 figure; otherwise delete it to protect page space.
+\begin{figure}[t]
+\centering
+\figureplaceholder{Jidni + Zhitong: optional accent means and intervals.
+Delete this slot if the table/text already communicates the result.}
+\caption{Accent means. TODO (Jidni/Zhitong): sentence chrF++, speaker uncertainty;
+do not present these as corpus scores.}
+\label{fig:accent-means}
+\end{figure}
