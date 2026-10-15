@@ -2,17 +2,20 @@
 \section{Methodology}
 \label{sec:methodology}
 
-The experiment follows a fixed-input evaluation procedure. We construct and
-freeze the accent-labelled dataset and reference translations, validate
-engineering feasibility on small pilots, and run the three pretrained systems
-without fitting their parameters. We then align predictions by clip, calculate
-translation and ASR metrics, and analyze paired system differences and accent
-variation. Marker investigations and subset checks follow the frozen benchmark
+The experiment follows a fixed-input evaluation procedure. The accent-labelled
+dataset and reference translations are constructed and frozen, and small pilots
+validate engineering feasibility. The three pretrained systems then process the
+frozen inputs without parameter fitting. Predictions are aligned by clip before
+translation and ASR metrics are calculated and paired system differences and
+accent variation are analyzed. Marker investigations and subset checks follow the frozen benchmark
 as exploratory analyses. The implementation is available on
 GitHub.\footnote{\url{https://github.com/Nlhmmh/cs760-accent-st-robustness-ml-research}}
-The repository includes archived predictions, run records and analysis code.
-The frozen metadata and recordings are not committed; reproducing inference
-requires those inputs, whereas scoring and statistical analysis can use the
+The repository includes the de-identified frozen evaluation metadata, pilot
+metadata, archived predictions, run records and analysis code. The evaluation
+CSV contains the source transcripts, accent labels, pseudonymous speaker IDs
+and Chinese references. Recordings are not included in the repository;
+repeating inference requires obtaining the matching audio while preserving
+the frozen metadata and row order. Scoring and statistical analysis can use the
 archived predictions without loading speech models or audio. The subsections
 below describe the data, inference controls, evaluation, statistics and
 diagnostic designs.

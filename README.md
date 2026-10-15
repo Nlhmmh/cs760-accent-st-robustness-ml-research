@@ -9,7 +9,7 @@ notebooks, three completed full runs, three-system quality evaluation,
 statistical-analysis tables, a Q1–Q9 synthesis with figures and a dashboard,
 an integrated IEEE LaTeX literature survey, and
 Direct `<unk>` diagnostics and sensitivity experiments.
-**Last updated: 11 October 2026.**
+**Last updated: 15 October 2026.**
 
 Project code: [GitHub repository](https://github.com/Nlhmmh/cs760-accent-st-robustness-ml-research).
 
@@ -126,17 +126,23 @@ Whisper transcript -----------------> Common Voice English transcript
 
 ## Implemented evaluation dataset
 
-The local frozen input is:
+The frozen inference inputs use this layout:
 
 ```text
 data/final_sample/
-├── final_sample_600_per_group.csv
-└── final_sample_audio/              # 4,200 MP3 clips
+├── final_sample_600_per_group.csv    # tracked frozen metadata
+└── final_sample_audio/              # 4,200 MP3 clips; Git-ignored
 ```
 
-`data/` is ignored by Git, so a fresh clone does not contain this dataset.
-Only the de-identified `data/final_sample` material is in scope for repository
-analysis.
+The repository tracks the de-identified frozen metadata in
+[`data/final_sample/final_sample_600_per_group.csv`](data/final_sample/final_sample_600_per_group.csv)
+and the pilot metadata in
+[`data/pilot_sample/pilot_sample_metadata.csv`](data/pilot_sample/pilot_sample_metadata.csv).
+The ignore rules allow these two CSVs while excluding recordings, raw source
+data and other local dataset outputs. A fresh clone includes the metadata but
+not the audio. Repeating inference requires obtaining the matching recordings
+and placing them in the expected audio folders; the frozen CSV and its row
+order must remain unchanged.
 
 ### Provenance
 
@@ -360,7 +366,7 @@ existing data, rather than a held-out evaluation on new data.
 | Stage | Status | Evidence in repository |
 |---|---|---|
 | Research proposal | Tracked PDF available | [9_Proposal.pdf](presentation/9_Proposal.pdf) |
-| Seven-group frozen sample | Complete locally; Git-ignored | `data/final_sample/` and preprocessing notebooks 01–02 |
+| Seven-group frozen sample | Frozen metadata tracked; recordings kept outside Git | `data/final_sample/final_sample_600_per_group.csv` and preprocessing notebooks 01–02 |
 | Seven-clip engineering pilot | Saved execution available | `create_pilot_samples.ipynb` |
 | 35-clip hardware timing pilot | Archived feasibility results | `timing_test_pipelines.ipynb`, `runs/pilot_run_colab_tpu.zip` |
 | Direct inference, 4,200 clips | 4,200/4,200 successful | `runs/direct_full_run_1788151795/` |
@@ -405,9 +411,10 @@ rerunning it.
 
 ### Execution order for new inference
 
-1. Follow [README-preprocessing.md](README-preprocessing.md) to prepare the
-   metadata and extract the 4,200 audio clips under `data/final_sample/`,
-   or provide the existing frozen inputs.
+1. Use the tracked frozen metadata and follow
+   [README-preprocessing.md](README-preprocessing.md) to extract the matching
+   4,200 audio clips under `data/final_sample/`, or provide the existing
+   recordings. Rebuilding the metadata is only needed to repeat data selection.
 2. Run `create_pilot_samples.ipynb` and manually check the pilot.
 3. Run `timing_test_pipelines.ipynb` if feasibility must be re-established on
    new hardware.
@@ -451,7 +458,7 @@ Q1–Q9 synthesis and its figures. No Python extraction is required.
 | What to reproduce | Entry point | Running guide | Required resources |
 |---|---|---|---|
 | Dataset selection and audio extraction | Notebooks [01](notebooks/01_data_preprocessing.ipynb) and [02](notebooks/02_audio_extraction.ipynb) | [README-preprocessing.md](README-preprocessing.md) | Source metadata, CoVoST references and audio archive; CPU |
-| Direct and Cascaded inference | Notebooks [03](notebooks/03_direct_pipeline.ipynb) and [04](notebooks/04_cascaded_pipeline.ipynb) | [README-running-pipelines.md](README-running-pipelines.md) | Frozen metadata/audio, model downloads and GPU |
+| Direct and Cascaded inference | Notebooks [03](notebooks/03_direct_pipeline.ipynb) and [04](notebooks/04_cascaded_pipeline.ipynb) | [README-running-pipelines.md](README-running-pipelines.md) | Tracked frozen metadata, separately obtained recordings, model downloads and GPU |
 | Translation-quality evaluation | [08_evaluation.ipynb](notebooks/08_evaluation.ipynb) | [README-evaluation.md](README-evaluation.md) | Archived prediction CSVs; CPU |
 | Statistical comparisons | [09_statistical_analysis.ipynb](notebooks/09_statistical_analysis.ipynb) | [README-statistical-analysis.md](README-statistical-analysis.md) | Merged evaluation CSV; CPU |
 | Q1–Q9 synthesis, figures and dashboard | [10_synthesis_q1_q9.ipynb](notebooks/10_synthesis_q1_q9.ipynb) | [READEME-synthesis.md](READEME-synthesis.md) | Archived evaluation, statistical and diagnostic results; CPU |
@@ -733,6 +740,9 @@ completed; Git history alone does not capture all collaborative work.
 ├── README-statistical-analysis.md
 ├── READEME-synthesis.md
 ├── SeamlessM4T_UNK_Investigation_Log.md
+├── data/
+│   ├── final_sample/final_sample_600_per_group.csv
+│   └── pilot_sample/pilot_sample_metadata.csv
 ├── notebooks/
 │   ├── 01_data_preprocessing.ipynb
 │   ├── 02_audio_extraction.ipynb
@@ -841,8 +851,10 @@ directory rather than overwriting the completed artifacts.
    configured for one per group. The merge notebook still selects 600M even
    though the three-system evaluation already includes 3.3B.
 6. **Provenance and access:** Colab full runs record model/data fingerprints but
-   no Git commit SHA. Audio and several supporting documents are local-only;
-   reproducible new inference requires the same frozen data and row order.
+   no Git commit SHA. Frozen evaluation and pilot metadata are tracked, while
+   recordings and several supporting documents remain outside Git. Repeating
+   inference requires the matching recordings and unchanged frozen metadata
+   and row order.
 7. **Final reporting:** reconcile older presentation drafts with the current
    artifacts, record actual member contributions and feedback responses, and
    report the `<unk>` sensitivity work separately from the frozen benchmark.

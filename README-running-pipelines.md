@@ -41,15 +41,17 @@ repository path. For local execution, use the repository root instead.
 
 ### Step 2: Copy 4,200 samples to the Google Colab environment
 
-The frozen dataset is Git-ignored and must already exist locally:
+The repository includes the frozen metadata CSV. The recordings remain
+Git-ignored and must be obtained separately before inference:
 
 ```text
 data/final_sample/
-├── final_sample_600_per_group.csv
-└── final_sample_audio/              # 4,200 audio clips
+├── final_sample_600_per_group.csv    # tracked frozen metadata
+└── final_sample_audio/              # 4,200 audio clips; Git-ignored
 ```
 
-Create the ZIP with `final_sample/` at its top level, so extraction into
+Once the matching recordings are available locally, create the ZIP with
+`final_sample/` at its top level, so extraction into
 `/content/data` produces the paths expected by the pipeline. From the **local
 repository root**, run:
 

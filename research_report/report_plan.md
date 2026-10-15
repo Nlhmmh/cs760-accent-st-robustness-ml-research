@@ -1,6 +1,7 @@
 # Group 9 final research report plan
 
 Prepared on 13 October 2026. This is a writing plan, not the final report.
+Data-access details updated on 15 October 2026.
 The assignment contract is [instructions.md](instructions.md). Work allocation
 comes from the **named** [README contributions](../README.md#team-member-contributions),
 because proposal and literature-survey member numbering differ.
@@ -45,7 +46,7 @@ It did **not** execute notebooks, rerun inference, or establish a fresh replay.
 
 | Component | Current project evidence | What it contributes to the paper |
 |---|---|---|
-| Data preparation — Arizona | `01_data_preprocessing.ipynb`, `02_audio_extraction.ipynb`; frozen metadata is local/Git-ignored | Common Voice Scripted Speech 26.0 English, CoVoST 2 Chinese references matched by normalized English sentence; filtering, speaker cap, sampling and label limitations |
+| Data preparation — Arizona | `01_data_preprocessing.ipynb`, `02_audio_extraction.ipynb`; frozen metadata is tracked at `data/final_sample/final_sample_600_per_group.csv`, while recordings remain outside Git | Common Voice Scripted Speech 26.0 English, CoVoST 2 Chinese references matched by normalized English sentence; filtering, speaker cap, sampling and label limitations |
 | Pilots and inference — Nathan | Pilot/timing notebooks, `03_direct_pipeline.ipynb`, `04_cascaded_pipeline.ipynb`, merger/archiving helpers; three full-run directories | Frozen model systems, engineering feasibility, preprocessing, deterministic inference, checkpointing, run validation and hardware |
 | Quality evaluation — Patricia | `08_evaluation.ipynb`, `runs/evaluation_results/merged_3system_with_metrics.csv`, saved evaluation PDF | Overall and per-accent corpus scores, sentence chrF++, WER and marker flags |
 | Statistics — Zhitong | `09_statistical_analysis.ipynb`; `intervals_long.csv`, `accent_means_ci.csv`, `spearman.csv`, `tests.csv` | Paired uncertainty, accent spread and gap variation, association tests and effect sizes |
@@ -292,8 +293,9 @@ model IDs and resolved revisions; audio/decoding controls; environment; alignmen
 metric settings/versions; statistical unit, estimand and resampling settings.
 Full hashes may live in the run records if their purpose and validation are
 explained. Do not claim new inference is reproducible from a public clone alone:
-audio/frozen metadata are not committed. Archived predictions permit CPU scoring
-and analysis, subject to documented notebook configuration changes.
+the frozen evaluation and pilot metadata CSVs are tracked, but recordings are
+not committed and must be obtained separately. Archived predictions permit CPU
+scoring and analysis, subject to documented notebook configuration changes.
 
 ## 7. Literature and citation plan
 

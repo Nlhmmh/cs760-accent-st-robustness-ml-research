@@ -45,10 +45,18 @@ dist/
 .eggs/
 
 # Local datasets and preprocessing artefacts
-/data
-/data/raw/
-/data/interim/
-/data/processed/
+# Ignore everything inside data/
+data/*
+
+# Allow pilot_sample directory
+!data/pilot_sample/
+data/pilot_sample/*
+!data/pilot_sample/pilot_sample_metadata.csv
+
+# Allow final_sample directory
+!data/final_sample/
+data/final_sample/*
+!data/final_sample/final_sample_600_per_group.csv
 
 # Downloaded model weights and checkpoints
 *.ckpt

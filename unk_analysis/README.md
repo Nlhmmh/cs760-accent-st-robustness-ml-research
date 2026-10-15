@@ -8,7 +8,7 @@ This analysis comes after the earlier `<unk>` investigation (PR #14). That work 
 
 | Step | What | Where to find it |
 |---|---|---|
-| 1 | Evaluation set (4,200 clips, 7 accent groups) | `../notebooks/01_data_preprocessing.ipynb`, `02_audio_extraction.ipynb`. The metadata (`final_sample_600_per_group.csv`) and the audio are kept locally and are not in the repository. |
+| 1 | Evaluation set (4,200 clips, 7 accent groups) | `../notebooks/01_data_preprocessing.ipynb`, `02_audio_extraction.ipynb`. Frozen metadata is tracked at `../data/final_sample/final_sample_600_per_group.csv`; recordings remain outside the repository. |
 | 2 | Direct and Cascade predictions | `../notebooks/03_direct_pipeline.ipynb`, `04_cascaded_pipeline.ipynb`; outputs in `../runs/direct_full_run_1788151795/`, `cascade_full_run_1788146589/` and `cascade_full_run_1790228071/` |
 | 3 | Evaluation table (metrics, `direct_has_unk` flag) | `../notebooks/08_evaluation.ipynb`; the table is `../runs/evaluation_results/merged_3system_with_metrics.csv` |
 | 4 | Earlier `<unk>` investigation | `../SeamlessM4T_UNK_Investigation_Log.md`; `../notebooks/05_direct_unk_diagnostic.ipynb`, `06_direct_unk_sensitivity.ipynb`, `07_direct_literal_unk_blocking_sensitivity.ipynb`; `../runs/direct_unk_diagnostic_*`, `direct_unk_sensitivity_*`, `direct_literal_unk_blocking_*` |
@@ -56,7 +56,7 @@ unk_analysis/
 **Inputs**
 - `merged_3system_with_metrics.csv`: the three-system evaluation table from the evaluation notebook. It is in the repository as `../runs/evaluation_results/merged_3system_with_metrics.csv`, which is where the scripts look by default; you can also pass its path as the first argument.
 - `../runs/direct_full_run_1788151795/direct_predictions.csv` (in this repository): speaker ids for part A.
-- Notebook 2 also needs `final_sample_600_per_group.csv` and `final_sample_audio.zip`. The audio is kept private and is not in the repository.
+- Notebook 2 also needs the tracked `../data/final_sample/final_sample_600_per_group.csv` and a separately supplied `final_sample_audio.zip`. The recordings are not in the repository; copy the CSV and audio archive to the notebook's configured input folder.
 
 **Order**
 1. `python scripts/accent_rate.py`
