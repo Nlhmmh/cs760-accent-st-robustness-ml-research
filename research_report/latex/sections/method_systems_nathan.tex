@@ -3,53 +3,79 @@
 \label{sec:systems}
 
 Fig.~\ref{fig:systems} shows the three evaluated pipelines. Direct uses
-\path{facebook/seamless-m4t-v2-large}, instantiated as
-\texttt{SeamlessM4Tv2ForSpeechToText}, with target code \texttt{cmn}; the v2 model
-is described in the Seamless report~\cite{seamless2023}. Its resolved revision is
-\path{5f8cc790b19fc3f67a61c105133b20b34e3dcb76}. The cascades use
-\path{openai/whisper-large-v2}~\cite{radford2023whisper}, with resolved revision
-\path{ae4642769ce2ad8fc292556ccea8e901f1530655}, forced to English transcription.
-The resulting English text is translated by one of two NLLB
-variants~\cite{nllb2022}:
-\path{facebook/nllb-200-distilled-600M}, revision
-\path{f8d333a098d19b4fd9a8b18f94170487ad3f821d}, or
-\path{facebook/nllb-200-3.3B}, revision
-\path{1a07f7d195896b2114afcb79b7b57ab512e7b43e}.
+SeamlessM4T v2-large~\cite{seamless2023}, instantiated as
+\texttt{SeamlessM4Tv2ForSpeechToText}, with target code \texttt{cmn}.
+The cascades use Whisper large-v2~\cite{radford2023whisper}, forced to English
+transcription. The resulting English text is translated by either NLLB-200
+distilled 600M or NLLB-200 3.3B~\cite{nllb2022}.
 Both NLLB variants use \texttt{eng\_Latn} as source and \texttt{zho\_Hans} as
 target; generation forces the target-language beginning-of-sequence token.
 The source reference transcript is never supplied to the cascade's MT stage.
+Table~\ref{tab:model-revisions} lists the model identifiers and exact revisions
+used in the completed runs. These are also recorded in the repository's run
+configurations.
+
+\begin{table*}[t]
+\caption{Model identifiers and exact revisions used in the completed runs.}
+\label{tab:model-revisions}
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}lXl@{}}
+\toprule
+Component & Model identifier & Revision \\
+\midrule
+Direct ST & \path{facebook/seamless-m4t-v2-large} &
+\texttt{5f8cc790b19fc3f67a61c105133b20b34e3dcb76} \\
+Cascade ASR & \path{openai/whisper-large-v2} &
+\texttt{ae4642769ce2ad8fc292556ccea8e901f1530655} \\
+Cascade MT (600M) & \path{facebook/nllb-200-distilled-600M} &
+\texttt{f8d333a098d19b4fd9a8b18f94170487ad3f821d} \\
+Cascade MT (3.3B) & \path{facebook/nllb-200-3.3B} &
+\texttt{1a07f7d195896b2114afcb79b7b57ab512e7b43e} \\
+\bottomrule
+\end{tabularx}
+\end{table*}
 
 \begin{figure}[t]
 \centering
 \begin{tikzpicture}[
   box/.style={draw, rounded corners=1pt, align=center, font=\scriptsize,
-    text width=24mm, minimum height=8mm, inner sep=2pt},
+    text width=21.5mm, minimum height=7.5mm, inner sep=1.5pt},
   arrow/.style={-{Stealth[length=1.5mm]}, thick}
 ]
-\node[box] (audio) at (0,0) {Same English speech};
-\node[box] (direct) at (-19mm,-14mm) {SeamlessM4T v2-large\\Direct ST};
-\node[box] (asr) at (19mm,-14mm) {Whisper large-v2\\English ASR};
-\node[box] (transcript) at (19mm,-28mm) {English transcript};
-\node[box] (mt) at (19mm,-42mm) {NLLB-600M or\\NLLB-3.3B};
-\node[box] (dout) at (-19mm,-56mm) {Direct Chinese text};
-\node[box] (cout) at (19mm,-56mm) {Cascade Chinese text};
-\node[box, text width=36mm] (eval) at (0,-71mm)
-  {Matched translation evaluation};
-\node[box, text width=36mm] (ref) at (0,-85mm)
-  {Same CoVoST 2 Chinese reference};
-\draw[arrow] (audio.south) -- ++(0,-2mm) -| (direct.north);
-\draw[arrow] (audio.south) -- ++(0,-2mm) -| (asr.north);
+\node[box] (audio) at (-14mm,6mm) {Same English speech};
+\node[box] (direct) at (-28mm,-11mm) {SeamlessM4T\\v2-large (Direct ST)};
+\node[box] (asr) at (0,-11mm) {Whisper large-v2\\English ASR};
+\node[box] (transcript) at (0,-23mm) {English transcript};
+\node[box, text width=19mm] (wer) at (28mm,-23mm) {WER evaluation};
+\node[box, text width=19mm] (englishref) at (28mm,-35mm)
+  {English reference\\transcript};
+\node[box] (mt) at (0,-35mm) {NLLB-600M or\\NLLB-3.3B};
+\node[box] (dout) at (-28mm,-47mm) {Direct Chinese text};
+\node[box] (cout) at (0,-47mm) {Cascade Chinese text};
+\node[box, text width=26mm] (eval) at (-28mm,-60mm)
+  {Translation evaluation\\BLEU / chrF / chrF++};
+\node[box, text width=29mm] (ref) at (13mm,-60mm)
+  {Same CoVoST 2\\Chinese reference};
+\coordinate (speechsplit) at (-14mm,-1.5mm);
+\draw[thick] (audio.south) -- (speechsplit);
+\draw[arrow] (speechsplit) -| (direct.north);
+\draw[arrow] (speechsplit) -| (asr.north);
 \draw[arrow] (direct) -- (dout);
 \draw[arrow] (asr) -- (transcript);
+\draw[arrow] (transcript.east) -- (wer.west);
+\draw[arrow, dashed] (englishref.north) -- (wer.south);
 \draw[arrow] (transcript) -- (mt);
 \draw[arrow] (mt) -- (cout);
-\draw[arrow] (dout.south) -- ++(0,-2mm) -| (eval.north);
-\draw[arrow] (cout.south) -- ++(0,-2mm) -| (eval.north);
-\draw[arrow] (ref.north) -- (eval.south);
+\draw[arrow] (dout.south) -- (eval.north);
+\draw[arrow] (cout.south) -- ++(0,-2.5mm) -| (eval.north);
+\draw[arrow, dashed] (ref.west) -- (eval.east);
 \end{tikzpicture}
 \caption{The implemented three-system comparison. The two NLLB alternatives
 produce separate cascade outputs from their respective archived ASR runs.
-All systems are scored on the same clips and Chinese references.}
+All systems are scored on the same clips and Chinese references. WER compares
+Whisper transcripts with the English reference transcripts. Dashed arrows
+connect reference texts to the corresponding evaluation.}
 \label{fig:systems}
 \end{figure}
 
@@ -71,8 +97,8 @@ Pilots and a 35-clip timing test assess execution feasibility rather than tune
 translation quality. Predictions and runtime records are checkpointed every
 ten samples.
 
-Run-level clip IDs are generated from the frozen row order. Before comparing
-systems, we check the metadata and ordered-ID SHA-256 fingerprints, unique IDs,
+Run-level clip IDs are generated from the frozen row order. Checks before system
+comparison cover the metadata and ordered-ID SHA-256 fingerprints, unique IDs,
 accent counts, source sentences and Chinese references. The repeating
 \texttt{sample\_id} identifies a pseudonymous speaker and is not a unique merge
 key. The two cascade ASR passes were executed separately; their archived

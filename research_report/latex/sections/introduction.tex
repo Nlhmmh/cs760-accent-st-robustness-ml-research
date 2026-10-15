@@ -10,15 +10,15 @@ therefore relevant to evaluation. Studies of automatic speech recognition (ASR)
 have reported performance disparities across English-language accents and
 proposed methods for improving recognition of accents not represented during
 training~\cite{dichristofano2022global,prabhu2023accentcodebooks}. However,
-recognition quality and translation quality are different outcomes. Evidence
-that an accent is associated with more transcription errors does not, by itself,
-show how accurately a complete system translates the speech.
+recognition quality and translation quality are different outcomes. More ASR
+errors for an accent do not necessarily mean poorer translation quality.
+Final translations must therefore be evaluated directly.
 
 Two common approaches to speech translation expose different intermediate
 information. A Cascaded speech translation (Cascaded ST) system first transcribes
 the source audio using ASR and then applies machine translation (MT) to that
-transcript. A Direct speech translation (Direct ST) system produces target-
-language text from speech without an exposed source-language transcript.
+transcript. A Direct speech translation (Direct ST) system produces
+target-language text from speech without an exposed source-language transcript.
 Cascades allow separately developed ASR and MT components to be combined, but
 their intermediate transcript can discard information or pass recognition
 errors to MT. Direct systems avoid this explicit transcript interface, while
@@ -36,13 +36,13 @@ Direct and Cascaded speech-to-text translation systems?}
 Here, the question is investigated through observed associations on a frozen
 evaluation set. Accent is not experimentally assigned, and the study does not
 isolate it from sentence content, speaker characteristics or recording
-conditions. We operationalize accent robustness as variation in mean sentence
+conditions. In this study, accent robustness is defined through variation in mean sentence
 chrF++ across the seven accent groups, including the difference between the
 highest and lowest group means. Overall translation quality is reported
 separately. A system can have higher scores in every group while still showing
 uncertain evidence of a smaller between-accent spread.
 
-We compare three pretrained systems on the same 4,200 English recordings and
+This study compares three pretrained systems on the same 4,200 English recordings and
 Simplified Chinese references. The Direct system uses SeamlessM4T v2-large.
 The two cascades combine Whisper large-v2 with either NLLB-200 distilled 600M
 or NLLB-200 3.3B. The recordings cover seven self-reported regional accent
@@ -66,17 +66,18 @@ ST, which provides no intermediate transcript to score.
 
 Corpus BLEU, chrF and chrF++ describe translation quality, while paired
 statistics use sentence chrF++. Speaker-clustered resampling addresses the fact
-that multiple clips can come from the same speaker. After the frozen runs, we
-also investigated literal \unk{} strings in Direct outputs and performed
-decoding and subset sensitivity checks. These are post-hoc diagnostics, not
-replacements for the original benchmark predictions.
+that multiple clips can come from the same speaker. After the frozen runs,
+additional analyses investigated literal \unk{} strings in Direct outputs and
+examined decoding and subset sensitivity. These additional checks were conducted
+after the main experiment. The original translations remained unchanged.
 
 The study contributes a matched three-system benchmark across regional English
 accent groups, an analysis that distinguishes system quality from accent
 variation and statistical uncertainty, and diagnostic evidence about ASR
 associations and Direct-output markers. Its findings concern the specified
-checkpoints and evaluation set. Differences in model capacity, training data and
-objectives prevent interpretation as a pure architectural ablation. The paper
+checkpoints and evaluation set. Because model capacity, training data and
+objectives also differ, the comparison cannot isolate the effect of system
+architecture alone. The paper
 first places this design in the relevant literature, then describes the
 experimental procedure and reports quality, statistical, diagnostic and
 sensitivity results before discussing their limitations.

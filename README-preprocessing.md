@@ -5,6 +5,13 @@ Run [01_data_preprocessing.ipynb](notebooks/01_data_preprocessing.ipynb), then
 run on CPU. They prepare the evaluation inputs; they do not train models or
 calculate translation quality.
 
+To repeat inference on the existing frozen set, use the tracked
+[`final_sample_600_per_group.csv`](data/final_sample/final_sample_600_per_group.csv)
+and obtain/extract the matching recordings with notebook 02. Notebook 01 is
+needed only to repeat data selection. The repository also tracks
+[`pilot_sample_metadata.csv`](data/pilot_sample/pilot_sample_metadata.csv).
+Recordings and raw source datasets remain outside Git.
+
 The notebooks currently use different environments: notebook 01 uses Google
 Colab and Drive, while notebook 02 uses local Windows paths. The path changes
 below are required for your own replay. This guide does not change the notebooks.
@@ -132,12 +139,12 @@ downstream layout below. Check the selected filenames as well as the count.
 
 ### Prepare the downstream layout
 
-Copy the metadata and selected recordings into:
+Keep the tracked frozen metadata in place and copy the selected recordings into:
 
 ```text
 data/final_sample/
-├── final_sample_600_per_group.csv
-└── final_sample_audio/              # selected MP3 files directly in this folder
+├── final_sample_600_per_group.csv    # tracked frozen metadata
+└── final_sample_audio/              # selected MP3 files; Git-ignored
 ```
 
 If extraction created nested directories, copy the selected MP3s into the

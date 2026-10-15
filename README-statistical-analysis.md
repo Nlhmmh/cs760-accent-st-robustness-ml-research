@@ -60,9 +60,10 @@ OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 assert DATA_FILE.is_file(), DATA_FILE
 ```
 
-The notebook's default root finder looks for both `data/` and `runs/`. If a
-fresh clone has no `data/` and the kernel starts inside `notebooks/`, it may
-select the wrong root; the explicit setup above handles that case. Start a
+The notebook's default root finder looks for both `data/` and `runs/`. A fresh
+clone includes `data/` with the tracked metadata, but not the recordings.
+If `data/` is removed and the kernel starts inside `notebooks/`, the default
+finder may select the wrong root; the explicit setup above handles that case. Start a
 fresh kernel before configuring this path. If replaying notebook 08 and 09 in
 the same kernel, restore the repository working directory first because the
 evaluation guide changes it to the replay output folder.
