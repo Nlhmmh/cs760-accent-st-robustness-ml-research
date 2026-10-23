@@ -1,0 +1,9 @@
+measure,value
+clips,4200
+"marked, speech input (archived Direct output)",508
+"marked, reference-transcript input",528
+"marked, Whisper-transcript input",498
+marked with speech and reference transcript,449
+marked with speech only (vs reference transcript),59
+marked with reference transcript only,79
+unmarked with speech,3692
