@@ -1,6 +1,6 @@
 """Direct <unk>: proper nouns / rare words? (tests the action plan's Q8 guess "proper nouns strongest")
 Sentence-level features from spaCy (POS, named entities) and wordfreq (Zipf frequency).
-Outputs: unk_wordtype_rates.csv, unk_wordtype_logit.csv, unk_wordtype.png.
+Outputs: unk_wordtype_rates.csv, unk_wordtype_logit.csv, unk_wordtype_imputation.csv, unk_wordtype.png.
 """
 import sys
 from pathlib import Path
@@ -27,6 +27,11 @@ for s, doc in zip(d.sentence.unique(), nlp.pipe(d.sentence.unique(), batch_size=
                    has_entity=int(any(e.label_ in ENT for e in doc.ents)),
                    min_zipf_content=z(content))
 F = pd.DataFrame.from_dict(feat, orient="index"); d = d.join(F, on="sentence")
+# clips with no noun/verb/adjective/adverb get the median value; record how many (reported in the paper)
+miss = d.min_zipf_content.isna()
+imp = pd.DataFrame([dict(clips_without_content_word=int(miss.sum()), sentences=d[miss].sentence.nunique(),
+                         marked_clips=int(d[miss].unk.sum()), imputed_median_zipf=round(d.min_zipf_content.median(), 2))])
+imp.to_csv(OUT / "unk_wordtype_imputation.csv", index=False); print(imp.to_string(index=False))
 d["min_zipf_content"] = d.min_zipf_content.fillna(d.min_zipf_content.median())
 d["rare"] = pd.cut(d.min_zipf_content, [-1, 2.5, 3.0, 3.5, 4.0, 10], labels=["<=2.5 (very rare)", "2.5-3", "3-3.5", "3.5-4", ">4 (common)"])
 d["sid"] = pd.factorize(d.sentence)[0]

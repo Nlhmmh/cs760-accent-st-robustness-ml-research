@@ -1,9 +1,54 @@
 % OWNER: Arizona. Share the diagnostic/sensitivity page allocation.
 \subsection{Further Direct-Output Diagnostics}
 \label{sec:further-diagnostic-method}
-\placeholder{Arizona}{Describe only further experiments whose findings will
-appear in Results: text input/reference-versus-ASR comparison, balanced 700-clip
-speech check retaining special tokens, token-probability comparisons and
-word-removal/control experiments. Give input path, model revision, sample sizes,
-selection and clustering unit for each chosen result. State that text-input
-diagnostics do not isolate the speech pathway or establish an internal cause.}
+
+A failure mode specific to one system could distort the accent comparison if
+it varied across groups. These checks therefore ask whether the literal \unk{}
+marker of Section~\ref{sec:earlier-diagnostic-method} is linked to accent,
+input modality or source wording (inputs and samples in
+Table~\ref{tab:further-diagnostics}). Checks that re-ran the model used the
+Direct checkpoint, revision and decoding controls of Section~\ref{sec:systems}
+on a Colab T4 GPU in FP16; exact library versions were not recorded. The
+case-insensitive pattern \verb|<\s*unk\s*>| selects the same 508 archived
+clips as exact-string matching. In all regressions, sentence length counts
+whitespace-delimited words and sentence clusters use the original English
+strings.
+
+\subsubsection{Accent}
+Logistic regressions of marker presence on accent, with and
+without sentence length, tested the six accent coefficients (United States
+English as reference) jointly by Wald tests with speaker- or, separately,
+sentence-clustered standard errors.
+
+\subsubsection{Input modality}
+The same checkpoint translated each clip's reference transcript
+and Whisper transcript in batches of 32
+(\texttt{SeamlessM4Tv2ForTextToText}). A speech re-run of 700
+clips, randomly sampled with 100 per accent group (seed 760), kept the
+generated token IDs to count special UNK ID~1, which decoding removes.
+
+\subsubsection{Source wording}
+Sentence-clustered logistic regressions related marker
+presence to sentence length, proper-noun presence and the minimum
+general-English Zipf frequency~\cite{speer2022wordfreq} of the clip's content
+lemmas, the lower-cased dictionary forms of alphabetic tokens tagged NOUN,
+VERB, ADJ or ADV (PROPN excluded) by spaCy
+\texttt{en\_core\_web\_sm}~\cite{honnibal2020spacy}. The 48 clips without a
+content token were assigned the median observed clip-level minimum (4.12).
+Word removal used the 439 distinct English sentences of the 508 speech-marked
+clips, restricted to the 385 whose text-input translation reproduced the
+marker. At the decoding step where the first marker began, each whitespace-delimited
+input word was deleted in turn with the already generated output tokens fixed,
+and the word whose deletion most reduced the summed probability of the two
+alternative next tokens that begin the marker was selected. Each sentence was
+then translated afresh, without the fixed prefix, once without the selected
+word and, as a control, once without another word chosen at random (seed
+760). The outcome is the proportion of the 385 sentences whose new
+translation contains no marker, with Wilson intervals.
+
+\subsubsection{Scope}
+Text input bypasses the speech encoder, so the text-input checks cannot
+localize markers in the speech pathway. All diagnostics are exploratory with
+unadjusted p-values; as in Section~\ref{sec:statistics}, speaker and sentence
+dependence are not modelled jointly, and Wilson intervals assume independent
+units.

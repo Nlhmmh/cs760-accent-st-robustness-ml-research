@@ -1,0 +1,14 @@
+measure,value
+clips re-run,700
+re-run output identical to archived output,694
+"visible marker, re-run output",95
+"visible marker, archived output",94
+clips with special ID 1,74
+"special ID 1 rate, Wilson 95% CI low (%)",8.5
+"special ID 1 rate, Wilson 95% CI high (%)",13.1
+"special ID 1 and visible marker, re-run output",0
+"special ID 1 and visible marker, archived output",0
+special ID 1 at penultimate generated-token position,73
+special ID 1 clips with decoded output ending in Unicode punctuation,0
+clips without special ID 1,626
+clips without special ID 1 ending in Unicode punctuation,596
