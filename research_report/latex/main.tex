@@ -8,6 +8,12 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage[T1]{fontenc}
+\usepackage{CJKutf8}
+% CJKutf8 supplies its own Unicode map; prevent a second map on CJK fonts.
+\makeatletter
+\let\report@addcmap\CJK@addcmap
+\def\CJK@addcmap#1{\report@addcmap{#1}\pdfnobuiltintounicode\font@name}
+\makeatother
 \usepackage{microtype}
 \usepackage{xcolor}
 \usepackage{booktabs}
