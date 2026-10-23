@@ -1,31 +1,59 @@
-% OWNER: Jidni. Target: about 0.6 page including a compact sensitivity table.
+% Integrated from research_report/member_5/jidni_part.md.
 \subsection{Sensitivity Checks and Larger-MT Interpretation}
 \label{sec:synthesis-results}
-\placeholder{Jidni}{Use the common marker-free interval table, WER-subset
-scores and one-clip-per-speaker check to test how conclusions change under
-selection/dependence checks. Interpret the overall 3.3B lift and accent-variation
-test using Zhitong's evidence. Report the saved fallback outcome even if it
-does not improve scores. Distinguish corpus fallback scores from sentence-gap
-intervals and sensitivity findings from causal interventions.}
+
+Table~\ref{tab:sensitivity} lists the checks of Section~\ref{sec:sensitivity-method}.
 
 \begin{table}[t]
-\caption{Selected sensitivity checks. TODO (Jidni): choose a few checks,
-name each statistic and interval unit, and report exact subset sizes.}
+\caption{Selected sensitivity checks. Gaps are mean sentence chrF++ (points) with 95\% intervals, speaker-clustered unless stated. D, C6, C3 = Direct, Cascade-600M, Cascade-3.3B.}
 \label{tab:sensitivity}
 \centering
-\small
-\begin{tabularx}{\columnwidth}{@{}XrX@{}}
+\footnotesize
+\setlength{\tabcolsep}{3pt}
+\begin{tabularx}{\columnwidth}{@{}>{\raggedright\arraybackslash}p{0.25\columnwidth}
+  >{\raggedright\arraybackslash}p{0.18\columnwidth}
+  >{\raggedright\arraybackslash}X@{}}
 \toprule
 Check & Clips & Statistic / finding \\
 \midrule
-Common marker-free subset & \scoreblank & TODO \\
-One clip per speaker & \scoreblank & TODO \\
-Cascade fallback on marked outputs & \scoreblank & TODO \\
+Common marker-free subset & 3,692 &
+  D $-$ C3 $+5.42$ [4.75, 6.08];\newline
+  D $-$ C6 $+7.50$ [6.88, 8.11] \\
+\addlinespace[2pt]
+Normalized $\mathrm{WER}=0$ & 2,952 &
+  D $-$ C3 $+3.61$ [3.04, 4.24];\newline
+  C3 $-$ C6 $+2.27$ [1.76, 2.76] \\
+\addlinespace[2pt]
+Normalized $\mathrm{WER}>0$ & 1,248 &
+  D $-$ C3 $+8.24$ [7.38, 9.17];\newline
+  C3 $-$ C6 $+1.40$ [0.90, 1.92] \\
+\addlinespace[2pt]
+One clip per speaker & 1,586 &
+  D $-$ C3 $+4.69$ [3.94, 5.51] (clip bootstrap) \\
+\addlinespace[2pt]
+C3 fallback on marked outputs & 4,200 (508 replaced) &
+  Corpus chrF++ $25.08 \rightarrow 24.89$; BLEU $38.86 \rightarrow 38.54$ \\
 \bottomrule
 \end{tabularx}
 \end{table}
 
-\placeholder{Jidni}{If space permits, include a few verified worst-clip examples
-and connect them to limitations or future work. Low automatic score alone does
-not identify a root cause. Summarize how the checks support or qualify the RQ
-answer; avoid repeating the main tables.}
+\subsubsection{Marker-free subset}
+On the 3,692 unmarked clips Direct's corpus chrF++ rises from 25.08 to 26.32. Both cascades rise as well, Cascade-3.3B from 20.06 to 20.77 and Cascade-600M from 18.44 to 19.10, so every system scores lower on the marked clips. The paired gaps on the unmarked clips are +5.42 [4.75, 6.08] against Cascade-3.3B and +7.50 [6.88, 8.11] against Cascade-600M, slightly above the full-set values in Table~\ref{tab:paired-gaps}, and each per-accent Direct-minus-Cascade interval stays above zero. On the 508 marked clips alone Direct also scores above both cascades (corpus chrF++ 17.55 against 15.46 and 14.22). The quality ranking holds with the marked outputs removed. The two groups of clips contain different sentences, so the 1.24-point rise in Direct's corpus chrF++ mixes the marker with sentence difficulty, and cannot be interpreted as the marker's effect.
+
+\subsubsection{WER subsets}
+Where Whisper's transcript matches the reference, which covers 70.3\% of clips, Direct leads Cascade-3.3B by +3.61 [3.04, 4.24]. Where the transcript contains at least one error the lead is +8.24 [7.38, 9.17]. Error clips make up 22.8\% of United States English and 36.2\% of Malaysian English, the groups with the smallest and one of the largest Direct-minus-Cascade-600M gaps in Table~\ref{tab:accent-gaps}. Recognition errors that reach the MT stage would produce this pattern, and the Spearman associations of Section~\ref{sec:statistical-asr-associations} point the same way. The split uses the cascade's own output as its dividing line. Direct's lead on error-free transcripts shows that the systems differ in more than recognition.
+
+\subsubsection{Larger MT}
+Cascade-3.3B improves on Cascade-600M in every accent group (Table~\ref{tab:accent-gaps}), with no detectable variation across groups (Section~\ref{sec:statistical-accent-gap-variation}). On error-free transcripts the lift is +2.27 [1.76, 2.76]; on clips with recognition errors it is +1.40 [0.90, 1.92]. For these checkpoints the larger MT model gained less where the transcript was wrong. The larger model narrows the gap to Direct and leaves most of it in place. A comparison that varies MT capacity alone cannot show what a larger or differently trained MT model would do.
+
+\subsubsection{Speaker dependence}
+With one clip per speaker the gaps are +6.19 [5.37, 6.90] against Cascade-600M, +4.69 [3.94, 5.51] against Cascade-3.3B and +1.50 [0.91, 2.16] between the cascades. These agree with the speaker-clustered estimates on the full set.
+
+\subsubsection{Fallback}
+Replacing Direct's output with the Cascade-3.3B translation on the 508 marked clips lowers corpus chrF++ from 25.08 to 24.89 and corpus BLEU from 38.86 to 38.54. On these clips the marked Direct outputs score above the cascade's translations, so the substitution did not improve scores.
+
+\subsubsection{Worst clips}
+In five of the seven groups, at least half of Direct's ten lowest-scoring clips score exactly zero. The cascades' worst clips in India and South Asia and in Hong Kong English carry mean WER between 0.31 and 0.56, against 0.06 over the whole set. Direct's worst clips carry mean WER of about 0.1, and 14\% of them contain the marker, near the 12.1\% base rate. Several references are non-literal. The reference for "There you have it!" is \begin{CJK*}{UTF8}{gbsn}给你！\end{CJK*}, and the literal \begin{CJK*}{UTF8}{gbsn}这就是它!\end{CJK*} scores zero against it. A low automatic score on such a clip measures reference matching and identifies no system error.
+
+\subsubsection{What the checks show}
+The quality ranking survives every check. Removing the marked outputs or counting each speaker once leaves Direct ahead of both cascades with the cascade ordering unchanged, and the same holds within each WER subset. The accent findings come out qualified. The gap's association with recognition errors fits the accent pattern in Table~\ref{tab:accent-gaps}, yet the subsets are defined by outcomes and by content, so they cannot attribute the gap to accent handling or to architecture, and Direct's lead on error-free transcripts stays unexplained.
