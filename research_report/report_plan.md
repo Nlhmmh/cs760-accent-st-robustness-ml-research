@@ -190,8 +190,8 @@ paper, not the current placeholder PDF. Target total: **11 pages** of main body.
 | IV-B. Uncertainty and accent variation | 0.90 page | Zhitong | Paired intervals, accent means/spreads, gap tests/effects and WER associations; explicitly separate quality from robustness; `results_statistics_zhitong.tex` |
 | IV-C–D. Marker findings | 1.00 page total | Nathan (about 0.35), Arizona (about 0.65) | Earlier frozen-run/constraint findings; selected text/speech/word-removal findings and unresolved mechanism; two member-specific results files |
 | IV-E. Sensitivity and synthesis | 0.60 page | Jidni | Marker-free intervals, WER subsets, 3.3B lift, speaker check, fallback and selected worst-clip interpretation; `results_synthesis_jidni.tex` |
-| V. Discussion and limitations | 0.75 page | Nathan integrates members' limitations | Answer RQ across results, quality versus robustness, confounding, dependence, automatic metrics, exploratory tests, diagnostic limits and reproducibility/access; `discussion_nathan.tex` |
-| VI. Conclusion and future work | About 1.00 page | Nathan integrates all members | High-level supported answers and prioritized future studies; no new results; `conclusion_nathan.tex` |
+| V. Discussion and limitations | 0.75 page | Nathan drafts discussion; Patricia drafts limitations using all members' inputs | Answer RQ across results, quality versus robustness, confounding, dependence, automatic metrics, exploratory tests, diagnostic limits and reproducibility/access; `discussion_nathan.tex` |
+| VI. Conclusion and future work | About 1.00 page | Patricia drafts using all members' inputs | High-level supported answers and prioritized future studies; no new results; `conclusion_nathan.tex` |
 | Author Contributions | Excluded | Each member; Nathan integrates | Exactly five confirmed 1–2 sentence statements; `author_contributions.tex` |
 | References | Excluded; **1 page max** | All cite; Nathan audits | Shared `references.bib`, IEEEtran BibTeX; at least nine sources actually used |
 
@@ -204,7 +204,8 @@ This avoids five independent reports and lets members edit their own parts.
 ### Nathan Naylin — organizer, pipelines and earlier diagnostics
 
 Write the title/abstract, Introduction, systems/execution subsection, earlier
-diagnostic method/results, integrated Discussion and Conclusion. Integrate the
+diagnostic method/results and integrated Discussion. Patricia drafts limitations,
+Conclusion and Future Work. Integrate the
 one-page Related Work from the team's existing reading. Maintain `main.tex`,
 shared notation, references, page budget and final PDF. Preserve both cascade
 variants and distinguish actual run times from pilot estimates. Nathan also
@@ -230,6 +231,9 @@ Inputs: notebooks 01–02, frozen de-identified dataset summaries,
 ### Patricia Jennesha — metrics and quality evaluation
 
 Write `method_evaluation_patricia.tex` and `results_quality_patricia.tex`.
+Draft the limitations placeholder in `discussion_nathan.tex` and the Conclusion
+and Future Work in `conclusion_nathan.tex`, drawing on all members' inputs.
+The existing filenames are retained for stable links and LaTeX inputs.
 Supply the overall score table, per-accent corpus evidence and WER summary.
 Record precise metric settings/signatures; explain why corpus scores, sentence
 means and WER aggregations differ. Contribute a brief error-propagation/robustness
@@ -334,7 +338,7 @@ Suggested internal schedule; Nathan can adjust these team handoff dates:
 | 15–18 | Member-owned method/results drafts, tables, captions and claim-to-artifact notes delivered |
 | 19–20 | Nathan integrates narrative and Related Work; Jidni prepares final-sized figures with owners |
 | 21–22 | Cross-review RQ answers, statistics, citations and reproducibility; shorten to the page budget |
-| 23–24 | Nathan writes final abstract/conclusion, confirms contributions/AI disclosure and checks the compiled PDF |
+| 23–24 | Patricia drafts limitations, conclusion and future work; Nathan writes the final abstract, confirms contributions/AI disclosure and checks the compiled PDF |
 | 25 | Final group review and leader submission before 23:59 |
 
 For every handoff, provide the LaTeX file, figure/table source, exact evidence

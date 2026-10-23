@@ -5,7 +5,7 @@
 \section{Related Work}
 \label{sec:related-work}
 
-\textit{Accent-sensitive recognition.}
+\subsection{Accent-sensitive recognition}
 DiChristofano et al.~\cite{dichristofano2022global} evaluated commercial ASR
 services using speakers reading the same passage and reported disparities
 associated with English-language backgrounds. Controlling text improves
@@ -17,7 +17,7 @@ regional groups separately. Their outcome is ASR performance, however, rather
 than final translation quality; their adaptation methods are also distinct from
 the present evaluation of frozen, unadapted systems.
 
-\textit{Direct and Cascaded translation.}
+\subsection{Direct and Cascaded translation}
 Sperber and Paulik~\cite{sperber2020endtoend} describe trade-offs between
 committing to intermediate ASR representations and modelling translation
 directly, including data scarcity and separate component objectives.
@@ -30,7 +30,7 @@ but do not imply a universal ranking or describe the regional English-to-Chinese
 setting studied here. The present comparison also uses different pretrained model
 families, so shared test inputs do not isolate architecture from training resources.
 
-\textit{Recognition errors and translation.}
+\subsection{Recognition errors and translation}
 Le et al.~\cite{le2017disentangling} showed that ASR errors can have different
 consequences for French-to-English translation: some errors produce substantial
 translation damage, whereas others have little effect. Their phrase-based MT
@@ -42,7 +42,7 @@ target-language scores. They do not establish that regional accent is the cause 
 translation differences in an observational benchmark, nor that a WER
 correlation identifies the mechanism inside a Direct model.
 
-\textit{Data and reference design.}
+\subsection{Data and reference design}
 Common Voice provides read speech with optional, self-reported accent metadata,
 rather than independently verified phonetic labels~\cite{ardila2020commonvoice}.
 CoVoST 2 extends Common Voice with professional translations of source
@@ -52,7 +52,7 @@ isolate accent from speaker and sentence content. The balanced clip counts and
 matched system inputs in the present study improve comparison without removing those
 dependencies or reference-matching limitations.
 
-\textit{Evaluation and statistical reliability.}
+\subsection{Evaluation and statistical reliability}
 BLEU evaluates reference n-gram agreement~\cite{papineni2002bleu}; chrF and chrF++
 provide character-based and combined character/word
 measures~\cite{popovic2015chrf,popovic2017chrfpp}. Post~\cite{post2018clarity}
