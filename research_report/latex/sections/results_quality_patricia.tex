@@ -1,26 +1,81 @@
 % OWNER: Patricia. Target: about 1 page including the overall table.
 \subsection{Overall and Per-Accent Translation Quality}
 \label{sec:quality-results}
-\placeholder{Patricia}{Fill Table~\ref{tab:overall-quality} from the archived
-three-system evidence and explain ranking and magnitudes. Report corpus WER
-and mean per-clip WER separately. Summarize per-accent corpus BLEU/chrF++ and
-sentence means with a compact table or by referring to the shared accent figure.
-Discuss meaning for the RQ rather than only listing scores. Leave uncertainty
-and test interpretation to Section~\ref{sec:statistical-results}.}
+
 
 \begin{table}[t]
-\caption{Overall translation quality. TODO (Patricia): fill the first three
-columns with corpus scores and the last with mean sentence chrF++; higher is better.}
-\label{tab:overall-quality}
+\caption{Overall translation quality on 4,200 clips. The first three
+columns are corpus scores; the last is mean sentence chrF++. Higher is
+better.}
+\label{tab:overall}
 \centering
-\small
-\begin{tabular}{@{}lrrrr@{}}
-\toprule
+\footnotesize
+\begin{tabular}{lrrrr}
+\hline
 System & BLEU & chrF & chrF++ & Sent. mean \\
-\midrule
-Direct & \scoreblank & \scoreblank & \scoreblank & \scoreblank \\
-Cascade-600M & \scoreblank & \scoreblank & \scoreblank & \scoreblank \\
-Cascade-3.3B & \scoreblank & \scoreblank & \scoreblank & \scoreblank \\
-\bottomrule
+\hline
+Direct       & \textbf{38.86} & \textbf{32.38} & \textbf{25.08} & \textbf{27.86} \\
+Cascade-600M & 29.11 & 24.23 & 18.44 & 20.86 \\
+Cascade-3.3B & 31.91 & 26.36 & 20.06 & 22.87 \\
+\hline
 \end{tabular}
 \end{table}
+ 
+Direct scores highest on all four measures in Table~\ref{tab:overall},
+and the ranking is the same on each: Direct, then Cascade-3.3B, then
+Cascade-600M. The two cascades share identical Whisper transcripts, so
+the difference between them reflects translation-model scale with the ASR
+input held fixed. Moving from 600M to 3.3B adds 2.81 BLEU, 2.14 chrF and
+1.62 chrF++. Direct's corpus lead shrinks as a result, from 9.75 to 6.94
+BLEU (about 29\%), but it remains ahead on every metric. Whisper's
+normalized WER is 5.97\% pooled (6.32\% as a per-clip mean) and is
+identical for both cascades.
+ 
+\begin{table}[t]
+\caption{Normalized Whisper WER and mean sentence chrF++ by accent group
+(600 clips each). Groups are ordered by Direct's score.}
+\label{tab:accent}
+\centering
+\footnotesize
+\begin{tabular}{lrrrr}
+\hline
+Accent group & WER (\%) & Direct & 600M & 3.3B \\
+\hline
+Filipino             & 6.48 & \textbf{28.90} & 21.23 & 24.48 \\
+Hong Kong            & 7.56 & \textbf{28.33} & 19.97 & 21.31 \\
+Malaysian            & 7.89 & \textbf{28.03} & 20.18 & 22.38 \\
+England              & 4.57 & \textbf{27.88} & 22.47 & 23.64 \\
+India and S. Asia    & 8.36 & \textbf{27.40} & 19.77 & 21.99 \\
+United States        & 4.29 & \textbf{27.27} & 20.70 & 22.61 \\
+Southern African     & 5.10 & \textbf{27.20} & 21.68 & 23.70 \\
+\hline
+\end{tabular}
+\end{table}
+ 
+Direct's lead holds in every accent group (Table~\ref{tab:accent}). In
+corpus terms it is ahead of Cascade-3.3B by 5.22 to 9.45 BLEU and 4.17 to
+6.77 chrF++, and ahead of Cascade-600M by 7.69 to 11.46 BLEU. Cascade-3.3B
+also scores higher than Cascade-600M in all seven groups, with
+sentence-level gains from 1.17 to 3.25 chrF++, although
+Section~IV-B shows the gain is marginal for England and Hong Kong English.
+ 
+The systems do not order the accents in the same way. Filipino is the
+highest group for Direct and for Cascade-3.3B, but England is highest for
+Cascade-600M. The lowest group is Southern African for Direct, India and
+South Asia for Cascade-600M, and Hong Kong for Cascade-3.3B. Hong Kong is
+therefore Direct's second-highest group and Cascade-3.3B's lowest. Across
+groups, mean sentence chrF++ spans about 1.7 points for Direct, 2.70 for
+Cascade-600M and 3.17 for Cascade-3.3B. Whisper's WER ranges from 4.29\%
+(United States) to 8.36\% (India and South Asia). The three groups with
+the highest WER (India and South Asia, Malaysian and Hong Kong) are also
+the three lowest-scoring groups for both cascades. Section~IV-B tests
+whether these differences are larger than sampling variation.
+ 
+For the research question, these descriptive results show that Direct is
+the stronger system in every accent group, and that accent group
+accounts for smaller score differences than the gap between Direct and
+either cascade. They do not show that Direct is more robust to accent.
+Its spread across groups is the smallest, but Section~IV-B shows that the
+differences in spread are uncertain. Direct outputs also contain the
+literal marker in 12.10\% of clips (Section~IV-C), which we report rather
+than remove.
