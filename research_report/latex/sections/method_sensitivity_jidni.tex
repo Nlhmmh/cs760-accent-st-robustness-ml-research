@@ -2,7 +2,11 @@
 \subsection{Subset and Speaker Sensitivity Checks}
 \label{sec:sensitivity-method}
 
-These checks ask whether the system comparison of Section~\ref{sec:statistics} changes when visibly marked outputs are removed, clips are split by recognition error, or each speaker is counted once. The archived predictions stay unchanged throughout. None of the checks is a validated remedy.
+The marker diagnostics describe output behaviour; the sensitivity checks ask
+whether the system comparison changes when visibly marked outputs are removed,
+clips are split by recognition error, or each speaker is counted once. A fallback
+rule and an audit of the lowest-scoring clips provide additional checks on
+interpretation. All analyses use the archived predictions, without changing them.
 
 \subsubsection{Common marker-free subset}
 The 3,692 clips whose archived Direct output contains no literal \unk{} (exact string, Section~\ref{sec:earlier-diagnostic-method}) form one subset for all systems, because no cascade output contains the string. Outputs that carry hidden special ID 1 stay in the subset (Section~\ref{sec:further-diagnostic-results}). On this subset the corpus metrics of Section~\ref{sec:metrics} and the paired gaps $\Delta_{s,s'}$ and $\Delta_{a;s,s'}$ are recomputed with the speaker-clustered bootstrap of Section~\ref{sec:statistics} ($B=1{,}000$, seed 760, 1,443 speakers). A verification check confirmed that this bootstrap reproduces Table~\ref{tab:paired-gaps} on the full set to four decimals. Marked and unmarked clips contain different sentences, so a difference between subset and full-set scores describes the clips that were removed.

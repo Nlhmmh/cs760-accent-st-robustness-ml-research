@@ -1,6 +1,6 @@
-# Group 9 IEEE final-report frame
+# Group 9 IEEE final report
 
-This is a **placeholder frame**, not a completed report. Read
+This is the integrated final-report source. Read
 [the report plan](../report_plan.md) and [the assignment instructions](../instructions.md)
 before writing. Section ownership follows named project contributions in
 [the root README](../../README.md#team-member-contributions). Nathan is the organizer.
@@ -19,17 +19,16 @@ From this directory:
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
-This produces `main.pdf`, currently a draft containing visible TODOs and empty
-tables/figures. Its page count does not predict the completed report's length.
+This produces the review preview `main.pdf`.
 Generated PDFs and auxiliary files are ignored by Git.
 
-After every placeholder is replaced and the team has checked the final paper:
+Build the submission-named copy after checking the paper:
 
 ```sh
 latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=9_FinalReport main.tex
 ```
 
-This produces the required `9_FinalReport.pdf`. Do not submit the frame preview.
+This produces the required `9_FinalReport.pdf`.
 Run `latexmk -c main.tex` to clean auxiliary files while keeping the PDF.
 For the named build, use `latexmk -c -jobname=9_FinalReport main.tex`.
 
@@ -47,37 +46,36 @@ All files below are in `sections/` unless stated otherwise.
 | Every member; Nathan integrates | Their own paragraph in `author_contributions.tex`; focused Related Work and limitation/future-work inputs |
 
 The existing section filenames are retained for stable links and LaTeX inputs;
-Patricia owns the limitations and conclusion/future-work placeholders even where
+Patricia owns the limitations and conclusion/future-work sections even where
 the filename ends in `_nathan.tex`.
+
+Nathan's and Arizona's marker-diagnostic files form one printed subsection in
+Methodology and one in Results. Their separate files retain ownership and
+stable cross-reference labels. Results moves from quality to uncertainty and
+accent variation, recognition-error associations, marker diagnostics and
+sensitivity checks. Preserve this sequence when editing individual files.
 
 `ai_use_statement.tex` is an optional placeholder, commented out in `main.tex`.
 Enable it only after confirming actual use and course guidance. It is not a
 mandatory section stated in the supplied final-report instructions.
 
-## Filling the frame
+## Editing the report
 
-1. Replace your `\placeholder{owner}{instructions}` calls with verified prose.
-   Preserve section labels and use the existing `\ref{...}` labels for tables
-   and figures. Do not turn a writing assignment into an already-completed
-   contribution claim.
-2. Fill blank table cells with results from the named archive. Check the score
-   aggregation and resampling unit in every caption. Empty dashes are deliberate
-   placeholders, not zero measurements.
-3. Put final figures in `figures/`. Replace `\figureplaceholder{...}` with, for
-   example, `\includegraphics[width=\columnwidth]{figures/accent_gaps.pdf}`.
-   The macro itself lives in `main.tex`; remove its definition after all calls
-   are gone. Delete optional figure slots that duplicate the text/tables.
-4. Use `\cite{key}` with the shared `references.bib`. Its 13 initial entries are
-   a focused seed set, not a requirement to cite irrelevant papers. The visible
-   citations in TODOs must become supported citations in real prose. Add needed
-   sources with verified metadata; do not use `\nocite{*}` to reach the minimum.
+1. Use verified prose and preserve section labels and existing `\ref{...}`
+   links. Contribution statements must describe completed work.
+2. Check table values against the named archives, including score aggregation
+   and resampling units. Do not replace missing evidence with assumed results.
+3. Figure 1 is inline TikZ in `sections/method_systems_nathan.tex`. Rebuild and
+   inspect its rendered layout after changes. Avoid figures that duplicate
+   existing tables without adding an explanation.
+4. Use `\cite{key}` with the shared `references.bib`. Add sources with verified
+   metadata and preserve IEEE first-citation order; do not use `\nocite{*}` to
+   reach the minimum.
 5. Keep preparation evidence paths in member notes/the Markdown plan. Refer to
-   our own results through paper tables/figures and to the code through the
+   the project's results through paper tables/figures and to the code through the
    existing Methodology footnote, not numbered literature entries.
-6. The default pdfLaTeX setup handles the English report. If including Chinese
-   translation examples as live text, choose and validate an appropriate CJK
-   font/package configuration first; do not paste unsupported Unicode into
-   this frame or use screenshots for equations.
+6. The pdfLaTeX setup includes CJK support for live Chinese examples. Check
+   those examples after rebuilding; use typed equations rather than screenshots.
 
 Find unresolved draft content from the repository root:
 
@@ -98,8 +96,15 @@ describe planned work. Follow the plan's final audit, including visual review.
 - Contributions: **one or two sentences per member**, execution and actual writing.
 - No appendix. Important experimental details must appear in the main body.
 
-`\clearpage` separates the body, Contributions and References so their page
-boundaries are easy to inspect. The optional AI statement has no explicit page-
+Author Contributions follows Acknowledgments in normal document flow.
+References starts on a dedicated page so that all 25 entries fit on one
+physical page, as required by the assignment. This is a report-specific layout
+choice rather than a general IEEE requirement. `\IEEEtriggeratref{12}` balances
+the bibliography columns; recheck that setting if the references change.
+The acknowledgments/contributions page uses the balance package, enabled after
+Conclusion and disabled before References. This keeps both columns in use and
+lets the Conclusion retain its natural heading spacing.
+Both sections are excluded from the body limit. The optional AI statement has no explicit page-
 limit exemption; if enabled, include its space in the body allowance. Do not
 reduce IEEE margins/fonts to meet the limits. Nathan maintains the planned
 11-page body budget and integrates one coherent narrative.

@@ -1,12 +1,12 @@
 % OWNER: Arizona. Share the diagnostic/sensitivity page allocation.
-\subsection{Further Direct-Output Diagnostics}
+\subsubsection{Accent association}
 \label{sec:further-diagnostic-method}
 
 A failure mode specific to one system could distort the accent comparison if
-it varied across groups. These checks therefore ask whether the literal \unk{}
-marker of Section~\ref{sec:earlier-diagnostic-method} is linked to accent,
-input modality or source wording (inputs and samples in
-Table~\ref{tab:further-diagnostics}). Checks that re-ran the model used the
+it varied across groups. Complementing the decoding checks, the following
+analyses examine whether the literal \unk{} marker is linked to accent,
+input modality or source wording (Table~\ref{tab:further-diagnostics}).
+Checks that re-ran the model used the
 Direct checkpoint, revision and decoding controls of Section~\ref{sec:systems}
 on a Colab T4 GPU in FP16; exact library versions were not recorded. The
 case-insensitive pattern \verb|<\s*unk\s*>| selects the same 508 archived
@@ -14,7 +14,6 @@ clips as exact-string matching. In all regressions, sentence length counts
 whitespace-delimited words and sentence clusters use the original English
 strings.
 
-\subsubsection{Accent}
 Logistic regressions of marker presence on accent, with and
 without sentence length, tested the six accent coefficients (United States
 English as reference) jointly by Wald tests with speaker- or, separately,
@@ -46,7 +45,7 @@ word and, as a control, once without another word chosen at random (seed
 760). The outcome is the proportion of the 385 sentences whose new
 translation contains no marker, with Wilson intervals.
 
-\subsubsection{Scope}
+\subsubsection{Diagnostic scope}
 Text input bypasses the speech encoder, so the text-input checks cannot
 localize markers in the speech pathway. All diagnostics are exploratory with
 unadjusted p-values; as in Section~\ref{sec:statistics}, speaker and sentence

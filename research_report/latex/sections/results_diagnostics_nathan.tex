@@ -1,11 +1,14 @@
 % OWNER: Nathan. Counts and scores checked against archived diagnostic CSVs.
-\subsection{Literal Markers and Earlier Decoding Checks}
+\subsection{Direct-Output Marker Diagnostics}
 \label{sec:earlier-diagnostic-results}
 
+\subsubsection{Marker frequency and decoding checks}
 The frozen Direct run contains literal \unk{} in 508 of 4,200 outputs
 (12.10\%), with 599 occurrences. Rates range from 10.33\% to 13.50\% across
 the seven groups; these descriptive counts do not establish an accent effect.
-Neither cascade contains this literal string. In the 35-clip sensitivity
+Neither cascade contains this literal string.
+
+In the 35-clip sensitivity
 sample, the CPU FP32 greedy baseline exactly reproduces 33 archived
 translations (94.29\%). Environment/precision differences therefore remain a
 limitation of comparison with the original GPU run.
@@ -22,7 +25,5 @@ Blocking the two ordinary-token sequences removes the exact spelling from all
 35 outputs, but all 35 instead contain \mbox{\texttt{<unk >}}. Corpus BLEU on this
 same subset falls from 28.19 to 15.52, chrF from 24.85 to 19.15, and chrF++ from
 18.86 to 14.49. Removing an exact-string flag therefore does not demonstrate
-repair of the output. The tested decoding constraints provide no validated
-mitigation, and neither subset scores nor marker changes replace the original
-benchmark results. The model's internal reason for generating these strings
-remains unresolved.
+repair of the output. The remaining diagnostics examine whether marker
+occurrence is associated with accent, input modality or source wording.

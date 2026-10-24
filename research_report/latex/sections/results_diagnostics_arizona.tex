@@ -1,9 +1,9 @@
 % OWNER: Arizona. Target: about 0.65 page; select findings, do not copy all extras.
-\subsection{Further Marker Investigation}
+\subsubsection{Accent association}
 \label{sec:further-diagnostic-results}
 
 \begin{table}[t]
-\caption{Further marker diagnostics for the Direct system. All checks are
+\caption{Accent, input-modality and source-wording diagnostics for Direct. All checks are
 post hoc and leave the archived predictions unchanged. Intervals are 95\%:
 sentence-clustered regression (word frequency) and Wilson (special ID, word
 removal).}
@@ -35,7 +35,6 @@ Word removal & Reference transcript; 385 sentences &
 \end{tabularx}
 \end{table}
 
-\subsubsection{Accent}
 The group marker rates in
 Section~\ref{sec:earlier-diagnostic-results} span about three percentage
 points, and the speaker-clustered joint test did not detect an association
@@ -76,12 +75,11 @@ maximize the drop in summed marker-start probability at a single decoding
 step, the deletion comparison measures sensitivity to a targeted deletion rather than
 independent evidence that rarity causes the marker.
 
-\subsubsection{Summary}
 Together, these checks characterize the marker as an anomaly of the Direct
 checkpoint that is associated with source wording and shows no detected
 accent pattern in its incidence; its internal cause remains unresolved. Word
 removal can also alter meaning, so marker disappearance alone does not
-indicate a better translation. These diagnostics concern marker incidence, not
-whether the score gap between marked and unmarked outputs differs across
-accent groups; Section~\ref{sec:synthesis-results} examines the system
-comparisons with visibly marked clips excluded.
+indicate a better translation. These checks describe marker incidence rather
+than the translation-score gap between marked and unmarked outputs across
+accents. The next section examines whether excluding visibly marked clips
+changes the system ranking.

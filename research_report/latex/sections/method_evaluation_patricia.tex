@@ -2,22 +2,21 @@
 \subsection{Evaluation Metrics}
 \label{sec:metrics}
 
-
 Translations are scored with SacreBLEU 2.6.0 against the single CoVoST~2
-Chinese reference for each clip. \emph{Corpus BLEU} [9] pools n-gram
-counts (up to 4-grams) over all clips and applies a brevity penalty. We
-use SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), because the
+Chinese reference for each clip. \emph{Corpus BLEU}~\cite{papineni2002bleu} pools n-gram
+counts (up to 4-grams) over all clips and applies a brevity penalty. BLEU
+uses SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), because the
 default tokenizer splits on whitespace and cannot segment Chinese, and
-the tokenizer must be reported with BLEU scores [12]. \emph{chrF} [10] is
+the tokenizer must be reported with BLEU scores~\cite{post2018clarity}. \emph{chrF}~\cite{popovic2015chrf} is
 an F-score over character n-grams (order 6, $\beta=2$, whitespace
-excluded by default). \emph{chrF++} [11] adds word unigrams and bigrams to
+excluded by default). \emph{chrF++}~\cite{popovic2017chrfpp} adds word unigrams and bigrams to
 chrF (word order 2). The Chinese tokenizer is not applied to the word
 component of chrF++, so it finds fewer word matches and chrF++ is lower
-than chrF for every system. We treat this as a property of the metric on
+than chrF for every system. This is treated as a property of the metric on
 Chinese, not as lower quality. Scores are on a 0--100 scale, and higher is
 better.
  
-We report two kinds of chrF++. \emph{Corpus} scores pool statistics over
+Two kinds of chrF++ are reported. \emph{Corpus} scores pool statistics over
 a set of clips and describe overall quality. \emph{Mean sentence chrF++}
 averages the score of each clip and is the quantity used for paired
 statistics and accent comparisons, because each clip then has its own
@@ -26,7 +25,7 @@ score. The two are not interchangeable.
 \emph{Word error rate} (WER) diagnoses the cascade's ASR stage only. It
 compares the Whisper transcript with the Common Voice sentence as
 $(S+D+I)/N$ for substitutions, deletions, insertions and $N$ reference
-words. We use \emph{normalized} WER, after lowercasing, removing
+words. The analysis uses \emph{normalized} WER, after lowercasing, removing
 punctuation, collapsing repeated spaces and stripping the ends. Raw WER is
 10.56\%, and normalization lowers it to 5.97\%, because many raw errors
 are formatting differences such as ``Mr'' and ``Mr.''. \emph{Pooled}
@@ -36,7 +35,8 @@ no WER. Finally, a \emph{literal marker} is an output containing the exact
 string \texttt{<unk>}, counted separately from the tokenizer's special
 unknown-token ID.
  
-\emph{Reproducibility.} Following Post [12], the SacreBLEU 2.6.0
+\subsubsection{Reproducibility}
+Following Post~\cite{post2018clarity}, the SacreBLEU 2.6.0
 signatures are as follows. BLEU:
 \texttt{nrefs:1\allowbreak|case:mixed\allowbreak|eff:no\allowbreak|tok:zh\allowbreak|smooth:exp\allowbreak|version:2.6.0}.
 chrF:
