@@ -1,15 +1,37 @@
 % OWNER: Patricia drafts conclusion and future work using all members' inputs. About one page.
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
-\placeholder{Patricia}{Give a high-level summary of the problem, matched
-three-system experiment and supported answers. State the frozen-set quality
-ranking, what is known about accent variation, and what remains inconclusive
-about relative robustness. Refer to established results rather than introduce
-new numbers, tests or causal claims.}
 
-\placeholder{Patricia}{Prioritize feasible future research using all members' inputs for a master's
-project: broader model/language/data replication; matched speaker/content design
-and joint dependence handling; human translation-quality evaluation; controlled
-tests that change one ASR or MT component at a time; and properly held-out evaluation of any marker mitigation or
-fallback rule. Explain which present limitation each proposed study resolves.
-Confirm these are future plans, not completed or validated improvements.}
+We compared a Direct system (SeamlessM4T v2) with two Whisper-to-NLLB
+cascades on 4,200 English recordings from seven regional accent groups,
+scored against Chinese references. On this frozen set, Direct
+outperformed both cascades on all four quality metrics and within every
+accent group. The larger translator closed part of the gap. Accent groups
+differ in score within each system, but by less than Direct differs from
+either cascade. Higher Whisper WER was weakly associated with lower
+cascade scores. What remains inconclusive is whether any system is more
+robust to accent. The design cannot separate accent from speaker and
+sentence content, or architecture from model size and training data.
+ 
+We propose the following studies. These are future plans, not completed
+or validated improvements. Each names the limitation it addresses.
+\begin{enumerate}
+\item \emph{Broader replication} across more models, language directions
+and datasets. This addresses the single direction and checkpoint set.
+\item \emph{Matched speaker and content design}, with the same sentences
+read in each accent, verified accent labels, and speaker and sentence
+dependence modelled jointly. This addresses unequal content, speakers
+and recordings, repeated sentences, and self-reported labels.
+\item \emph{Human translation-quality evaluation}, with several
+references or post-editing. This addresses single-reference automatic
+metrics.
+\item \emph{Controlled tests that change one ASR or MT component at a
+time}, extending our 600M and 3.3B comparison. This addresses the
+model, training and capacity confounds.
+\item \emph{Held-out evaluation of any marker mitigation or fallback
+rule}, on data not used to design it. This addresses the post-hoc,
+subset-based diagnostics.
+\item \emph{Fuller replay records}, with pinned commits, saved
+environments and shareable derived data. This addresses the incomplete
+reproducibility records.
+\end{enumerate}

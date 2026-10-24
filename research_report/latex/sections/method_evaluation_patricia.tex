@@ -1,15 +1,46 @@
 % OWNER: Patricia. Target: about 0.5 page.
 \subsection{Evaluation Metrics}
 \label{sec:metrics}
-\placeholder{Patricia}{Define corpus BLEU, chrF and chrF++, and mean sentence
-chrF++ with supporting metric papers~\cite{papineni2002bleu,popovic2015chrf,
-popovic2017chrfpp}. State SacreBLEU 2.6.0, Chinese BLEU tokenization, character
-order 6, beta 2, word orders 0/2 and whitespace policy. Record signatures and
-score scale, following reproducible reporting~\cite{post2018clarity}. The
-Chinese BLEU tokenizer is not applied to chrF++'s word component.}
 
-\placeholder{Patricia}{Define raw/normalized English WER and the exact
-lowercase, punctuation-removal and whitespace transforms. Distinguish pooled
-corpus WER from mean per-clip WER; Direct exposes no ASR transcript. Define
-literal \unk{} using exact-string matching, separately from special UNK IDs.
-Clarify that statistics use sentence chrF++ rather than corpus metric gaps.}
+
+Translations are scored with SacreBLEU 2.6.0 against the single CoVoST~2
+Chinese reference for each clip. \emph{Corpus BLEU} [9] pools n-gram
+counts (up to 4-grams) over all clips and applies a brevity penalty. We
+use SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), because the
+default tokenizer splits on whitespace and cannot segment Chinese, and
+the tokenizer must be reported with BLEU scores [12]. \emph{chrF} [10] is
+an F-score over character n-grams (order 6, $\beta=2$, whitespace
+excluded by default). \emph{chrF++} [11] adds word unigrams and bigrams to
+chrF (word order 2). The Chinese tokenizer is not applied to the word
+component of chrF++, so it finds fewer word matches and chrF++ is lower
+than chrF for every system. We treat this as a property of the metric on
+Chinese, not as lower quality. Scores are on a 0--100 scale, and higher is
+better.
+ 
+We report two kinds of chrF++. \emph{Corpus} scores pool statistics over
+a set of clips and describe overall quality. \emph{Mean sentence chrF++}
+averages the score of each clip and is the quantity used for paired
+statistics and accent comparisons, because each clip then has its own
+score. The two are not interchangeable.
+ 
+\emph{Word error rate} (WER) diagnoses the cascade's ASR stage only. It
+compares the Whisper transcript with the Common Voice sentence as
+$(S+D+I)/N$ for substitutions, deletions, insertions and $N$ reference
+words. We use \emph{normalized} WER, after lowercasing, removing
+punctuation, collapsing repeated spaces and stripping the ends. Raw WER is
+10.56\%, and normalization lowers it to 5.97\%, because many raw errors
+are formatting differences such as ``Mr'' and ``Mr.''. \emph{Pooled}
+corpus WER divides total errors by total words, while \emph{mean per-clip}
+WER averages the clip values. Direct ST exposes no transcript, so it has
+no WER. Finally, a \emph{literal marker} is an output containing the exact
+string \texttt{<unk>}, counted separately from the tokenizer's special
+unknown-token ID.
+ 
+\emph{Reproducibility.} Following Post [12], the SacreBLEU 2.6.0
+signatures are as follows. BLEU:
+\texttt{nrefs:1\allowbreak|case:mixed\allowbreak|eff:no\allowbreak|tok:zh\allowbreak|smooth:exp\allowbreak|version:2.6.0}.
+chrF:
+\texttt{nrefs:1\allowbreak|case:mixed\allowbreak|eff:yes\allowbreak|nc:6\allowbreak|nw:0\allowbreak|space:no\allowbreak|version:2.6.0}.
+chrF++ differs only in \texttt{nw:2}. Mean sentence chrF++ uses the same
+chrF++ settings. The signatures were printed after the full runs, using
+the same scorer settings as the reported scores.
