@@ -101,9 +101,10 @@ References starts on a dedicated page so that all 25 entries fit on one
 physical page, as required by the assignment. This is a report-specific layout
 choice rather than a general IEEE requirement. `\IEEEtriggeratref{12}` balances
 the bibliography columns; recheck that setting if the references change.
-The acknowledgments/contributions page uses the balance package, enabled after
-Conclusion and disabled before References. This keeps both columns in use and
-lets the Conclusion retain its natural heading spacing.
+The balance package shares the final Conclusion text, Acknowledgments and
+Contributions across both columns of their final page. It is enabled after
+Conclusion and disabled before References. Do not force a page break before
+Acknowledgments; that would leave the Conclusion overflow on a separate page.
 Both sections are excluded from the body limit. The optional AI statement has no explicit page-
 limit exemption; if enabled, include its space in the body allowance. Do not
 reduce IEEE margins/fonts to meet the limits. Nathan maintains the planned

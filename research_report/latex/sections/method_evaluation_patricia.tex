@@ -2,25 +2,25 @@
 \subsection{Evaluation Metrics}
 \label{sec:metrics}
 
-Translations are scored with SacreBLEU 2.6.0 against the single CoVoST\~2 Chinese reference for each clip. 
-\emph{Corpus BLEU}~\cite{papineni2002bleu} pools n-gram counts (up to 4-grams) over all clips and applies a brevity penalty. 
-We use SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), which segments Chinese text into characters. 
-The default 13a tokenizer separates punctuation but does not segment Chinese characters, 
-so the tokenizer must be reported with BLEU scores~\cite{post2018clarity}. 
-\emph{chrF}~\cite{popovic2015chrf} is an F-score over character n-grams (order 6, $\beta=2$, whitespace excluded by default). 
-\emph{chrF++}~\cite{popovic2017chrfpp} adds word unigrams and bigrams to chrF (word order 2). 
-chrF++ does not use BLEU's Chinese tokenizer. Its word component is extracted using whitespace 
-and punctuation handling, so unspaced Chinese text forms very few words. Consequently, chrF++ is 
-lower than chrF for every system in this evaluation. This reflects differences in metric definitions 
-and Chinese word segmentation, rather than necessarily indicating lower translation quality. 
+Translations are scored with SacreBLEU 2.6.0 against the single CoVoST~2 Chinese reference for each clip.
+\emph{Corpus BLEU}~\cite{papineni2002bleu} pools n-gram counts (up to 4-grams) over all clips and applies a brevity penalty.
+BLEU uses SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), which segments Chinese text into characters.
+The default 13a tokenizer separates punctuation but does not segment Chinese characters,
+so the tokenizer must be reported with BLEU scores~\cite{post2018clarity}.
+\emph{chrF}~\cite{popovic2015chrf} is an F-score over character n-grams (order 6, $\beta=2$, whitespace excluded by default).
+\emph{chrF++}~\cite{popovic2017chrfpp} adds word unigrams and bigrams to chrF (word order 2).
+chrF++ does not use BLEU's Chinese tokenizer. Its word component is extracted using whitespace
+and punctuation handling, so unspaced Chinese text forms very few words. Consequently, chrF++ is
+lower than chrF for every system in this evaluation. This reflects differences in metric definitions
+and Chinese word segmentation, rather than necessarily indicating lower translation quality.
 Scores are on a 0--100 scale, and higher is better.
- 
+
 Two kinds of chrF++ are reported. \emph{Corpus} scores pool statistics over
 a set of clips and describe overall quality. \emph{Mean sentence chrF++}
 averages the score of each clip and is the quantity used for paired
 statistics and accent comparisons, because each clip then has its own
 score. The two are not interchangeable.
- 
+
 \emph{Word error rate} (WER) diagnoses the cascade's ASR stage only. It
 compares the Whisper transcript with the Common Voice sentence as
 $(S+D+I)/N$ for substitutions, deletions, insertions and $N$ reference
@@ -33,7 +33,7 @@ WER averages the clip values. Direct ST exposes no transcript, so it has
 no WER. Finally, a \emph{literal marker} is an output containing the exact
 string \texttt{<unk>}, counted separately from the tokenizer's special
 unknown-token ID.
- 
+
 \subsubsection{Reproducibility}
 Following Post~\cite{post2018clarity}, the SacreBLEU 2.6.0
 signatures are as follows. BLEU:

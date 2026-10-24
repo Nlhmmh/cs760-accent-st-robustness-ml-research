@@ -2,7 +2,7 @@
 \section{Conclusion and Future Work}
 \label{sec:conclusion}
 
-We compared a Direct system (SeamlessM4T v2) with two Whisper-to-NLLB
+This study compared a Direct system (SeamlessM4T v2) with two Whisper-to-NLLB
 cascades on 4,200 English recordings from seven regional accent groups,
 scored against Chinese references. On this frozen set, Direct
 outperformed both cascades on all four quality metrics and within every
@@ -16,11 +16,12 @@ sentence content, or architecture from model size and training data.
 In practice, these results favour Direct on this benchmark for all seven
 groups, but they do not justify choosing a system for a particular accent
 without testing on that accent's speakers and judging translations with
-human raters. Accent group mattered less than system choice, yet group
+human raters. The observed between-accent spreads in mean sentence chrF++
+were smaller than Direct's overall lead over either cascade, yet group
 differences and the Direct lead both varied, so small groups need more
 speakers before they can be compared reliably.
 
-We propose the following studies. These are future plans, not completed
+The following studies are proposed. These are future plans, not completed
 or validated improvements. Each names the limitation it addresses.
 \begin{enumerate}
 \item \emph{Broader replication} across more models, language directions
@@ -36,7 +37,7 @@ references or post-editing. This addresses single-reference automatic
 metrics.
 
 \item \emph{Controlled tests that change one ASR or MT component at a
-time}, extending our 600M and 3.3B comparison. This addresses the
+time}, extending the 600M and 3.3B comparison. This addresses the
 model, training and capacity confounds.
 
 \item \emph{Held-out evaluation of any marker mitigation or fallback

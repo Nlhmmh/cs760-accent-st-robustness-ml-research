@@ -19,7 +19,7 @@ Cascade-3.3B & 31.91 & 26.36 & 20.06 & 22.87 \\
 \bottomrule
 \end{tabular}
 \end{table}
- 
+
 Direct scores highest on all four measures in Table~\ref{tab:overall},
 and the ranking is the same on each: Direct, then Cascade-3.3B, then
 Cascade-600M. The two cascades use identical saved Whisper transcripts, so
@@ -29,7 +29,7 @@ two evaluated NLLB checkpoints at the translation stage. Moving from 600M to 3.3
 BLEU (about 29\%), but it remains ahead on every metric. Whisper's
 normalized WER is 5.97\% pooled (6.32\% as a per-clip mean) and is
 identical for both cascades.
- 
+
 \begin{table}[t]
 \caption{Normalized Whisper WER and mean sentence chrF++ by accent group
 (600 clips each). Groups are ordered by Direct's score.}
@@ -50,14 +50,14 @@ Southern African     & 5.10 & \textbf{27.20} & 21.68 & 23.70 \\
 \bottomrule
 \end{tabular}
 \end{table}
- 
+
 Direct's lead holds in every accent group (Table~\ref{tab:accent}). In
 corpus terms it is ahead of Cascade-3.3B by 5.22 to 9.45 BLEU and 4.17 to
 6.77 chrF++, and ahead of Cascade-600M by 7.69 to 11.46 BLEU. Cascade-3.3B
 also scores higher than Cascade-600M in all seven groups, with
 sentence-level gains from 1.17 to 3.25 chrF++, although
 Section~\ref{sec:statistical-results} examines uncertainty in these gains.
- 
+
 The systems do not order the accents in the same way. Filipino is the
 highest group for Direct and for Cascade-3.3B, but England is highest for
 Cascade-600M. The lowest group is Southern African for Direct, India and
@@ -65,11 +65,11 @@ South Asia for Cascade-600M, and Hong Kong for Cascade-3.3B. Hong Kong is
 therefore Direct's second-highest group and Cascade-3.3B's lowest. Across
 groups, mean sentence chrF++ spans about 1.7 points for Direct, 2.70 for
 Cascade-600M and 3.17 for Cascade-3.3B. Mean per-clip normalized WER by
-group ranges from 4.29\% (United States) to 8.36\% (India and South Asia). 
-The three groups with the highest WER (India and South Asia, Malaysian and Hong Kong) 
-are also the three lowest-scoring groups for both cascades. Section~IV-B 
+group ranges from 4.29\% (United States) to 8.36\% (India and South Asia).
+The three groups with the highest WER (India and South Asia, Malaysian and Hong Kong)
+are also the three lowest-scoring groups for both cascades. Section~\ref{sec:statistical-results}
 tests whether these differences are larger than sampling variation.
- 
+
 The descriptive ranking is therefore consistent across accent groups. The next
 analysis examines uncertainty in the system gaps and asks whether differences
 in between-accent spread support a claim of stronger accent robustness.
