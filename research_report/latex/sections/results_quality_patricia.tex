@@ -22,9 +22,9 @@ Cascade-3.3B & 31.91 & 26.36 & 20.06 & 22.87 \\
  
 Direct scores highest on all four measures in Table~\ref{tab:overall},
 and the ranking is the same on each: Direct, then Cascade-3.3B, then
-Cascade-600M. The two cascades share identical Whisper transcripts, so
-the difference between them reflects translation-model scale with the ASR
-input held fixed. Moving from 600M to 3.3B adds 2.81 BLEU, 2.14 chrF and
+Cascade-600M. The two cascades use identical saved Whisper transcripts, so
+the difference between them reflects the change between the
+two evaluated NLLB checkpoints at the translation stage. Moving from 600M to 3.3B adds 2.81 BLEU, 2.14 chrF and
 1.62 chrF++. Direct's corpus lead shrinks as a result, from 9.75 to 6.94
 BLEU (about 29\%), but it remains ahead on every metric. Whisper's
 normalized WER is 5.97\% pooled (6.32\% as a per-clip mean) and is
@@ -62,11 +62,13 @@ The systems do not order the accents in the same way. Filipino is the
 highest group for Direct and for Cascade-3.3B, but England is highest for
 Cascade-600M. The lowest group is Southern African for Direct, India and
 South Asia for Cascade-600M, and Hong Kong for Cascade-3.3B. Hong Kong is
-therefore Direct's second-highest group and Cascade-3.3B's lowest.
-Whisper's WER ranges from 4.29\%
-(United States) to 8.36\% (India and South Asia). The three groups with
-the highest WER (India and South Asia, Malaysian and Hong Kong) are also
-the three lowest-scoring groups for both cascades.
+therefore Direct's second-highest group and Cascade-3.3B's lowest. Across
+groups, mean sentence chrF++ spans about 1.7 points for Direct, 2.70 for
+Cascade-600M and 3.17 for Cascade-3.3B. Mean per-clip normalized WER by
+group ranges from 4.29\% (United States) to 8.36\% (India and South Asia). 
+The three groups with the highest WER (India and South Asia, Malaysian and Hong Kong) 
+are also the three lowest-scoring groups for both cascades. Section~IV-B 
+tests whether these differences are larger than sampling variation.
  
 The descriptive ranking is therefore consistent across accent groups. The next
 analysis examines uncertainty in the system gaps and asks whether differences

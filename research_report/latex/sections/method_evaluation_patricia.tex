@@ -2,19 +2,18 @@
 \subsection{Evaluation Metrics}
 \label{sec:metrics}
 
-Translations are scored with SacreBLEU 2.6.0 against the single CoVoST~2
-Chinese reference for each clip. \emph{Corpus BLEU}~\cite{papineni2002bleu} pools n-gram
-counts (up to 4-grams) over all clips and applies a brevity penalty. BLEU
-uses SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), because the
-default tokenizer splits on whitespace and cannot segment Chinese, and
-the tokenizer must be reported with BLEU scores~\cite{post2018clarity}. \emph{chrF}~\cite{popovic2015chrf} is
-an F-score over character n-grams (order 6, $\beta=2$, whitespace
-excluded by default). \emph{chrF++}~\cite{popovic2017chrfpp} adds word unigrams and bigrams to
-chrF (word order 2). The Chinese tokenizer is not applied to the word
-component of chrF++, so it finds fewer word matches and chrF++ is lower
-than chrF for every system. This is treated as a property of the metric on
-Chinese, not as lower quality. Scores are on a 0--100 scale, and higher is
-better.
+Translations are scored with SacreBLEU 2.6.0 against the single CoVoST\~2 Chinese reference for each clip. 
+\emph{Corpus BLEU}~\cite{papineni2002bleu} pools n-gram counts (up to 4-grams) over all clips and applies a brevity penalty. 
+We use SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), which segments Chinese text into characters. 
+The default 13a tokenizer separates punctuation but does not segment Chinese characters, 
+so the tokenizer must be reported with BLEU scores~\cite{post2018clarity}. 
+\emph{chrF}~\cite{popovic2015chrf} is an F-score over character n-grams (order 6, $\beta=2$, whitespace excluded by default). 
+\emph{chrF++}~\cite{popovic2017chrfpp} adds word unigrams and bigrams to chrF (word order 2). 
+chrF++ does not use BLEU's Chinese tokenizer. Its word component is extracted using whitespace 
+and punctuation handling, so unspaced Chinese text forms very few words. Consequently, chrF++ is 
+lower than chrF for every system in this evaluation. This reflects differences in metric definitions 
+and Chinese word segmentation, rather than necessarily indicating lower translation quality. 
+Scores are on a 0--100 scale, and higher is better.
  
 Two kinds of chrF++ are reported. \emph{Corpus} scores pool statistics over
 a set of clips and describe overall quality. \emph{Mean sentence chrF++}

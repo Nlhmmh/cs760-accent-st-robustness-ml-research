@@ -2,76 +2,76 @@
 % Target: about 0.75 page. This is counted inside the 12-page main-body limit.
 \section{Discussion and Limitations}
 \label{sec:discussion}
-\subsection{Answer to the research question}
-The benchmark supports a consistent quality ranking: Direct, then
-Cascade-3.3B, then Cascade-600M, overall and in every accent group. Direct's
-advantage varies by accent with small effects, but few accent pairs differ
-after correction. Its smaller observed between-accent spread does not establish
-stronger accent robustness because the spread differences remain uncertain
-(Section~\ref{sec:statistical-results}). The supported answer is therefore
-higher measured translation quality for Direct on this dataset; relative accent
-robustness remains unresolved.
 
-\subsection{Interpretation of the findings}
-The WER results help describe the cascade comparison without fully explaining
-the system gaps. Higher normalized WER is weakly associated with lower cascade
-scores and larger Direct advantages. Direct also retains a lead where
-normalized WER is zero (Table~\ref{tab:sensitivity}), so counted transcription
-errors cannot explain the full gap. Matching normalized reference text does
-not, however, establish equivalent information for Direct and Cascaded systems.
-Direct exposes no transcript, preventing the same WER analysis for that system.
+\textbf{Answer to the research question.} In this frozen benchmark, the
+three systems rank the same way overall and in every regional accent
+group: Direct, then Cascade-3.3B, then Cascade-600M. Accent group is
+associated with score differences within each system, but these are
+smaller than Direct's lead over either cascade. Direct's lead also varies
+only weakly by accent, and few accent pairs differ after correction. A
+positive system gap and stronger robustness are different claims.
+Robustness, as defined here, concerns the spread of group means. Direct's
+spread is the smallest, but the differences in spread are uncertain
+(Section~IV-B). We therefore conclude that Direct translated better on
+this data, not that it is demonstrably less sensitive to accent.
 
-The two cascades provide a more controlled comparison within the translation
-stage: their saved transcripts are identical, so their score difference arises
-after recognition. The larger NLLB checkpoint narrows the gap to Direct,
-including on positive-WER clips, but does not close it. This supports the
-observed benefit of the evaluated MT checkpoint change while leaving training,
-modelling and reference-matching explanations for the remaining gap unresolved.
+\textbf{Supporting findings.} Higher normalized Whisper WER goes with
+lower cascade scores and with a larger Direct advantage, but weakly and
+only as a clip-level association. It does not show that recognition errors
+are the mechanism, and WER cannot be computed for Direct, which has no
+transcript. Direct's lead is larger on clips where Whisper makes errors,
+but it remains on error-free transcripts, so recognition errors cannot
+explain all of it. The larger NLLB checkpoint narrows but does not close
+the lead, so changing the NLLB checkpoint does not account for the whole
+gap. The literal marker \texttt{<unk>} appears only in Direct
+outputs, but Direct stays ahead of both cascades when marked clips are
+removed (Section~IV-E). The marker therefore does not explain Direct's
+lead, and its cause remains unresolved.
 
-The marker findings establish a separate distinction between visible output
-behaviour and measured translation quality. Direct stays ahead when visibly
-marked clips are excluded. Exact-string blocking changes the marker's spelling
-and lowers scores in the 35-clip test
-(Section~\ref{sec:earlier-diagnostic-results}), while cascade fallback also
-lowers corpus scores (Table~\ref{tab:sensitivity}). Neither tested intervention
-provides a validated repair, and the marker's internal cause remains unresolved.
+\textbf{Limitations and their consequences.}
+\begin{itemize}
+    \item \emph{One language direction and specific checkpoints.}
+    The ranking may not hold for other languages, models or versions.
 
-\subsection{Limitations and their consequences}
+    \item \emph{Model, training and capacity confounds.}
+    The systems differ in size, training data and objectives, and overlap
+    between the evaluation clips and the models' training data could not
+    be ruled out. The results compare systems, and Direct's lead cannot
+    be credited to its design.
 
-\subsubsection{Model coverage and training confounds}
-The ranking may not hold for other languages, models or versions. The systems differ in
-size, training data and objectives, and overlap between the evaluation
-clips and the models' training data could not be ruled out. The results
-compare systems, and Direct's lead cannot be credited to its design.
-\subsubsection{Accent labels and sampling dependencies}
-Groups mix several
-varieties and self-reported labels may be inconsistent, so group differences
-are coarse. Speaker counts range
-from 41 to 527 per group, groups differ in what is said and how it was
-recorded, and repeated sentences are not modelled jointly with speakers.
-Accent is not isolated, so results are associations, and groups with few
-speakers have wide intervals.
-\subsubsection{Single-reference automatic metrics}
-Each clip has one
-reference, and a spot-check of 20 pairs found 3 with meaning errors. A low
-score may reflect an acceptable paraphrase or a poor reference, so scores
-show overlap with a reference, not translation quality as judged by
-people.
-\subsubsection{Exploratory tests and correction scope}
-Only the Dunn pairwise
-tests are Holm-corrected. Other $p$-values and the per-accent intervals are
-not adjusted, so isolated significant results should be read cautiously.
-\subsubsection{Diagnostic limits}
-Marker checks use selected subsets and
-changed decoding settings, and the text-input checks do not isolate the
-speech pathway. They describe those samples only and do not identify a
-cause or validate a fix.
-\subsubsection{Reproducibility}
-The recordings are excluded from the
-repository, the full-run records lack a Git commit hash, and environment
-and replay records are incomplete. Others can re-score from the archived
-predictions but cannot repeat inference without obtaining the Common
-Voice data.
+    \item \emph{Self-reported, pooled accent labels.}
+    Groups mix several varieties and labels may be inconsistent, so group
+    differences are coarse.
+
+    \item \emph{Unequal speakers, content and recordings.}
+    Speaker counts range from 41 to 527 per group, groups differ in what
+    is said and how it was recorded, and repeated sentences are not
+    modelled jointly with speakers. Accent is not isolated, so results
+    are associations, and groups with few speakers have wide intervals.
+
+    \item \emph{Single-reference automatic metrics.}
+    Each clip has one reference, and a spot-check of 20 pairs found 3
+    with meaning errors. A low score may reflect an acceptable paraphrase
+    or a poor reference, so scores show overlap with a reference, not
+    translation quality as judged by people.
+
+    \item \emph{Exploratory tests and correction scope.}
+    Only the Dunn pairwise tests are Holm-corrected. Other p-values and
+    the per-accent intervals are not adjusted, so isolated significant
+    results should be read cautiously.
+
+    \item \emph{Diagnostic limits.}
+    Marker checks use selected subsets and changed decoding settings,
+    and the text-input checks do not isolate the speech pathway. They
+    describe those samples only and do not identify a cause or validate
+    a fix.
+
+    \item \emph{Reproducibility.}
+    The recordings are excluded from the repository, the full-run
+    records lack a Git commit hash, and environment and replay records
+    are incomplete. Others can re-score from the archived predictions
+    but cannot repeat inference without obtaining the Common Voice data.
+\end{itemize}
 
 In practice, the results are best used to compare these systems on this
 benchmark and to design a stronger study, not to predict deployment
