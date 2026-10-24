@@ -2,13 +2,13 @@
 \section{Methodology}
 \label{sec:methodology}
 
-The experiment follows a fixed-input evaluation procedure. The accent-labelled
-dataset and reference translations are constructed and frozen, and small pilots
-validate engineering feasibility. The three pretrained systems then process the
-frozen inputs without parameter fitting. Predictions are aligned by clip before
-translation and ASR metrics are calculated and paired system differences and
-accent variation are analyzed. Marker investigations and subset checks follow the frozen benchmark
-as exploratory analyses. The implementation is available on
+The experiment proceeds from a frozen dataset to matched system outputs,
+translation scoring and paired statistical comparisons. Small pilots check
+engineering feasibility before the three pretrained systems process the same
+inputs without parameter fitting. Predictions are aligned by clip to compare
+system quality, accent variation and ASR associations. Exploratory marker
+diagnostics and subset checks then examine output behaviour and the stability
+of the comparison. The implementation is available on
 GitHub.\footnote{\url{https://github.com/Nlhmmh/cs760-accent-st-robustness-ml-research}}
 The repository includes the de-identified frozen evaluation metadata, pilot
 metadata, archived predictions, run records and analysis code. The evaluation
@@ -18,4 +18,4 @@ repeating inference requires obtaining the matching audio while preserving
 the frozen metadata and row order. Scoring and statistical analysis can use the
 archived predictions without loading speech models or audio. The subsections
 below describe the data, inference controls, evaluation, statistics and
-diagnostic designs.
+diagnostic designs in that order.
