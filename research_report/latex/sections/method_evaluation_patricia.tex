@@ -3,19 +3,23 @@
 \label{sec:metrics}
 
 
+
 Translations are scored with SacreBLEU 2.6.0 against the single CoVoST~2
 Chinese reference for each clip. \emph{Corpus BLEU} [9] pools n-gram
 counts (up to 4-grams) over all clips and applies a brevity penalty. We
-use SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), because the
-default tokenizer splits on whitespace and cannot segment Chinese, and
-the tokenizer must be reported with BLEU scores [12]. \emph{chrF} [10] is
+use SacreBLEU's Chinese tokenizer (\texttt{tokenize=zh}), which splits
+Chinese into characters. The default 13a tokenizer separates punctuation
+but does not segment Chinese characters, and the tokenizer must be
+reported with BLEU scores [12]. \emph{chrF} [10] is
 an F-score over character n-grams (order 6, $\beta=2$, whitespace
 excluded by default). \emph{chrF++} [11] adds word unigrams and bigrams to
-chrF (word order 2). The Chinese tokenizer is not applied to the word
-component of chrF++, so it finds fewer word matches and chrF++ is lower
-than chrF for every system. We treat this as a property of the metric on
-Chinese, not as lower quality. Scores are on a 0--100 scale, and higher is
-better.
+chrF (word order 2). chrF++ does not use BLEU's Chinese tokenizer. Its
+word component is extracted by splitting on whitespace with some
+punctuation handling, so an unspaced Chinese sentence forms very few
+words. In this evaluation chrF++ is lower than chrF for every system.
+The two are different metric definitions, so their values are not
+interchangeable quality scales. Scores are on a 0--100 scale, and higher
+is better.
  
 We report two kinds of chrF++. \emph{Corpus} scores pool statistics over
 a set of clips and describe overall quality. \emph{Mean sentence chrF++}
