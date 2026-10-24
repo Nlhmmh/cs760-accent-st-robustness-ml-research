@@ -38,7 +38,7 @@ All files below are in `sections/` unless stated otherwise.
 
 | Member | Main files |
 |---|---|
-| Nathan Naylin | `abstract.tex`, `introduction.tex`, `related_work.tex`, `methodology.tex`, `method_systems_nathan.tex`, `method_diagnostics_nathan.tex`, `results.tex`, `results_diagnostics_nathan.tex`, discussion in `discussion_nathan.tex`; coordinates `../main.tex` and `../references.bib` |
+| Nathan Naylin | `abstract.tex`, `introduction.tex`, `related_work.tex`, `methodology.tex`, `method_systems_nathan.tex`, `method_diagnostics_nathan.tex`, `results.tex`, `results_diagnostics_nathan.tex`, `results_runtime_nathan.tex`, discussion in `discussion_nathan.tex`; coordinates `../main.tex` and `../references.bib` |
 | Arizona Xing | `method_data_arizona.tex`, `method_diagnostics_arizona.tex`, `results_diagnostics_arizona.tex` |
 | Patricia Jennesha | `method_evaluation_patricia.tex`, `results_quality_patricia.tex`, limitations in `discussion_nathan.tex`, `conclusion_nathan.tex` (Conclusion and Future Work) |
 | Zhitong Li | `method_statistics_zhitong.tex`, `results_statistics_zhitong.tex` |

@@ -1,0 +1,14 @@
+% OWNER: Nathan. Aggregates verified against all three archived runtime CSVs.
+\subsection{Inference Runtime}
+\label{sec:runtime-results}
+
+Direct and Cascade-600M recorded similar mean processing times, while
+Cascade-3.3B had the largest mean (Table~\ref{tab:runtime}). The MT stage
+averaged 0.202~s per clip for NLLB-600M and 0.373~s for NLLB-3.3B; the
+corresponding ASR-stage means were 0.728~s and 0.735~s.
+
+These totals measure accumulated processing time rather than elapsed Colab
+session duration. Timing follows the stage definitions in
+Section~\ref{sec:systems}. Each configuration has one full run, so the values
+provide computational context for this benchmark rather than a controlled
+deployment-latency comparison.

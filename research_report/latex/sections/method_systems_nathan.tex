@@ -79,6 +79,24 @@ connect reference texts to the corresponding evaluation.}
 \label{fig:systems}
 \end{figure}
 
+\begin{table}[!t]
+\caption{Measured processing time for 4,200 clips per system on Tesla T4 GPUs
+with FP16 weights. Totals sum per-clip times; cascade values sum separate ASR
+and MT passes. Model loading and warm-up are excluded.}
+\label{tab:runtime}
+\centering
+\footnotesize
+\begin{tabular}{@{}lrr@{}}
+\toprule
+System & Mean (s/clip) & Total (min) \\
+\midrule
+Direct       & 0.928 & 64.98 \\
+Cascade-600M & 0.929 & 65.06 \\
+Cascade-3.3B & 1.107 & 77.50 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
 All clips and accents use the same inference controls: seed 760, greedy
 generation with \texttt{num\_beams=1}, \texttt{do\_sample=False} and
 \texttt{max\_new\_tokens=256}. Audio channels are averaged to mono and resampled
@@ -102,8 +120,10 @@ comparison cover the metadata and ordered-ID SHA-256 fingerprints, unique IDs,
 accent counts, source sentences and Chinese references. The repeating
 \texttt{sample\_id} identifies a pseudonymous speaker and is not a unique merge
 key. The two cascade ASR passes were executed separately; their archived
-transcript strings match on all 4,200 clips. Model and dataset fingerprints are
-saved, although the full-run records do not include a Git commit hash.
+transcript strings match on all 4,200 clips. The notebooks were edited locally
+and executed on a separate Google Colab T4 runtime. Model and dataset
+fingerprints were saved, but the project's Git commit hash was not captured
+in the full-run records.
 
 Timing uses wall-clock measurements with CUDA synchronization around each
 measured operation. Direct per-clip pipeline time includes audio loading,
@@ -112,3 +132,5 @@ measured ASR and MT stages, not simultaneous end-to-end latency. Model loading
 and warm-up are excluded from these per-clip measurements. Thus timing is an
 engineering diagnostic and should not be interpreted as a fully controlled
 deployment-speed comparison.
+Table~\ref{tab:runtime} summarizes full-run processing times;
+Section~\ref{sec:runtime-results} discusses the comparison.
