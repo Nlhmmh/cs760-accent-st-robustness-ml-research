@@ -2,7 +2,6 @@
 \subsection{Overall and Per-Accent Translation Quality}
 \label{sec:quality-results}
 
-
 \begin{table}[t]
 \caption{Overall translation quality on 4,200 clips. The first three
 columns are corpus scores; the last is mean sentence chrF++. Higher is
@@ -10,14 +9,14 @@ better.}
 \label{tab:overall}
 \centering
 \footnotesize
-\begin{tabular}{lrrrr}
-\hline
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
 System & BLEU & chrF & chrF++ & Sent. mean \\
-\hline
+\midrule
 Direct       & \textbf{38.86} & \textbf{32.38} & \textbf{25.08} & \textbf{27.86} \\
 Cascade-600M & 29.11 & 24.23 & 18.44 & 20.86 \\
 Cascade-3.3B & 31.91 & 26.36 & 20.06 & 22.87 \\
-\hline
+\bottomrule
 \end{tabular}
 \end{table}
  
@@ -37,10 +36,10 @@ identical for both cascades.
 \label{tab:accent}
 \centering
 \footnotesize
-\begin{tabular}{lrrrr}
-\hline
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
 Accent group & WER (\%) & Direct & 600M & 3.3B \\
-\hline
+\midrule
 Filipino             & 6.48 & \textbf{28.90} & 21.23 & 24.48 \\
 Hong Kong            & 7.56 & \textbf{28.33} & 19.97 & 21.31 \\
 Malaysian            & 7.89 & \textbf{28.03} & 20.18 & 22.38 \\
@@ -48,7 +47,7 @@ England              & 4.57 & \textbf{27.88} & 22.47 & 23.64 \\
 India and S. Asia    & 8.36 & \textbf{27.40} & 19.77 & 21.99 \\
 United States        & 4.29 & \textbf{27.27} & 20.70 & 22.61 \\
 Southern African     & 5.10 & \textbf{27.20} & 21.68 & 23.70 \\
-\hline
+\bottomrule
 \end{tabular}
 \end{table}
  
@@ -57,7 +56,7 @@ corpus terms it is ahead of Cascade-3.3B by 5.22 to 9.45 BLEU and 4.17 to
 6.77 chrF++, and ahead of Cascade-600M by 7.69 to 11.46 BLEU. Cascade-3.3B
 also scores higher than Cascade-600M in all seven groups, with
 sentence-level gains from 1.17 to 3.25 chrF++, although
-Section~IV-B shows the gain is marginal for England and Hong Kong English.
+Section~\ref{sec:statistical-results} examines uncertainty in these gains.
  
 The systems do not order the accents in the same way. Filipino is the
 highest group for Direct and for Cascade-3.3B, but England is highest for
@@ -71,11 +70,6 @@ The three groups with the highest WER (India and South Asia, Malaysian and Hong 
 are also the three lowest-scoring groups for both cascades. Section~IV-B 
 tests whether these differences are larger than sampling variation.
  
-For the research question, these descriptive results show that Direct is
-the stronger system in every accent group, and that accent group
-accounts for smaller score differences than the gap between Direct and
-either cascade. They do not show that Direct is more robust to accent.
-Its spread across groups is the smallest, but Section~IV-B shows that the
-differences in spread are uncertain. Direct outputs also contain the
-literal marker in 12.10\% of clips (Section~IV-C), which we report rather
-than remove.
+The descriptive ranking is therefore consistent across accent groups. The next
+analysis examines uncertainty in the system gaps and asks whether differences
+in between-accent spread support a claim of stronger accent robustness.

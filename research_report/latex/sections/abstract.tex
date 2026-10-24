@@ -1,13 +1,27 @@
-% OWNER: Nathan; all members verify. Write last. One paragraph, 150--200 words.
+% OWNER: Nathan. Summary of the integrated results; 183 words.
 \begin{abstract}
-\placeholder{Nathan}{Replace with one paragraph covering the problem, frozen
-English-to-Chinese seven-accent experiment, three pretrained systems, paired
-evaluation and speaker-aware uncertainty, the verified quality ranking, the
-limits of the accent-robustness finding, and the main implication. Use results
-already established in the body. Avoid citations and unexplained abbreviations.}
+Regional English accents may affect speech recognition, but their association
+with final translation quality requires separate evaluation. This study compares
+one Direct and two Cascaded English-to-Simplified-Chinese systems on 4,200
+recordings across seven regional accent groups. SeamlessM4T v2-large is compared
+with Whisper large-v2 followed by either NLLB-200 distilled 600M or NLLB-200
+3.3B, using identical clips and references without fine-tuning. Corpus metrics
+describe overall quality, while paired sentence-level chrF++ differences,
+measuring character and word overlap, are assessed with speaker-clustered
+bootstrap intervals and exploratory rank tests. Direct leads Cascade-600M by
+7.00 points (95\% interval 6.45--7.60) and Cascade-3.3B by 4.99 points
+(4.39--5.70). The larger translation model improves the cascade by 2.01 points
+(1.61--2.42). Direct leads within every accent, but differences in between-accent
+spread remain uncertain. Higher recognition error is weakly associated with
+lower cascade scores and larger Direct advantages. The quality ranking persists
+after excluding visibly marked outputs and counting each speaker once. These
+findings support the observed ranking of the evaluated systems, while leaving
+relative accent robustness unresolved. Differences in sentence content, speaker
+composition, model family and training data prevent causal attribution to
+accent or architecture.
 \end{abstract}
 
 \begin{IEEEkeywords}
-\placeholder{Nathan}{Select concise indexing terms, for example speech
-translation, regional English accents, robustness, and paired evaluation.}
+speech-to-text translation, regional English accent robustness,
+direct speech translation, cascaded speech translation, paired evaluation
 \end{IEEEkeywords}

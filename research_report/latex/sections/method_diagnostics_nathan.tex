@@ -1,7 +1,13 @@
 % OWNER: Nathan. Post-hoc experiments; official predictions are preserved.
-\subsection{Earlier Direct-Output Diagnostics}
+\subsection{Direct-Output Marker Diagnostics}
 \label{sec:earlier-diagnostic-method}
 
+The Direct-output diagnostics examine marker frequency, decoding behaviour,
+accent association, input modality and source wording. They use the frozen
+outputs or explicitly selected re-run samples; the official predictions remain
+unchanged.
+
+\subsubsection{Decoding checks}
 The initial audit examined the exact string \unk{} in the frozen Direct outputs,
 its frequency by accent and repeated sentence, runtime/generation flags, and the
 pinned tokenizer's encoding of Chinese references. Reference-tokenizer
@@ -20,4 +26,5 @@ visible marker, using \texttt{bad\_words\_ids}. Each experiment checked baseline
 agreement with the archived translations, counted literal markers and special
 UNK IDs separately, and scored the same subset using SacreBLEU 2.6.0. Changed
 outputs were inspected for alternative marker spellings. These post-hoc
-experiments did not alter the official 4,200 predictions.
+experiments are evaluated on their selected samples, separately from the
+official 4,200 predictions.

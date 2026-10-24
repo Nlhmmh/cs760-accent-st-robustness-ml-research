@@ -1,4 +1,4 @@
-% Group 9 final report FRAME. Replace every TODO before submission.
+% Group 9 final research report.
 % See ../report_plan.md for scope, ownership, evidence and page allocations.
 % .latexmkrc resolves IEEEtran from the same supplied template as the survey.
 \documentclass[conference]{IEEEtran}
@@ -18,19 +18,16 @@
 \usepackage{xcolor}
 \usepackage{booktabs}
 \usepackage{tabularx}
+\usepackage{balance}
 \usepackage[hidelinks]{hyperref}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,positioning}
 
-% Draft helpers: visible owner-labelled placeholders; no invented results.
+% Helper retained for the optional, disabled AI-use statement.
 \newcommand{\placeholder}[2]{%
   \par\noindent
   {\color{blue!65!black}\textbf{TODO (#1):} #2}\par}
-\newcommand{\figureplaceholder}[1]{%
-  \fbox{\parbox[c][2.5cm][c]{0.92\columnwidth}{%
-    \centering\small\textbf{Figure placeholder}\\[0.5em]#1}}}
 \newcommand{\unk}{\texttt{<unk>}}
-\newcommand{\scoreblank}{\textemdash}
 
 \title{Regional English Accent Robustness in Direct and Cascaded
 Speech-to-Text Translation: An Empirical Study}
@@ -93,16 +90,25 @@ jmay830@aucklanduni.ac.nz}
 
 \input{sections/discussion_nathan}
 \input{sections/conclusion_nathan}
+% End the body columns at their natural spacing, then balance the short
+% acknowledgments/contributions page without changing IEEE fonts or margins.
+\clearpage
+\balance
+\input{sections/acknowledgments}
 
 % The main body ends here. Contributions and References are excluded from
-% the 12-page body limit. Explicit page breaks make that boundary reviewable.
-\clearpage
+% the 12-page body limit. Contributions follow Acknowledgments in normal flow.
 \input{sections/author_contributions}
 % Optional: enable only after the team verifies actual use/course guidance.
 % Any enabled statement consumes space; it is not an appendix.
 % \input{sections/ai_use_statement}
 
+% Keep all references on one physical page to meet the course limit.
+% This page break is a layout choice, not a general IEEE requirement.
 \clearpage
+\nobalance
+% IEEEtran's built-in column break balances the final bibliography page.
+\IEEEtriggeratref{12}
 \bibliographystyle{IEEEtran}
 \bibliography{references}
 \end{document}

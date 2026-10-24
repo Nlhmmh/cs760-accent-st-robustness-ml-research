@@ -2,6 +2,10 @@
 \subsection{Statistical Analysis}
 \label{sec:statistics}
 
+The statistical analysis separates system quality, between-accent spread and
+variation in paired system gaps. Speaker dependence determines the resampling
+and primary testing units.
+
 \subsubsection{Notation}
 Let $i=1,\dots,N$ index clips ($N=4{,}200$), $a(i)\in\mathcal{A}$ the accent group ($|\mathcal{A}|=7$, $n_a=600$ clips each), $c(i)$ the pseudonymous speaker, and $s\in\mathcal{S}=\{\mbox{Direct},\mbox{Cascade-600M},\mbox{Cascade-3.3B}\}$ the system. Let $y_{is}$ be the sentence-level chrF++ of system $s$ on clip $i$. The accent mean and overall mean are
 \begin{equation}
@@ -19,7 +23,24 @@ All point estimates are clip-weighted.
 The 1,586 speakers contribute up to 88 clips each, so clips are not independent. Intervals therefore use a paired bootstrap~\cite{koehn2004significance} that resamples whole speakers as blocks, because an ordinary bootstrap understates uncertainty when utterances are correlated within speakers~\cite{liu2019blockwise}: within each accent, speakers are resampled with replacement and all of their clips are retained; the same resampled speakers are used for all three systems so that between-system differences stay paired. The procedure uses $B=1{,}000$ resamples with seed 760 and reports 95\% percentile intervals (2.5th and 97.5th percentiles) for $\Delta_{s,s'}$, $\Delta_{a;s,s'}$, $R_s$ and $\Delta R_{s,s'}$. As a sensitivity check, the same procedure treats each clip as its own cluster.
 
 \subsubsection{Tests}
-The analysis uses rank-based tests, which assume no particular score distribution, as advised for NLP metrics whose distribution is unknown~\cite{dror2018}. To ask whether a gap varies by accent, a Kruskal--Wallis test~\cite{kruskal1952} is applied to $d_{is,s'}$ across the seven accents, with $\epsilon^2=H/(n-1)$ as effect size ($n$ is the number of observations in the test), followed by Dunn pairwise tests~\cite{dunn1964} with Holm correction~\cite{holm1979} over the 21 accent pairs (per comparison and analysis level), and Cliff's $\delta=\Pr(x>x')-\Pr(x<x')$, for scores $x,x'$ drawn from the two groups, as pairwise effect size. Within each accent, a paired Wilcoxon signed-rank test assesses whether the gap differs from zero, reported with the matched-pairs rank-biserial correlation. Clip-level tests treat repeated clips from one speaker as independent, so every rank test is repeated on speaker-mean scores and gaps (one value per speaker; $n=1{,}586$), which is treated as the primary analysis. Kruskal--Wallis is also applied to $y_{is}$ itself to test accent differences within a system. The agreement between systems' accent orderings is summarized by Spearman's $\rho$ over the seven accent means (no interval is computed).
+The analysis uses rank-based tests, which assume no particular score distribution,
+as advised for NLP metrics whose distribution is unknown~\cite{dror2018}.
+To ask whether a gap varies by accent, a Kruskal--Wallis
+test~\cite{kruskal1952} is applied to $d_{is,s'}$ across the seven accents,
+with $\epsilon^2=H/(n-1)$ as effect size ($n$ is the number of observations
+in the test). Dunn pairwise tests~\cite{dunn1964} follow, with Holm
+correction~\cite{holm1979} over the 21 accent pairs (per comparison and
+analysis level). Cliff's $\delta=\Pr(x>x')-\Pr(x<x')$, for scores $x,x'$
+drawn from the two groups, gives the pairwise effect size.
+
+Within each accent, a paired Wilcoxon signed-rank test assesses whether the
+gap differs from zero, reported with the matched-pairs rank-biserial
+correlation. Clip-level tests treat repeated clips from one speaker as
+independent, so every rank test is repeated on speaker-mean scores and gaps
+(one value per speaker; $n=1{,}586$), which is treated as the primary analysis.
+Kruskal--Wallis is also applied to $y_{is}$ itself to test accent differences
+within a system. Agreement between systems' accent orderings is summarized by
+Spearman's $\rho$ over the seven accent means (no interval is computed).
 
 \subsubsection{WER associations}
 Associations between normalized Whisper WER and $y_{is}$ for each cascade, or WER and the Direct-minus-Cascade gap, are Spearman correlations over clips, with speaker-clustered bootstrap intervals (same settings as above).

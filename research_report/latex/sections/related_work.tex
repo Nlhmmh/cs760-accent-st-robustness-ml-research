@@ -7,30 +7,29 @@
 
 \subsection{Accent-sensitive recognition}
 DiChristofano et al.~\cite{dichristofano2022global} evaluated commercial ASR
-services using speakers reading the same passage and reported disparities
-associated with English-language backgrounds. Controlling text improves
-comparability but does not eliminate speaker or recording differences.
+services on a shared passage and reported disparities associated with
+English-language backgrounds. Shared text controls content, but speaker and
+recording differences remain.
 Prabhu et al.~\cite{prabhu2023accentcodebooks} used Common Voice accent labels to
 construct speaker-disjoint sets for seen and unseen accents, and learned
-accent-specific codebooks to improve recognition. These studies motivate evaluating
-regional groups separately. Their outcome is ASR performance, however, rather
-than final translation quality; their adaptation methods are also distinct from
-the present evaluation of frozen, unadapted systems.
+accent-specific codebooks to improve recognition. Both studies motivate regional
+evaluation but measure ASR rather than final translation quality. Prabhu et al.'s
+adaptation method also differs from the present frozen-system comparison.
 
 \subsection{Direct and Cascaded translation}
-Sperber and Paulik~\cite{sperber2020endtoend} describe trade-offs between
+At the translation stage, Sperber and Paulik~\cite{sperber2020endtoend} describe trade-offs between
 committing to intermediate ASR representations and modelling translation
 directly, including data scarcity and separate component objectives.
 Bentivogli et al.~\cite{bentivogli2021cascade} compared Direct and Cascaded
-systems on matched MuST-C segments for English-to-German, Italian and Spanish,
-using automatic scores and professional post-editing. The approaches were
-similar on several human measures, while some conclusions changed with language
-direction and evaluation measure. Their results support matched evaluation,
-but do not imply a universal ranking or describe the regional English-to-Chinese
-setting studied here. The present comparison also uses different pretrained model
-families, so shared test inputs do not isolate architecture from training resources.
+systems on matched English-to-German, Italian and Spanish MuST-C segments using
+automatic scores and professional post-editing. Several human measures were
+similar, while conclusions varied by language and measure. This supports matched
+evaluation without implying a universal ranking or describing the regional
+English-to-Chinese setting. Here, different pretrained families also prevent
+isolating architecture from training resources.
 
 \subsection{Recognition errors and translation}
+The intermediate transcript raises a further evaluation question.
 Le et al.~\cite{le2017disentangling} showed that ASR errors can have different
 consequences for French-to-English translation: some errors produce substantial
 translation damage, whereas others have little effect. Their phrase-based MT
@@ -60,6 +59,6 @@ shows why tokenization and scoring settings must accompany reported BLEU scores.
 Koehn~\cite{koehn2004significance} motivates paired bootstrap comparisons on the
 same test items. The present study retains paired evaluation with speaker-clustered
 resampling, distinguishes corpus scores from sentence means, and reports uncertainty in accent
-variation. The resulting study connects these literature themes in a matched
-seven-group, three-system benchmark with explicitly exploratory diagnostics;
-it does not claim that these themes are absent from all prior work.
+variation. These choices connect the accent, system-design and evaluation
+literature in a matched seven-group, three-system benchmark with exploratory
+diagnostics. The next section specifies its data construction and controls.
