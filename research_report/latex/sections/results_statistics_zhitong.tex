@@ -7,7 +7,7 @@ accounting for speaker dependence. Separate analyses examine the spread of
 accent means and whether the size of each system gap varies across accents.
 
 \begin{table}[t]
-\caption{Paired mean sentence chrF++ gaps (points) with speaker-clustered 95\% intervals. Positive gaps favor the first-named system.}
+\caption{Paired mean sentence chrF++ gaps (points) with speaker-clustered 95\% intervals. Positive gaps favour the first-named system.}
 \label{tab:paired-gaps}
 \centering
 \small
@@ -44,9 +44,10 @@ US & 527 & 27.3 & 20.7 & 22.6 & 6.6 [5.4, 7.8] & 4.7 [3.6, 5.8] \\
 \end{table}
 
 \subsubsection{System gaps}
-All three overall gap intervals exclude zero, supporting the ranking in
-Table~\ref{tab:overall}. Cascade-3.3B improves on Cascade-600M by about two
-points (Table~\ref{tab:paired-gaps}). Within every accent the
+All three overall gap intervals exclude zero (Table~\ref{tab:paired-gaps}),
+supporting Hypotheses~\ref{hyp:quality} and~\ref{hyp:mt-size}.
+Cascade-3.3B gains about two points over Cascade-600M.
+Within every accent the
 Direct-minus-Cascade intervals also exclude zero (Table~\ref{tab:accent-gaps}),
 and the speaker-level matched-pairs rank-biserial correlations are positive
 throughout (0.53--0.93 against Cascade-600M; 0.39--0.91 against Cascade-3.3B).
@@ -59,14 +60,24 @@ bootstrap estimates the clip-weighted mean gap, while the rank test uses
 speaker-mean paired differences. The two summaries therefore need not agree.
 
 \subsubsection{Accent means and spread}
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figures/accent_means.pdf}
+\caption{Mean sentence chrF++ with unadjusted 95\% speaker-clustered
+bootstrap intervals. Overlap alone does not test robustness differences.}
+\label{fig:accent-means}
+\end{figure}
+
 Direct has the smallest observed between-accent spread, but the differences
-between systems remain uncertain. The spread $R_s$ is 1.7 [1.4, 5.1] points
+between systems remain uncertain (Fig.~\ref{fig:accent-means}).
+The spread $R_s$ is 1.70 [1.4, 5.1] points
 for Direct, 2.70 [2.0, 4.7] for Cascade-600M and 3.17 [2.0, 5.7] for
 Cascade-3.3B. These intervals are right-skewed because a maximum minus a minimum
 of noisy means is biased upward. All three differences in spread have
 intervals that include zero (e.g.\ $-1.0$ [$-2.3$, 2.3] for
 Direct $-$ Cascade-600M). Higher translation scores therefore do not establish
-stronger accent robustness under the study's spread-based definition.
+stronger accent robustness under the study's spread-based definition;
+Hypothesis~\ref{hyp:spread} remains unresolved.
 
 A speaker-level Kruskal--Wallis test detects accent differences only for
 Cascade-600M ($p=0.041$, $\epsilon^2=0.008$; Direct $p=0.185$,
@@ -102,8 +113,9 @@ analysis of recognition and translation scores. Higher normalized WER is
 associated with lower cascade scores ($\rho=-0.19$ [$-0.22$, $-0.16$] for
 Cascade-600M; $-0.20$ [$-0.23$, $-0.17$] for Cascade-3.3B) and with a larger
 Direct advantage ($\rho=0.13$ [0.10, 0.16] and $0.17$ [0.14, 0.20]). All
-intervals exclude zero, overall and within each accent, but the associations
-are weak and observational; they do not identify ASR error as the cause.
+intervals exclude zero, overall and within each accent, supporting
+Hypothesis~\ref{hyp:wer}. The associations are weak and observational;
+they do not identify ASR error as the cause.
 
 These associations describe the cascade's exposed recognition stage. The
 following diagnostics examine a separate feature of Direct outputs: the

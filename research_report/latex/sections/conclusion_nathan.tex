@@ -6,9 +6,10 @@ This study compared a Direct system (SeamlessM4T v2) with two Whisper-to-NLLB
 cascades on 4,200 English recordings from seven regional accent groups,
 scored against Chinese references. On this frozen set, Direct
 outperformed both cascades on all four quality metrics and within every
-accent group. The larger NLLB checkpoint narrowed the gap. Accent groups
-differ in score within each system, but by less than Direct differs from
-either cascade. Higher Whisper WER was weakly associated with lower
+accent group. The larger NLLB checkpoint narrowed the gap. Observed
+accent-group means differ within each system; exploratory speaker-level
+tests detect differences only for Cascade-600M.
+Higher Whisper WER was weakly associated with lower
 cascade scores. What remains inconclusive is whether any system is more
 robust to accent. The design cannot separate accent from speaker and
 sentence content, or architecture from model size and training data.

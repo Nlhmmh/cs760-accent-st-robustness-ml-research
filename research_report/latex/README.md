@@ -16,11 +16,17 @@ so editing it does not change the literature survey.
 From this directory:
 
 ```sh
+python3 figures/generate_accent_means.py
 latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 ```
 
+The figure command needs Matplotlib and redraws Figure 2 from Zhitong's archived
+speaker-clustered accent means and intervals. It does not run inference or
+recompute statistics, and leaves Jidni's original Q3 figure unchanged.
+
 This produces the review preview `main.pdf`.
-Generated PDFs and auxiliary files are ignored by Git.
+Compiled report PDFs and auxiliary files are ignored by Git; the Figure 2
+vector PDF is retained as a source asset.
 
 Build the submission-named copy after checking the paper:
 
@@ -52,8 +58,8 @@ the filename ends in `_nathan.tex`.
 Nathan's and Arizona's marker-diagnostic files form one printed subsection in
 Methodology and one in Results. Their separate files retain ownership and
 stable cross-reference labels. Results moves from quality to uncertainty and
-accent variation, recognition-error associations, marker diagnostics and
-sensitivity checks. Preserve this sequence when editing individual files.
+accent variation, recognition-error associations, marker diagnostics, runtime
+and sensitivity checks. Preserve this sequence when editing individual files.
 
 `ai_use_statement.tex` is an optional placeholder, commented out in `main.tex`.
 Enable it only after confirming actual use and course guidance. It is not a

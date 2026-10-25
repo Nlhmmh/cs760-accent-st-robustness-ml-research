@@ -12,7 +12,7 @@ Let $i=1,\dots,N$ index clips ($N=4{,}200$), $a(i)\in\mathcal{A}$ the accent gro
 \bar y_{a,s}=\frac{1}{n_a}\sum_{i:\,a(i)=a} y_{is},\qquad
 \bar y_{s}=\frac{1}{N}\sum_{i=1}^{N} y_{is}.
 \end{equation}
-For two systems $s,s'$, the paired gap is $d_{is,s'}=y_{is}-y_{is'}$, with overall estimand $\Delta_{s,s'}=\bar y_s-\bar y_{s'}$ and within-accent estimand $\Delta_{a;s,s'}=\bar y_{a,s}-\bar y_{a,s'}$. A positive gap favors the first-named system. Robustness is operationalized as the between-accent spread of each system and the difference in spread between two systems:
+For two systems $s,s'$, the paired gap is $d_{is,s'}=y_{is}-y_{is'}$, with overall estimand $\Delta_{s,s'}=\bar y_s-\bar y_{s'}$ and within-accent estimand $\Delta_{a;s,s'}=\bar y_{a,s}-\bar y_{a,s'}$. A positive gap favours the first-named system. Robustness is operationalized as the between-accent spread of each system and the difference in spread between two systems:
 \begin{equation}
 R_s=\max_{a\in\mathcal{A}}\bar y_{a,s}-\min_{a\in\mathcal{A}}\bar y_{a,s},\qquad
 \Delta R_{s,s'}=R_s-R_{s'}.
@@ -46,4 +46,4 @@ Spearman's $\rho$ over the seven accent means (no interval is computed).
 Associations between normalized Whisper WER and $y_{is}$ for each cascade, or WER and the Direct-minus-Cascade gap, are Spearman correlations over clips, with speaker-clustered bootstrap intervals (same settings as above).
 
 \subsubsection{Scope}
-Only the Dunn comparisons are multiplicity-corrected; all other $p$-values and the per-accent intervals are unadjusted, and the tests are exploratory. Repeated sentence content is not modeled jointly with speakers. A non-significant result is not treated as evidence of equality, since underpowered comparisons, such as those for accents with few speakers, support no firm conclusion in either direction~\cite{card2020power}. All results are associations rather than causal effects, because the systems differ in model family, size and training data.
+Only the Dunn comparisons are multiplicity-corrected; all other $p$-values and the per-accent intervals are unadjusted, and the tests are exploratory. Repeated sentence content is not modelled jointly with speakers. A non-significant result is not treated as evidence of equality, since underpowered comparisons, such as those for accents with few speakers, support no firm conclusion in either direction~\cite{card2020power}. All results are associations rather than causal effects, because the systems differ in model family, size and training data.
