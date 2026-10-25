@@ -60,8 +60,8 @@ marker's effect.
 The Direct advantage persists in both WER subsets, but its size differs.
 Where normalized Whisper WER is zero, which covers 70.3\% of clips, Direct
 leads Cascade-3.3B by +3.61 [3.04, 4.24]. Where normalized WER is positive,
-the lead is +8.24 [7.38, 9.17]. These positive-WER clips make up 22.8\% of United States English and 36.2\%
-of Malaysian English. The three groups with the fewest positive-WER clips
+the lead is +8.24 [7.38, 9.17]. The share of positive-WER clips ranges from 22.8\% (United States English)
+to 36.2\% (Malaysian English). The three groups with the fewest positive-WER clips
 (United States, England and Southern African) have the three smallest
 Direct-minus-Cascade-600M gaps in Table~\ref{tab:accent-gaps}, and the four
 groups with the most have the four largest. The pattern is consistent with recognition errors
@@ -85,7 +85,7 @@ With one clip per speaker the gaps are +6.19 [5.37, 6.90] against Cascade-600M, 
 Replacing Direct's output with the Cascade-3.3B translation on the 508 marked clips lowers corpus chrF++ from 25.08 to 24.89 and corpus BLEU from 38.86 to 38.54. On these clips the marked Direct outputs score above the cascade's translations, so the substitution did not improve scores.
 
 \subsubsection{Lowest-scoring clips}
-In five of the seven groups, at least half of Direct's ten lowest-scoring clips score exactly zero. The cascades' worst clips in India and South Asia and in Hong Kong English carry mean WER between 0.31 and 0.56, against 0.06 over the whole set. Direct's worst clips carry mean WER of about 0.1, and 14\% of them contain the marker, near the 12.1\% base rate. Several references are non-literal. The reference for "There you have it!" is \begin{CJK*}{UTF8}{gbsn}给你！\end{CJK*}, and the literal \begin{CJK*}{UTF8}{gbsn}这就是它!\end{CJK*} scores zero against it. A low automatic score on such a clip shows a mismatch with the reference; whether the literal rendering is itself an acceptable translation needs qualitative assessment, which this study did not perform.
+In five of the seven groups, at least half of Direct's ten lowest-scoring clips score exactly zero. The cascades' worst clips in India and South Asia and in Hong Kong English carry mean WER between 0.31 and 0.56, against 0.06 over the whole set. Direct's worst clips carry mean WER of about 0.1, and 14\% of them contain the marker, near the 12.1\% base rate. Several references are non-literal. The reference for ``There you have it!'' is \begin{CJK*}{UTF8}{gbsn}给你！\end{CJK*}, and the literal \begin{CJK*}{UTF8}{gbsn}这就是它!\end{CJK*} scores zero against it. A low automatic score on such a clip shows a mismatch with the reference; whether the literal rendering is itself an acceptable translation needs qualitative assessment, which this study did not perform.
 
 Together, the subset and speaker checks support the stability of the observed
 system ranking. Their implications for accent robustness and the unresolved
