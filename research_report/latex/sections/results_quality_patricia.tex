@@ -31,14 +31,14 @@ normalized WER is 5.97\% pooled (6.32\% as a per-clip mean) and is
 identical for both cascades.
 
 \begin{table}[t]
-\caption{Normalized Whisper WER and mean sentence chrF++ by accent group
+\caption{Mean per-clip normalized Whisper WER (\%) and mean sentence chrF++ by accent group
 (600 clips each). Groups are ordered by Direct's score.}
 \label{tab:accent}
 \centering
 \footnotesize
 \begin{tabular}{@{}lrrrr@{}}
 \toprule
-Accent group & WER (\%) & Direct & 600M & 3.3B \\
+Accent group & Mean WER (\%) & Direct & 600M & 3.3B \\
 \midrule
 Filipino             & 6.48 & \textbf{28.90} & 21.23 & 24.48 \\
 Hong Kong            & 7.56 & \textbf{28.33} & 19.97 & 21.31 \\
@@ -63,7 +63,7 @@ highest group for Direct and for Cascade-3.3B, but England is highest for
 Cascade-600M. The lowest group is Southern African for Direct, India and
 South Asia for Cascade-600M, and Hong Kong for Cascade-3.3B. Hong Kong is
 therefore Direct's second-highest group and Cascade-3.3B's lowest. Across
-groups, mean sentence chrF++ spans about 1.7 points for Direct, 2.70 for
+groups, mean sentence chrF++ spans 1.70 points for Direct, 2.70 for
 Cascade-600M and 3.17 for Cascade-3.3B. Mean per-clip normalized WER by
 group ranges from 4.29\% (United States) to 8.36\% (India and South Asia).
 The three groups with the highest WER (India and South Asia, Malaysian and Hong Kong)

@@ -10,5 +10,7 @@
 *.lof
 *.lot
 *.pdf
+# Vector figure used as a report source asset.
+!figures/accent_means.pdf
 *.dvi
 *.xdv
