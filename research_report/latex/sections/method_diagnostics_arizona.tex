@@ -16,8 +16,8 @@ strings.
 
 Logistic regressions of marker presence on accent, with and
 without sentence length, tested the six accent coefficients (United States
-English as reference) jointly by Wald tests with speaker- or, separately,
-sentence-clustered standard errors.
+English as reference) jointly by Wald tests, once with speaker-clustered and
+once with sentence-clustered standard errors.
 
 \subsubsection{Input modality}
 The same checkpoint translated each clip's reference transcript
@@ -37,17 +37,12 @@ content token were assigned the median observed clip-level minimum (4.12).
 Word removal used the 439 distinct English sentences of the 508 speech-marked
 clips, restricted to the 385 whose text-input translation reproduced the
 marker. At the decoding step where the first marker began, each whitespace-delimited
-input word was deleted in turn with the already generated output tokens fixed,
-and the word whose deletion most reduced the summed probability of the two
-alternative next tokens that begin the marker was selected. Each sentence was
+input word was deleted in turn, with the already generated output tokens
+fixed. The selected word was the one whose deletion most reduced the summed
+probability of the two alternative next tokens that begin the marker. Each sentence was
 then translated afresh, without the fixed prefix, once without the selected
 word and, as a control, once without another word chosen at random (seed
 760). The outcome is the proportion of the 385 sentences whose new
-translation contains no marker, with Wilson intervals.
-
-\subsubsection{Diagnostic scope}
-Text input bypasses the speech encoder, so the text-input checks cannot
-localize markers in the speech pathway. All diagnostics are exploratory with
-unadjusted p-values; as in Section~\ref{sec:statistics}, speaker and sentence
-dependence are not modelled jointly, and Wilson intervals assume independent
-units.
+translation contains no marker, with Wilson intervals. The Wilson intervals
+treat clips in the special-ID check and sentences in word removal as
+independent units.
