@@ -15,7 +15,9 @@ only weakly by accent, and few accent pairs differ after correction. A
 positive system gap and stronger robustness are different claims.
 Robustness, as defined here, concerns the spread of group means. Direct's
 spread is the smallest, but the differences in spread are uncertain
-(Section~\ref{sec:statistical-results}). The results therefore indicate that Direct translated better on
+(Section~\ref{sec:statistical-results}). Hypotheses~\ref{hyp:quality},
+\ref{hyp:wer} and~\ref{hyp:mt-size} are supported, whereas
+Hypothesis~\ref{hyp:spread} remains unresolved. The results therefore indicate that Direct translated better on
 this data, not that it is demonstrably less sensitive to accent.
 
 \subsection{Supporting findings}
@@ -28,9 +30,10 @@ but it remains on transcripts with zero normalized WER, so counted transcription
 errors cannot explain all of it. The larger NLLB checkpoint narrows but does not close
 the lead, so changing the NLLB checkpoint does not account for the whole
 gap. The literal marker \texttt{<unk>} appears only in Direct
-outputs, but Direct stays ahead of both cascades when marked clips are
-removed (Section~\ref{sec:synthesis-results}). The marker therefore does not explain Direct's
-lead, and its cause remains unresolved.
+outputs, but Direct stays ahead of both cascades in both the marked and
+unmarked subsets (Section~\ref{sec:synthesis-results}). Marked clips alone
+therefore do not account for the observed ranking; the marker's cause
+remains unresolved.
 
 \subsection{Limitations and their consequences}
 \subsubsection{One language direction and specific checkpoints}
