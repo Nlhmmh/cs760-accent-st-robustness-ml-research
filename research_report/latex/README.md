@@ -77,6 +77,8 @@ mandatory section stated in the supplied final-report instructions.
 4. Use `\cite{key}` with the shared `references.bib`. Add sources with verified
    metadata and preserve IEEE first-citation order; do not use `\nocite{*}` to
    reach the minimum.
+   The `report-reference-control` entry formats lists longer than six authors
+   as the lead author plus “et al.”; it is not a numbered reference.
 5. Keep preparation evidence paths in member notes/the Markdown plan. Refer to
    the project's results through paper tables/figures and to the code through the
    existing Methodology footnote, not numbered literature entries.
