@@ -1,6 +1,5 @@
 % OWNER: Arizona. Target: about 0.65 page; select findings, do not copy all extras.
 \subsubsection{Accent association}
-\label{sec:further-diagnostic-results}
 
 \begin{table}[t]
 \caption{Accent, input-modality and source-wording diagnostics for Direct. All checks are
@@ -35,51 +34,48 @@ Word removal & Reference transcript; 385 sentences &
 \end{tabularx}
 \end{table}
 
-The group marker rates in
-Section~\ref{sec:earlier-diagnostic-results} span about three percentage
+The group marker rates reported above span about three percentage
 points, and the speaker-clustered joint test did not detect an association
 between accent and marker presence (Table~\ref{tab:further-diagnostics});
 sentence clustering or length adjustment does not change this ($p=0.45$ and
-$0.48$, respectively). The true between-group differences remain uncertain. Of
-the 370 normalized sentences recorded more than once, six were marked in some
-recordings but not others.
+$0.48$, respectively). Of the 370 normalized sentences recorded more than
+once, six were marked in some recordings but not others.
 
 \subsubsection{Input modality}
-With reference-transcript input, the marker recurs in
-most speech-marked clips but in only 2.1\% of the 3,692 unmarked clips, so the
-anomaly is not exclusive to speech input; Whisper-transcript input gives a
-similar overall rate (11.9\% versus 12.6\%). Speech and reference-transcript
-input still differ for 138 clips (59 marked only with speech input, 79 only
-with reference-transcript input). In the
+\label{sec:further-diagnostic-results}
+With reference-transcript input, the marker recurs in most speech-marked
+clips and appears in only 79 of the 3,692 speech-unmarked clips (2.1\%), so
+the anomaly is not exclusive to speech input. Whisper-transcript input gives
+a similar overall rate (11.9\%, versus 12.6\% with reference transcripts).
+Marker status differs between speech and reference-transcript input for 138
+clips (59 marked only with speech input, 79 only with reference-transcript
+input). In the
 700-clip speech re-run, 694 outputs reproduced their archived strings exactly,
 and none of the 74 clips with special UNK ID~1 showed the visible marker in
-either run. The count of 508 refers to the visible string, not to special-ID
-generation, so outputs with hidden ID~1 can remain in the marker-free subset
-of Section~\ref{sec:synthesis-results}.
+either run. Outputs with hidden ID~1 can therefore remain in the marker-free
+subset of Section~\ref{sec:synthesis-results}.
 
 \subsubsection{Source wording}
 Marker presence is associated with source vocabulary
 that is rare in general English. The rate falls from 31.3\% (82 of 262 clips)
 when the rarest content lemma has Zipf $\le 2.5$ to 5.1\% (119 of 2,323) when
-it exceeds 4 (including imputed clips), and after length adjustment each
+it exceeds 4 (including imputed clips). After length adjustment, each
 tenfold increase in that lemma's frequency is associated with about half the
 odds of a marker (Table~\ref{tab:further-diagnostics}). Proper nouns show no
 clear association (OR 0.95 [0.75, 1.21], adjusted for length and rarest-lemma
 frequency). Among the 385 sentences with marked text-input translations,
-re-translation without the selected word was marker-free far more often than
-without a random other word (Table~\ref{tab:further-diagnostics}), and the
-gap remains in the 161 sentences whose random word is not a spaCy stop word
-(78.3\% versus 13.0\%). Selected words are rarer than the other non-stop words
-(median surface-form Zipf 3.8 versus 4.6), but because each was chosen to
-maximize the drop in summed marker-start probability at a single decoding
-step, the deletion comparison measures sensitivity to a targeted deletion rather than
-independent evidence that rarity causes the marker.
+re-translation without the selected word was marker-free for 80.5\% of them,
+against 9.9\% without a random other word
+(Table~\ref{tab:further-diagnostics}). The gap remains in the 161 sentences
+whose random word is not a spaCy stop word (78.3\% versus 13.0\%). Selected words are rarer than the other non-stop words
+(median surface-form Zipf 3.8 versus 4.6). Because each was chosen to
+maximize the drop in summed marker-start probability at one decoding step,
+the deletion comparison measures sensitivity to the targeted deletion and
+does not isolate a causal effect of word rarity.
 
-Together, these checks characterize the marker as an anomaly of the Direct
-checkpoint that is associated with source wording and shows no detected
-accent pattern in its incidence; its internal cause remains unresolved. Word
-removal can also alter meaning, so marker disappearance alone does not
-indicate a better translation. These checks describe marker incidence rather
-than the translation-score gap between marked and unmarked outputs across
-accents. The next section examines whether excluding visibly marked clips
-changes the system ranking.
+Marker occurrence is associated with rarer source wording, while no
+association with accent was detected; its internal cause remains unresolved. The text-input and token-ID checks also show that
+neither speech input nor generation of special UNK ID~1 is required for the
+visible marker to occur. The word-removal experiment measures marker
+presence rather than translation quality. The next section examines whether
+the system ranking persists after visibly marked clips are excluded.
